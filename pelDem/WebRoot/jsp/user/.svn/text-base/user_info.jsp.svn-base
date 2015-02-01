@@ -1,0 +1,210 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8;no-cache, must-revalidate">
+<title>My Test</title>
+<link type="text/css" rel="stylesheet" href="../css/main.css"/>
+<style type="text/css">
+body{width:100%;height:100%;background-color: #FFFFFF;text-align: center;}
+.input_txt{width:200px;height:20px;line-height:20px;}
+.info{height:40px;line-height:40px;}
+.info th{text-align: right;width:65px;color: #4f4f4f;padding-right:5px;font-size: 13px;}
+.info td{text-align:left;}
+</style>
+<script language="JavaScript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/lhgdialog/lhgdialog.min.js?t=self&s=areo_blue"></script>
+</head>
+<body>
+	<form action="save.html" name="userForm" id="userForm" target="result" method="post" onsubmit="return checkInfo();">
+		<input type="hidden" name="userId" id="userId" value="${user.userId }"/>
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr class="info">
+			<th>用户名:</th>
+			<td><input type="text" name="loginname" id="loginname" class="input_txt" value="${user.loginname }"/></td>
+		</tr>
+		<tr class="info">
+			<th>密　码:</th>
+			<td><input type="password" name="password" id="password" class="input_txt"/></td>
+		</tr>
+		<tr class="info">
+			<th>确认密码:</th>
+			<td><input type="password" name="chkpwd" id="chkpwd" class="input_txt"/></td>
+		</tr>
+		<tr class="info">
+			<th>名　称:</th>
+			<td><input type="text" name="username" id="username" class="input_txt" value="${user.username }"/></td>
+		</tr>
+		<tr class="info">
+			<th>电子邮件:</th>
+			<td><input type="text" name="email" id="email" class="input_txt" value="${user.email }"/></td>
+		</tr>
+		<tr class="info">
+			<th>角　色:</th>
+			<td>
+				<select name="roleId" id="roleId"  onchange="juese()">
+					<option value="">请选择</option>
+					<c:forEach items="${roleList}" var="role">
+						<option value="${role.roleId }">${role.roleName }</option>
+					</c:forEach>
+				</select>
+			</td>
+		</tr>
+		
+		<tr class="info" id="areaTr"  style="visibility:hidden;">
+			<th>区   域:</th>
+			<td>
+				<select name="areaId" id="areaId" class="input_txt">					
+					 <option value="">请选择</option>
+					<c:forEach items="${areaList}" var="area">
+						<option <c:if test='${user.areaId == area.areaId}'>selected="selected"</c:if>
+						 value="${area.areaId }" >${area.areaName }</option>
+					</c:forEach>
+				</select>
+			</td>
+		</tr>
+		<%--  <c:choose>
+					 	<c:when test="${not empty user.areaId}">
+					 	</c:when>
+					 	<c:otherwise>
+					 		<option value="">请选择</option>
+					 	</c:otherwise>					
+					 </c:choose> 
+					 <% if(==101){%>selected="selected"<%} %>
+					 --%>
+		<!-- 
+		<tr class="info">
+			<th>职　位:</th>
+			<td>				
+				<a href='#' onclick='show_jobs()'>
+					<c:choose>
+						<c:when test="${empty user.job}">
+							<span id='jobName' name='jobName'>无</span>
+							<input type="hidden" id='jobId' name="jobId" />
+						</c:when>
+						<c:otherwise>
+							<span id='jobName' name='jobName'>${user.job.jobName }</span>
+							<input type="hidden" id='jobId' name="jobId" value="${user.job.jobId }" />
+						</c:otherwise>
+					</c:choose>
+				</a>
+			</td>
+		</tr>
+		-->
+	</table>
+	</form>
+	<iframe name="result" id="result" src="about:blank" frameborder="0" width="0" height="0"></iframe>
+	<script language="JavaScript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/lhgdialog/lhgdialog.min.js?t=self&s=areo_blue"></script>
+	<script type="text/javascript">
+
+	
+	
+			function juese(){
+				var id=$("#roleId").val();
+			//	alert(id);
+				if (id==7) {
+					/* 	if (areaId!='') {
+							var areaId=$("#areaId").val();
+							$("#areaTr").attr("style","display:block;");
+							//$("#areaTr").attr("style","display:none;");
+						} */
+						//$("#areaTr").attr("style","display:block;height:40px;line-height:40px;");
+						$("#areaTr").attr("style","visibility:visible;");	
+					}else{
+						//$("#areaTr").attr("style","display:none;");
+						$("#areaTr").attr("style","visibility:hidden;");
+					}
+				
+			}
+		
+	
+		function show_jobs(){
+			var sFeatures = "dialogHeight:300px;dialogWidth:300px;center:yes;scroll:yes;status:no;";
+			var node = window.showModalDialog("showjobs.html","",sFeatures);
+			if(node){
+				$('#jobName').html(node.name);
+				$('#jobId').val(node.id);
+			}			
+		}
+	
+		var dg;
+		$(document).ready(function(){
+			dg = frameElement.lhgDG;
+			dg.addBtn('ok','保存',function(){
+				$("#userForm").submit();
+			});
+			if($("#userId").val()!=""){
+				$("#loginname").attr("readonly","readonly");
+				$("#loginname").css("color","gray");
+				var roleId = "${user.roleId}";
+				if(roleId!=""){
+					$("#roleId").val(roleId);
+				}
+			}
+			
+			
+			var roleId=$("#roleId").val();
+		//	alert(roleId);
+				if (roleId==7) {
+				/* 	if (areaId!='') {
+						var areaId=$("#areaId").val();
+						$("#areaTr").attr("style","display:block;");
+						//$("#areaTr").attr("style","display:none;");
+					} */
+					
+					$("#areaTr").attr("style","visibility:visible;");	
+				}
+		});
+		
+		function checkInfo(){
+			if($("#loginname").val()==""){
+				alert("请输入用户名!");
+				$("#loginname").focus();
+				return false;
+			}
+			if($("#userId").val()=="" && $("#password").val()==""){//新增
+				alert("请输入密码!");
+				$("#password").focus();
+				return false;
+			}
+			if($("#password").val()!=$("#chkpwd").val()){
+				alert("请确认密码!");
+				$("#password").focus();
+				return false;
+			}
+			if($("#username").val()==""){
+				alert("请输入名称!");
+				$("#username").focus();
+				return false;
+			}
+			if($("#email").val()==""){
+				alert("请输入电子邮件!");
+				$("#email").focus();
+				return false;
+			}
+			return true;
+		}
+		
+		function success(){
+			if(dg.curWin.document.forms[0]){
+				dg.curWin.document.forms[0].action = dg.curWin.location+"";
+				dg.curWin.document.forms[0].submit();
+			}else{
+				dg.curWin.location.reload();
+			}
+			dg.cancel();
+		}
+		
+		function failed(){
+			alert("新增失败，该用户名已存在！");
+			$("#loginname").select();
+			$("#loginname").focus();
+		}
+		
+	
+			
+	</script>
+</body>
+</html>
