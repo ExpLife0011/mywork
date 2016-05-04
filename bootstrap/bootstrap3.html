@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="js/jquery-2.1.4.js"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css" />
+<link rel="stylesheet" href="css/style3.css" />
+<title>无标题文档</title>
+</head>
+
+<body>
+	<!--头部开始-->
+	<header role="banner" class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+			<a href="#" class="navbar-brand img"><img src="img/logo.png" alt="bootstrap"></a>			 
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span><!--对应标签-->
+               </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                 <li><a href="#">Shoes<span class="caret"></span></a></li>
+                <!--按钮下拉菜单-->
+                 <li class="dropdown"> 
+                 	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Clothing<span class="caret"></span></a>
+                 	<ul class="dropdown-menu">
+                     <li><a href="#">Dropdown link</a></li>
+                     <li><a href="#">Dropdown link</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li><a href="#">Separated link</a></li>
+                    </ul>
+                 </li>
+                <!--按钮下拉菜单结束-->     
+                 
+                 <li><a href="#">Accessories<span class="caret"></span></a></li>
+				 <li><a href="#">Men<span class="caret"></span></a></li>
+				 <li><a href="#">Women<span class="caret"></span></a></li>
+				 <li><a href="#">Kids<span class="caret"></span></a></li>
+				 </ul>
+				 <!--右边菜单-->
+				 <ul class="nav navbar-nav navbar-right">
+				 <li><a href="#" class="dropdown-toggle" data-toggle = "dropdown">All departments<span class="caret"></span></a>
+				 	<ul class="dropdown-menu">
+                     <li><a href="#">Dropdown link</a></li>
+                     <li><a href="#">Dropdown link</a></li>
+                     <li><a href="#">Another action</a></li>
+                     <li><a href="#">Something else here</a></li>
+                     <li><a href="#">Separated link</a></li>
+                    </ul>
+				 </li>
+				 </ul>
+                 <!--右边菜单结束-->
+			</div>
+		</div>
+	</header>
+	<!--内容开始-->
+<div class="container">
+   <div class="row">
+	<section class=" col-md-4 col-sm-3">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+       <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+       </ol>
+       <!--图片-->
+	   <div class="carousel-inner" role="list-box">
+		<div class="item active" style="background:#223240">
+			<img src="img/slide1.png" alt="第一张">
+		</div>
+		<div class="item" style="background:#F5E4DC;">
+			<img src="img/slide2.png" alt="第二张">
+		</div>
+		<div class="item" style="background:#DE2A2D;">
+			<img src="img/slide3.png" alt="第三张">
+		</div>
+	   </div>
+	   <a href="#carousel-example-generic" data-slide="prev" class="left carousel-control">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	   </a>
+	   <a href="#carousel-example-generic" data-slide="next" class="right carousel-control">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	   </a>
+      </div>
+      <h2>Featured Content</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Learn more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+	</section>
+	<section class="col-md-4 col-sm-3">
+		<div class="col-container">
+		<h2 style="margin-top: 0; padding-top: 0;">Welcome!</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+        </div>
+        <h2>Recent Updates</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+        <h2>And another thing</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+	</section>
+	<section class="col-md-4 col-sm-3">
+		<h2 style="margin-top: 0; padding-top: 0;">Don't Miss!</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+        <h2>Check it out</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+        <h2>Finally</h2>
+      	<p>Suspendingsses hello world,This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+        </p>
+        <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+	</section>
+   </div>
+</div>
+	<!--内容结束-->
+	<!--尾部开始-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div id="cate" class="col-sm-4 col-md-2">
+					<h3>Categories</h3>
+					<ul class="social">
+						<li>Shoes</li>
+						<li>Clothing</li>
+						<li>Accessories</li>
+						<li>Men</li>
+						<li>Women</li>
+						<li>Kids</li>
+						<li>Pets</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-md-2">
+					<h3>Styles</h3>
+					<ul class="social">
+						<li>Athletic</li>
+						<li>Casual</li>
+						<li>Dress</li>
+						<li>Everyday</li>
+						<li>Other Days</li>
+						<li>Alternatives</li>
+						<li>Otherwise</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-md-2">
+					<h3>Other</h3>
+					<ul class="social">
+						<li>Link</li>
+						<li>Another Link</li>
+						<li>Link again</li>
+						<li>Try this</li>
+						<li>Don't you dare</li>
+						<li>Oh go ahead</li>
+					</ul>
+				</div>
+				<div class="clearfix visible-sm"></div>
+				<div class="about col-sm-12 col-md-6">
+					<h3>About US</h3>
+					<p>掌握基本的网络命令，熟练使用Ping命令了解网络的连接及连通状况实验原理和内容安装Boson NetSim。按照实验步骤完成scenario labs中的lab3  和lab6。将实验结果截屏放入实验报告根据实验结果，分析实验结果数据两个实验中的几个设备之间的联通关系。
+                    </p>
+                    <p><a href="#" class="btn btn-primary pull-right">Read more&nbsp;<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	
+	
+	
+	
+</body>
+</html>
