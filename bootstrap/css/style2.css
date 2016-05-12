@@ -1,0 +1,28 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+.logo {
+	padding:0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #CCCCCC;
+	}
+#myCarousel {
+	margin: 50px 0 0 0;
+}
+#navbar-collapse ul {
+	margin-top:0;
+}
+.carousel-inner img {
+	margin: 0 auto;
+}
+#container2{
+	margin-top: 10px;
+}
+.img{
+	transition: all 1s ease-in;
+}
+.img:hover{
+	transform: scale(0.5);
+}
