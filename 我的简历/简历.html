@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	 	<title>个人简历</title>
+		<link rel="stylesheet" href="img/jquery.fullPage.css" />
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				font:16px "微软雅黑",verdana;
+			}
+			.section{
+				position: relative;
+				background: #FFFFFF;
+				overflow: hidden;
+				text-align:center;
+			}
+			.section1{
+				background:url(jQuery全屏滚动插件fullPage/images/3.jpg) no-repeat;
+			}
+			.section1 h1{
+				margin-top: 5%;
+				color: #FFFFFF;
+				font-weight: normal;
+				font-size: 70px;
+				opacity: 0.8;
+			}
+			.section1 p{
+				margin: 5% auto 0;
+				color: #FFFFFF;
+				font-size: 18px;
+				width: 60%;
+				margin-top: 800px;
+			}
+			.section1 a{
+				display: block;
+				margin: 5% auto 0;
+				color: #FFFFFF;
+				font-size: 18px;
+				opacity: 0.9;
+				text-decoration:none;
+				height:18px;
+			}
+/*===========================================*/
+			.section2{
+				background: url(jQuery全屏滚动插件fullPage/images/2.jpg) no-repeat;
+			}
+			.section2 h1{
+				margin: 10px auto;
+				color: #39C;
+				font-weight: normal;
+				font-size: 70px;
+			}
+			.section2 p{
+				width:500px;
+				margin-bottom:20px;
+				background:rgba(255,0,0,0.1);
+				color:#FFF;
+				font-size:24px;
+			}
+			.section2 img{
+				position:absolute;
+				left:65%;
+				top:10%;
+				border-radius:50%;
+				transition:all 0.5s ease;
+			}
+			.section2 img:hover{
+				transform:rotate(360deg);
+			}
+			.section2 a{
+				display:inline-block;
+				margin: 20px auto 0;
+				color:#fff;
+				text-decoration: none;
+				text-align:center;
+				background:rgba(255,255,0,0.6);
+				line-height: 40px;
+				font-family:Arial, Helvetica, sans-serif;
+				font-weight:bolder;
+				height:40px;
+				padding:5px 25px;
+				border-radius:3px;
+				transition:all 0.8s ease;
+			}
+			.section2 a:hover{
+				transform:rotate(360deg)scale(0.5);
+				-moz-transform:rotate(360deg)scale(0.5);
+				background:rgba(255,255,0,1);
+			}
+/*==================================================*/
+			.section3{
+				background: url(jQuery全屏滚动插件fullPage/images/1.jpg) no-repeat;
+			}
+			.section3 h1{
+				margin: 20px auto;
+				color: #F3F843;
+				font: normal 40px;
+				width: 60%;
+			}
+			.section3 .row{
+				width: 95%;
+				margin-left: 20px;
+				color: #333333;
+				font-size: 18px;
+				position: relative;
+			}
+			.section3 .column{
+				float: left;
+				display: inline-block;
+				width: 31%;
+				margin: 10px;
+				padding-bottom: 30px;
+				background-color: rgba(255,255,255,0.1);
+				border:2px solid rgba(255,0,0,0.1);
+			}
+			.section3 .word p{
+				display:inline-block;
+				width:200px;
+				color:#9C6;
+				font-family:"微软雅黑";
+			}
+			.section3 a{
+				display: inline-block;
+				margin: 20px auto 0;
+				color: #08C;
+				height: 25px;
+				line-height: 25px;
+				padding: 3px 10px;
+				background:rgba(255,255,255,0.4);
+				text-decoration: none;
+				text-align: center;
+				border-radius: 3px;
+				transition:all 0.7s ease;
+			}
+			.section3 a:hover{
+				background: rgba(255,0,0,0.3);
+				color:white;
+			}
+/*===============================================================*/			
+			.section4{
+				background:url(jQuery全屏滚动插件fullPage/images/2.jpg) no-repeat;
+			
+			}
+			.section4 h1{
+				margin: 20px auto;
+				color: rgba(255,255,255,0.7);
+				font-weight:normal;
+				font-size: 40px;
+			}
+			.section4 .row{
+				width: 95%;
+				margin-left: 20px;
+				color: #333333;
+				font-size: 18px;
+				position: relative;
+			}
+			.section4 .column{
+				float: left;
+				display: inline-block;
+				width: 31%;
+				margin: 10px;
+				padding-bottom: 30px;
+				background-color: rgba(255,255,255,0.1);
+				border:2px solid rgba(255,0,0,0.1);
+			}
+			.section4 .column img{
+				height: 114px;
+				margin-top: 45px;
+				border-radius: 5px;
+				transition: all 0.5s ease;
+				box-shadow:0 0 5px rgba(255,255,255,1);
+			}
+			.section4 .column img:hover{
+				transform: scale(1.1);
+				box-shadow:red;
+			}
+			.section4 .column h4{
+				margin: 20px auto;
+			}
+			.section4 .column .info p{
+				color: #fff;
+			}
+			.section4 .column .info a{
+				text-decoration:none;
+				text-align:center;
+				display:inline-block;
+				height:25px;
+				line-height:25px;
+				border:1px solid rgba(255,255,255,0.5);
+				border-radius:5px;
+				padding:3px 15px;
+				color:#CFC;
+				font-weight:normal;
+			}
+			.section4 .column .info a:hover{
+				border:1px solid rgba(255,255,255,1);
+			}
+			
+			.section4 .git{
+				position: absolute;
+				top: 350px;
+				left: 34%;
+				margin: 100px auto;
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			.section4 .gitimg{
+				margin-top:80px;
+			}
+		</style>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script>
+			$(function(){
+				$("#fullpage").fullpage({
+					anchors:['page1','page2','page3','page4'],
+					navigation:true,//导航
+					loopBottom:true,//滚动到顶部后继续可以向上滚动
+					loopTop:true,
+					navigationTooltips:['首页','自我简介','能力','作品'],
+					verticalCentered:false,/*不居中*/
+					css3:true,
+					afterLoad:function(anchorLink,index){
+				if(index == 1){
+				$('.section1').find('p').delay(500).animate({
+					'margin-top': '0'
+				}, 1500,'easeOutExpo');
+				}
+				if(index == 2){
+				$('.section2').find('a').animate({
+					'margin-left': '0'
+				}, 500,'easeOutExpo');
+				}
+				if(index == 3){
+				$('.section3').find('h1').delay(500).fadeIn(2000)
+				}
+				
+				
+			},
+			/*=========================================*/
+			        onLeave:function(index,direction){
+				if(index == 1){
+				$('.section1').find('p').delay(500).animate({
+					'margin-top': '800px'
+				}, 1500,'easeOutExpo');
+				}
+				if(index == 2){
+				$('.section2').find('a').animate({
+					'margin-left': '-110%'
+				}, 500,'easeOutExpo');
+				}
+				if(index == 3){
+				$('.section3').find('h1').delay(500).fadeOut(2000)
+				}
+	
+			}
+		})
+	})
+		</script>
+        <script>
+		$(function(){
+			$(function(){
+				$('.row').hover(function(){
+					$('.word').slideDown(500)
+					 },function(){
+					$('.word').slideUp(500)
+				})
+			})
+		})
+		</script>
+	</head>
+	<body>
+		<div id="fullpage">
+			<div class="section section1">
+				<h1>欢迎光临我的简历</h1>
+				<p>感谢您能在百忙之中抽出事件来看我的简历，这是我自己做的一个简单简历页面，希望您能喜欢。</p>
+				<a href="#">想了解更多，往下滚动吧！∧＿∧</a>
+			</div>
+			<div class="section section2">
+			    <h1>自我简介</h1>
+                <p>我叫齐琪，来自安徽，是天津工业大学的本科毕业生，主修信息管理与信息系统，在大学生涯中，我顺利考过英语四六级，计算机二级，也积极参加各种实践活动，更加入了中国青年志愿者，取得了丰富的实践经验，同时因为专业的原因，我自学前端已经有好几个月的时间了，非常希望能找到一份web前端的工作</p>
+			    <img src="img/photo.png">
+                <a href="#">进一步了解</a>
+			</div>
+			<div class="section section3">
+				<h1>我的个人能力</h1>
+				<!--<p>高级手表向来是以及时精准为标准Apple watch也是如此,他与你的iPhone相配合,与全球标准时间的误差不超过五十毫秒,而且,你可以对表盘进行个性化设置,</p>-->
+                <div class="row">
+					<div class="column">
+						<h4 class="primary"></h4>
+						<div class="info">
+							<div class="word"><p>HTML,CSS,Jquery,Javascript</p></div>
+							<a href="#" class="more">掌握熟悉</a>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<div class="column">
+						<h4 class="primary"></h4>
+						<div class="info">
+							<div class="word"><p>Bootstrap,Ajax,响应式</p></div>
+							<a href="#" class="more">正在学习</a>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+					<div class="column">
+						<h4 class="primary"></h4>
+						<div class="info">
+							<div class="word"><p>node.js,php后台。。。</p></div>
+							<a href="#" class="more">其他探索</a>
+						</div>
+					</div>
+				</div>
+				<a href="#">进一步了解</a>
+			</div>
+			<div class="section section4">
+				<h1>希望您能喜欢</h1>
+				
+				<div class="row">
+					<div class="column">
+						<img src="img/port1.png"/>
+						<h4 class="primary"></h4>
+						<div class="info">
+							<p>一个简单静态页面</p>
+							<a href="#" class="more">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<img src="img/port2.png"/>
+						<h4 class="primary"></h4>
+						<div class="info">
+							<p>Bootstrap页面</p>
+							<a href="#" class="more">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<img src="img/port3.png"/>
+						<h4 class="primary"></h4>
+						<div class="info">
+							<p>fullpage简单页面</p>
+							<a href="#" class="more">了解更多</a>
+						</div>
+					</div>
+				</div>
+                <img class="gitimg" src="img/github.png">
+				<a class="git" href="http://github.com/tencent1234/mywork">我的Github地址:github.com/tencent1234/mywork</a>
+			</div>
+		</div>	
+	</body>
+</html>
