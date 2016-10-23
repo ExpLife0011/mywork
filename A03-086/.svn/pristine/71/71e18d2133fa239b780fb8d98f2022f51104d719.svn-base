@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>6.2　迎接客人服务</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+	</script>	 
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="5994768A-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="51566EB9-914A-877B-F6AF-D7AD99CFB643"
+data-pre-file="c06s01.html" 
+data-pre-title="上一节：课程导入" 
+data-next-file="c06s03.html" 
+data-next-title="下一节：散客入住接待">
+<div class="chapter">
+	<img src="images/c0600-000-s.png">
+</div>
+<div class="chapter-box">
+	<div class="chapter-num">第一部分</div>
+	<div class="chapter-name">课程导入</div>
+</div>
+<div class="page-number" id="p_1">p.1</div>
+<article>
+	<h1>一、学习领域</h1>
+	<section>
+		客服部接待普通客人的服务流程。
+	</section>
+	<h1>二、学习情境</h1>
+	<section>
+		天津蓟县恒大酒店客房部<img src="../META-INF/images/icon-dilidingwei.png" alt="" style="display: inline-block;width: 16px; margin-bottom: -4px;" /></span>。
+	</section>
+	<h1>三、学习目标</h1>
+	<section>
+		 客房服务是项目多、内容杂、随机性强的服务工作。客房部服务水平的高低，直接影响到住店宾客对饭店接待水平的评价，从而影响饭店客源的稳定性和持续性，并影响饭店“回头客”的接待量，因此通过本模块的学习达到：
+	</section>
+	<section class="indent-title">1．了解客房部接待普通客人的服务流程。</section>
+	<section class="indent-title margin0">2．掌握客房清扫服务。</section>
+	<section class="indent-title margin0">3．熟悉公共区域卫生清扫。</section>
+	<section class="indent-title margin0">4．熟悉客房物品分配。</section>
+	<section class="indent-title margin0">5．掌握客房对客服务相关知识。</section>
+</article>
+<div class="page-number" id="p_2">p.2</div>
+<article>
+	<h1>四、情景描述</h1>
+	<section>
+		张福林按照人力资源部的安排来到了客房部服务中心，客房部经理为其安排了工作岗位，首先是在客房服务中心熟悉客房部各项工作安排及内容，然后到客房学习客房清扫工作，最后在客房部其他工作岗位进行观摩式学习。
+	</section>
+</article>
+</body>
+</html>

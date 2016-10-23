@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>1.2　前厅部概述</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="41689BDE-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="C39D1EF7-762F-11E6-9EF4-0016D39A06D3"
+data-uuid="CFFA3671-908F-5507-C963-FFA093A8DBDA"
+data-pre-file="c01s01.html" 
+data-pre-title="课程导入" 
+data-next-file="c01s03.html" 
+data-next-title="下一节：前厅部服务概述">
+<div class="chapter-box">
+	<div class="chapter-num">第二部分</div>
+	<div class="chapter-name">前厅部概述</div>
+</div>
+ <article>
+	<h1>一、任务目标</h1>
+	<section>1．了解前厅部在现代酒店经营管理中的重要地位和基本作用。</section>
+	<section>2．熟悉前厅部的主要任务。</section>
+	<section>3．掌握前厅部的组织机构设置与管理岗位的主要职责。</section>
+	<section>4．熟悉前厅部的环境设计。</section>
+
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>某天的下午，某楼层服务员小王正在整理工作车，准备将垃圾运走。正在这时，402  房间的李先生急匆匆地来到服务台，问：“服务员，请问你收拾房间时，有没有看到垃圾桶里有张借款凭证？”“对！”客人懊恼地说：“昨天晚上我喝醉了。将一张 5 万元的借款凭证撕碎后扔进了垃圾桶。”</section>
+	<section>小王知道从一大袋垃圾中找出这张借款凭证的小碎片谈何容易！可小王又想到，酒店一直要求员工“想客人所想，急客人所急”，在客人最需要我们的时候，更应该主动为他们提供服务。想到这里，小王微笑着安慰客人说：“请不要着急，先回房休息，我一定尽力帮您找到。”客人听了，非常感动，怀着希望走了。</section>
+	<section>小王将垃圾袋从工作车上取下来，翻开后，一点一点扒垃圾，仔细地查找着每一片纸片，垃圾袋中散发着刺鼻的臭味，但她仍然认真地寻找着，“功夫不负有心人”，撕碎了的借款凭证碎片终于找到了。小王又找来胶水，将碎片一一粘好，碎片又变成了一张完整的借款凭证，客人看到这张虽然有污迹，但完整无缺的借款凭证时，激动地握住小王的手说：“小姐，太感谢你了，没想到贵酒店的员工服务这么好，住贵酒店将是我永远的选择。”</section>
+	<section style="text-indent: 0px;">思考：</section>
+	<section class="case-fold margin0">1．客人撕碎丢弃在垃圾桶里的东西，小王有责任从垃圾中找吗？</section>
+	<section class="case-fold margin0">2．在清洁客服中应注意什么？</section>
+	</div>
+	
+	<h1>三、任务流程</h1>
+	<section>在正式入职前，需要对前厅部的地位作用及主要任务有深入的了解，通过以下内容我们来了解前厅部基本概述的内容。</section>
+	<div class="related-information jump-button" data-href="information0102.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>	
+	<div class="additional-knowledge jump-button" data-href="additional0101.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	<h1>四、情景描述</h1>
+	<section>张福林是一名应届毕业生，正准备前往蓟县恒大酒店前厅部实习。在上岗之前必须进行为期三周的岗前培训，前期的培训主要包括了解前厅部的基本知识，包括前厅部的功能、任务、组织机构及每个岗位的职责等。通过培训，她已经能够意识到前厅部的重要性以及主要组织机构及岗位职责等，为接下来的工作做好准备。</section>
+	<h1>五、任务内容</h1>
+	<section>前厅经理带领外宾参观前厅运转情况，学生分为四组，分别扮演前厅工作人员，介绍自己的职责及工作情况。</section>
+	<h1>六、任务实施路径</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　客房部服务流程图</figcaption>
+	</figure>
+</article>
+<div class="foot"></div>
+</body>
+</html>

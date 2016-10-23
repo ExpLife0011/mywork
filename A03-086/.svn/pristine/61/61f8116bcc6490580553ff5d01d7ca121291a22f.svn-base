@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<book id="DE754AAC-762D-11E6-9EF4-0016D39A06D3" version="1">
+<title>前厅客房服务与管理</title>
+<publisher></publisher>
+<publishTime>2012-01-01</publishTime>
+<isbn>000000</isbn>
+<appMinVerAndroid>14</appMinVerAndroid>
+<appMinVerIOS>16</appMinVerIOS>
+<formatVersion>2</formatVersion>
+<appMinVerPC>24</appMinVerPC>
+<appMinVerAndroidPhone>11</appMinVerAndroidPhone>
+<appMinVerIOSPhone>24</appMinVerIOSPhone>
+<authors>
+<author>吕函霏</author>
+<author>郑海明</author>
+</authors>
+<freeChapters>
+<chapter id="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"/>
+</freeChapters>
+<chapters>
+<chapter id="2742D221-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>本书信息</title>
+<image>chapter_images/infor.jpg</image>
+<file>/infor/infor.html</file>
+<sections>
+<section id="07DA2959-762F-11E6-9EF4-0016D39A06D3">
+<title>本书信息</title>
+<file>/infor/infor.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="41689BDE-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>模块一　前厅部认识</title>
+<image>chapter_images/c01.jpg</image>
+<file>/c01/c01s01.html</file>
+<sections>
+<section id="63AD1353-762F-11E6-9EF4-0016D39A06D3">
+<title>第一部分　课程导入</title>
+<file>/c01/c01s01.html</file>
+</section>
+<section id="C39D1EF7-762F-11E6-9EF4-0016D39A06D3">
+<title>第二部分　前厅部概述</title>
+<file>/c01/c01s02.html</file>
+</section>
+<section id="CB052985-762F-11E6-9EF4-0016D39A06D3">
+<title>第三部分　前厅部服务概述</title>
+<file>/c01/c01s03.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="50252866-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>模块二　前厅散客接待服务</title>
+<image>chapter_images/c02.jpg</image>
+<file>/c02/c02s01.html</file>
+<sections>
+<section id="D617B0CC-762F-11E6-9EF4-0016D39A06D3">
+<title>第一部分　课程导入</title>
+<file>/c02/c02s01.html</file>
+</section>
+<section id="DF4A5D80-762F-11E6-9EF4-0016D39A06D3">
+<title>第二部分　散客客房预订</title>
+<file>/c02/c02s02.html</file>
+</section>
+<section id="E78BA969-762F-11E6-9EF4-0016D39A06D3">
+<title>第三部分　散客入住接待</title>
+<file>/c02/c02s03.html</file>
+</section>
+<section id="EE843FA4-762F-11E6-9EF4-0016D39A06D3">
+<title>第四部分　散客住店服务</title>
+<file>/c02/c02s04.html</file>
+</section>
+<section id="F715845A-762F-11E6-9EF4-0016D39A06D3">
+<title>第五部分　散客离店结账服务</title>
+<file>/c02/c02s05.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="6125CCE8-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>模块三　团队客人接待服务</title>
+<image>chapter_images/c03.jpg</image>
+<file>/c03/c03s01.html</file>
+<sections>
+<section id="01F3AA34-7630-11E6-9EF4-0016D39A06D3">
+<title>第一部分　课程导入</title>
+<file>/c03/c03s01.html</file>
+</section>
+<section id="0B28B777-7630-11E6-9EF4-0016D39A06D3">
+<title>第二部分　团队客人客房预订</title>
+<file>/c03/c03s02.html</file>
+</section>
+<section id="1478BE03-7630-11E6-9EF4-0016D39A06D3">
+<title>第三部分　团队客人抵店服务</title>
+<file>/c03/c03s03.html</file>
+</section>
+<section id="1EFA9C14-7630-11E6-9EF4-0016D39A06D3">
+<title>第四部分　团队客人住店服务（叫醒、礼宾）</title>
+<file>/c03/c03s04.html</file>
+</section>
+<section id="287CC5C5-7630-11E6-9EF4-0016D39A06D3">
+<title>第五部分　离店结账</title>
+<file>/c03/c03s05.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="6FEABA5A-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>模块四　VIP客人前厅接待服务</title>
+<image>chapter_images/c04.jpg</image>
+<file>/c04/c04s01.html</file>
+<sections>
+<section id="3369502F-7630-11E6-9EF4-0016D39A06D3">
+<title>第一部分　课程导入</title>
+<file>/c04/c04s01.html</file>
+</section>
+<section id="3A1B7D71-7630-11E6-9EF4-0016D39A06D3">
+<title>第二部分　前厅VIP客人接待服务</title>
+<file>/c04/c04s02.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="82B8818A-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>模块五　客房部认识</title>
+<image>chapter_images/c05.jpg</image>
+<file>/c05/c05s01.html</file>
+<sections>
+<section id="429BB357-7630-11E6-9EF4-0016D39A06D3">
+<title>第一部分　课程导入</title>
+<file>/c05/c05s01.html</file>
+</section>
+<section id="48ED03CF-7630-11E6-9EF4-0016D39A06D3">
+<title>第二部分　客房部概述</title>
+<file>/c05/c05s02.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="9EA77E6B-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>模块六　客房部服务流程</title>
+<image>chapter_images/c06.jpg</image>
+<file>/c06/c06s01.html</file>
+<sections>
+<section id="5327EA9F-7630-11E6-9EF4-0016D39A06D3">
+<title>第一部分　课程导入</title>
+<file>/c06/c06s01.html</file>
+</section>
+<section id="5994768A-7630-11E6-9EF4-0016D39A06D3">
+<title>第二部分　迎接客人服务</title>
+<file>/c06/c06s02.html</file>
+</section>
+<section id="5FB6FAD8-7630-11E6-9EF4-0016D39A06D3">
+<title>第三部分　散客入住接待</title>
+<file>/c06/c06s03.html</file>
+</section>
+<section id="659B9D25-7630-11E6-9EF4-0016D39A06D3">
+<title>第四部分　散客住店服务</title>
+<file>/c06/c06s04.html</file>
+</section>
+<section id="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3">
+<title>第五部分　散客离店结账服务</title>
+<file>/c06/c06s05.html</file>
+</section>
+</sections>
+</chapter>
+<chapter id="AD360011-762E-11E6-9EF4-0016D39A06D3" type="C">
+<title>附录</title>
+<image>chapter_images/c07.jpg</image>
+<file>/c07/c07s01.html</file>
+<sections>
+<section id="7525D604-7630-11E6-9EF4-0016D39A06D3">
+<title>前厅服务员考试大纲</title>
+<file>/c07/c07s01.html</file>
+</section>
+</sections>
+</chapter>
+</chapters>
+</book>

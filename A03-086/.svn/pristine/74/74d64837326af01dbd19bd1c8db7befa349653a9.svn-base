@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>6.3　散客入住接待</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/select.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		select.init();
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.right{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/dui.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.wrong{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/cuo.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.judge{
+		display: inline-block;
+		width: 21px;
+		height: 18px;
+		margin-bottom: -2px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="5FB6FAD8-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="2638CDFD-88B2-6DDA-82A7-52A4A449458F"
+data-pre-file="c06s02.html" 
+data-pre-title="上一节：迎接客人服务" 
+data-next-file="c06s04.html" 
+data-next-title="下一节：散客住店服务">
+<div class="chapter-box">
+	<div class="chapter-num">第三部分</div>
+	<div class="chapter-name">散客入住接待</div>
+</div>
+<div class="page-number" id="p_24">p.24</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．了解入住登记接待准备工作的内容。</section>
+	<section class="indent-title margin0">2．掌握散客入住接待程序。</section>
+	<section class="indent-title margin0">3．掌握客房销售技巧。</section>
+	<section class="indent-title margin0">4．熟悉入住期间常见问题的处理。</section>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>某客人电话预订了一个套间，实习生小张制定用房预分方案时将套间安排在 9 层 916 房间。实习生小张下班后将预订情况转交给下一班的实习生小李。晚上客人到店，接班的前台接待小李没有检查上班前实习生小张安排的房号，就为客人办理了住店手续。当客人来到 916 房间时发现这不是套间，而是标准间，客人大为不满，要求换房。但是前台查询后说套间已全部租住，没有办法调整，只好答应一有套间就给予调换。</section>
+	<section>事后前台主管了解到是因为各层均是 16 号房间是套间，唯独 9 层的 16 号房间是标准间。而实习生对楼层的情况只是大致了解，结果按一般规律办理，错把标准间当做套间出租了。</section>
+	<section style="text-indent: 0px;">思考：</section>
+	<section class="case-fold margin0">1．散客办理入住手续前，应做什么样的准备？</section>
+	<section class="case-fold margin0">2．办理入住时，前厅服务员应该注意什么？</section>
+	</div>
+	</article>
+	<div class="page-number" id="p_25">p.25</div>
+	<article>
+	<section>任务流程：客房销售是通过总台员工接待客人，为客人办理入住登记手续、分配房间来实现的。入住登记是前厅部对客服务全过程的一个关键阶段，以下是前厅部接待散客入住的工作流程。</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0603-001.png" data-title="图 3　前厅部接待散客入住工作流程" data-desc="前厅部接待散客入住工作流程。">
+		<img src="images/c0603-001-s.png" alt="" class="width500">
+		<figcaption class="img-caption">图 3　前厅部接待散客入住工作流程</figcaption>
+	</figure>
+	</article>
+	<div class="page-number" id="p_26">p.26</div>
+	<article>
+	<div class="related-information jump-button" data-href="information0603.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+	
+	<h1>二、普通散客入住接待</h1>
+	<section>入住接待是酒店与客人第一次直接接触，因此，前厅接待员要能够根据客人的需求合理分配房间，有条不紊地位客人办理入住登记手续，尽量缩短办理入住登记的时间，力争使每一位客人满意，给客人留下良好的第一印象。</section>
+	<section>宾客入住登记程序，可以分为 7 个步骤。</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0603-002.png" data-title="办理宾客入住登记步骤" data-desc="办理宾客入住登记步骤。">
+		<img src="images/c0603-002-s.png" alt="" class="width620">
+		<figcaption class="img-caption">办理宾客入住登记步骤</figcaption>
+	</figure>
+	</article>
+	<div class="page-number" id="p_27">p.27</div>
+	<article>
+	<h2>（一）向宾客致意</h2>
+	<section>宾客到达服务台前，接待员应热情主动地和宾客问候，千万不可冷落宾客。尤其是在内外宾客一起及入住高峰期时，更要注意和客人打招呼或者致意。如果知道宾客姓名或职位，应用姓氏或头衔来称呼宾客，使其倍感亲切与尊重。</section>
+	<div class="case-box">
+	<div class="case-title">案例分析</div>
+	<section>一位常住的外国客人从饭店外面回来，当他走到服务台时，还没有等他开口，问讯员就主动微笑地把钥匙递上，并轻声称呼他的名字，这位客人大为吃惊，由于饭店对他留有印象，使他产生一种强烈的亲切感，旧地重游如回家一样。</section>
+	<section>还有一位客人在服务台高峰时进店，服务员问讯小姐突然准确地叫出：“xx 先生，服务台有您一个电话。”这位客人又惊又喜，感到自己受到了重视，受到了特殊的待遇，不禁添了一份自豪感。另外一位外国客人第一次前往住店，前台接待员从登记卡上看到客人的名字，迅速称呼他以表欢迎，客人先是一惊，而后作客他乡的陌生感顿时消失，显出非常高兴的样子。简单的词汇迅速缩短了彼此间的距离。此外，一位 VIP（非常重要的客人—贵宾） 客人随带陪同人员来到前台登记，服务人员通过接机人员的暗示，得悉其身份，马上称呼客人的名字，并递上打印好的登记卡请他签字，使客人感到自己的地位不同，由于受到超凡的尊重而感到格外的开心。</section>
+	<section style="text-indent: 0px;">评析：</section>
+	<section class="margin0">学者马斯洛的需要层次理论认为，人们最高的需求是得到社会的尊重。当自己的名字为他人所知晓就是对这种需求的一种很好的满足。在饭店及其他服务性行业的工作中，主动热情地称呼客人的名字是一种服务的艺术，也是一种艺术的服务。饭店服务台人员尽力记住客人的房号、姓名和特征，借助敏锐的观察力和良好的记忆力，作出细心周到的服务，使客人留下深刻的印象，客人今后在不同的场合会提起该饭店如何如何，等于是饭店的义务宣传员。</section>
+	</div>
+	</article>
+	<div class="page-number" id="p_28">p.28</div>
+	<article>
+	<section>目前国内著名的饭店规定：在为客人办理入住登记时至少要称呼客人名字三次。前台员工要熟记 VIP 的名字，尽可能多地了解他们的资料，争取在他们来店报家门之前就称呼他们的名字，当再次见到他们时能直称其名，作为一个合格服务员最基本的条件，同时，还可以使用计算机系统，为所有下榻的客人做出历史档案记录，它对客人做出超水准、高档次的优质服务，把每一位客人都看成是 VIP，使客人从心眼里感到饭店永远不会忘记他们。</section>
+	<h2>（二）识别宾客有无预订</h2>
+	<section>抵店宾客可以分为两类：有预定和无预定直接抵店的客人。这两类客人办理入住不尽相同。</section>
+	<h3>1．如有预定</h3>
+	<section>请客人出示有效证件，根据其姓名迅速查找其订房资料，并复述宾客的订房要求（如房型、住宿天数、付费方式），确认后请宾客完成入住确认单。如客人持有订房凭证，接待员应先将订房凭证的副本留下，作为向代理机构计算的凭证。对于已支付订金的客人，接待员应再次向客人确认所受到的订金金额。</section>
+	<h3>2．如无预定直接抵店</h3>
+	<section>接待员应首先了解宾客的住房需求，根据当天客房状况，判断能否满足宾客的要求，如能提供满足客人需求的房间，请客人填写入住登记表，如果无法满足宾客的住宿需求，可以向客人推销酒店其他房型，设法留住客人。若确实无法满足客人需求时，接待员也应向宾客表示感谢，帮助客人联系临近饭店，帮助客人解决燃眉之急，以塑造酒店在客人心目中的良好形象。</section>
+	</article>
+	<div class="page-number" id="p_29">p.29</div>
+	<article>
+	<h2>（三）填写入住登记表</h2>
+	<h3>1．完成入住确认单</h3>
+	<section>客人到达饭店住宿需要做的第一件事，就是到前台办理入住登记手续。各酒店的住宿登记表，也称为入住确认单。</section>
+	<h4>（1）前台管理系统自动填写</h4>
+	<section>随着计算机系统、酒店前台管理系统软件和居民身份证信息识别系统的不断升级，目前，大多数酒店对于临时住宿登记表的填写都是采取系统自动填写并打印的形式。也就是只需将宾客的第二代居民身份证，放置在与计算机和酒店前台管理系统软件同时连接的读卡器上，宾客的姓名、性别、家庭住址等身份信息就会自动填入软件中的表格。接待员再在表格中输入房号和所付押金，直接打印表格后，只须由宾客签名。这样，一张由临时住宿登记表和押金单合二为一的表格就完成了。这种操作既保证了宾客信息的准确，又提高了前台的工作效率。</section>
+	<h4>（2）手工填写</h4>
+	<section>对于手工填写临时住宿登记表的饭店，接待员应在保证质量的前提下，尽其所能地为客人缩短办理入住登记手续的时间，以提高效率。对于已办理预定手续的散客，酒店在客人预订时已掌握了部分资料信息，所以，在客人抵店前可将相关内容输入电脑内，形成预先登记。当客人抵店后，就可根据其姓名迅速查找到该客人的预先登记表，核实证件后，请客人在预先登记表上签名；对于未办理预订的抵店客人，应请他们填写空白登记表，并尽量帮助客人填写。</section>
+	</article>
+	<div class="page-number" id="p_30">p.30</div>
+	<article>
+	<h3>2．核对有效证件</h3>
+	<section>酒店入住登记时使用的有效证件分为国内国外两种。</section>
+	<h4>（1）国内旅客有效证件</h4>
+	<section>中华人民共和国居民身份证、临时身份证、中国护照、军官证、警官证、文职干部证、军警老干部离休荣誉证等。</section>
+	<h4>（2）境外旅客有效证件</h4>
+	<section>港澳居民来往内地通行证、台湾居民来往大陆通行证、中华人民共和国旅行证、中华人民共和国入出境通行证、外国护照。</section>
+	<section class="fold-o">①港澳居民来往内地通行证：港澳居民来往内地通行证于 1999 年 1 月 15 日启用。通行证有效期分为 3 年和 10 年两种，持证人年满 18 周岁的为 10 年有效，未满 18 周岁的为 3 年有效。通行证号码组成规则：通行证证件号码共 11 位。第 1 位为字母，“H”字头签发给香港居民，“M”字头签发给澳门居民；第 2 位至第 11 位为数字，前 8 位数字为通行证持有人的终身号，后 2 位数字表示换证次数，首次发证为 00，此后依次递增。</section>
+	<section class="fold-o margin0">②台湾居民来往大陆通行证：台湾居民来往大陆通行证简称“台胞证”，是中华人民共和国政府发给台湾人民来往大陆地区观光、商务、探视的身份证明书，其样式与作用均类似护照。每次入境所需的类似一般护照上之签证的入境许可，在台胞证上称为“签注”。</section>
+	<section class="fold-o margin0">③中华人民共和国旅行证：简称中旅证或中国旅行证，是中华人民共和国护照的替代证件，前往世界各国有效；中国旅行证持有人为中华人民共和国公民。中国旅行证的签发、换发、补发和加注由中华人民共和国的外交代表机关、领事机关和外交部授权的其他驻外机构办理。中国旅行证是可代替护照使用的国际旅行证，与护照具有同等效力。分为一年一次入出境有效和两年多次入出境有效两种。</section>
+	<section class="fold-o margin0">④中华人民共和国入出境通行证：是入出中国国（边）境的通行证件，由省，自治区，直辖市公安厅（局）及其授权的公安机关签发。这种证件在有效期内一次或者多次入出境有效。一次有效的，在出境时由边防检查站收缴。</section>
+	<section class="fold-o margin0">⑤护照：是一个国家的公民出入本国国境和到国外旅行或居留时，由本国发给的一种证明该公民国籍和身份的合法证件。所以护照是外国人办理入住登记手续时持有的有效证件。</section>
+	</article>
+	<div class="page-number" id="p_31">p.31</div>
+	<article>
+	<div class="alternately">
+		<div>自我训练</div>
+		<div class="top30">下列关于签证的说法正确的是（<span class="answerBox">B</span>）。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 签证就是护照，都是外国人的身份证明</div>
+		<div class="choose"><span class="alternately-o">B</span> 签证是指一个国家的国内或驻外主管机关在外国公民所持有效护照或其他有效出入境证件上签注，盖印，表示准许持证人出入该国国境或过境</div>
+		<div class="choose"><span class="alternately-o">C</span> 签证可单独构成身份证明</div>
+		<div class="choose"><span class="alternately-o">D</span> 签证是一个地区同意外国公民出入或经过该国国境的一种许可证明</div>
+		<div class="alternately-cross">交卷</div>
+	</div>
+
+	<div class="additional-knowledge jump-button" data-href="additional0603.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	
+	<h2>（四）排房定价</h2>
+	<section>核对好客人有效证件后，应根据客人的数量和要求，为客人安排相应类型的房间，若客人预订时已安排好房间，则应按照预订的房号出租给客人。为客人安排好房间后，接待员还应在饭店规定的价格范围内为客人确认房价。若客人预订时已商定好房价，则应遵守预订时的房价，不能随意更改。</section>
+	</article>
+	<div class="page-number" id="p_32">p.32</div>
+	<article>
+	<h2>（五）确定付款方式，收取押金</h2>
+	<section>住宿登记表中，有“付款方式”一项，从酒店角度来说，确定付款方式，可以确保酒店利益，防止客人逃账；从客人角度来说，确定付款方式可以使住客享受住宿期间消费挂账的方便和办理离店结账手续的高效性。</section>
+	<h3>1．宾客常用的付款方式有</h3>
+	<section>现金支付、信用卡支付、转账支付等。</section>
+	<h4>（1）现金支付</h4>
+	<section>对于酒店来说，客人用现金支付风险小，利于周转。</section>
+	<h4>（2）信用卡支付</h4>
+	<section>如果客人用信用卡结账，接待员应首先辨明客人所持的信用卡是否属于中国银行规定的，可在我国使用且本酒店接受的信用卡。其次核实住客是否为持卡人，检查信用卡的有效期及信用卡的完好程度，根据宾客住宿需求，向银行索取预授权额度，确定宾客信用额度，然后使用银行刷卡机刷取相应的金额。</section>
+	<h4>（3）转账支付</h4>
+	<section>客人如果要用转账方式结账，一般客人在订房时就会向酒店提出，并经酒店有关人员批准，核实确认后，才能使用转账功能结账。在使用转账支付方式时酒店需要声明属于转账款项的具体范围（如：房费、餐费、长话费、传真费或全部），确认宾客信用额度。</section>
+	</article>
+	<div class="page-number" id="p_33">p.33</div>
+	<article>
+	<h3>2．关于押金的方式</h3>
+	<section>对于一些熟客、长期的公司客户、VIP 客人，酒店一般会免收押金，以示对客人的友好和信任。客人入住酒店时首先要交纳一定数额的押金，押金的额度一般为房价的 1.5 倍，有的酒店收取 2 倍。</section>
+	<section class="fold-h4">（1）如果客人用现金做押金，提醒客人要保留好押金条作为凭证，并确定客人的信用额度。</section>
+	<section class="fold-h4 margin0">（2）如果客人用信用卡做押金，用信用卡做预授权，并请客人在 pos 机卡单签字，确认客人的信用额度。</section>
+	<section class="fold-h4 margin0">（3）如果客人是由公司付费，确保公司在酒店有预付款，并且确认客人是否是有效签单人，以免公司对账时，对账务有异议，出现拒付的情况。</section>
+
+	<div class="alternately">
+		<div>自我训练</div>
+		<div>
+		<div class="top30">1．当客人表示要使用卡支付房费时，下列做法中（<span class="answerBox">B</span>）是不妥当的。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 要认真检查客人所持信用卡是否属于有效的允许</div>
+		<div class="choose"><span class="alternately-o">B</span> 只接受外国客人的信用卡</div>
+		<div class="choose"><span class="alternately-o">C</span> 使用的信用卡当面查验有无破损</div>
+		<div class="choose"><span class="alternately-o">D</span> 要婉言拒收失效的信用卡</div>
+		</div>
+		<div>
+		<div class="top30">2．下列四项中（<span class="answerBox">A</span>）属于酒店办理完客人的入住登记手续时押金的支付政策。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 押金的支付方式既包括现金支付又包括刷信用卡支付</div>
+		<div class="choose"><span class="alternately-o">B</span> 押金可以刷任何银行卡支付</div>
+		<div class="choose"><span class="alternately-o">C</span> 押金的支付凡是可以是储蓄卡支付</div>
+		<div class="choose"><span class="alternately-o">D</span> 押金的支付方式可以是现金支付</div>
+		</div>
+		<div class="alternately-cross">交卷</div>
+	</div>
+	</article>
+	<div class="page-number" id="p_34">p.34</div>
+	<article>
+	<h2>（六）完成入住登记的相关手续</h2>
+	<h3>1．发放房卡</h3>
+	<section>接待员发放房卡时，要做到一人一张，告知其房卡的用途。如果酒店为客人提供免费的餐券、洗衣券、宣传品等，此时应同房卡一并交给客人。</section>
+	<h3>2．引领客人</h3>
+	<section>客人在前台办理好入住登记手续后，接待员应安排行李员引领客人到房间。如无行李员或客人不需引领，则指明电梯位置。有的酒店为了表示对客人的重视，要求接待员在客人进房间 10imn 后，打电话给客人，询问意见和要求。</section>
+	<h3>3．将有关信息输入电脑</h3>
+	<section>最后应将住宿登记表中的宾客信息输入电脑，建立客人的电子客史档案。</section>
+	<div class="additional-knowledge jump-button" data-href="additional0603-2.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	
+
+	<h2>（七）填写有关表格</h2>
+	<section>宾客办理完入住登记后，接待员在宾客填写的入住登记表上标出宾客入住的具体时间（精确到分钟）。然后，将入住登记表上面的信息输入电脑，并将与结账有关的详细信息（折扣、信用卡号码、享受免费日期、付款方式等）输入宾客账单。对于使用转账方式结账的客人，一般需要制作两份账单，一份账单是向签约单位收款的凭证，备注内表明所记录的款项，而且还应注明付款单位的名称；第二份账单是记录客人自付款项的账单。</section>
+	</article>
+	<div class="page-number" id="p_35">p.35</div>
+	<article>
+	<div class="sheet jump-button" data-href="sheet04.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO">
+		<div class="sheet-images"><img src="../META-INF/images/icon-03.png" alt=""></div>
+		<div class="sheet-name">表 14　有预订客人入住登记手续的程序与标准</div>
+		<div class="sheet-images-right"><img src="../META-INF/images/icon-04.png" alt=""></div>
+	</div>
+	
+	
+
+	<div class="alternately">
+		<div>自我训练</div>
+		<div class="top30">在接待有预订的散客时，下列做法中（<span class="answerBox">B</span>）是不妥当的。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 主动问候客人有无预订</div>
+		<div class="choose"><span class="alternately-o">B</span> 同客人商谈价格</div>
+		<div class="choose"><span class="alternately-o">C</span> 与客人确认所收到的预定金额</div>
+		<div class="choose"><span class="alternately-o">D</span> 当面仔细核对客房预订单上的信息</div>
+		<div class="alternately-cross">交卷</div>
+	</div>
+
+	<div class="sheet jump-button" data-href="sheet05.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO">
+		<div class="sheet-images"><img src="../META-INF/images/icon-03.png" alt=""></div>
+		<div class="sheet-name">表 15　未预定客人入住登记手续办理的程序与标准</div>
+		<div class="sheet-images-right"><img src="../META-INF/images/icon-04.png" alt=""></div>
+	</div>
+
+	
+	
+
+	<div class="alternately">
+		<div>自我训练</div>
+		<div>
+		<div class="top30">1．在接待无预订的散客时，下列做法中（<span class="answerBox">B</span>）是不妥当的。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 主动询问客人住宿要求</div>
+		<div class="choose"><span class="alternately-o">B</span> 若客人不接受房价，则应直接予以回绝</div>
+		<div class="choose"><span class="alternately-o">C</span> 注意查看当日可租房状况</div>
+		<div class="choose"><span class="alternately-o">D</span> 主动介绍价格</div>
+		</div>
+		<div>
+		<div class="top30">2．（判断题）在接待无预订的散客时，应主动询问客人的住宿要求。（<span class="answerBox">A</span>）<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 对</div>
+		<div class="choose"><span class="alternately-o">B</span> 错</div>
+		</div>
+		<div class="alternately-cross">交卷</div>
+	</div>
+	</article>
+	<div class="page-number" id="p_36">p.36</div>
+	<article>
+	<h1>三、入住期间的常见问题</h1>
+	<h2>（一）换房</h2>
+	<section>换房是前厅部总服务台的日常业务。宾客可能因为房间的位置、价格、类型、环境或个人原因提出换房，酒店也可能因为维修保养、宾客延期离店、安排接待团队/会议等原因，向客人提出换房要求。无论哪种情况，换房都会给宾客和酒店双方带来麻烦，所以必须慎重处理。换房的程序如下：</section>
+	<section class="indent-title">1．弄清或解释换房的合理原因；</section>
+	<section class="indent-title margin0">2．介绍准备调换的客房状况，确定换房的具体时间；</section>
+	<section class="indent-title margin0">3．填写换房单，知会相关部门或岗位；</section>
+	<section class="indent-title margin0">4．更改、修订其原始资料；</section>
+	<section class="indent-title margin0">5．将换房信息记录在客史档案中</section>
+	<h2>（二）卖重房</h2>
+	<!-- 案例导入 start -->
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section style="text-align: center; font-weight: bold;">客房重复预订之后</section>
+	<section>销售公关部接到一日本团队住宿的预订，在确定了客房类型和安排在 10 楼同一楼层后，销售公关部开具了“来客委托书”，交给了总台石小姐。由于石小姐工作疏忽，错输了电脑，而且与此同时，又接到一位台湾石姓客人的来电预订。因为双方都姓石，石先生又是酒店的常客与石小姐相识，石小姐便把 10 楼 1015 客房许诺订给了这位台湾客人。</section>
+	<section>当发现客房被重复预订之后，总台的石小姐受到了严厉的处分。不仅因为工作出现了差错，而且违反了客人预订只提供客房类型、楼层，不得提供具体的房号的店规。这样一来，酒店处于潜在的被动地位。如何回避可能出现的矛盾呢？酒店总经理找来了销售公关部和客房部的两位经理，商量了几种应变方案。</section>
+	<section>台湾石先生如期来到酒店，当得知因为有日本客人来才使自己不能如愿时，表现出了极大的不满。换间客房是坚决不同意的，也无论总台怎么解释和赔礼，这位台湾客人仍指责酒店背信弃义，崇洋媚外，“东洋人有什么了不起，我先预订，我先住店，这间客房非我莫属。”销售公关部经理向石先生再三致歉，并道出了事情经过的原委和对总台失职的石小姐的处罚，还转告了酒店总经理的态度，一定要使石先生这样的酒店常客最终满意。</section>
+	<section>这位台湾石先生每次到这座城市，都下榻这家酒店，而且特别偏爱住 10 楼。据他说，他的石姓与 10 楼谐音相同，有一种住在自己的家的心理满足；更因为他对 10 楼的客房的陈设、布置、色调、家具都有特别的亲切感，会唤起他对逝去的岁月中一段美好而温馨往事的回忆。因此对 10 楼他情有独钟。销售公关部经理想，石先生既然没有提出换一家酒店住宿，表明对我们酒店仍抱有好感，“住 10 楼比较困难，因为要涉及另一批客人，会产生新的矛盾，请石先生谅解。”“看在酒店和石小姐的面子上，同意换楼层。但房型和陈设、布置各方面要与 1015 客房一样。”石先生作出了让步。“14楼有一间客房与 1015 客房完全一样。”销售公关部经理说，“事先已为先生准备好了。”“14 楼，我一向不住 14 楼的。西方人忌 13 楼，我不忌，但我忌讳的就是 14，什么叫 14，不等于是‘石死’吗？让我死，多么不吉利。”石先生脸上多云转阴。“那么先生住 8 楼该不会有所禁忌了吧？”销售公关部经理问道。“您刚才不是说只有 14 楼有同样的客房吗？”石先生疑惑地问。“8 楼有相同的客房，但其中的布置，家具可能不尽如石先生之意。您来之前我们已经了解石先生酷爱保龄球，现在我陪先生玩上一会儿，在这段时间里，酒店会以最快的速度将您所满意家具换到 8 楼客房。”销售公关经理说。“不胜感激，我同意。”石先生惊喜。</section>
+	<section>销售公关部经理拿出对讲机，通知有关部门：“请传达总经理指令，以最快速度将 1402 客户的可移动设施全部搬入 806 客房。”酒店的这一举措，弥补了工作中失误，赢得了石先生的心。为了换回酒店的信誉，同时也为了使“上帝”真正满意，酒店做出了超值的服务。此事被传为佳话，声名远播。</section>
+	<section>卖重房是把同一间客房重复出售给不同的客人。由于工作疏忽，接待处将客房已售出，但房态未能及时更改过来，导致该房间重新销售；有事由于未能与客房部保持及时的信息沟通而无法掌握最新的楼层实际房态，也会导致卖重房。处理卖重房的程序：</section>
+	<section class="indent-title">1．立即通知客房中心或楼层服务员，请客人到 OK 房，为客人换房；</section>
+	<section class="indent-title margin0">2．立即向客人道歉，通知大堂副理处理，并准备 OK 房房卡和其换房手续； </section>
+	<section class="indent-title margin0">3．为客人进行房间升级并送入水果或酒店礼品等，以示歉意；</section>
+	<section class="indent-title margin0">4．尽可能当面致歉。</section>
+	</div>
+	</article>
+	<div class="page-number" id="p_37">p.37</div>
+	<article>
+	<h2>（三）入住高峰，客人等待办理入住手续的时间过长，引起抱怨</h2>
+	<section>在为宾客办理入住登记的过程中经常会出现许多宾客焦急等待办理手续的情况，而且具体到每位宾客在办理手续的过程中会有这样那样的要求与问题，总服务台前会显得非常忙乱。这时，总服务台的服务员必须保持镇定和清醒，避免慌乱，并注意以下几个问题：</section>
+	<section class="case-fold">1．宾客抵达前，应熟悉订房资料，检查各项准备工作；</section>
+	<section class="case-fold margin0">2．根据客情，合理安排人力；</section>
+	<section class="case-fold margin0">3．在入住接待高峰时，根据实际情况可以设立预订和非预定两个接待区域；</section>
+	<section class="case-fold margin0">4．客人越多的时候越要保持镇定。</section>
+	<section class="case-fold margin0">5．保持纪录资料的正确、整洁。因为后续的各项服务工作能否顺利开展都要依靠纪录的准确性。</section>
+	<h2>（四）酒店提供的客房类型、价格与客人的要求不符</h2>
+	<section>出现这种情况有两种可能性：酒店失约或预订员纪录有误。如果因为酒店原因，有两种解决办法：一是酒店仍有空房，可提供一间房价稍高的客房，按原先商定的价格，出售给宾客；二是酒店已无空房，按酒店失约行为处理。如果是预订员纪录有误，应尽快安排一间符合客人要求的房间，并向宾客说明情况，请求原谅。</section>
+	</article>
+	<div class="page-number" id="p_38">p.38</div>
+	<article>
+	<h2>（五）离店日期变更</h2>
+	<section>宾客在入住期间，因为情况变化，要求提前或延期离店。</section>
+	<section class="indent-title">1．如果宾客要求提前离店，前厅部预订处要修改预订记录，以便可以承接更多的预订；客房部则应尽快清扫整理好客房，以备出租。</section>
+	<section class="indent-title margin0">2．如果宾客要求延迟离店，前厅部预订处应检查预订记录，看能否接受宾客的要求，如果可以，应开具“延迟退房通知单”，通知预订处、结账处、客房部等，同时，接待处修改原始资料，以保持宾客信息的正确性；若无法满足宾客要求，则应向客人解释清楚，请其谅解并尽力帮助宾客联系其他住处，争取宾客的合作。</section>
+	<div class="sheet jump-button" data-href="sheet03.html" data-target="_blank" data-phscroll-enable="NO" data-scroll-enable="NO">
+		<div class="sheet-images"><img src="../META-INF/images/icon-03.png" alt=""></div>
+		<div class="sheet-name">表 16　延迟退房通知单</div>
+		<div class="sheet-images-right"><img src="../META-INF/images/icon-04.png" alt=""></div>
+	</div>
+	
+	
+
+	<h2>（六）宾客不愿详实登记</h2>
+	<section>有部分宾客由于多种原因，不愿详实登记，此时接待员应该：</section>
+	<section class="indent-title">1．耐心向宾客解释填写住宿登记表的必要性；</section>
+	<section class="indent-title margin0">2．若客人处于怕麻烦或填写有困难，则可代其填写，只要求客人签名确认即可；</section>
+	<section class="indent-title margin0">3．若客人处于某种顾虑，担心住店期间被打扰，则可以告诉客人，酒店可以为其使用保密服务，保证客人不受打扰。</section>
+	</article>
+	<div class="page-number" id="p_39">p.39</div>
+	<article>
+	<h1>四、前台销售工作方法与技巧</h1>
+	<!-- 案例导入 start -->
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section style="text-align: center; font-weight: bold;">巧妙推销豪华套房</section>
+	<section>某天，南京金陵饭店前厅部的客房预订员小王接到一位美国客人从上海打来的长途电话，想预订两间每天收费在120美元左右的标准双人客房，三天以后开始住店。</section>
+	<section>小王马上翻阅了一下订房记录表，回答客人说由于三天以后饭店要接待一个大型国际会议的多名代表，标准间客房已经全部订满了。小王讲到这里并未就此把电话挂断，而是继续用关心的口吻说：“您是否可以推迟两天来，要不然请您直接打电话与南京XX饭店去联系询问如何？”美国客人说：“我们对南京来说是人地生疏，你们饭店比较有名气，还是希望你给想想办法。”</section>
+	<section>小王暗自思量以后，感到应该尽量勿使客人失望，于是接着用商量的口气说：“感谢您对我们饭店的信任，我们非常希望能够接待像您们这些尊敬的客人，请不要着急，我很乐意为您效劳。我建议您和朋友准时前来南京，先住两天我们饭店内的豪华套房，每套每天也不过收费 280 美元，在套房内可以眺望紫金山的优美景色，室内有红木家具和古玩摆饰，提供的服务也是上乘的，相信您们住了以后会满意的。”</section>
+	<section>小王讲到这里故意停顿一下，以便等等客人的回话，对方沉默了一些时间，似乎在犹豫不决，小王于是开口说：“我料想您并不会单纯计较房金的高低，而是在考虑这种套房是否物有所值，请问您什么时候乘哪班火车来南京？我们可以派车到车站来接，到店以后我一定陪您和您的朋友一行亲眼去参观一下套房，再决定不迟。美国客人听小王这么讲，倒有些感到情面难却了，最后终于答应先预订两天豪华套房后挂上了电话。</section>
+	<section style="text-indent: 0px;">点评：</section>
+	<section class="margin0">前厅客房预订员在平时的岗位促销时，一方面要通过热情的服务来体现；另一方面则有赖于主动、积极的促销，这只有掌握销售心理和语言技巧才能奏效。</section>
+	</div>
+	</article>
+	<div class="page-number" id="p_40">p.40</div>
+	<article>
+	<section>上面案例中的小王在促销时确已掌握所谓的“利益诱导原则”，即使客人的注意力集中于他付钱租了房后能享受哪些服务，也就是将客人的思路引导到这个房间是否值得甚至超过他所付出的。小王之所以能干，在于他用比较婉转的方式报价，以减少对客人的直接冲击力，避免使客人难于接受而陷于尴尬。小王的一番话使客人感觉自己受到尊重并且小王的建议是中肯、合乎情理的，在这种情况下，反而很难加以否定回答说个“不”字，终于实现了饭店积极主动促销的正面效果。</section>
+	<section>前厅部是酒店经营管理中的一个重要部门，它主要承担以饭店客房的实际销售为中心的一系列工作。例如为客人办理入住，离店及结帐等经营中较为实际的工作。同时前厅还是饭店业务活动和对客服务的一个综合性部门。 </section>
+	<section>为了增加客房销售收入，前厅接待员的工作不仅直接面向客人办理入住手续、排房，而且在接待服务工作中更应搞好面对面的对客销售。前厅销售工作的成功与否，直接影响到客人对酒店的认识、评价和能否再一次的光顾，最终影响到饭店的经营效果。为了搞好前厅销售工作，前厅接待员必须了解自己饭店所销售的产品和服务的特点及其销售对象。其中，掌握对客报价方法和推销技巧是做好销售工作的重要前提，所以，我们要不断地研究自己的推销技巧，总结并运用这些方法和技巧，才是前厅工作取胜的一个重要环节。</section>
+	<h2>（一）报价方法</h2>
+	<section>前台对客报价是酒店为扩大自身产品的销售，运用口头描述技艺，引起客人的购买欲望，借以扩大销售的一种推销方法。其中包含着推销技巧、语言艺术、职业品德等内容，在实际推销工作中，非常讲究报价的针对性，只有适时采取不同的报价方法，才能达到销售的最佳效果。掌握报价方法，是搞好推销工作的一项基本功，以下是酒店常见的几种报价方法。</section>
+	</article>
+	<div class="page-number" id="p_41">p.41</div>
+	<article>
+	<h3>1．高低趋向报价</h3>
+	<section>这是针对讲究身份、地位的客人设计的，这种报价法首先向客人报明酒店的最高房价，让客人了解酒店所提供房间高房价及与其相配的环境和设施，在客人对此不感兴趣时再转向销售较低价格的客房，我们接待员要善于运用语言技巧说动客人，高价伴随的高级享受，诱使客人做出购买决策，当然，所报价格应相对合理，不宜过高。报房价由高价格退到较低价格比较适宜。例如：可以说“靠近湖边新装修的客房是 328 元”，“进出方便，别墅式的客房是 198 元”，“环境安静、景色优美，在四楼的客房是 168 元”，然后问客人，“您喜欢哪一种？”</section>
+	<h3>2．低高趋向报价</h3>
+	<section>这种报价可以吸引那些对房间价格作过比较的客人，为酒店带来广阔的客源市场，这种报价法有利于酒店的竞争优势。</section>
+	<h3>3．交叉排列报价法</h3>
+	<section>这种报价法是将酒店所有现行价格按一定排列顺序提供给客人；即先报最低价格，再报最高价格，最后报中间价格，让客人有选择适中价格的机会，这样做，酒店既坚持了明码标价，又维护了商业道德，既方便客人在整个房价体系中自由选择，又增加了酒店出租高价客房，获得更多收益的机会。</section>
+	</article>
+	<div class="page-number" id="p_42">p.42</div>
+	<article>
+	<h3>4．选则性报价</h3>
+	<section>采用此类报价法要求前台操作人员善于辨别抵店客人的支付能力，能客观地按照客人的兴趣和需要，选择提供适当的房价范围，一般报价不能超过两种以上，以体现估量报价的准确性，避免选择报价时犹豫不决。</section>
+	<h3>5．利益引诱报价</h3>
+	<section>这是一种对已预订到一般房间的客人，采取给予一定附加利益的方法，使他们放弃原预订客房，转向购买高一档次价格的客房。</section>
+	<h3>6．“三明治”报价</h3>
+	<section>此类报价是将价格置于所提供的服务项目中，以减弱直观价格的分量，增加客人购买的可能性，此类报价一般由前台接待人员用口头语言进行描述性报价，强调提供的服务项目是适合于客人利益的，但不能太多，要恰如其分。</section>
+	<h3>7．灵活报价</h3>
+	<section>灵活报价是根据酒店的现行价格和规定的价格浮动幅度，将价格灵活地报给客人的一种方法。要有一个突出的重点卖点。</section>
+	<section>此报价一般是由酒店的主管部门规定，根据酒店的具体实际情况，在一定价格范围内适当浮动，灵活报价，调节客人的需求，使客房出租率和经济效益达到理想水平。</section>
+	
+
+	<h2>（二）前台销售技巧</h2>
+	</article>
+	<div class="page-number" id="p_43">p.43</div>
+	<article>
+	<h3>1．前台销售的一般工作要求</h3>
+	<h4>（1）销售准备</h4>
+	<section class="fold-o">①仪表仪态要端正，要表现高雅的风度和姿态。</section>
+	<section class="fold-o margin0">②前台工作环境要有条理，使服务台区域干净整齐，不零乱。</section>
+	<section class="fold-o margin0">③熟悉酒店各种类型的客房及其服务质量，以便向潜在客人介绍。</section>
+	<section class="fold-o margin0">④了解酒店所有餐厅，酒吧，娱乐场所等各营业场所及公共区域的营业时间与地点。</section>
+	<h4>（2）服务态度</h4>
+	<section class="fold-o">①要善于用眼神和客人交流，要表现出热情和真挚。</section>
+	<section class="fold-o margin0">②要面部常带微笑：对客人表示：“欢迎，见到您很高兴” 。</section>
+	<section class="fold-o margin0">③用礼貌用语问候每位客人。</section>
+	<section class="fold-o margin0">④举止行为要恰当、自然、诚恳。</section>
+	<section class="fold-o margin0">⑤回答问题要简单，明了，恰当，不要夸张宣传住宿条件。</section>
+	<section class="fold-o margin0">⑥不要贬低客人，要耐心向客人解释问题。</section>
+	<section>一个礼貌，训练有素的前台人员是酒店经营最宝贵的财富之一，他所造成的客人对酒店的第一印象，将决定客人是否再次光顾，甚至会自动为酒店宣传，扩大酒店的影响。</section>
+	<h4>（3）销售工作</h4>
+	</article>
+	<div class="page-number" id="p_44">p.44</div>
+	<article>
+	<section class="fold-o">①要善于用描述性语言向客人提供几种客房的优势，说明能给客人带来好处以供客人选择，但不要对几种客房作令人不快的比较。</section>
+	<section class="fold-o margin0">②不要直接询问客人要求哪种价格的房间，应在描述客房情况的过程中，试探客人要哪种。</section>
+	<section class="fold-o margin0">③要善于观察和尽力弄清客人的要求和愿望，有目的地销售适合客人需要的客房。</section>
+	<section class="fold-o margin0">④不要放弃对潜在客人推销客房。必要时可派人陪同他们参观几中不同类型的客房，增进与客人之间关系，这将有助于对犹豫不决的客人促成销售。</section>
+	<h4>（4）服务工作</h4>
+	<section class="fold-o">①要保证客人到店后所有的信函和留言得到发送。</section>
+	<section class="fold-o margin0">②提供叫醒服务要有记录，确保准时，避免疏漏。</section>
+	<section class="fold-o margin0">③避免前台工作出现“停顿”。如果确定下了某位客人的预订，在有现房的情况下，可先安排客人住宿，然后再处理预订单，不要让客人久等。</section>
+	<h3>2．对“优柔寡断”客人销售技巧</h3>
+	<section class="fold-h4">（1）了解消费动机（度假、观光、娱乐），针对不同，灵活机动。</section>
+	<section class="fold-h4  margin0">（2）要在推销同时介绍酒店周围的环境增加感染力和诱惑力。</section>
+	<section class="fold-h4  margin0">（3）熟悉酒店的各项服务内容，附加的小利益往往起到较好的促销作用。</section>
+	<section class="fold-h4  margin0">（4）需要多一些耐心和多一番努力。</section>
+	<h3>3．对“价格敏感”客人的销售技巧</h3>
+	<section class="fold-h4">（1）前台员工在报价时一定要注意积极描述住宿条件。</section>
+	<section class="fold-h4  margin0">（2）提供给客人一个选择价格的范围，要运用灵活的语言描述高房价的设施优点。</section>
+	<section class="fold-h4  margin0">（3）描述不同类型的客房时，要对客人解释说明客房特征和设施的各自特点。</section>
+	<section class="fold-h4  margin0">（4）熟悉本酒店所提供特殊价格政策，认真了解价格敏感型客人的背景和要求，采取不同的销售手段，给予相应的折扣，争取客人住店。</section>
+	</article>
+	<div class="page-number" id="p_45">p.45</div>
+	<article>
+	<h3>4．工作繁忙时的销售</h3>
+	<section>由于团队客人和外地客人的到店时间往往比较集中，往往会出现客人排长队的现象，客人会表现出不耐烦。这时就需要前台员工：</section>
+	<section class="fold-h4">（1）作好接待高峰前的接待准备，了解会议及团队到店时间，作好准备工作。以减少客人办理入住手续的等候时间，同时也应注意房况，确保无误；</section>
+	<section class="fold-h4  margin0">（2）入住高峰时，要确保手头有足够的登记所需的文具用品，保证工作有序完成；</section>
+	<section class="fold-h4  margin0">（3）入住高峰，可选派专人指引，帮助客人办理入住登记，以缩短等候时间；</section>
+	<section class="fold-h4  margin0">（4）按“先到先服务”原则，认真接待好每一位客人，做到忙而不乱；</section>
+	<section class="fold-h4  margin0">（5）遵守办理一招呼二抱歉三问候四的顺序。</section>
+	
+	<div class="top30" style="-webkit-user-select:none;"></div>
+
+	<div class="box-example-pad">
+	<div class="example"><img src="../META-INF/images/text01.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-assessment02.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能考核">技能考核</div>
+		<div class="example"><img src="../META-INF/images/text02.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-training02.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能训练">技能训练</div>		
+		<div class="example"><img src="../META-INF/images/text03.png" alt=""></div>
+		<div class="example"></div>
+	<div style="clear: both;"></div>
+	</div>
+
+	<div class="box-example-ph">
+		<div class="example"><img src="../META-INF/images/text01.png" alt=""></div>
+				
+		<div class="jump-button example" data-target="_blank" data-href="skills-training02.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能训练">技能训练</div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-assessment02.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能考核">技能考核</div>
+		<div class="example"><img src="../META-INF/images/text02.png" alt=""></div>
+		<!-- <div class="example"><img src="../META-INF/images/text03.png" alt=""></div>
+		<div class="example"></div> -->
+	<div style="clear: both;"></div>
+	</div>
+	
+
+</article>
+<div class="foot"></div>
+</body>
+</html>

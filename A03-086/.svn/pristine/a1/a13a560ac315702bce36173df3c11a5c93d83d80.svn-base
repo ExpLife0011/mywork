@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>相关知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	相关知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+    <h1>一、前厅的地位和任务</h1>
+    <h2>（一）前厅部的地位</h2>
+    <section>前厅部也称客务部、前台部、大堂部，位于酒店的门厅处，是酒店组织客源、销售客房商品，联络和协调各部门的对客服务，并为客人提供前厅系列服务的综合性部门。</section>
+	<section>前厅部一般都设置在酒店大堂最显眼的位置，使客人进入酒店后能够很方便地找到服务台，以便办理相关的入住等手续。“大堂部”的名称突出了其在酒店中的位置以及与大堂有关区域的关系。而有些酒店称呼为“总服务台”则强调了其在酒店综合服务中的重要地位与作用。</section>
+	<section>前厅部是现代酒店的重要组成部分，是业务活动的中心、酒店的门面和销售窗口，在酒店经营管理中占有举足轻重的地位。前厅部的运转和管理水平，直接影响到整个酒店的经营效果和对外形象。由于其工作具有接触面广、政策性强、业务繁杂、关系全局等特点，所以它在酒店中具有十分重要的地位和作用，主要表现在以下几个方面：</section>
+	<h3>1、前厅部是酒店业务活动的中心</h3>
+	<section>酒店主要是为客人提供食宿的场所，客房是酒店最主要的产品。前厅部要通过积极开展客房的预订业务，为抵店的客人办理入住登记手续及安排住房，来宣传和推销酒店的产品；同时，前厅部还要及时地将客源、客情、客人需求及投诉等各种信息传递给其他部门，共同协调全酒店的对客服务工作，以确保服务工作的效率和质量。因此，前厅部在酒店的经营活动中是承上启下、联系内外、疏通左右的枢纽，可以说是整个酒店的神经中枢。</section>
+    <h3>2、前厅部工作贯穿于客人与酒店交易往来的全过程，是客人与酒店联系的纽带</h3>
+	<section>前厅部自始至终都是为客人服务的中心，前厅部人员为客人提供的服务从客人抵店前的预订入住、直至客人离店结账、建立客史档案，贯穿于客人与酒店交易往来的全过程。如果客人对酒店服务不满意，也会到前厅部投诉。另外，前厅部掌握全部住宿客人的相关资料和信息，并将这些信息反馈到酒店管理机构和相关部门。</section>
+    <h3>3、前厅部是酒店管理机构的代表</h3>
+    <section>前厅部是酒店的神经中枢，在客人的心目中它是酒店管理机构的代表。酒店形象是公众对于酒店的总体评价，是酒店的表现与特征在公众心目中的反映。酒店形象对现代酒店的生存和发展有着直接的影响。一个好的形象是酒店巨大的精神财富。前厅部的主要服务机构通常都设在客人来往最为频繁的大堂。任何客人一进店，就会对大堂的环境艺术、装饰布置、设备设施和前厅部员工仪容仪表、服务质量、工作效率等，产生深刻的“第一印象”。而这种第一印象在客人对酒店的认知中会产生非常重要的作用，它产生于瞬间，但却会长时间保留在人们的记忆表象中。客人离店时，经由大堂，前厅服务人员在为客人办理结算手续、送别客人时的工作表现等都会给客人留下“最后印象”，优质的服务将使客人对酒店产生依恋之情。客人在酒店整个居留期间，前厅要提供各种有关的服务，客人遇到困难要找前厅寻求帮助，客人感到不满时也要找前厅投诉。在客人的心目中，前厅便是酒店的全部。而且，在大堂汇集的大量人流中，除住店客人外，还有许多前来就餐、开会、购物、参观游览、会客交谈、检查指导等各种各样的客人。他们往往停留在大堂，对酒店的环境、设施、服务品头论足。因此说，前厅管理水平和服务水准，往往直接反映整个酒店的管理水平、服务质量和服务风格，前厅是酒店工作的“橱窗”，代表着酒店的对外形象。</section>
+    <h3>4、前厅部是酒店组织客源、创造经济收入的关键部门</h3>
+    <section>为宾客提供食宿是酒店的基本功能，客房是酒店出售的最大、最主要的商品。通常在酒店的营业收入中，客房销售额要高于其他各项。据统计，目前国际上客房收入一般占酒店总营业收入的 50% 左右，而在我国还高于这个比例。前厅部的有效运转是提高客房出租率，增加客房销售收入，从而提高酒店经济效益的关键之一。</section>
+    <h3>5、前厅部是酒店管理的参谋和助手</h3>
+    <section>作为酒店业务活动的中心，前厅部直接面对市场，面对客人，是酒店中最敏感的部门。前厅部能收集到有关市场变化、客人需求和整个酒店对客服务、经营管理的各种信息,并对这些信息进行认真的整理和分析，每日或定期向酒店提供真实反映酒店经营管理情况的数据报表和工作报告，并向酒店管理机构提供咨询意见，作为制定和调整酒店计划和经营策略的参考依据。</section>
+
+    <h2>（二）前厅部的主要任务</h2>
+    <section>前厅部的地位和作用决定了它在酒店经营中所承担的任务，虽然不同规模的酒店组织机构不同，但其基本任务是一致的。那就是推销客房商品及酒店其他产品，协调酒店各部门向客人提供满意的优质服务，使酒店获得理想的经济效益和社会效益。</section>
+    <h3>1、销售客房，为客人办理入住登记以及分配客房</h3>
+	<section>前厅部的首要任务是销售客房。目前，我国有相当数量酒店的赢利，前厅部占整个酒店利润总额的 50% 以上。前厅部推销客房数量的多与少，达成价格的高与低，不仅直接影响着酒店的客房收入，而且住店人数的多少和消费水平的高低，也间接地影响着酒店餐厅、酒吧等收入。</section>
+    <h3>2、提供各项前厅服务</h3>
+	<section>预订、总台和总机员工的工作表现能影响宾客对酒店服务的感觉，但大厅服务的员工能使客人留下持久的印象。前厅部必须向客人提供优质的订房、登记、邮件、问讯、电话、留言、行李、委托代办、换房、钥匙、退房等各项服务。</section>
+    <h3>3、管理客账，监控信用额度</h3>
+	<section>当一位客人办理入住手续后，前厅收银必须为其开设一个账户，以记录客人在酒店住宿期间的消费。一般客人账户包括每日的房费、餐厅的消费（采用签单形式）、客房用餐服务费、饮料费（房间迷你酒吧）、洗衣服务费、外买服务费、电话费等一切在酒店消费的费用。收银员每天负责核算和整理各营业部门收银员送来的客人消费账单，确保酒店的经济利益；同时编制各种会计报表，以便及时反映酒店的营业活动状况。</section>
+	<h3>4、提供有关酒店经营管理信息，建立客人资料和其他资料档案</h3>
+	<section>大部分酒店为住店一次以上的零星散客建立客史档案。按客人姓名字母顺序排列的客史档案，记录相关内容。</section>
+    <h3>5、调度酒店业务，协调对客服务</h3>
+    <section>前厅部要向有关部门下达各项业务指令，然后协调各部门解决执行指令过程中遇到的新问题，联络各部门为客人提供优质服务。调度酒店业务是现代酒店前厅部的一个重要功能。现代酒店要强调统一协调的对客服务，要使分工的各个方面都能有效地运转，都能充分地发挥作用。前厅部作为酒店的“神经中枢”，承担着对酒店业务安排的调度工作和对客服务的协调工作。主要表现在：</section>
+
+
+
+    <section class="fold-o">
+    (1)将通过销售客房商品活动所掌握的客源市场、客房预订及到客情况及时通报其他有关部门，使各有关部门有计划地安排好各自的工作，互相配合，保证各部门的业务均衡衔接。
+    </section>
+	<section class="fold-o margin0">(2)将客人的需求及接待要求等信息传递给各有关部门，并检查、监督落实情况。</section>
+	<section class="fold-o margin0">
+	(3)将客人的投诉意见及处理意见及时反馈给相关部门，以保证酒店的服务质量。为适应市场需求，增强酒店的竞争能力，酒店的业务内容越来越多，分工越来越细，前厅部的这种调度酒店业务功能也就越显得更为重要。
+	</section>
+</article>
+<div class="foot"></div>
+</body>
+</html>

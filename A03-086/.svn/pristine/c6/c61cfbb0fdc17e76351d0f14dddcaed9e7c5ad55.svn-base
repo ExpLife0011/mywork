@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>散客离店结账服务-简答题</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="562AA098-2E04-EA91-3703-A43A5677F98D"
+data-activity-uuid="776FE5C6-AF84-41F7-9E2A-34118DFAB961"
+data-activity-sn="tS-060503"
+data-level="2">
+<div class="content">
+<div class="test-top">习题与实践</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-0" data-answer-shown='n'>1．角色扮演：主题：团队客人离店结账资料准备：笔、账单角色：前厅收银员、楼层服务员、团队领队</div>
+			 
+		</div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-1" data-answer-shown='n'>2．到酒店实地观察团体客人、散客离店结账程序，并写出评析报告。</div>
+		</div>
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title>相关知识</title>
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)" />
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)" />
+		<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+		<script type="text/javascript">
+			function pageOnLoad() {
+				MIGlobals.init();
+
+			}
+		</script>
+		<style type="text/css">
+			.secondary {
+				width: 718px;
+				height: 120px;
+				background-color: #85003c;
+				font-size: 30px;
+				-webkit-user-select: none;
+				color: #fff;
+				font-weight: bold;
+				line-height: 120px;
+				box-sizing: border-box;
+				padding-left: 50px;
+			}
+			
+			.headline {
+				text-align: center;
+				text-indent: 0px;
+				font-size: 24px;
+				-webkit-user-select: none;
+			}
+			
+			.headline-bottom {
+				text-align: center;
+				text-indent: 0px;
+				font-size: 20px;
+				-webkit-user-select: none;
+				margin-top: 8px;
+			}
+			
+			.table-l {
+				border-collapse: collapse;
+				width: 100%;
+				font-size: 16px;
+			}
+			
+			.table-l th {
+				border: 1px solid #fff;
+				font-family: lantinghei;
+				padding: 8px;
+				background-color: #456177;
+				color: #fff;
+				border-left: none;
+				border-top: none;
+			}
+			
+			.table-l td {
+				border: 1px solid #456177;
+				font-family: lantingxihei;
+				padding: 8px;
+				border-top: none;
+				border-left: none;
+			}
+			
+			.table-l td:first-child {
+				text-align: center;
+			}
+			
+			@media screen and (max-width: 600px) {
+				.secondary {
+					display: none;
+				}
+				.headline {
+					text-align: center;
+					text-indent: 0px;
+					font-size: 1.11rem;
+					-webkit-user-select: none;
+				}
+				.headline-bottom {
+					text-align: center;
+					text-indent: 0px;
+					font-size: 1rem;
+					-webkit-user-select: none;
+					margin-top: 8px;
+				}
+				.table-l td:first-child {
+					text-align: left;
+				}
+			}
+		</style>
+	</head>
+
+	<body onload="pageOnLoad();">
+
+		<div class="secondary">
+			相关知识
+		</div>
+		<article>
+			<h1>一、办理入住登记</h1>
+			<h2>（一）入住管理办法</h2>
+			<section>团队客人人数多，统一到店，提前精心地做好服务预案、服务准备；选用服务素养高、服务技能娴熟的服务人员，是准确、迅速地完成入住办理的保证。服务预案和服务准备要针对团队客人的要求完成，包括分配房间、制作钥匙信封、预留房间、与相关部门沟通等工作。办理团队客人入住应完成“服务准备、办理入住、信息储存” 3 个步骤，具体的服务方法如下：</section>
+
+			<h3>1．服务准备</h3>
+			<h4>（1）仪容仪态</h4>
+			<section>按服务规范检查个人的仪容仪表，调节好情绪，做到服务热情、面带微笑、真心诚意。</section>
+			<h4>（2）设备设施</h4>
+			<section>计算机、打印机、刷卡机、验钞机、电话机处于工作状态。
+			</section>
+
+			<h4>（3）用具用品
+	</h4>
+			<section>准备好相关办公用品。
+			</section>
+			<h4>（4）相关表格
+	</h4>
+			<section>入住登记表、房卡。
+			</section>
+			<h4>（5）服务预案
+	</h4>
+			<section>准备好“本日抵店客人名单”，掌握 VIP 客人情况及预订客人的特殊需求，提前做好入住登记表的预制和相关的准备工作，并落实客房部等相关部门的准备情况，做到心中有数；熟知酒店的客房状况，随时提供准确、快捷的入住办理服务。</section>
+
+			<h4>（6）相关信息
+	</h4>
+			<section>熟知酒店内外相关信息，准备好相关资料，提供满足客人各种需求的服务。
+			</section>
+			<h4>（7）分配房间
+	</h4>
+			<section>按照团队要求提前分配房间，尽量安排在同一楼层。
+			</section>
+			<h4>（8）信息传递
+	</h4>
+			<section>分配房间后，打印房间单5份，并分送客房部、行李部、团队领队(团队抵店时分送)、团队联络员和前台存档。
+			</section>
+			<h4>（9）钥匙准备
+	</h4>
+			<section>在团队到达前，预先准备好装有房卡、钥匙、早餐券的钥匙信封，并与客房部联系确保房间为干净房。</section>
+			<h3>2．办理入住</h3>
+			<h4>（1）热情问候</h4>
+			<section>酒店代表与销售部团体联络员一同礼貌地把团队客人引领至团队入店登记处，当客人抵达酒店时表示欢迎。</section>
+			<h4>（2）预订核对</h4>
+			<section>根据预订确认书、团队名称或客人姓名查找预定资料，复述团队主要的住店需求，获得客人确认。
+			</section>
+
+			<h4>（3）证件核对
+	</h4>
+			<section>核对客人有关证件的有效性和真实性，包括护照、身份证、签证的有效期。
+			</section>
+			<h4>（4）分配房间
+	</h4>
+			<section>请团队联络员在团队明细单上签名、日期；接待员也需签字；确定房号、确认房价和离店日期，将分配房间明细表交予团队领队，诚恳征询客人需求，做到妥善解决。
+			</section>
+			<h4>（5）收取押金
+	</h4>
+			<section>确定付款方式，按规定收取押金(若使用信用卡，须甄别签字的真实性)，并为客人开押金收据。</section>
+
+			<h4>（6）住店登记
+	</h4>
+			<section>把团队名称、客人的姓名、身份证号码(护照号码)、抵离店日期、客房数量、客房类型、房价、付款方式、住店押金等相关信息录入管理系统中，形成入住登记表和客房分配表。
+			</section>
+			<h4>（7）复述确认
+	</h4>
+			<section>依据登记表复述客人主要的入住需求，听取客人意见，直到客人满意，提示客人登记表中的“注意事项”，再打印入住登记表和客房分配表，请客人签字确认。
+			</section>
+			<h4>（8）完成登记
+	</h4>
+			<section>把制作好的装有房卡、钥匙、早餐券的钥匙信封(注意会同领队当面清点、签字)，连同客人证件、押金收据一同交给客人，提醒客人妥善保管；告知客人饭店提供贵重物品免费寄存服务；通知行李员，引客入房，道别时给客人良好的祝愿。
+			</section>
+			<h4>（9）发送行李
+	</h4>
+			<section>将准确的房号名单转交行李部，发送行李。</section>
+
+		<h3>3．信息存储</h3>
+			<h4>（1）信息输入</h4>
+			<section>将所有信息输入计算机。</section>
+		   <h4>（2）检查信息</h4>
+			<section>检查信息的正确性，并输入客史档案。</section>
+		<h4>（3）归档存储</h4>
+			<section>将登记卡存放在客人住宿档案中，以便查询。</section>
+			
+		<h2>（二）团队抵店前的准备工作</h2>
+		<h3>１．根据团体订房要求，查看房态，安排客房，打印团体用房分配表。提前为团体编排房间注意事项：</h3>
+		<section>（1）总台接待员根据团体协议去编排已订定的房间类别。房间类型要尽量一致。</section>
+		<section>（2）房间安排相对要集中，尽量编排在同一层楼，以便于团队的集中管理。</section>
+		<section>（3）房间楼层要避开客人所忌讳的数字。</section>
+		<section>（4）房间和床头的朝向要适应客人的生活习惯和生活习俗。</section>
+		<section>（5）在房架(ROOM RACK)指示上标明，该房间已被编排，不能再做其他用途。</section>		
+		<h3>2．团体用房分配表送至礼宾部、总机房、客房部、餐饮部等部门，让这些部门也做好准备工作和配合工作，如行李服务、叫早服务、客房清扫、团队餐准备等。</h3>
+		<h3>3．准备好“团队人员住宿登记表”和团体客人的信封。信封上应标有房号，信封内应有客房钥匙卡、房卡及饭店促销品等。团体客人的房卡一般都不能签单，房卡姓名栏可填写团号，房价栏可填写“合同价”。</h3>
+		
+	<h2>（三）团队入住登记阶段程序</h2>
+	<h3>１．会议团客人入住登记程序</h3>
+	<section>会议团的客人中，有些来自国内，有些来自国外，会议类型也不同，但其入住登记程序基本相同，会议团入住登记程序如下。</section>
+		<section>（1）总台接待员根据团体协议去编排已订定的房间类别。房间类型要尽量一致。</section>
+		<section>（2）会议报到当天：一般由会务组在大厅的一角设立报到处，接待与会客人，会议报到后的有关事项和日程安排应事先打印好，人手一份，或张贴在大厅内使每位客人都知道。接待员应把准备好的客房钥匙交给会务组。并准备足够的入住登记表。</section>
+		<section>（3）会议团客人多数不是同一时间到达：每到一位客人，接待员或销售部人员应协助会务组人员为与会者分房并分发钥匙，分发入住登记表请客人当场登记并收回登记表，实在无法收回的应记下房号稍候上门收取。登记表应固定于文件夹中便于客人站立式填写。</section>
+		<section>（4）接待员应收回入住登记表并登记每位客人的最终房号：打印一份会议排房表交总机室、问讯处，便于酒店为客人提供服务。</section>
+		<section>（5）与会的外宾通常按散客的形式入住登记：接待员应及时收回其入住登记表。</section>
+		<section>（6）如果会务组未提供团体分房表：接待员应尽量了解客人的房号，并了解会务组的房号，如果有关于该会议的问讯或电话一律转接到会务组。</section>
+		
+		<h3>2．旅游团入住登记程序</h3>
+		<section>（1）团体到达前一天，订房处应提供旅行团成员名单和该团体分房名单以及团体订房表(即生活接待委托书)，由接待员负责分配好客房。</section>
+		<section>（2）把分好的客房钥匙放入已经准备好的团体钥匙袋中(信封)，在每个团体钥匙袋中 (信封)注明房号和客人的姓名，然后提前足够的时间通知客房部该团体的房号及到达时间，请客房部及时把客房准备好，如有客人的信件或留言也必须放入相应客人的团体钥匙袋中。</section>
+		<section>（3）团体将要到达时，接待员应把团体资料，如团体接待通知单、团体分房表、空白的团体入住登记表及钥匙袋放在团体专用的柜台内等候客人到达，一般可以把同一个团体的资料放在一个抽屉内而与其他的团体资料分开。</section>
+		<section>（4）团体到达后应把团体钥匙袋交给导游并协助导游分发钥匙，同时请导游让客人在团体入住登记表上登记，登记完后收回此表，有时团体客人入住后常会自行互换房问，这时接待员应该请导游配合，把该团每位客人的实际房号核实后上报接待处，如果与最初饭店的排房表有出入，应立即在团体分房表上更正并及时通知电话总机室、问讯处、收款处等相应部门。接待员应在团体入住登记表上签名。</section>
+		<section>（5）如客人以散客形式入境或团体入境签证丢失，应请客人按散客入住登记的同样程序登记。</section>
+		<section>（6）接待员应及时通知导游用餐的种类、时间和地点，向导游发用餐券，还要与导游一起安排好收行李的时间及早上叫醒时间并通知行李组、总机室等班组。</section>
+		<section>（7）酒店客房内设置的小酒吧及直拨程控电话通常是关闭的，如果团体客人要使用这些设施，需先交付一定数量的押金或单立账户一次性结账，然后接待处通知客房部打开小酒吧，通知电话总机室打开直拨长途电话供客人使用。</section>
+		<section>（8）把团体客人的资料输入电脑。</section>
+		<section>（9）如遇未订房的团体客人到达，接待处人员应密切配合尽快安排客人入住(通常以散客入住登记形式安排)。在接待团队的过程中，接待员既要保持与接待散客一样的服务标准，同时又要注意维护前厅正常服务秩序和气氛。</section>
+		
+		<h1>二、显示和控制客房状况</h1>
+		<h2>（一）房态的种类</h2>
+		<section>客房部、前厅部的客房状况的控制都很重要，但侧重点又有所不同，常见的客房状态的种类有以下几种。</section>
+		<table class="table-l">
+		<tr>
+			<th style="width: 20%;">客房状态</th>
+			<th style="border-right: none;">解释</th>
+		</tr>
+		<tr>
+			<td>住房</td>
+			<td style="border-right: none;">客房内已有人入住英语，称Occupied，简称o或 OCC。</td>
+		</tr>
+		<tr>
+			<td>维修房</td>
+			<td style="border-right: none;">客房设施出了问题，需要维修装饰或该客房钥匙丢失需要换锁，英语称Out Of Order，简称OOO。</td>
+		</tr>
+		<tr>
+			<td>待租</td>
+			<td style="border-right: none;">客人已离店，客房已经清理完毕，等待出租给其他客人，英语称 Vacant，简称 V。</td>
+		</tr>
+		<tr>
+			<td>正在清理</td>
+			<td style="border-right: none;">客人已离店，客房正在清扫，英语称 Check Out，简称 C/O。</td>
+		</tr>
+		<tr>
+			<td>请勿打扰房</td>
+			<td style="border-right: none;">客人因故不希望被打扰而挂上免打扰牌，英语称 Do Not Disturb，简称 DND。</td>
+		</tr>
+		<tr>
+			<td>店外住宿</td>
+			<td style="border-right: none;">客人办了入住登记手续，但外出没有回酒店住宿，英语称 Sleep Out，简称 S0。</td>
+		</tr>
+		<tr>
+			<td>预退房</td>
+			<td style="border-right: none;">住房中当天将退的客房叫预退房，英语称 Expected Departure room，简称 ED。此房态专用于前厅部，对前厅部的排房很重要。</td>
+		</tr>
+	</table>
+		<h2>（一）房态控制的内容</h2>
+		<h3>1．客房状态控制的重要性</h3>
+		<section>客房状态又叫客房状况(Room State)，是指对每一问客房在一定时段上正在占用、清扫或待租等不同情况的标志或描述。准确地控制房态对酒店是非常重要的。</section>
+		<section>（1）客房状态不准确，会减少酒店的客房收入。</section>
+		<section>（2）客房状态不准确，会降低接待处、收款处、订房处、客房部、电话总机室、问讯处等部门的工作质量与工作效率。</section>
+		<section>（3）客房状态不准确会影响酒店与客人之问的人际关系，增加客人的投诉。</section>
+		<section>客房部每天至少要在早、晚两次检查每一问客房的房态，然后记录在客房状态核对表上，并把客房状态核对表送交接待处。接待处把该表中的记录与客房状态控制架上的记录相核对。如果双方的记录有差异应立即查明原因，确定最终的正确房态；如果接待处有电脑并与客房部的电脑联网，双方在电脑上随时核对房态即可。接待处在任何时刻都应该保持最正确的房态以便分房，如果酒店客满或接近退房时限，客房状态变化较快，接待员应根据变化情况随时更改房态记录，并通知客房部更改房态，客房部在得知房态变化时，也应立即通知接待处，以保持客房状态的准确性。</section>
+		<h2>（二）换房的操作要领</h2>
+		<section> 换房有时是按客人的要求进行的，有时则是由酒店提出的。</section>
+		<h3>1．客人要求换房的原因</h3>
+		 <section>（1）正在使用的客房过大或过小。</section>
+		 <section>（2）客人希望住价格更便宜或更贵的客房。</section>
+		 <section>（3）住店过程中，客人有同事或亲友前来入住或客人要事先离店，住店人数发生了变化。</section>
+		 <section>（4）卫生环境太差，经客人提出后改善不明显。</section>
+		 <section>（5）客房设备不是很完善，一时又无法修复。</section>
+		 <section>（6）在同等客房的前提下，客人有如下要求。</section>
+		 
+		 <section class="fold-o">①更换楼层</section>
+		<section class="fold-o">②更换朝向。</section>
+		<section class="fold-o">③更换位置。</section>
+		<section class="fold-o">④更换房号(不变换楼层、朝向、位置时)。</section>
+		
+		<h3>2．酒店要求客人换房的原因</h3>
+		<section>（1）正在使用的客房突然发生了一时无法修复的故障。</section>
+		<section>（2）由于酒店的疏忽，同一客房在同一天分配给了两批不同的客人，其中一批客人应做换房处理。</section>
+		<section>（3）由于钥匙丢失必须给该房的客人换房。</section>
+		<section>（4）由于集中使用某一幢楼、某一楼层、某一区域客房或使团体用房集中于某一幢楼、某一楼层、某一区域而需要给客人换房。</section>
+		<section>（5）由于某客房发生了凶杀、失窃、死亡等意外事件为保护现场而必须封锁该房，该房内如还有住客应换房。</section>
+		<h3>3．换房程序</h3>
+		<section>（1）当客人要求换房时，首先应了解原因，如果客人有充分的理由，应立即换房：如果理由不充分，先做解释工作，如果客人还坚持要换房，应尽量满足客人的要求。</section>
+		<section>（2）在电脑或空房表中找出符合客人要求的客房。</section>
+		<section>（3）填一式多份的换房通知单给有关部门，因酒店的不同，相关部门可以有前厅收款处、行李处、客房部、电话总机室、问讯处，第一联应存接待处留底，如果换房过程中客人改变了客房类型，还应通知订房处。VIP 住店期间通常酒店不会要求客人换房，如果出现了特殊情况或 VIP 要求换房，则应尽量满足客人要求并通知总经理及保安部。</section>
+		<section>（4）通知行李员引领客人到新的客房，帮助客人提拿行李并派发换房通知单给有关的部门。</section>
+		<section>（5）接待员应更正客房状况控制架 L(或电脑中)的房态记录，问讯员应更改问讯架上(或电脑中)客人的房号记录。</section>
+		<section>（6）如果因客满后无法满足客人的换房要求，应记录下客人的要求，并答应客人次日优先换房，如客堵确实很差，应报值班经理视具体情况给客人一定的折扣。</section>
+		<section>（7）有时酒店由于客满，客房非常紧张，不得不在客人外出期间给客人换房或合并客房，此种情况下接待员应事先与客人联系，得到客人许可后，请客人把行李整理好，然后通知行李员把行李搬到给客人换好的客房，此时大堂副理、保安员和行李员都应该在场，而且必须确认客人的所有东西都已搬到另一个房间。</section>
+		<section>（8）换房导致房费的变化，应立即通知收款处以保证客人账单上资料的准确性。 </section>
+		<div class="additional-knowledge jump-button" data-href="additional0302-3.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识" style="margin-top: 20px;">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	
+		<h1>三、团队入住期间可能遇到的问题</h1>
+		<h2>（一）团队对酒店的担保</h2>
+		<section>团体订房通常是保证类的。一般来讲，由于不可抗力的原因，如地震、火灾、交通事故等造成的取消或减少预订，酒店不应没收订金，当然旅行社也应该尽早通知酒店减少或取消预订。但是，如果旅行社或会议订房单位由于不可抗力之外的原因取消或更改订房，或者由于减少人数太多或通知酒店较晚，酒店为了维护自身的利益，必须采取一些措施，这些措施会因酒店的不同而不同，而且事先在合同或协议中应该有说明。例如，某酒店规定对于付过订金的旅游团体，减少所订房的 10％ 以下，要在到店前 48 小时前通知酒店；减少 10％～50％ 的订房，要在 21 天前通知酒店；减少 50％ 以上的订房直至全部取消所订房间，要在客人预计到达日期的 45 天前通知酒店，否则至少要从订金中扣除客人减少或取消的房间总数一天的全价房费来赔偿酒店的损失(不可抗力造成的减少或取消除外)。如果客人只是增加订房数量或天数，酒店通常会很乐意地接受，即使满足不了客人的要求，酒店也应该与客人协商，力争让客人满意。</section>
+		<h2>（二）团队延时退房</h2>
+		<section>客人要求延期退房要在 12 时或 18 时前提出申请，经过接待处主管或前厅部经理同意，在淡季可以允许客人延期退房，有时也可以免收应该加收的费用，但延期时间不可太长，否则仍应加收费用。如果在旺季客人要求延期退房，应耐心向客人解释，请求客人按时退房或建议客人由酒店代客人联系别的酒店，旺季超时退房的房费一般不减免，特殊情况仍可减免。也可以把晚退房作为对常客等的特殊优惠。</section>
+		               <section>如果客人要求推迟退房 1 天以上，接待处应该与订房处联系，看是否影响其他订房客人入住。如果不影响其他订房客人入住，可允许延期；如果可能影响其他订房客人入住，应向客人说明，请求客人按时离开并表示愿意向客人提供方便。</section>
+		               <section>无论延期半天还是一天以上，都应填写一式三份的延期退房通知单，第一联接待处留底。第二联交收款处，第三联给客房部，此单由接待处主管或前厅部经理签字有效。如没有书面的延期退房通知单，口头(电话)通知相关部门也可以。但必须准确及时地传递延期退房的信息。</section>
+		
+		<div class="additional-knowledge jump-button" data-href="additional0303.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识" style="margin-top: 20px;">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+    <div class="box-example-pad">
+	<div class="example"><img src="../META-INF/images/text01.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href=" " data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能考核">技能考核</div>
+		<div class="example"><img src="../META-INF/images/text02.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-training3.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能训练">技能训练</div>		
+		<div class="example"><img src="../META-INF/images/text03.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href=" " data-scroll-enable="YES" data-phscroll-enable="YES" data-title="知识考核">知识考核</div>
+	<div style="clear: both;"></div>
+	</div>
+	<div class="jump-exercise jump-button" data-target="_blank" data-href="test03-3.html" data-scroll-enable="NO" data-phscroll-enable="YES" data-title="案例分析" style="margin-top: 8px;" data-isActivity="YES">
+		<div class="jump-title">案例分析</div>
+		<div class="jump-left"></div>
+	</div>
+		</article>
+		<div class="foot"></div>
+	</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Large single image</title>
+	<meta name="viewport" content="width=718"/> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		body {
+			margin: 0px;
+			padding: 0px;
+			width: 718px;
+			-webkit-user-select:none;
+		}
+		#title {
+			width: 718px;
+			position: absolute;
+			top: 0px;
+			height: 34px;
+			border-bottom: 1px solid #8c8c8c;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			font-family: "微软雅黑", sans-serif;
+			font-size: 26px;
+			font-weight: bold;
+			overflow: hidden;
+		}
+		#img-area {
+			position: absolute;
+			overflow: hidden;
+			/*-webkit-overflow-scrolling: touch;*/
+			top: 79px;
+			bottom: 121px;
+			left: 20px;
+			width: 676px;
+			border: 1px solid #8c8c8c;
+			text-align: center;
+		}
+
+		
+		#img0 {
+			z-index: 2;
+			position: absolute;
+			box-shadow: 0px 0px 8px 2px #5c5b5a;
+			margin-left: 30px;
+			margin-top: 60px;
+		}
+
+		.scale-to-original {
+			-webkit-transition-duration: 0.3s;
+			-webkit-animation-timing-function: linear;
+		}
+		#img-description {
+			position: absolute;
+			padding: 20px;
+			height: 60px;
+			width: 678px;
+			bottom: 0px;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			line-height: 150%;
+			font-size: 16px;
+			font-family: "微软雅黑", sans-serif;
+			border-top: 1px solid #8c8c8c;
+		}
+	</style>
+	<script type="text/javascript" src="js/mosoink.js"></script>
+	<script type="text/javascript" src="js/large-img.js"></script>
+	<script type="text/javascript">
+
+		function pageOnLoad() {
+			MIGlobals.miInit();
+			initData();
+			MIGlobals.loadJSModule(MIGlobals.contextRoot + "/META-INF/large-img.js", function() {
+				MILargeImage.addGestureOnImage($("img0"));
+			});
+		}
+		
+		function initData() {
+			
+			var url = new URLParser(window.location.href).parse();
+			var title = url.getParameter("title");
+			var description = url.getParameter("description");
+			var imgSrc = url.getParameter("imgSrc");
+			/*
+			var title = "Large Image in Single Page";
+			var description = "本书的主人公，父母（詹姆·波特，莉莉·伊万斯）被神秘人——伏地魔杀死。大名鼎鼎的“大难不死的男孩”，魔法界每个人都认识他，因为只有他逃脱了伏地魔的死咒，且使他消失了十几年。11岁之前在姨夫徳思礼一家遭虐待，11岁后，进入霍格沃茨魔法学校，踏上了魔法世界和与伏地魔的生死斗争中。和他父亲一样，他是魁地奇的优秀找球手。凭借自己的智慧和勇气及朋友们的真诚帮助，多次与伏地魔对抗，最终将伏地魔杀死。";
+			var imgSrc = "/a/chapter05/images/g02-03.jpg";
+			*/
+			/*
+			 * WebKit is just more strict. You must instantiate a new Image() object before the replacement...
+			 * @see  http://code.google.com/p/chromium/issues/detail?id=7731#c12
+			 */
+			var dw = $("img-area").clientWidth - 60;
+			var dh = $("img-area").clientHeight - 120;
+			var img = new Image();
+			img.addEventListener("load", function(e) {
+				MIGlobals.centerImage(this, "img0", dw, dh);
+			}, false);
+
+
+			$("title").innerText = title;
+			img.src= imgSrc;
+			$("img0").src = img.src;
+			$("img-description").innerText = description;
+		}
+	</script>
+	
+</head>
+<body onload="pageOnLoad();">
+	<div id="title">单页大图</div>
+	<div id="img-area">
+		<img id="img0" src=""/>
+	</div>
+	<div id="img-description">
+	</div>
+</body>
+</html>

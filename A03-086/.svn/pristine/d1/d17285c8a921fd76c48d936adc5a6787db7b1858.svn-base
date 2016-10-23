@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>4.1　课程导入</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="6FEABA5A-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="3369502F-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="40B78A35-4018-39AE-17CC-9B21D013B075"
+data-pre-file="" 
+data-pre-title="" 
+data-next-file="c04s02.html" 
+data-next-title="下一节：前厅VIP客人接待服务">
+<div class="chapter">
+	<img src="images/c0400-000-s.png" alt="">	
+</div>
+<div class="chapter-box">
+	<div class="chapter-num">第一部分</div>
+	<div class="chapter-name">课程导入</div>
+</div>
+<div class="page-number" id="p_1">p.1</div>
+<article>
+	<h1>一、学习领域</h1>
+	<section>前厅部接待VIP客人的服务流程。</section>
+	<h1>二、学习情境</h1>
+	<section><span class="map" data-lat="40.085905" data-lng="117.2865" data-title="天津蓟县恒大酒店" data-ios-zoomlevel="17" data-android-zoomlevel="17">天津蓟县恒大酒店前厅部<img src="../META-INF/images/icon-dilidingwei.png" alt="" style="display: inline-block;width: 16px; margin-bottom: -4px;" /></span>。</section>
+	<h1>三、学习目标</h1>
+	<section>VIP客人是指有较高身份地位或因各种原因对酒店有较大影响力的客人，酒店在接待VIP客人时，需要根据客人不同的级别提供相应规格的礼遇，周密安排，本模块的学习达到：</section>
+	<section class="indent-title">1．了解 VIP 客人的分类。</section>
+	<section class="indent-title margin0">2．掌握VIP客人的接待服务流程。</section>
+	<section class="indent-title margin0">3．熟悉行政楼层的相关服务。</section>
+	</article>
+	<div class="page-number" id="p_2">p.2</div>
+	<article>
+	<h1>四、任务内容</h1>
+	<section>学生分为四组，分别模拟前厅部接待VIP客人的四项主要工作任务：</section>
+	<section class="indent-title">1．根据 VIP 客人的等级及客人的需求安排房间。</section>
+	<section class="indent-title margin0">2．为 VIP 客人办理入住服务。</section>
+	<section class="indent-title margin0">3．为客人提供全面优质的住店服务。</section>
+	<section class="indent-title margin0">4．根据客人的需求提供结账服务。</section>
+	<h1>五、任务实施路径</h1>
+	<section>前厅部 VIP 客人接待服务流程图：</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　前厅部团队客人接待流程图</figcaption>
+	</figure>
+	
+</article>
+<div class="foot"></div>
+</body>
+</html>

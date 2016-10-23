@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="font-size: 20px;text-align: center;font-weight: bold;text-indent: 0px;">◆订金的金额、形式和期限</section>
+	 <section>订金的金额应该是客人所订客房数一日的全价房费。有些酒店根据需要与可能，会预收两天甚至客人所有订房天数全额的房费作订金，但这一现象并不多见。订金通常只在客房供不应求时才可能收到同时客人也才愿意交。订金可以是现金，也可以是汇款，有时也接受支票。	</section>
+	<section>散客的订金一般应在客人预计到达酒店时间之前的 24 小时前让酒店收到，以使酒店完成保证订房的手续。团体的订金应视酒店的规定情况及团体订房单位与酒店的关系在每次签协议或合同时商定订金的金额、形式和期限(有时会议团还会包括一定数量的清场费)，一般情况下团体订金的全部或一部分至少应在客人到店前一个星期支付。团体订金通常允许分批支付而不像散客订金那样需一次付清。</section>
+	
+	<section style="font-size: 20px;text-align: center;font-weight: bold;text-indent: 0px;">◆订金收取的前提</section>
+	 <section>订金的收取既涉及酒店的规定，又涉及客人的意愿，还牵涉到不同的具体情况，因此，会有该收不收或该收而收不到的情况发生，一般情况下，订金收取的前提如下。
+	</section>
+	 
+	<section>1．订房时声明对于晚到的客人要收取订金。	</section>
+		<section>2．旺季一般应收取订金。	</section>
+	      <section>3．旺季客房供不应求，空房甚为可惜，客人一般也愿意预付订金，故通常应收收订金，而淡季客源不足，收取订金会限制客人订房，所以应免收或少收订金。	</section>
+	<section>4．客人为得到保证订房，主动要求预付订金，这种情况下均应收取订金，因为客人预付订金对本酒店无害而限制了客人订房不到的现象。	</section>
+	<section>5．对于团体客人一般应收取订金，团体客人订房数量大，如果取消会给酒店造成很大的损失，因此对团体客人一般应收取订金，而且订金的金额、期限和形式应比散客更严格。 </section>
+	 
+	 
+	 
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

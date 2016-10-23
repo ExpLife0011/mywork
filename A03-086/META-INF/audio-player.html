@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=718, user-scalable=no"> 
+	<style type="text/css">
+		#video-box {
+
+		}
+	</style>
+	<script type="text/javascript" src="js/mosoink.js"></script>
+	<script type="text/javascript">
+		function pageOnLoad(){
+			var url = new URLParser(window.location.href);
+			url.parse();
+			var file = url.getParameter("audioFile");
+			var title = url.getParameter("title");
+			$("#title").innerText = title;
+			$("#a1").src = file;
+		}
+		
+		
+	</script>
+</head>
+<body onload="pageOnLoad();">
+	<div id="audio-box">
+		<div id="title" style="font-size: 18px; font-weight:bold;"></div>
+		<audio id="a1" type="audio/mp3" src="" controls/>
+	</div>
+</body>
+</html>

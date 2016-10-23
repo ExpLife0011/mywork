@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>2.2　散客客房预订</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="50252866-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="DF4A5D80-762F-11E6-9EF4-0016D39A06D3"
+data-uuid="35E7CBC9-A377-ED55-681E-85ED4F9135FD"
+data-pre-file="c02s01.html" 
+data-pre-title="课程导入" 
+data-next-file="c02s03.html" 
+data-next-title="下一节：散客入住接待">
+<div class="chapter-box">
+	<div class="chapter-num">第二部分</div>
+	<div class="chapter-name">散客客房预订</div>
+</div>
+ <article>
+	<h1>一、任务目标</h1>
+	<section>1、散客客房预订的处理流程。</section>
+	<section>2、了解预订管理内容。</section>
+	<section>3、学会处理订房纠纷。</section>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>某年 8 月 15 日，天津蓟县恒大酒店接到广东某游艇制造厂打来的电话，对方要求预订 3 个标准间，从 9 月 5 日起住 4 天。三天后，对方按照酒店的要求，支付 2000 元定金给酒店。8 月 25 日，广东企业打来电话说：“对不起，由于我们计划有变，不能去参加旅游产业节，因此想取消预订，能否退还定金？”</section>
+	<section>预订员通过系统查找到了该笔预订，而且对方已经在 8 月 18 日将定金汇入酒店账户。今天距离预定日还有 11 天，按照酒店规定，这类情况可以退还定金，因此预订员回复对方：“我们同意取消预订，全额退还定金。”挂上电话，预订员在预订记录上做了取消记号，同时联系财务部及时退还对方 2000 元定金。</section>
+	<section style="text-indent: 0px;">思考：</section>
+	<section class="case-fold margin0">1．酒店在什么情况下可以返还全部定金？</section>
+	<section class="case-fold margin0">2．酒店预订员在接受预定前应该做好哪些准备？</section>
+	<section class="case-fold margin0">3．受理预订时应该考虑哪些因素？</section>
+	<section class="case-fold margin0">3．预订员如何修改与取消预订？</section>
+	</div>
+	<h1>三、任务流程</h1>
+	<section>根据酒店实际情况和散客需求,接受和处理订房要求。前厅部接受散客预订的工作流程如下：</section>
+	<div class="related-information jump-button" data-href="information0202.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+	 
+	 
+	 
+	<h1>四、情景描述</h1>
+	<section>张福林是一名应届毕业生，正准备前往蓟县恒大酒店前厅部实习。在上岗之前必须进行为期三周的岗前培训，前期的培训主要包括了解前厅部的基本知识，包括前厅部的功能、任务、组织机构及每个岗位的职责等。通过培训，她已经能够意识到前厅部的重要性以及主要组织机构及岗位职责等，为接下来的工作做好准备。</section>
+	<h1>五、任务内容</h1>
+	<section>前厅经理带领外宾参观前厅运转情况，学生分为四组，分别扮演前厅工作人员，介绍自己的职责及工作情况。</section>
+	<h1>六、任务实施路径</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　客房部服务流程图</figcaption>
+	</figure>
+</article>
+<div class="foot"></div>
+</body>
+</html>

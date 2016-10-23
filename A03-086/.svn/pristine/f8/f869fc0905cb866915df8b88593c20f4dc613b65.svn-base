@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>1.2　前厅部概述</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="5327EA9F-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="86811510-641A-F7CB-C19C-C4FBF3C3B340"
+data-pre-file="c01s01.html" 
+data-pre-title="课程导入" 
+data-next-file="c01s03.html" 
+data-next-title="下一节：前厅部服务概述">
+<div class="chapter-box">
+	<div class="chapter-num">第二部分</div>
+	<div class="chapter-name">前厅部概述</div>
+</div>
+ <article>
+	<h1>一、任务目标</h1>
+	<section>1．了解前厅部在现代酒店经营管理中的重要地位和基本作用。</section>
+	<section>2．熟悉前厅部的主要任务。</section>
+	<section>3．掌握前厅部的组织机构设置与管理岗位的主要职责。</section>
+	<section>4．熟悉前厅部的环境设计。</section>
+	<h1>二、案例导入</h1>
+	<section>南京某酒店大堂，两位外国客人向大堂副理值班台走来。大堂倪副理立即起身，面带微笑地以敬语问候，让座后两位客人忧虑地讲述起他们心中的苦闷：“我们从英国来，在这儿负责一项工程，大约要三个月，可是离开了翻译我们就成了‘失语者’，有什么方法能让我们尽快解除这种陌生感？”小倪微笑地用英语答道：“感谢两位先生光临我店，使大厅篷壁生辉，这座历史悠久的都市也同样欢迎两位先生的光临，你们在街头散步的英国绅士风度也一定会博得市民的赞赏。”熟练的英语所表达的亲切的情谊，一下子拉近了彼此间的距离，气氛变得活跃起来。于是外宾更加广泛地询问了当地的生活环境、城市景观和风土人情。从长江大桥到六朝古迹，从秦淮风情到地方风味，小倪无不一一细说。外宾中一位马斯先生还兴致勃勃地谈到：“早就听说中国的生肖十分有趣，我是1921年8月4日出生的，参加过二次大战，大难不死，一定是命中属相助佑。”说者无心，听者有意，两天之后就是8月4日，谈话结束之后，倪副理立即在备忘录上做好记录。8月4日那天一早，小倪就买了鲜花，并代表酒店在早就预备好的生日卡上填好英语贺词，请服务员将鲜花和生日贺卡送到马斯先生的房间。马斯先生从珍贵的生日贺礼中获得了意外的惊喜，激动不已，连声答道：“谢谢，谢谢贵店对我的关心，我深深体会到这贺卡和鲜花之中隐含着许多难以用语言表达的情意。我们在南京逗留期间再也不会感到寂寞了。”</section>
+	<section>请问，上述案例如何体现前厅部的重要性？</section>
+	<h1>三、任务流程</h1>
+	<section>在正式入职前，需要对前厅部的地位作用及主要任务有深入的了解，通过以下内容我们来了解前厅部基本概述的内容。</section>
+	 
+	 
+	 
+	 
+	<h1>四、情景描述</h1>
+	<section>张福林是一名应届毕业生，正准备前往蓟县恒大酒店前厅部实习。在上岗之前必须进行为期三周的岗前培训，前期的培训主要包括了解前厅部的基本知识，包括前厅部的功能、任务、组织机构及每个岗位的职责等。通过培训，她已经能够意识到前厅部的重要性以及主要组织机构及岗位职责等，为接下来的工作做好准备。</section>
+	<h1>五、任务内容</h1>
+	<section>前厅经理带领外宾参观前厅运转情况，学生分为四组，分别扮演前厅工作人员，介绍自己的职责及工作情况。</section>
+	<h1>六、任务实施路径</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　客房部服务流程图</figcaption>
+	</figure>
+</article>
+<div class="foot"></div>
+</body>
+</html>

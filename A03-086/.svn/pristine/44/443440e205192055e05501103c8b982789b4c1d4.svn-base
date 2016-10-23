@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>2.5　散客离店结账服务</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/select.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		select.init();
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+
+	@media screen and (max-width: 350px){
+		.chapter-num {
+	display: inline-block;
+    padding-left: 15px;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: bold;
+    height: 60px;
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+    line-height: 52px;
+}
+.chapter-name {
+    float: right;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+   	top: 38px;
+    left: 144px;  
+    font-weight: bold;
+    padding-right: 15px;
+    line-height: 130%;
+}
+
+}
+.right{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/dui.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.wrong{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/cuo.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.judge{
+		display: inline-block;
+		width: 21px;
+		height: 18px;
+		margin-bottom: -2px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="50252866-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="F715845A-762F-11E6-9EF4-0016D39A06D3"
+data-uuid="C34CF377-C1A8-FDE0-5B0D-516247A0023D"
+data-pre-file="c02s04.html" 
+data-pre-title="上一节：散客住店服务" 
+data-next-file="../c03/c03s01.html" 
+data-next-title="下一节：课程导入">
+<div class="chapter-box">
+	<div class="chapter-num">第五部分</div>
+	<div class="chapter-name">散客离店结账服务</div>
+</div>
+<div class="page-number" id="p_53">p.53</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．掌握宾客各种付款方式的操作规范。</section>
+	<section class="indent-title margin0">2．熟悉客账控制流程。</section>
+	<section class="indent-title margin0">3．掌握散客结账离店的工作程序。</section>
+	<section class="indent-title margin0">4．能够准确地操作贵重物品的寄存。</section>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>一位住客当天中午乘火车回乡，提早在某饭店总服务台办好结账退房手续，他认为虽然结了账，但在中午十二时以前客房的住用权仍是属于他的，因此把整理好的箱物行李放在客房内，没有向楼层服务员打招呼，就出去买东西逛街了。</section>
+	<section>过了一个多小时，那位客人回到饭店准备取行李离店，谁知进入原住客房一看，已经有新住客在房间内喝茶，而他的行李已不知去向。当找到楼层服务员以后才知道他的行李已送到总台去了，楼层服务员反而责怪他为什么在结账后不和楼层联系。</section>
+	<section>客人听了以后很生气，“回敬”了几句便到总服务台提意见，谁知总台人员不记得他已结账，还不肯马上把行李交还给他。经过与楼层服务员联系的反复折腾，客人离店时已经快中午了。客人临行时说了句：“如果下次再来这个城市，我发誓不住你们这里!” </section>
+	<section style="text-indent: 0px;">评析：</section>
+	<section>客人办理结账退房以后并未最后离开的情况并非罕见。通过以上案例，可以看出该饭店在客房服务的程序方面存在漏洞。</section>
+	<section>有些饭店把房间钥匙交给客人保管使用，比较方便，当客人结账时即把钥匙交回，如果需要寄存行李也应交给总台，不再回客房了。该饭店是采用由楼层服务员为客人开房门的办法，由于总服务台和楼层服务台之间配合得不好，无法掌握客人的行踪去向，造成服务混乱无章。</section>
+	<section>正确的做法是楼层服务员心中应当对客人退房离店的时间有个数，主动和客人联系以安排打扫客房、接待新来的客人的有关事宜。如果客人不通过楼层服务员而直接到总台结账，总台人员也应该同时和楼层服务员联系，如果客人不马上离店，那么房间也不可急于打扫，总台也不可把新客人安排入住该房间。假如客人想再进房间，而已把行李寄放到总台，那就另当别论了。 </section>
+	<section>上述案例中饭店的最大失误之处，在于客人虽已办理结账退房手续，但行李仍放在房间内，本人尚未最后离店。在客房未重新整理打扫好之前，马上又安排新的客人入住，这显然是错误的，因为这间客房还不够重新出租的条件。</section>
+	</div>
+	</article>
+	<div class="page-number" id="p_54">p.54</div>
+	<article>
+	
+	<h1>二、任务流程</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0605-001.png" data-title="图 5　散客离店结账服务" data-desc="散客离店结账服务。">
+		<img src="images/c0605-001-s.png" alt="" class="width620">
+		<figcaption class="img-caption">图 5　散客离店结账服务</figcaption>
+	</figure>
+	<div class="related-information jump-button" data-href="information0205.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+
+	<div class="additional-knowledge jump-button" data-href="additional0205-1.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="补充知识" style="margin-top: 20px;">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	</article>
+	<div class="page-number" id="p_55">p.55</div>
+	<article>
+	
+	
+	<h1>三、贵重物品寄存与保管</h1>
+	<div class="alternately">
+		<div>自我训练</div>
+		<div>
+		<div class="top30">1．为客人提供贵重物品保险箱中途开箱的服务时，下列做法中正确的是（<span class="answerBox">C</span>）。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 为尊重客人的隐私，应让客人独自开箱、关箱、上锁</div>
+		<div class="choose"><span class="alternately-o">B</span> 要让客人重新填写贵重物品寄存单</div>
+		<div class="choose"><span class="alternately-o">C</span> 可以不重新填贵重物品寄存单，但要做好中途开箱记录</div>
+		<div class="choose"><span class="alternately-o">D</span> 必须找启用保险箱的同一名服务员接待，以免出错</div>
+		</div>
+		<div>
+		<div class="top30">2．若客人丢失保险箱钥匙后要求取物时，下列做法错误的是（<span class="answerBox">C</span>）。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 收款员、保安人员及客人均应在场</div>
+		<div class="choose"><span class="alternately-o">B</span> 酒店通常要求客人作出一定的经济赔偿</div>
+		<div class="choose"><span class="alternately-o">C</span> 用留在总台的备用钥匙开箱</div>
+		<div class="choose"><span class="alternately-o">D</span> 在先办完各种规定手续后，有维修人员使用器械打开保险箱</div>
+		</div>
+		<div>
+		<div class="top30">3．（判断题）酒店对于收存的无人认领的行李一般规定最长保存期为 30 天。（<span class="answerBox">A</span>）<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 对</div>
+		<div class="choose"><span class="alternately-o">B</span> 错</div>
+		</div>
+		<div class="alternately-cross">交卷</div>
+	</div>
+	</article>
+	<div class="page-number" id="p_56">p.56</div>
+	<article>
+	<h2>（一）贵重物品寄存程序</h2>
+	<section class="indent-title">1．弄清宾客寄存要求。</section>
+	<section class="indent-title margin0">2．填写“贵重物品寄存单”。</section>
+	<section class="indent-title margin0">3．依据宾客要求，选择相应规格保险箱，并将箱号记在寄存单上。</section>
+	<section class="indent-title margin0">4．使用总钥匙与分钥匙同时打开保险箱门，取出存放盒，由宾客亲自放入盒内。</section>
+	<section class="indent-title margin0">5．将存放盒、寄存单第一联放入保险箱，第二联及分钥匙交给宾客。总钥匙留在前厅收银处保管。</section>
+	<div class="sheet jump-button" data-href="sheet06.html" data-target="_blank" data-phscroll-enable="NO" data-scroll-enable="NO">
+		<div class="sheet-images"><img src="../META-INF/images/icon-03.png" alt=""></div>
+		<div class="sheet-name">表 26　贵重物品寄存单</div>
+		<div class="sheet-images-right"><img src="../META-INF/images/icon-04.png" alt=""></div>
+	</div>
+	
+	<h2>（二）中途开箱程序</h2>
+	<section>客人存入贵重物品后，如要求再次使用保管箱时，工作程序如下。</section>
+	<section class="indent-title">1．问候客人，向客人表示欢迎。</section>
+	<section class="indent-title margin0">2．请客人出示保管箱钥匙，然后取出安全保管箱记录卡副卡，请客人填写、签字。</section>
+	<section class="indent-title margin0">3．取出其填写过的正卡并核对。</section>
+	<section class="indent-title margin0">4．如签字相符，当着客人的面将保管箱打开，请客人使用。</section>
+	<section class="indent-title margin0">5．客人存取完毕，再当着客人的面用两把钥匙将保管箱锁上。</section>
+	<section class="indent-title margin0">6．将客用钥匙交还客人保管，并礼貌提醒客人注意钥匙的保管和安全。</section>
+	<section class="indent-title margin0">7．向客人道别。</section>
+	<section class="indent-title margin0">8．将填写过的正卡与其副卡存在规定的器物中。</section>
+	</article>
+	<div class="page-number" id="p_57">p.57</div>
+	<article>
+	<h2>（三）客人退还保险箱的处理</h2>
+	<section class="indent-title">1．请客人出示保管箱钥匙。</section>
+	<section class="indent-title margin0">2．当着客人的面用两把钥匙将该保管箱打开，请客人取出其贵重物品。</section>
+	<section class="indent-title margin0">3．客人取出其贵重物品后，收银员再检查一遍保险箱，以防有遗留物品。</section>
+	<section class="indent-title margin0">4．请客人填写记录卡正反面并签字。</section>
+	<section class="indent-title margin0">5．检查记录卡正卡反面的填写内容，核对签字。</section>
+	<section class="indent-title margin0">6．收回该保管箱的客用钥匙，锁上该箱。</section>
+	<section class="indent-title margin0">7．向客人道别。</section>
+	<section class="indent-title margin0">8．将该卡与其填写过的副卡一起存档，以备核查。</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0605-003.png" data-title="图 7　安全保险箱记录卡" data-desc="安全保险箱记录卡。">
+		<img src="images/c0605-003-s.png" alt="" class="width620">
+		<figcaption class="img-caption">图 7　安全保险箱记录卡</figcaption>
+	</figure>
+	</article>
+	<div class="page-number" id="p_58">p.58</div>
+	<article>
+	<h2>（四）保管箱钥匙遗失的处理</h2>
+	<section>如客人遗失保管箱钥匙，饭店通常要求客人作出经济赔偿，但必须有明文规定。当客人遗失保管箱钥匙，而又要取物品时，须在客人、当班收银员及饭店保安人员在场的情况下，由饭店工程部有关人员强行开箱，并做好记录，以备核查。</section>
+	<h2>（五）客人贵重物品丢失的处理</h2>
+	<section>目前国内大多数饭店对客人的贵重物品保管采取不闻不问，丢了也不负责的态度。这种态度对客人是不公平的。</section>
+	<section class="indent-title">1．按国际惯例，饭店有义务保护住店客人人身和财产安全。</section>
+	<section class="indent-title margin0">2．饭店一般都在一定的场所和位置向客人声明：请将贵重物品存放在饭店前厅物品保管处，否则，出现丢失，概不负责。这意味着，客人按要求存放，酒店就应该负责。</section>
+	<section class="indent-title margin0">3．尽管保管箱有两把钥匙，客人和饭店方面各执一把，只有当两把同时使用时才能打开保管箱，但饭店工作人员完全有机会利用职务之便另配一把“客用钥匙”，给客人带来风险。</section>
+
+
+	<div class="top30" style="-webkit-user-select:none;"></div>
+
+	<div class="box-example-pad">
+	<div class="example"><img src="../META-INF/images/text01.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-assessment04.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能考核">技能考核</div>
+		<div class="example"><img src="../META-INF/images/text02.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-training04.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能训练">技能训练</div>		
+		<div class="example"><img src="../META-INF/images/text03.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-knowledge02.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="知识考核">知识考核</div>
+	<div style="clear: both;"></div>
+	</div>
+
+	<div class="box-example-ph">
+		<div class="example"><img src="../META-INF/images/text01.png" alt=""></div>
+				
+		<div class="jump-button example" data-target="_blank" data-href="skills-training04.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能训练">技能训练</div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-assessment04.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能考核">技能考核</div>
+		<div class="example"><img src="../META-INF/images/text02.png" alt=""></div>
+		<div class="example"><img src="../META-INF/images/text03.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-knowledge02.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="知识考核">知识考核</div>
+	<div style="clear: both;"></div>
+	</div>
+	
+	<div class="jump-exercise jump-button" data-target="_blank" data-href="fill01.html" data-scroll-enable="NO" data-phscroll-enable="NO" data-title="填空题" data-isActivity="YES">
+		<div class="jump-title">填空题</div>
+		<div class="jump-left"></div>
+	</div>
+	
+
+	<div class="jump-exercise jump-button" data-target="_blank" data-href="select-text01.html" data-scroll-enable="NO" data-isActivity="YES" data-phscroll-enable="NO" data-title="判断题" style="margin-top: 8px;">
+		<div class="jump-title">判断题</div>
+		<div class="jump-left"></div>
+	</div>
+	
+	
+	<div class="jump-exercise jump-button" data-target="_blank" data-href="test03.html" data-scroll-enable="YES" data-isActivity="YES" data-phscroll-enable="YES" data-title="简答题" style="margin-top: 8px;">
+		<div class="jump-title">简答题</div>
+		<div class="jump-left"></div>
+	</div>
+	
+
+	<div class="jump-exercise jump-button" data-target="_blank" data-href="test04.html" data-scroll-enable="NO" data-phscroll-enable="YES" data-title="案例分析" style="margin-top: 8px;" data-isActivity="YES">
+		<div class="jump-title">案例分析</div>
+		<div class="jump-left"></div>
+	</div>
+	
+</article>
+<div class="foot"></div>
+</body>
+</html>

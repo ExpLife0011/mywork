@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>4.2　前厅 VIP客人接待服务</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="6FEABA5A-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="3A1B7D71-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="2EC78BB6-E462-E97B-9223-B39F35BAB49D"
+data-pre-file="c04s01.html" 
+data-pre-title="上一节：课程导入" 
+data-next-file="../c05/c05s01.html" 
+data-next-title="下一节：课程导入">
+<div class="chapter-box">
+	<div class="chapter-num">第二部分</div>
+	<div class="chapter-name">前厅 VIP 客人接待服务</div>
+</div>
+<div class="page-number" id="p_3">p.3</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．掌握 VIP 客人等级划分及其预订程序与标准。</section>
+	<section class="indent-title margin0">2．掌握 VIP 客人入住手续办理的程序。</section>
+	<section class="indent-title margin0">3．熟悉商务楼层的服务。</section>
+	<section class="indent-title margin0">4．了解金钥匙服务的相关内容。</section>
+	<h1>二、案例导入</h1>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>沙特基础建设的一个 VIP 团队，来人一行 10 人，其中有沙特的王子，沙特的助理，沙基中国公司的经理。来之前，公司助理告知了他们的行程，飞机航班号并且需要接机服务。 客房方面：需要准备指南针，毯子，古兰经。餐饮方面：不含酒精的啤酒 特殊的清真菜单。前台：按照级别分配房间大小、楼层高低不同的房间，以及不同的级别的欢迎礼品，是否是总经理手写的欢迎卡片等。如：沙特王子 安排在酒店的最高楼层，行政大套房，大份的欢迎水果，巧克力，总经理手写的欢迎卡片等。助理的房间，安排在沙特王子旁边，行政套房，大份欢迎水果，打印的欢迎卡片。沙基的中国经理，安排低一个楼层的房间，湖景房，小份欢迎水果，打印的欢迎卡片。其他房间都安排在其他低楼层。除了这三个房间，其他房间不能享受行政酒廊待遇，但所有房间都含早餐。三间房是公司付费，不需要收押金，不在前台停留，直接进房间。所有人的证件会在入住后有人送来。</section>
+	<section>沙特王子有的 SPA 账目，王子电话自己派助理结清，不要出现在账单上。前台接到通知后就把房账和SPA的账目分开系统留好交接结账时，公司派人先在前台把三间房的账目结清。王子自己结过账，所以公司来人付费时，不会看到 SPA 的消费。其他人自己离店前会把账目自己结清。</section>
+	<section style="text-indent: 0px;">思考与讨论：</section>
+	<section class="case-fold margin0">1．VIP 客人预定程序有哪些？</section>
+	<section class="case-fold margin0">2．VIP 客人入住手续办理的程序有哪些？</section>
+	<section class="case-fold margin0">3．行政楼层的服务有哪些？</section>
+	<section class="case-fold margin0">4．如何处理 VIP 客人的客帐？</section>
+	</div>
+	 
+	<div class="page-number" id="p_4">p.4</div>
+	
+	
+	<h1>三、任务流程</h1>
+	<section>根据 VIP 客人的等级，酒店提供相应规格的礼遇，周密安排，认真接待。前厅部接待 VIP 客人的工作流程如下：</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0602-001.png" data-title="图 2　客房部迎客服务工作流程图" data-desc="客房部迎客服务工作流程图。">
+		<img src="images/c0602-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 2　前厅部接受团队客人预订工作流程图</figcaption>
+	</figure>
+
+	<div class="related-information jump-button" data-href="information0402.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+
+	<div class="additional-knowledge jump-button" data-href="additional0402.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识" style="margin-top: 20px;">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	 
+	
+	 
+    
+</article>
+<div class="foot"></div>
+</body>
+</html>

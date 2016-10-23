@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>团队客人客房预订-案例分析</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C23EF684-E45E-CB08-6DA8-6C849601A2DD"
+data-activity-uuid="5F620FF6-C2EC-4275-AC48-46890592EF5C"
+data-activity-sn="tS-060504"
+data-level="2">
+<div class="content">
+<div class="test-top">团队客人客房预订-案例分析</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-0" data-answer-shown='n'><section>A．客人入住高价客房</section>
+			    <section>在旅游旺季，各酒店出租率均较高，为了保证经济效益，一般酒店都实行超额预订。</section>
+			    <section>一天，两位外地游客办理住宿登记。“先生，对不起!你们只能住一天。”“公司为我们预订的客房明明是三天，怎么现在只有一天呢?”客人很不高兴。“实在对不起，这几天是旅游旺季，现在房问特别紧张。要么你们另找住处。”“你们必须要解决我们的住宿问题，反正明天我们不走，你们看着办吧。”客人更加恼火了，大声吵了起来。</section>
+			    <section>大堂副理闻声而至，首先让客人慢慢地把要求说完。“你们的要求是正确的，不过这几天正是旅游旺季，标准间很紧张。你们看这样行不行，我设法安排一间套房，请你们明后两天继续留住，只是房价要高些。”大堂副理以抱歉的口吻说。“那怎么行，说好了又要变，开黑店啊?”客人不满地说。</section>
+			    <section>“对不起，先生，实在是非常抱歉。这样吧，以我的权限，给你们打个八折好吗?对比您现在的房价只差 100 元。”大堂副理继续以商量的口吻说。“那就这样吧。”客人终于点头同意了。</section>
+			<section>B．客人满意住进值班房</section>
+			<section>“十一”黄金周，某酒店为保证经济效益，实行了超额预订。一天，1005 客房为预订房，大堂副理在下午多次打电话联系 1005 房间的预离客人，但未找到。而此时 1005 房间的预抵客人已经到达，又没有其他空房。大堂副理向刚刚到达的客人解释酒店超额预订，并保证将他安排在其他酒店，一旦有空房，再将其接回。但客人态度坚决，称非住这里不可，否则将投诉。鉴于客人态度十分坚决，并提出只要有住房就可以，他就是不想到其他酒店。在值班经理的允许下，大堂副理将客人安置到值班经理用房，客人对此表示满意。</section>
+			<section>C. 让客人愉快入住其他酒店</section>
+			<section>长沙一年一度的金鹰电视艺术节期间，是酒店的接待高峰，为保证酒店的经济效益，某酒店一连几天都实行了超额预订。一天，一位来自外地的客人要入住酒店，他已经提前预订了房间，而此时酒店房间已全部出租，没有空余房间。当前台接待员向客人解释时，客人却不理睬。这位客人提起行李在大堂大喊大叫，说自己已经预订了房间，因此是不会走的。这时，大堂副理走过来，将客人领到大堂副理工作台前，细心地与客人解释，征得客人同意，又打电话与同星级的酒店联系，终于在附近酒店找了一间房，价格相近。之后又经请示，派出酒店的车辆将客人送至附近的酒店。待客人安顿好后，客人对大堂副理说，他对酒店的服务非常满意，下次一定要住这里。</section></div>
+			<div class="item-answer" id="item-0-a">
+				<div class="item-answer-content">
+					<div>点评：</div>
+					<div><section>超额预订是指酒店在一定时期内，有意识地使其接受的客房预订数超过其客房接待能力的一种预订现象，其目的是充分利用酒店客房，提高开房率。</section>
+					<section>宾客向酒店订房，并不是每位客人都做出保证类订房。经验告诉我们，即使酒店的订房率达到100％，也会有订房者因故虽有预订而不到。临时取消，或者住店客人提前离店，会使酒店出现空房。因此，酒店为了追求较高的住房率，争取获得最大经济效益，往往实行超额预订。</section>
+					<section>超额预订，从实践上虽然是可以理解的，了客人的预订，就意味着在酒店与客人之间，但从法律意义上讲，则是违法的。酒店接受确立了关于客房出租的合同关系。而酒店进行超额预订，势必会因此在某个时间，使某个或某些客人不能按“合同”约定的条件(预订要求)入住，这就相当于酒店单方面违约。对此，酒店经营者应有清醒的认识。对于因超额预订而不能入住的客人，应该妥善处理。</section>
+					<section>超额预订是订房管理艺术的最高体现，处理得好会提高客房出租率，增加酒店的经济效益。但是如果超额过高，预订客人又都在规定的时限内抵达，酒店无法提供所订住房，必然引起客人的不满，无疑会给酒店带来麻烦。酒店接受并确认客人的订房后，发生这种情况属于酒店的违约行为。所以，必须积极采取补救措施，千方百计调剂房间，开拓房源，最大限度地满足客人的预订要求，妥善安排好客人住宿，以消除客人的不满，挽回不良影响，维护酒店的声誉。</section>
+					<section>处理超额预订，只有实在挤不出房间时，才可考虑将客人送到其他酒店。因为，客人人住其他酒店，有可能成为其他酒店的回头客，这对于送出客人的酒店来说将是一个损失。</section>
+					<section>案例A中，接待员在处理客人住宿的问题时，似乎忘记了处理投诉应遵循的“着眼于问题的解决”的基本原则，应加强员工的服务意识方面的培训教育。值班经理的处理办法之所以让客人满意，一方面是因为他以诚恳的态度认真听取了客人的意见，使客人心中的火气慢慢冷却，为进一步处理打下了较好的心理基础；另一方面，他及时采取补救措施帮客人解决了住宿问题，并以套房打折给了客人一种心理上的补偿，不仅解决了问题，还促销了高价客房。案例B中，值班经理的安排，既保护了酒店的信誉，也为酒店增加了收入。案例C中，在万不得已的情况下，热情地为不能入住的超额预订客人联系其他酒店，也做到了使客人满意。</section></div>
+					
+				</div>
+			</div>
+		</div>
+		 
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

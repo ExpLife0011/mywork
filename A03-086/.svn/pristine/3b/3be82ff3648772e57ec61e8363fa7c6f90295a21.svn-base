@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>1.1　课程导入</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="41689BDE-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="63AD1353-762F-11E6-9EF4-0016D39A06D3"
+data-uuid="C91167E2-CD2C-C169-28F4-24E677AA80DC"
+data-pre-file="" 
+data-pre-title="" 
+data-next-file="c01s02.html" 
+data-next-title="下一节：前厅部概述">
+<div class="chapter">
+	<img src="images/c0100-000-s.png" alt="">	
+</div>
+<div class="chapter-box">
+	<div class="chapter-num">第一部分</div>
+	<div class="chapter-name">课程导入</div>
+</div>
+<article>
+	<h1>一、学习领域：</h1>
+	<section>前厅部基础知识的掌握。</section>
+	<h1>二、学习情境：</h1>
+	<section>天津蓟县恒大酒店前厅部。</section>
+	<h1>三、学习目标：</h1>
+	<section>前厅部是酒店业务活动的中心，客人与酒店沟通的桥梁。它被安排在酒店的最显眼处，既是客人进入酒店时最先接触的部门，也是客人离店时最后接触的部门。因此前厅部工作的好坏，直接关系到客人对酒店满意程度，这不仅影响到酒店的客房出租率和经济收入，而且也反映出酒店工作效率、服务质量和管理水平的高低。可以说，前厅部是现代酒店管理的关键部门。因此通过本模块的学习达到：</section>
+	<section class="indent-title">1．了解前厅部在现代酒店经营管理中的重要地位和基本作用。</section>
+	<section class="indent-title margin0">2．了解前厅部的主要任务。</section>
+	<section class="indent-title margin0">3．掌握前厅部的组织机构设置与管理岗位的主要职责。</section>
+	<section class="indent-title margin0">4．熟悉前厅部的环境设计。</section>
+	<section class="indent-title margin0">5．熟悉前厅部业务特点及前厅部员工素质要求。</section>
+	 
+	 
+	 
+	<h1>四、情景描述：</h1>
+	<section>张福林是一名应届毕业生，正准备前往蓟县恒大酒店前厅部实习。在上岗之前必须进行为期三周的岗前培训，前期的培训主要包括了解前厅部的基本知识，包括前厅部的功能、任务、组织机构及每个岗位的职责等。通过培训，她已经能够意识到前厅部的重要性以及主要组织机构及岗位职责等，为接下来的工作做好准备。</section>
+	<h1>五、任务内容：</h1>
+	<section>前厅经理带领外宾参观前厅运转情况，学生分为四组，分别扮演前厅工作人员，介绍自己的职责及工作情况。</section>
+	<h1>六、任务实施路径：</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　客房部服务流程图</figcaption>
+	</figure>
+</article>
+<div class="foot"></div>
+</body>
+</html>

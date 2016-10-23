@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>2.1　前厅散客接待服务</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="50252866-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="D617B0CC-762F-11E6-9EF4-0016D39A06D3"
+data-uuid="FDAC335B-F121-3652-DA51-E4E6F05AD070"
+data-pre-file="" 
+data-pre-title="" 
+data-next-file="c02s02.html" 
+data-next-title="下一节：散客客房预订">
+<div class="chapter">
+	<img src="images/c0200-000-s.png" alt="">	
+</div>
+<div class="chapter-box">
+	<div class="chapter-num">第一部分</div>
+	<div class="chapter-name">课程导入</div>
+</div>
+<article>
+	<h1>一、学习领域</h1>
+	<section>前厅部接待散客的服务流程。</section>
+	<h1>二、学习情境</h1>
+	<section>天津蓟县恒大酒店前厅部。</section>
+	<h1>三、学习目标</h1>
+	<section>散客是酒店客源重要组成部分，如何为散客提供优质高效的前厅接待服务直接决定了酒店的生存与发展，因此通过本模块的学习达到：</section>
+	<section class="indent-title">1．了解散客接待服务流程。</section>
+	<section class="indent-title margin0">2．掌握散客客房预订的处理方法，了解预订管理内容，学会处理订房纠纷。</section>
+	<section class="indent-title margin0">3．掌握散客入住登记流程。</section>
+	<section class="indent-title margin0">4．熟悉散客离店结账相关知识。</section>
+	 
+	<h1>四、任务内容</h1>
+	<section>学生分为四组，分别模拟前厅部接待散客的四项主要工作任务：</section>
+    <section class="indent-title">1．根据酒店实际情况和散客需求接受和处理订房要求。</section>
+	<section class="indent-title margin0">2．根据客人实际情况办理住宿登记。</section>
+	<section class="indent-title margin0">3．为客人提供舒适的住店服务。</section>
+	<section class="indent-title margin0">4．为客人提供优质高效的离店结账服务。</section>
+
+
+
+	 
+	<h1>五、任务实施路径</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　前厅部散客接待流程图</figcaption>
+	</figure>
+</article>
+<div class="foot"></div>
+</body>
+</html>

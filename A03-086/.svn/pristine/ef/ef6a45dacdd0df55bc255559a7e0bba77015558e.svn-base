@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>案例分析</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C23EF684-E45E-CB08-6DA8-6C849601A2DD"
+data-activity-uuid="5F620FF6-C2EC-4275-AC48-46890592EF5C"
+data-activity-sn="tS-060504"
+data-level="2">
+<div class="content">
+<div class="test-top">案例分析</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>入夜，上海一家三星级酒店的大堂灯火辉煌。一个国内旅行团正值此时抵店大堂里熙熙攘攘。旅行团领队正高声念着团友的名字分发房间钥匙。当领队念到一位团友名字时，这位中年女团友对领队说：“我自己住一间套房，加多少钱我自己付，  因为今晚我要见一位当地的朋友，你看可以吗?”领队回答说：“当然可以，等会儿我。陪你去办下手续。”</section>
+	<section>领队和这位打扮入时的中年妇女一起来到总台。中年妇女刚说要开一间套房。总台接待员小张就开口了：“你是旅行团的吧?你不能住套房。”小张这句话犹如一块巨石落进了平静的湖面。“什么？我不能住套房?我第一次听说我不能住套房，你以为我住不起套房还是怎么的?”中年妇女气得火冒三丈。小张急忙申辩道：“不，不是这个意思。你听我……”小张话还没有说完，中年妇女就打断她的话：“我要找你们总经理，你这人怎么这样说话!”</section>
+	<section>当大堂副理急匆匆地赶过来时，中年妇女又朝着他扯开了嗓门：“看样子你是经理吧，你手下的这位小姐怎么这么不懂得说话，不等我把要求说完，就断定我住不起套房，我走到哪里都没有人这样看不起我!”</section>
+	<section>“您别急，是我们服务员不对。我立即为您开一间套房，这样吧，高出价格部分我做主为您免了，您看可以吗?’’大堂副理快刀斩乱麻，这么大方的决定着实让这位妇女吃了一惊，一下子没了脾气。“你说话算数?”中年妇女带着疑惑问道。“这也算是感谢您给我们服务员上了一堂课。服务员不懂得说话，确实不应该，回头我再找她谈。”大堂副理说完，立即在总台为这位中年妇女开了一间套房。当把房间钥匙交到领队手上时，中年妇女才嗫嚅地说．“服务员要批评，但高出的房价我还是要付的。…我是诚意的，请您接受我对您的歉意吧。”大堂副理诚挚地说，一场风波就这样平息了。</section>
+	<section style="text-indent: 0px;">思考题</section>
+	<section class="case-fold margin0">1．案例中中年妇女为什么生气？</section>
+	<section class="case-fold margin0">2．你认为大堂副理处理得如何？</section>	 
+	</div>
+		 
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>散客离店结账服务-案例分析</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C23EF684-E45E-CB08-6DA8-6C849601A2DD"
+data-activity-uuid="5F620FF6-C2EC-4275-AC48-46890592EF5C"
+data-activity-sn="tS-060504"
+data-level="2">
+<div class="content">
+<div class="test-top">散客离店结账服务-案例分析</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-0" data-answer-shown='n'>1．客人每周六都入住本店，上周六入住时已付了本周六的定金，门店按常规帮他保留了一间单人房，可是本周六，客人同行有三人要入住，此时门店已客满，无法给他安排，介绍其到其他酒店，他不接受，如何解决较妥？</div>
+			<div class="item-answer" id="item-0-a">
+				<div class="item-answer-content">
+					<div>答：</div>
+					<div>如客人不接受被介绍到其他酒店，可征求客人意见为其预订的那一个房间做加床服务，待明天有空房时再及时为客人调出 ；或查一下当天预订未到的房间，是否有取消的情况，也可以优先给这三位客人。</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-1" data-answer-shown='n'>2．客人称客房内物品丢失如何处理？</div>
+			<div class="item-answer" id="item-1-a">
+				<div class="item-answer-content">
+					<div>答：</div>
+					<div>要积极配合客人帮助寻找，并与保卫部配合查询监控录像资料，方便查找。一般情况下酒店对在客房内丢失的物品没有赔偿的责任，如有必要可帮助客人报警处理。</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

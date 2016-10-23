@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>3.5　离店结账</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/select.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		select.init();
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.right{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/dui.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.wrong{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/cuo.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.judge{
+		display: inline-block;
+		width: 21px;
+		height: 18px;
+		margin-bottom: -2px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="6125CCE8-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="287CC5C5-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C73931A4-4257-C55E-C2F0-021BD374E66C"
+data-pre-file="c03s04.html" 
+data-pre-title="上一节：团队客人住店服务（叫醒、礼宾）" 
+data-next-file="../c04/c04s01.html" 
+data-next-title="下一节：课程导入">
+<div class="chapter-box">
+	<div class="chapter-num">第五部分</div>
+	<div class="chapter-name">离店结账</div>
+</div>
+<div class="page-number" id="p_24">p.24</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．掌握团队客人离店结账的处理流程。</section>
+	<section class="indent-title margin0">2．了解夜审工作内容。</section>
+	<section class="indent-title margin0">3．学会办理团队客人离店结账手续。</section>
+	<h1>二、案例导入</h1>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>场景一：某日，一位酒店的会议团队领队到前台收银处支付最近一段时间的餐饮费用。当他看到打印出来的账单上面的总金额时，立刻脸色大变，不悦地说： “你们真是乱收费，我们不可能有这样高的消费金额!”收银员面带微笑地对客人说：“对不起，您能帮我一起核对一下账单吗?”客人同意了，于是和收银员一起对账单进行核对。期间，收银员顺势对几笔大的账目金额作了提示，以唤起客人的回忆。等账单全部核对完毕，收银员礼貌地说：“谢谢您帮我核对了账单，耽误您时间了!”此时客人已经明白自己错怪了酒店，连声说道：“小姐，麻烦你了，真不好意思!”</section>
+	 
+	<section style="text-indent: 0px;">思考与讨论：</section>
+	<section class="case-fold margin0">1．收银员是用什么方法使客人心服口服的？</section>
+	<section class="case-fold margin0">2．你认为作为前台收银员应该注意什么？</section>
+	<section class="case-fold margin0">3．从该案例中你学到了什么？</section>
+	</div>
+	<h1>三、任务流程</h1>
+	<section>前厅部为团队客人办理离店结账的工作流程如下：</section>
+	 
+	
+	
+	 <div class="related-information jump-button" data-href="information0305.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+	 
+</article>
+<div class="foot"></div>
+</body>
+</html>

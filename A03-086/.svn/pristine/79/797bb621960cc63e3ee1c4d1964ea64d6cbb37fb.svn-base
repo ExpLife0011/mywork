@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>3.1　课程导入</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="6125CCE8-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="01F3AA34-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="E824342D-2073-332B-9FA8-1026ED353CD8"
+data-pre-file="../c02/c02s05.html" 
+data-pre-title="上一节：散客离店结账业务" 
+data-next-file="c03s02.html" 
+data-next-title="下一节：团队客人客房预订">
+<div class="chapter">
+	<img src="images/c0300-000-s.png" alt="">	
+</div>
+<div class="chapter-box">
+	<div class="chapter-num">第一部分</div>
+	<div class="chapter-name">课程导入</div>
+</div>
+<div class="page-number" id="p_1">p.1</div>
+<article>
+	<h1>一、学习领域</h1>
+	<section>客服部接待团队客人的服务流程。</section>
+	<h1>二、学习情境</h1>
+	<section><span class="map" data-lat="40.085905" data-lng="117.2865" data-title="天津蓟县恒大酒店" data-ios-zoomlevel="17" data-android-zoomlevel="17">天津蓟县恒大酒店前厅部<img src="../META-INF/images/icon-dilidingwei.png" alt="" style="display: inline-block;width: 16px; margin-bottom: -4px;" /></span>。</section>
+	<h1>三、学习目标</h1>
+	<section>团队客人入住是提高酒店入住率的最有效途径，如何为团队客人提供优质高效的前厅接待服务也直接体现了酒店前台员工的服务水平，因此通过本模块的学习达到：</section>
+	<section class="indent-title">1．了解团队客人接待服务流程。</section>
+	<section class="indent-title margin0">2．掌握团队客房预订的处理方法，了解团队预订类型，学会处理超额预订。</section>
+	<section class="indent-title margin0">3．掌握团队客人入住登记流程。</section>
+	<section class="indent-title margin0">4．熟悉团队客人离店结账相关知识。</section>
+	</article>
+	<div class="page-number" id="p_2">p.2</div>
+	<article>
+	<h1>四、情景描述</h1>
+	<section>通过前期培训，张福已经了解前厅部散客接待流程。现在领班开始对她进行团队客人接待服务培训，为她即将开始的工作做好了充分准备。</section>
+	<h1>五、任务内容</h1>
+	<section>学生分为四组，分别模拟前厅部接待团队客人的四项主要工作任务：</section>
+	<section class="indent-title">1．根据酒店实际情况和团队需求接受和处理订房要求。</section>
+	<section class="indent-title margin0">2．根据团队客人实际情况办理住宿登记。</section>
+	<section class="indent-title margin0">3．为客人提供优质的住店服务。</section>
+	<section class="indent-title margin0">4．为客人提供优质高效的离店结账服务</section>
+	<section>任务实施路径：前厅部团队客人接待服务流程图。</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　前厅部团队客人接待流程图</figcaption>
+	</figure>
+	
+</article>
+<div class="foot"></div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>3.2　团队客人客房预订</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="6125CCE8-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="0B28B777-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="B88231A0-61FA-52C5-4441-84F88F649157"
+data-pre-file="c03s01.html" 
+data-pre-title="上一节：课程导入" 
+data-next-file="c03s03.html" 
+data-next-title="下一节：团队客人抵店服务">
+<div class="chapter-box">
+	<div class="chapter-num">第二部分</div>
+	<div class="chapter-name">团队客人客房预订</div>
+</div>
+<div class="page-number" id="p_3">p.3</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．掌握团队客人客房预订的处理流程。</section>
+	<section class="indent-title margin0">2．了解预订管理内容。</section>
+	<section class="indent-title margin0">3．学会处理超额预订。</section>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>场景一： 9月15日，天津蓟县恒大酒店接到天津康辉旅行社姜先生打来的电话，他们有一个大约40人的旅游团队，要求预订10月1日到10月3日的标准间20间，预订员张静接到电话马上查看客房情况，能够接受，便为姜先生办理了相关预订手续，请设计一个场景，进行旅游团队电话预订模拟对话，进行模拟训练。</section>
+	<section>场景二：9月26日下午三点左右，销售部李飞打来电话，说华泰公司临时需要预订27日的15间标准间，预订员小雪查看了客房情况，还有空房。因离抵店时间还有1天，一些手续来不及办理，小雪告诉李飞请华泰公司负责人马上用传真发一份付款担保（支票）复印件来。请以此设计一段团队临时预订的场景，并进行模拟训练。</section>
+	<section style="text-indent: 0px;">思考与讨论：</section>
+	<section class="case-fold margin0">1．假如“十一”期间酒店就剩下 20 多间客房，是将房间预订出去，还是留给临时来的散客？</section>
+	<section class="case-fold margin0">2．会议预订与旅游团队预订有什么不同？会议预订要注意什么？</section>
+	</div>
+	 
+	<h1>二、任务流程</h1>
+	<section>根据酒店实际情况和团队客人需求接受和处理订房要求。</section>
+	<section>前厅部接受团队客人预订的工作流程如下：</section>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0602-001.png" data-title="图 2　客房部迎客服务工作流程图" data-desc="客房部迎客服务工作流程图。">
+		<img src="images/c0602-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 2　前厅部接受团队客人预订工作流程图</figcaption>
+	</figure>
+
+	<div class="related-information jump-button" data-href="information0302.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+
+	<div class="additional-knowledge jump-button" data-href="additional0302.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识" style="margin-top: 20px;">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	 
+	<!--
+    	作者：1771861981@qq.com
+    	时间：2016-10-21
+    	描述：
+    -->
+	 
+	 
+	 
+    
+</article>
+<div class="foot"></div>
+</body>
+</html>

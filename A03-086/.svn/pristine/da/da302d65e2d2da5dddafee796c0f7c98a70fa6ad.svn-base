@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="font-weight: bold;text-align: center; font-size: 20px;text-indent: 0px;">商务楼层管理</section>
+	<h1>一、什么是行政楼层</h1>
+	<section>在一些高星级酒店，利用客房某些楼层，设置面向高消费客人的豪华客房群。这种客房的家具、日用品和室内装饰等非常高档，住宿客人一般是级别较高的行政官员、公务旅行者、企业老总或其他社会名流。这种特定的楼层就叫行政楼层。行政楼层归前厅部管理。</section>
+	 <h1>二、行政楼层的特色</h1>
+	<section class="fold-h4">（一）商务楼层提供超值服务水准及专享设施缓解商旅压力</section>
+	<section class="fold-h4 margin0">（二）提供比普通客房水准更高、更舒适的服务及设施</section>
+	<section class="fold-h4 margin0">（三）客人自办理入住起，就享有不必在大堂排队久候的便利。客人可以在其行政酒廊办理入住手续，即使需要等候也可以坐着等。</section>
+	<section class="fold-h4 margin0">（四）行政酒廊作为行政楼层的主要特色之一，可为客人提供免费早餐、晚间鸡尾酒和全天供应的饮料，是供客人放松和休憩的场所。行政酒廊通常还附带有会议室或董事会会议室，以供行政楼层的短期住客在其入住期间免费使用。</section>
+	<section class="fold-h4 margin0">（五）行政楼层在其酒店中所占的比例取决于酒店。总体来说，酒店越豪华，其所设的行政楼层的客房就越多。</section>
+	<h1>三、酒店发展行政楼层的意义</h1> 
+	 <section class="fold-h4">（一）给酒店带来高效益	 </section>
+	 <section class="fold-h4 margin0">（二）满足客人对此类客房日益增长的需要	 </section>
+	 <section class="fold-h4 margin0">（三）给酒店引入极至服务</section>
+	 <section class="fold-h4 margin0">（四）提高酒店智能化程度：先进的通讯系统（CA）、管理系统、自动化系统</section>
+	 <h1>四、行政楼层员工素质要求</h1> 
+	 
+	 <section class="fold-h4">（一）气质高雅，有良好的外部形象和身材。	</section>
+	 <section class="fold-h4 margin0">（二）工作耐心细致，诚实可靠，礼貌待人。	</section>
+	 <section class="fold-h4 margin0">（三）知识面广，有扎实的文化功底和专业素质，接待人员最好有大专以上学历，管理人员应有本科以上学历。	</section>
+	 <section class="fold-h4 margin0">（四）熟练掌握商务楼层各项服务程序和工作标准。	</section>
+	 <section class="fold-h4 margin0">（五）英语口语表达流利，英文书写能力达到高级水平。	</section>
+	 <section class="fold-h4 margin0">（六）具备多年的酒店前厅、餐饮部门的服务或管理工作经验,掌握接待、账务、餐饮、商务中心等的服务技巧。	</section>
+	 <section class="fold-h4 margin0">（七）有较强的合作精神和协作能力，能够与各业务部门协调配合。	</section>
+	 <section class="fold-h4 margin0">（八）善于与宾客交往，掌握处理客人投诉的技巧。</section>
+	 
+	 <h1>五、行政楼层客人入住服务程序</h1>
+	 <section>（一）接待散客的工作规程：	 </section>
+	     <section>1．向客人微笑问好，询问其是否已预订；	 </section>
+	     <section>2．查订房，核对有关细节（到达的人数、时间等）；	 </section>
+	     <section>3．请客人出示身份证或护照；	 </section>
+	     <section>4．按客人要求分配房间；	 </section>
+	     <section>5．协助客人填写出入住登记表，检查登记卡并核对有关证件；	 </section>
+	     <section>6．确认客人的离店日期、房价、房间种类及付款方式；	 </section>
+	     <section>7．酒店为磁卡钥匙，应制作房卡，然后将住房卡交于客人，并祝客人住得愉快。	 </section>
+	  <section>（二）接待团队的工作规程：	 </section>
+	     <section>1．团队当天未到前预排房间；	 </section>
+	     <section>2．团队抵店时，可由主管及有关人员迎接，可致欢迎词并简单介绍酒店的情况；	 </section>
+	     <section>3．将装有房卡的信封他发给客人；	 </section>
+	     <section>4．主管或有关人员，将客人送至电梯；	 </section>
+	     <section>5．客房部服务员应在电梯口迎接客人，问候、引领客人进入客房；	 </section>
+	     <section>6．接待员要与陪同、领队确认用房数有无变化；人数及客人姓名有无变化；用餐要求有无变化；对叫醒服务的要求；离店安排；	 </section>
+	     <section>7．行李有时在团队抵店前到，有时在团队抵店后到，行李到店后，行李部必须尽快组织力量将行李送往客房；	 </section>
+	     <section>8．接待员登记团队入住手续、更改通知单、特殊要求通知等资料尽快送往有关部门。</section>
+	 
+	 <h1>六、商务楼层与其他楼层的区别</h1>
+	 <h2>（一）对设备设施的要求</h2>
+	 <section>1．商务设备设施：如语言信箱、信息网络、视听设备、电话答录设备以及复印、传真等设备。楼层上的商务中心服务功能要全，环境要好，服务时间要长。	</section>
+	<section>2．提供各种先进的会议设施：入住商务楼层的客人可能有各种会议，如研讨会、论坛、讲座、培训、会谈等，因此商务楼层应设置相应的大小不同的会议场所及配备相应的设施设备。如会场有各种信源接口，具有同声翻译系统、电子投票系统、多媒体咨询系统、声像播放系统和电子白板系统等。	</section>
+	<section>3．对客房设备设施的要求：客房的写字台和床头照明应更亮一些，客房内办公桌更大更好。注重通过客用品、材料、色调等来增强家居感。讲究卫生间的布局、设置。	</section>
+	<section>4．对客房面积的要求：商务楼层应尽可能为客人提供宽敞的活动空间。另外明显的变化，一是减少抽屉的数量；二是取消大壁橱，把节约的面积还给客房。与之相协调是客房中装置挂钩，供客人挂行李袋，或是行李架台面放大，以便客人放置轮箱。</section>
+	 
+	 <h2>（二）对服务的要求</h2> 
+	 <section>1．入住商务楼层的客人除了希望得到一般宾客“家外之家”的享受外，更希望得到“公司外公司”的服务，就是为这些公务客提供其公司从事公务活动所需要的服务。如管理服务、经纪服务、信息服务、文秘服务、交通服务、休闲服务和保健服务。	 </section>
+	 <section>2．楼层实行了许多特殊的服务，有“单独入住登记”。在这里，客人不用按传统的排队办理入住手续，设有客人专用座椅，客人可边办手续边休息，酒店往往也同时为客人提供免费的酒水和饮料以供客人在长途旅行之后消除疲倦和解渴，这里的服务员都是经过专门训练的高级职员，外语娴熟，谈吐优雅，而且反应敏捷，能在最短的时间里办好所有事项，能尽可能与客人多的沟通、交流来提供个性化服务；“推迟离店时间”——离店结账时间一直延续到下午6点，完全符合商务客人的活动规律；“高度私人化服务”——在酒店例行的服务程序和规范上增加了更多符合商务客人自身习好的服务项目。烫洗衣服是一项非常重要的服务内容，因为参加公务活动的客人首先要确立良好的个人形象。	 </section>
+	 <section>3．提供个性化服务是商务楼层客人的普遍要求，酒店根据对客人详细的资料收集，尽可能地提供针对性的服务，达到服务的高水准。对于入住商务楼层的客人，酒店应通过网上信息平台获取顾客们的兴趣与偏好，针对客人的个性需求和自身能力更新整合酒店产品，全面提升对客服务和酒店管理，充分体现酒店与顾客共同设计产品的特色，客人们在自己参与“设计”的酒店里，会得到最大程度的满足。	 </section>
+	 <section>4．从金钥匙的委托服务衍生出专为商务客人提供电脑技术服务的“技术侍从”（TECHN-OLOGY  BUTLER）。一旦客人的笔记本电脑遇到麻烦或其他电子技术问题,这些电脑天才们可随叫随到，当即排除故障，保证客人顺利工作。</section>
+	 <h3>（三）对安全的要求</h3>
+	 <section>入住商务楼层的客人尤其是商务客人都希望客房安装电子门锁，甚至要求电话、传真加装保密装置，以防止泄露商业机密。高档的公务客对商务楼酒廊等公共区域或会议室，也会提出安全和保密的要求。</section>
+	 <h1>七、商务楼层未来发展的趋势</h1>
+	 
+	 <section class="fold-h4">（一）增强商务楼层客房内商务设备设施的自助化程度	 </section>
+	 <section class="fold-h4 margin0">（二）未来的商务楼层客房将提供以下产品	 </section>
+	 <section>1．光线唤醒：由于许多人习惯根据光线而不是闹铃声来调整起床时间，新的唤醒系统将会在客人设定的唤醒时间前半小时逐渐增强房间内的灯光，直到唤醒时刻的灯光亮得像白天一样；   	 </section>
+	     <section>2．无匙门锁系统：以指纹或视网膜鉴定客人身份；	 </section>
+	     <section>3．虚拟现实的窗户：提供由客人自己选择的窗外风景；	 </section>
+	     <section>4．自动感应系统：光线、声音和温度都可以根据每个客人的喜好来自动调节；	 </section>
+	     <section>5．“白色噪音”：客人可选择能使自己感到最舒服的背景声音；	 </section>
+	     <section>6．客房内虚拟娱乐中心：客人可在房间内参加高尔夫球、篮球等任何自己喜爱的娱乐活动；	 </section>
+	     <section>7．客房内健身设备：以供喜爱单独锻炼的客人使用；	 </section>
+	     <section>8．电子控制的床垫：可使不同的客人都得到最舒适的床上感受；	 </section>
+	     <section>9．营养学家根据客人身体状况专门设计的食谱。	 </section>
+	 <section>（三）增设女子商务楼层	 </section>
+	     <section>近年来随着妇女就业比例的日益提高，女性商务逐渐引起人们的重视，不少酒店设立女性行政层的做法很受女商务客的欢迎。澳大利亚酒店业悉尼 BOND STREET 公寓酒店,为女性旅行者特设两层楼。房间内的用品包括浴袍、拖鞋、各类杂志以及女性用品和礼物。对商务的性质，公寓对客人提供全套酒店式服务，直拨电话、留言系统、个人传真、互联网、电视、录像机、音响及付费闭路电视等设施一应俱全。	 </section>
+	 <section>（四）客房商务化（ROOM－AS－OFFICE）的发展趋势	 </section>
+	     <section>目前越来越多的客房商务化的趋势仍有增无减越来越多的酒店在所有的客房内都开始安装传真机、两条以上的电话线、与电话接驳的打印机、INTERNET 的接口等。</section>
+	 
+	 
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

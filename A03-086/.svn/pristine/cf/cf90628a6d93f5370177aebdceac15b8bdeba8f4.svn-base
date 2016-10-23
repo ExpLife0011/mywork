@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>案例分析</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C23EF684-E45E-CB08-6DA8-6C849601A2DD"
+data-activity-uuid="5F620FF6-C2EC-4275-AC48-46890592EF5C"
+data-activity-sn="tS-060504"
+data-level="2">
+<div class="content">
+<div class="test-top">案例分析</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>1226 房的金先生是 M 公司的一名销售经理，因公务需要来我市出差，他已在我们酒店住宿了 5 天，按计划将于今天中午 12：00 前离店。上午接待员按常规打电话到客房与客人确认离店时问，电话无人接听。据客房服务员小潘反映，金先生早上 8：00 左右外出了，出门前告诉小潘今天不退房了，且要求再延长住宿 2 天。因为有急事要出门，来不及去总服务台办理续住手续，请小潘代为办理，有关费用 20：00 左右金先生回酒店时再来支付。作为总服务台的接待员得到此信息后，立即查看了客房状态表，发现 1226 房从今天 13：30 开始连续 10 天已安排给了一个会议团队。请你妥善地为金先生办理好逾期住宿业务。</section>
+	 
+	<section>问题：按国际惯例该酒店结账时间为中午 12：00 前，如果金先生只是延迟到当天下午 13：55 结账，而且酒店又处在住宿淡季，金先生提出免收超时部分的房租要求，请你处理此事。</section> 
+	</div>
+		 
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

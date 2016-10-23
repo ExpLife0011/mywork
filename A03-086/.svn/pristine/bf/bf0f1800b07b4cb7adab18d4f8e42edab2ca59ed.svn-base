@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>案例分析</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C23EF684-E45E-CB08-6DA8-6C849601A2DD"
+data-activity-uuid="5F620FF6-C2EC-4275-AC48-46890592EF5C"
+data-activity-sn="tS-060504"
+data-level="2">
+<div class="content">
+<div class="test-top">案例分析</div>
+<article>
+<div class='wrap'>
+  <div class="topheight"></div>
+    <div class="case-box">
+	 <div class="case-title">案例导入</div>
+	  <section>×酒店按常规，每天派一名酒店代表前往火车站，为几列豪华旅游列车接站。此刻，中日友好协会的某旅行团乘车抵达，该团成员皆为老人。不知是因为导游的粗心没有通知酒店，还是此团将要下榻的酒店没有接站服务，只见这批老人在拥挤的站台上，手提、肩背沉重的行李左冲右撞。×酒店的酒店代表小王，正巧没有这趟车的接站任务，看到这种情况他略加思索，便快步上前征得随团陪同的同意，用简单而准确的日语告诉客人，他是×酒店的酒店代表，可以为大家提供无偿的行李服务。请大家先将大件行李集中，清点数目。然后迅速推来行李车把行李一一搬上，跟着团队向停车场走去。日本客人看着小王推着行李车，心里都有一种到家见到亲人的感觉。次日，由于所下榻酒店的服务质量低下，该团全体成员要求当天下午搬至×酒店入住，因为昨天小王的举动打动了他(她)们。当他们在×酒店大堂见到小王时，那亲切的招呼声引来了许多客人目光。一个月后，同一系列的团队也改入住×酒店，该酒店因此受益匪浅。</section>
+	<section style="text-indent: 0px;">点评：</section>
+	<section>小王打动客人的是一种高尚的职业道德和不求任何功利的主动助人的服务精神，体现了良好的个人素质和酒店代表的崇高使命感。我国有一位“金钥匙”曾经说过：  “我以我自己能终生去做一名专业服务人员而骄傲，因为我每天都在帮助别人，客人在我这里得到的是惊喜，而我们也在客人的惊喜中找到了富有的人生。我们未必会有大笔的金钱，但我们一定不会贫穷，因为我们富有经验，富有信息，富有助人的精神，富有同情心、幽默感，我们富有为人解决困难的知识和技能。”这些话语，看上去朴实无华，但每句话都闪烁着人生的亮丽。小王的所作所为，正是这种服务思想的具体体现，是酒店最终赢得客人的秘密所在。</section>
+	</div>
+		 
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

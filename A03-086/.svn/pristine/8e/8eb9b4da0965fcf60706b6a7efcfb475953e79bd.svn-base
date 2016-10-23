@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=320,user-scalable=no"/> 
+	<title>本书信息</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/res-style.css">
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+	}
+	</script>
+</head>
+<body onload="pageOnLoad();"><div class='section clearfix' id='07DA2959-762F-11E6-9EF4-0016D39A06D3'><div class='section-no'>1</div><div class='section-title'>本书信息</div></div>
+<div style='padding: 0px 0px 10px 0px;' class='clearfix'>
+
+
+
+<div style="float:left; width: 155px;"></div>
+<div style="float:left; width: 155px;"></div>
+</div>
+
+</body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>相关知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #fff;
+	font-family: lantinghei;
+	padding: 8px;
+	background-color: #456177;
+	color: #fff;
+	border-left: none;
+	border-top: none;
+	}
+	.table-l td {
+		border:1px solid #456177;
+		font-family: lantingxihei;
+		padding: 8px;
+		border-top: none;
+		border-left: none;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	相关知识
+</div>
+<article>
+	<h1>一、处理客账</h1>
+	<h2>（一）团队客账的建立方法</h2>
+	<section>只要有宾客人住或使用酒店，前厅收银就要为宾客建立账户。账户是在宾客进入酒店后，记录宾客预付款和消费情况的账单。这种账单以一个支付主体为一个记账户头，称为账户。账户通常分为散客账户、团体账户、临时账户。会议账户一般归入团体账户。团体客人如有不愿接受综合服务费标准的限制，准备零点宴请用餐或其他消费时也要另立个人账户，但户头必须清楚、准确，切忌混乱不清，特别是姓名、房号必须与住宿登记表内容保持一致。账户要分类归档，以方便取用。临时账户通常指宾客使用酒店，如开会、场地租赁等，但不租用客房，为此而设立的账户。现在酒店的账户直接设置在电脑里。其账户的基本形式详见下图：</section>
+	
+	<section>为宾客建立账户后，即开始记录宾客住店期间的一切费用。宾客的房租采取按天累计的方法每天结算一次，其他各项费用，如餐饮、洗衣、长途电话、传真、美容美发、书报等项目，除宾客愿在消费时以现金结算外，均可由宾客签字后由各有关部门将其转人前厅收银处，并记人宾客的账户。因此，记账要准确，宾客姓名、房号、费用项目和金额、消费时间等要清楚，并和宾客账户记录保持一致。	</section>
+	<section>由于宾客在酒店逗留期较短，发生的费用项目多，又可能随时离店，故要求转账迅速。各业务部门必须按规定时间将宾客签字认可后的账单进到前厅收银处，以防跑账、漏账现象的发生。若采用计算机收银系统，宾客在店内的任何消费，只要收银员将账单转入收银机，计算机即可记下宾客当时的转账款项，这极大地提高了工作效率.</section>
+	<h2>（二）团队客人结账的注意事项</h2>
+	<section>团体退房前一天应提前做好准备，核对清楚，做好查房等准备工作。</section>
+	
+	<section>1．与有自付项目的客人联系，建议提前结清自付款项，以免退房时等待时间过长。	</section>
+	<section>2．退房时，核对团队名称、团号、房号，通知客房中心检查客房酒水的使用情况。	</section>
+	<section>3．打印团队账单，请该团陪同确认签字，收取团队客房钥匙。	</section>
+	<section>4．如出现账目上的争议，及时请主管或大堂副理协助解决。	</section>
+	<section>5．任何情况下不得将团体客房价格透露给客人及非相关人员。	</section>
+	<section>6．陪同无权私自将未经认可的账目转由旅行社支付。	</section>
+	<section>7．与宾客道别。</section>
+	
+	<h2>（三）夜审的主要工作任务</h2>
+	<section>夜审工作就是核查前一个夜班所收到的账单，将房租登录在宾客账户上，并做好汇总和核查工作。夜审工作应有明确的截止时限，各个酒店会根据自身的因素来确定这个截止时限。旅游景区的观光、旅游酒店一般设置在午夜零点，大城市的商务类酒店则更多的设置在凌晨 3：00 到 5：00，时限后的账务均计入新的一天的账务。	</section>
+	<section>夜审员的具体工作步骤如下：	</section>
+	<section>1．检查所有营业部门的账单是否都已转来；	</section>
+	<section>2．检查所有单据是否都已登上账户；	</section>
+	<section>3．按部门将单据分类，计算出各部门的收入总额；	</section>
+	<section>4．检查所有现金表上的项目是否都已登记在账户上；	</section>
+	<section>5．检查所有优惠是否都有签字批准，是否登记在账户上；	</section>
+	<section>6．将当日房租登录在客户的账户上(一般计算机会自动登录)：	</section>
+	<section>7．将每个账卡的借方和贷方金额分别相加，得出当日金额；	</section>
+	<section>8．核查每个营业部门的借方栏总数是否与相应的销售收入一致：	</section>
+	<section>9．将现金收入栏和代付栏总数与现金表相比较，以确认两数相符；	</section>
+	<section>10．核查折让与回扣总数是否与有关单据上的总数相符；	</section>
+	<section>11．将开账余额栏的总和与前一天结账时的余额总和相比较，核查是否相符。    	</section>
+	<section>在此基础上，夜审员还应负责编制报表，进行包括客房、餐饮和综合服务收入统计以及全店收人审核统计，并上报总经理及转送相关部门，作为掌握和调整经营管理的重要依据。</section>
+	
+	 <div class="additional-knowledge jump-button" data-href="additional0304.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	 
+	 <h1>二、办理离店手续</h1>
+	<h2>（一）团队退房的流程</h2>
+	<section>1．将结账团队的名称(团号)告知相关楼层服务台员工，通知其查走房。	</section>
+	<section>2．打印账单，做到转账和客人自付分开。通常接待单位或旅行社只支付房租及餐饮费用，其他杂项，如电话单、洗衣费、酒水费用则由客人自行支付。	</section>
+	<section>3．如预订单标明付款方式为转账，则请付款单位陪同人员在转账单上签字确认，并注明报账单位以便将来结算；凡不允许挂账的单位，其团队费用一律到店前现付，团队客人的房价不可泄露给客人。	</section>
+	<section>4．为有账目的该团客人打印账单，付款。	</section>
+	<section>5．收回房卡与钥匙。</section>
+	 <h2>（二）钥匙服务（离店团队退房时的钥匙管理）</h2>
+	<section>1．住客卡通常在客人入住后才制作，每位磁卡钥匙制作员工都有独立的密码进入制作系统。	</section>
+	<section>2．根据不同的管理层次逐级规定制作人员的权限，如客人的住客卡由前台接待员或收款员制作，而楼层服务员卡则由客房主管制作等。	</section>
+	<section>3．磁卡钥匙的制作者及密码应由高层管理人员专门负责管理和控制，随时查对制作钥匙的情况。	</section>
+	<section>4．开门时，应持有效钥匙，磁条朝下，按卡片上箭头所示的方向轻轻插入门锁的插口内；插到底后平稳拔出，拔卡速度不能太快或太慢，中间不能停顿；磁卡拔出后，指示灯亮绿灯，在 10 秒内即可开门入房。若超过 10 秒未开门，门锁又会自动锁上。指示灯亮红灯说明此卡不可开门。使用重新设置过的磁卡开门后，原磁卡自动失效，不能开门。	</section>
+	<section>5．住客卡在登记的时间内可开启相应的客房，如住客卡丢失或住客提前退房，可以不收回他的住客卡，可以用退房卡使原住客卡失效，也可用新的住客卡开锁成功后，使原住客卡失效。	</section>
+	<section>6．客人结账时，将磁卡钥匙交给前厅收款员，收款员应及时将其交给接待员。接待员在交接班时应清点未制作磁卡数量。	</section>
+	<section>7．当电脑或制作钥匙的发行机出现故障时，可使用备用钥匙。一般需准备 3 套以上，由管理人员如客房部经理或前厅部经理使用专用保险箱保存。随着科学技术的发展，越来越多的新型锁具系统已进入酒店，如指纹锁等，酒店锁具有的安全性和方便性会越来越高。</section>
+	<div class="additional-knowledge jump-button" data-href="additional0305.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	
+	
+	
+	
+	
+	
+</article>	
+<div class="foot"></div>
+</body>
+</html>

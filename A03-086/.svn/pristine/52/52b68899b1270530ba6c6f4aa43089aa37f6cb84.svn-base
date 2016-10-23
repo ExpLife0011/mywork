@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="font-size: 20px;text-align: center;font-weight: bold;text-indent: 0px;">◆营业日报表的编制</section>
+	<section>营业日报表是全面反映酒店当 EI 客房营业情况的业务报表，一般由前厅收银处夜审员负责编制，其中一份于次 Et 凌晨送往酒店总经理办公室，以便酒店经理及时掌握营业总情况。另一份送交财务部门作为核对营业收入的依据。该表主要是从当日所出租的客房数量、所接待的宾客数以及应获得的客房营业收入这三方面，对酒店客房日销售状况进行归类和总结。其设计格式因酒店而异，编制方法和步骤主要有以下几个方面。</section>
+	 
+	 
+	<section class="indent-title">1．统计出当日出租的客房数、在店宾客数及客房营业收入。</section>
+	<section class="indent-title margin0">2．统计出当日离店宾客及其用房数、当日抵店宾客及其用房数。	</section>
+	<section>上述数据来源于离店宾客资料和抵店宾客名单，并据此汇总出当日出租的客房数和在店宾客数，其计算方法为：	</section>
+	     <section>当日出租客房数=昨日出租客房数-当日离店宾客用房数+当日抵店宾客用房数</section>
+	<section class="indent-title margin0">3．检查核对当天的客房营业收入。	</section>
+	<section>核对客房营业收入的主要项目有核对散客的客房收入、核对团队的客房收入、核对当日房价变更的统计结果。</section>
+	<section class="indent-title margin0">4．计算出当日的客房出租率和实际平均房价。	</section>
+	 <section>为了更详尽地反映出具体的数据，有些酒店还要求分别统计出团队用房率，以及散客的平均房价，预订未到客所占的比率等。	 </section>
+	     <section>此外，根据预订资料和客房状况资料，统计出第二天预订抵店客用房数和次日离店宾客退房数，以计算出第二天预订出租的客房数和第二天客房出租率。</section>
+	 
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

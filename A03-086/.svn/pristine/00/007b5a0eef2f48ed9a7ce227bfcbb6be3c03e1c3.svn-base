@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+ <article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="font-weight: bold;text-align: center; font-size: 20px;text-indent: 0px;">在受理客人预订时，预订员应注意哪些事项</section>
+	<h4>（1）接听电话时，必须使用礼貌用语，口齿清晰，应酬得体。</h4>
+	<h4>（2）接到预订函电后，应立即处理，不能让客人久等。</h4>
+	<h4>（3）填写客房预订单时，必须认真、仔细，逐栏逐项填写清楚。否则，少有差错，将会给接待工作带来困难，影响服务质量和酒店的经济效益。</h4>
+	<h4>（4）遇到大团或特别订房时，订房确认书要经前厅部经理或总经理签署后发出。这时如确实无法满足其预定要求，要另发函电，表示歉意，并同样经前厅部经理或总经理签署后发出。</h4>
+
+
+
+</article>
+
+<div class="foot"></div>
+</body>
+</html>

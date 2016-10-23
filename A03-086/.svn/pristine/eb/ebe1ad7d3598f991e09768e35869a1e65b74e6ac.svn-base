@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>相关知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/select.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		select.init();
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #fff;
+	font-family: lantinghei;
+	padding: 8px;
+	background-color: #456177;
+	color: #fff;
+	border-left: none;
+	border-top: none;
+	}
+	.table-l td {
+		border:1px solid #456177;
+		font-family: lantingxihei;
+		padding: 8px;
+		border-top: none;
+		border-left: none;
+	}
+	.table-l td:first-child {
+		text-align: left;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	.right{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/dui.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.wrong{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/cuo.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.judge{
+		display: inline-block;
+		width: 21px;
+		height: 18px;
+		margin-bottom: -2px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	相关知识
+</div>
+<article>
+	<h1>一、离店服务概述</h1>
+	<section>前厅结账工作是将酒店产品真正转化为酒店收入的手段，也是宾客离店前接受的最后一项服务。因此，在为客人办理离店手续时，收银员应热情、礼貌、快捷而准确地提供服务，给客人留下服务态度好、工作效率高的良好形象。</section>
+	<h2>（一）离店服务的程序</h2>
+	<section class="indent-title">1．收银员根据接待员制作的预计离店客人一览表，抽出当日预期离店客人的账卡，进行审核、结账，确保账目清楚、准确无误。</section>
+	<section class="indent-title margin0">2．客人前来结账时，收银员出示其账卡并询问是否有刚发生的费用（如打长途），同时检查这些费用是否入账。</section>
+	<section class="indent-title margin0">3．向客人报告其在饭店的消费总额。若客人无异议，即可开总账单，收回款项，予以结账；若客人有异议，则需耐心向客人分叙账单的细目，可以礼貌地邀请客人和自己一起核对账单。</section>
+	<section class="indent-title margin0">4．向客人主动征求意见，并表示谢意，欢迎其再度光临。客人离开时，祝其旅途愉快，一路顺风。</section>
+	<section class="indent-title margin0">5．收银员将客人的登记卡、结账单等各种凭据汇总归类，并通知前厅接待处变更客房状况。汇总归类的凭据供夜间审核，然后归入客史档案。</section>
+
+	<section class="table-header">表 24　离店结账通知书</section>
+	<table class="table-l">
+		<tr>
+			<td colspan="4" style="border-right:none;border-top: 1px solid #456177;"></td>
+			<td colspan="2" style="border-left:none;text-align:left;border-top: 1px solid #456177;border-right:none;">NO.</td>
+		</tr>
+		<tr>
+			<td style="width: 20%;">日期 Date</td>
+			<td style="width: 20%;">摘要<br>Description</td>
+			<td colspan="2" style="width: 20%;">参照<br>Reference</td>
+			<td style="width: 20%;">借方 Debit</td>
+			<td style="width: 20%;border-right:none;">贷方 Credit</td>
+		</tr>
+		<tr>
+			<td style="height: 20px;"></td>
+			<td></td>
+			<td colspan="2"></td>
+			<td></td>
+			<td style="border-right:none;"></td>
+		</tr>
+		<tr>
+			<td colspan="3" style="text-align:left;">付款方式：<br/>Payment: <br/>核收：<br/>Audit:<br/>经手人：<br/>Cashier:</td>
+			<td colspan="3" style="text-align:left;border-right:none;">在任何情形下，本人都同意负责支付以上的账目<br/>Rwgardless of charge instruction. I acknowledge that I am personally liable for payment of the above statement.<br/>客人签名<br/>Sign</td>
+		</tr>
+	</table>
+	<h2>（二）离店服务准备</h2>
+	<section class="indent-title">1．开房员准备：每天根据客人入住登记表逐一核查次日预期离店客人的情况，制作《次日预期离店客人名单》交收银处。名单一般按房号顺序排列并清楚列明客人房号、姓名、入住日期等，同时还应该送交客房、总机、问讯处、预订处、行李处等有关部门。</section>
+	<section class="indent-title margin0">2．收银员准备客人入住后，收银员每日累计账目。在接到次日预期离店客人名单后，应该将这些客人的账单结好待用。 </section>
+	<section class="indent-title margin0">3．问讯员在客人离店前需详细检查客人的信件及留言，并及时将信件及留言递送到客人手中；若客人外出，应该将信件及留言放入该客人的房间钥匙存放架中，以便及时交给客人。</section>
+	<section class="indent-title margin0">4．行李员准备：当接到客人离店并要求搬运行李的通知时，前厅行李处主管必须核对清楚客人姓名、房号、行李件数、客人要求搬运行李的时间，并安排行李员在预定的时间上楼帮助客人。行李员应提前通知行李专梯作准备，备好行李车，填好散客离店行李登记表。若是团体离店，则必须安排多名行李员并按楼层依次收验行李。收验时，要逐一查看每件行李上的标签，验证团体名称、客人姓名、行李件数并填写团体离店客人行李登记表。装车运送时，应同楼同车、同团同车，切勿混装。一次拿不完的行李，要派专人看管，并用网绳盖好或绑好。</section>
+	<section class="indent-title margin0">5．总机员准备：总机员接到次日预期离店客人名单时，应该完成两件事情。</section>
+	<section class="fold-h4">（1）查看名单中有无电话费未交或未记账的，若有，立即通知收银处累账。</section>
+	<section class="fold-h4 margin0">（2）查看名单中客人有无预订叫醒服务，若客人无预订，应该主动打电话询问客人什么时候离开，是否需要提供叫醒服务，以示关心；若客人预订了叫醒服务，则应该交接给下一班遵照执行。</section>
+
+	<div class="alternately">
+		<div>自我训练</div>
+		<div>
+		<div class="top30">1．在预离店客人结账服务的准备工作中，下列做法错误的是（<span class="answerBox">B</span>）。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 问询员检查有无客人信件</div>
+		<div class="choose"><span class="alternately-o">B</span> 总台服务员通知客房部停止供应客人洗漱用品</div>
+		<div class="choose"><span class="alternately-o">C</span> 礼宾部提前安排客人用车</div>
+		<div class="choose"><span class="alternately-o">D</span> 结账员核查预期离店客人的账单</div>
+		</div>
+		<div>
+		<div class="top30">2．（判断题）在预期离店客人结账服务的准备工作中，问询员检查有无客人信件、留言等。（<span class="answerBox">A</span>）<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 对</div>
+		<div class="choose"><span class="alternately-o">B</span> 错</div>
+		</div>
+		<div class="alternately-cross">交卷</div>
+	</div>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>某日，北京某饭店的一位长住客人到收银处支付用餐费用。当他看到账单上的总金额时，顿时火冒三丈，说：“你们真是乱收费，我不可能有这么高的消费额！”收银员面带微笑地回答说：“对不起，您能让我核对一下原始单据吗？”客人没有异议。收银员一面检查账单，一面对客人说：“真是对不起，您能帮我一起核对吗？”客人点头认可，于是和收银员一起就账单上的项目一一核对。其间，收银员顺势对几笔大的金额，如招待访客费、饮用名酒费等作了口头提醒，以唤起客人的回忆。等账目全部核对完毕，收银员很有礼貌地说：“谢谢您帮助我核对了账单，耽误了您的时间，劳驾了。”此时客人知道自己错了，连声说：“小姐，麻烦你了，真不好意思！”</section>
+	<section style="text-indent: 0px;">评析：</section>
+	<section class="margin0">尊重是语言礼貌的核心，说话时要尊重客人，即使客人发了火，也不要忘记尊重客人即尊重自己这一道理。让客人付钱是一门艺术，纵然你有千条理由，首先要给客人一个体面的台阶。</section>
+	</div>
+	<h1>二、客账管理要求与控制流程</h1>
+	<section>收银服务由前厅总台收银处负责，作为收银员应该了解并掌握总台收银结账服务的主要工作任务、操作规程及相关要求，快捷准确地为客人提供结账服务。为避免前厅客账发生漏记、错记以及漏账、跑账和坏账等问题，除必须建立和健全各项规章制度外，还应根据业务经营和会计核算的需要，设置“营业日记簿”、“营业日报表”、“客房日报表”，及时记录和反映客房的经济业务和应收的客人结算款及结算情况，加强前厅客账管理。</section>
+	<h2>（一）客账管理要求</h2>
+	<h3>1．账户清楚</h3>
+	<section>酒店允许宾客在逗留期间将他们在饭店的消费计入其客房账户之中，因此前台接待处给每位登记入住的宾客设立一个账户，提供收银登录该宾客在酒店入住期间的房租及其他各项花费，宾客账户内包含房号、姓名、付款方式以及宾客在饭店各营业场所的消费项目、日期等内容，用于前厅收银处记录宾客花费情况。</section>
+	<h3>2．转账迅速</h3>
+	<section>宾客一般入住时间短，费用项目多，这就要求转账迅速。宾客在每个营业场所的花费就形成一个分账户，宾客账单就是由这些分账户账单组成。宾客在酒店任何部门花费，只要各营业点的收银员将账目输入电脑系统中，前台软件系统就能即时显示宾客当时的支付款项，避免了漏账现象。</section>
+	<h3>3．记账准确</h3>
+	<section>宾客在入住期间的花费采取一日累计的方法，每日结算一次，宾客离店时，只要将结算值再加上当日的房费即可，这样可以大大提供宾客离店时结账的效率。这就要求各营业点的收银员在记录或是登记入账时做到认真仔细、准确无误，特别是宾客房号、姓名、消费日期与时间、消费项目与金额等更应该详细记录，以减少结账错误给酒店与宾客带来的不利影响。</section>
+	<h2>（二）客人支付方式</h2>
+	<h3>1．现金结算（Cash）</h3>
+	<section>现金结算的程序如下。</section>
+	<section class="fold-h4">（1）收银员在接收客人支付的现金时应唱收现金数量。如客人支付的是外币，则应在账单上加盖“外币币种”字样的印章，应严格加以控制。</section>
+	<section class="fold-h4 margin0">（2）查看客单，复核钱款无误后，收下现金并唱付找零。</section>
+	<section class="fold-h4 margin0">（3）在客单上盖上“PAID”字样的印章后，把客单的客人联和找零一起交给客人。</section>
+	<section class="fold-h4 margin0">（4）将客单的其他联保留好，以备审核、统计。</section>
+	<h3>2．信用卡结算（Check Card）</h3>
+	<section>信用卡结算的程序如下。</section>
+	<section class="fold-h4">（1）如果客人希望使用信用卡结算，收银员应当先检查客人提供的信用卡的有效日期、外观是否完整（如有明显无效、残缺的情况，应当向客人指出），同时让客人在客单上签名，检查客人的签名是否与信用卡的背签相符。</section>
+	<section class="fold-h4 margin0">（2）如果客人使用的是国内信用卡，还应请客人出示身份证。</section>
+	<section class="fold-h4 margin0">（3）收银员根据最新收到的“黑名单”，进一步检查信用卡是否有效，或通过终端机检查信用卡、办理信用卡授权等。经过确认无误后方可签单购单，压印信用卡。</section>
+	<section class="fold-h4 margin0">（4）收银员将签购单押好，并在签购单上填写客单上的消费总额，然后交给客人签名认可。客人信用卡的号码应该清晰地用刷卡机印在签账单上，刷卡的日期要正确。签账单的最后一联一定要字迹清楚，如果不清楚则需要重新刷一次，同时必须要在客人面前将第一次刷好的签购单撕毁。</section>
+	<section class="fold-h4 margin0">（5）在客单的客人联上盖上“付讫”字样，之后连同签购单和信用卡一起交还给客人。</section>
+	<section class="fold-h4 margin0">（6）将签购单的其余联合客单的其余联一起存放好。</section>
+
+	<div class="alternately">
+		<div>自我训练</div>
+		<div class="top30">当客人用信用卡结账时，应核对信用卡的签名是否（<span class="answerBox">A</span>）。<span class="judge"></span></div>
+		<div class="top30 choose"><span class="alternately-o">A</span> 与签购单一致</div>
+		<div class="choose"><span class="alternately-o">B</span> 为中文</div>
+		<div class="choose"><span class="alternately-o">C</span> 为英文</div>
+		<div class="choose"><span class="alternately-o">D</span> 与客人登记单一致</div>
+		
+		<div class="alternately-cross">交卷</div>
+	</div>
+	
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

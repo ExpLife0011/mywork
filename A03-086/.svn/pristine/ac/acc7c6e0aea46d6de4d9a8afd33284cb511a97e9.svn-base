@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>散客离店结账服务-简答题</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="562AA098-2E04-EA91-3703-A43A5677F98D"
+data-activity-uuid="776FE5C6-AF84-41F7-9E2A-34118DFAB961"
+data-activity-sn="tS-060503"
+data-level="2">
+<div class="content">
+<div class="test-top">散客离店结账服务-简答题</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-0" data-answer-shown='n'>1．简述酒店叫醒服务的要点及注意事项。</div>
+			<div class="item-answer" id="item-0-a">
+				<div class="item-answer-content">
+					<div>答：</div>
+					<div>1．如出现许多客房的叫醒服务在同一时间的特殊情况，总机话务员需提前与客房服务中心、大堂副理和总台沟通配合，共同完成叫醒服务。</div>
+					<div>2．叫醒服务事关重大，酒店工作人员在受理此项服务时必须慎之又慎。切忌漏叫或错叫客人。一旦出现失误，不管责任在酒店还是在客人都应给予高度重视，积极采取补救措施。</div>
+					<div>3．为确保客人被叫醒，酒店一般都要两次叫醒客人。</div>
+					<div>4．酒店可在叫醒客人的时候，顺便把当天的气象情况告诉客人。</div>
+				</div>
+			</div>
+		</div>
+		<div class="item-box">
+			<div class="quiz-item" id="item-1" data-answer-shown='n'>2．简述客房部主要服务岗位的职责。</div>
+			<div class="item-answer" id="item-1-a">
+				<div class="item-answer-content">
+					<div>答：</div>
+					<div>1．客房中心联络员：主要任务是接听电话，及时向有关人员或部门反馈客人的服务要求并督促其落实，确保为客人提供高效优质的服务；做好部门之间和部门内部的信息传递，为部门的正常运行创造良好的条件。</div>
+					<div>2．客房服务员：负责客房及楼层公共区域的清洁保养和对客服务工作，为住客提供安全、清洁卫生、舒适方便和美观的住宿环境。</div>
+					<div>3．区域清洁工：负责指定区域的日常清洁保养工作，确保清洁保养的质量标准。</div>
+					<div>4．布草房服务员、缝纫工：负责布草和员工制服的发放和保管以及织补工作，保证客房、前厅等部门布草供应以及发出的布草制服符合质量标准。</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

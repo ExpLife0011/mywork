@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>5.2　客房部概述</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="82B8818A-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="48ED03CF-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="DB311BB0-91C7-9F8D-73C4-E269F2796F35"
+data-pre-file="c05s01.html" 
+data-pre-title="上一节：课程导入" 
+data-next-file="" 
+data-next-title="">
+<div class="chapter-box">
+	<div class="chapter-num">第二部分</div>
+	<div class="chapter-name">客房部概述</div>
+</div>
+<div class="page-number" id="p_3">p.3</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．了解客房部在现代酒店经营管理中的重要地位和基本作用。</section>
+	<section class="indent-title margin0">2．熟悉客房部的主要任务。</section>
+	<section class="indent-title margin0">3．掌握客房部的组织机构设置与管理岗位的主要职责。</section>
+	<h2>二、案例导入</h2>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>一宗大生意将于今日敲定，张老板高兴地来到B酒店前台，打算入住到秘书通过电话预订的豪华三间套客房，一心想着在这样寒冷的冬日，赶紧到房间去冲个痛快的热水澡，既能解除旅途的疲劳，又能振作起精神参加中午的合同签字仪式。张老板来到了预订的客房，脱掉衣服一头钻进浴室，可是放了五分钟的水依然是凉的，美好、兴奋的感觉一下被身体冻得瑟瑟发抖的现实所破坏。他愤怒地抓起电话接通大堂副理，气愤地投诉酒店的客房设施及服务，并要求马上退房搬出这家酒店。大堂副理敷衍“换房间”的建议更让张老板不可接受。他在酒店餐厅用餐的时候对同事及朋友大声地抱怨，不仅惊动了旁边用餐的客人，也引起了餐厅经理的注意。餐厅经理一边安抚客人，一边通知大堂副理迅速为客人解决所发生的问题，最终张老板决定继续入住。</section>
+	<section>请问，上述案例如何体现客房部的重要性。</section> 
+	</div>
+	 <h2>三、任务流程</h2>
+	 <section>在正式入职前，需要对客房部的地位作用及主要任务有深入的了解，通过以下内容我们来了解客房部基本概述的内容。</section>
+	 <div class="related-information jump-button" data-href="information0502.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+
+	<div class="additional-knowledge jump-button" data-href="additional0502.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识" style="margin-top: 20px;">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+</article>
+<div class="foot"></div>
+</body>
+</html>

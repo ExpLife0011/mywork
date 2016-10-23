@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<table>
+		<tr>
+			<td>减免</td>
+			<td>rebate</td>
+			<td>支付</td>
+			<td>Payment</td>
+		</tr>
+		<tr>
+			<td>入住登记</td>
+			<td>check in</td>
+			<td>登记表格</td>
+			<td>Register form</td>
+		</tr>
+		<tr>
+			<td>退房</td>
+			<td>check out</td>
+			<td>换房</td>
+			<td>change room</td>
+		</tr>
+		<tr>
+			<td>填写</td>
+			<td>fill in</td>
+			<td>欢迎卡</td>
+			<td>Welcome card</td>
+		</tr>
+		<tr>
+			<td>钥匙</td>
+			<td>key</td>
+			<td>柜台</td>
+			<td>Counter</td>
+		</tr>
+		<tr>
+			<td>加床</td>
+			<td>extra bed</td>
+			<td>地址</td>
+			<td>Address</td>
+		</tr>
+		<tr>
+			<td>标准双人房</td>
+			<td>standard room</td>
+			<td>标准单人房</td>
+			<td>Single room</td>
+		</tr>
+		<tr>
+			<td>国籍</td>
+			<td>nationality</td>
+			<td>收据</td>
+			<td>Receipt</td>
+		</tr>
+		<tr>
+			<td>公司</td>
+			<td>company</td>
+			<td>分单</td>
+			<td>Separate bill</td>
+		</tr>
+		<tr>
+			<td>兑换水单</td>
+			<td>exchange memo</td>
+			<td>手 续 费</td>
+			<td>Handing charge</td>
+		</tr>
+		<tr>
+			<td>折    扣</td>
+			<td>discount</td>
+			<td>免    费</td>
+			<td>Free of charge</td>
+		</tr>
+		<tr>
+			<td>全    价</td>
+			<td>full price /full rate</td>
+			<td>余    额</td>
+			<td>Balance</td>
+		</tr>
+		<tr>
+			<td>电    报</td>
+			<td>Telegram</td>
+			<td>自费电话</td>
+			<td>Paid call</td>
+		</tr>
+		<tr>
+			<td>帐    目</td>
+			<td>Account</td>
+			<td>汇    率</td>
+			<td>Exchange rate</td>
+		</tr>
+		<tr>
+			<td>总    数</td>
+			<td>total</td>
+			<td>退    款</td>
+			<td>pay out</td>
+		</tr>
+		<tr>
+			<td>本地电话</td>
+			<td>local call</td>
+			<td>长途电话</td>
+			<td>long distance call</td>
+		</tr>
+		<tr>
+			<td>区    号</td>
+			<td>area code</td>
+			<td>对方付费电话</td>
+			<td>Collect call</td>
+		</tr>
+		<tr>
+			<td>电    脑</td>
+			<td>computer</td>
+			<td>内线电话</td>
+			<td>House phone</td>
+		</tr>
+		<tr>
+			<td>行 李 生</td>
+			<td>bell boy</td>
+			<td>行    李</td>
+			<td>Luggage /baggage</td>
+		</tr>
+		<tr>
+			<td>叫    醒</td>
+			<td>Wake up / morning call</td>
+			<td>行 李 车</td>
+			<td>trolley</td>
+		</tr>
+		<tr>
+			<td>留    言</td>
+			<td>message</td>
+			<td>信 用 卡</td>
+			<td>Credit card</td>
+		</tr>
+		<tr>
+			<td>互 联 网</td>
+			<td>Internet</td>
+			<td>电子邮箱</td>
+			<td>E-mail</td>
+		</tr>
+		<tr>
+			<td>复    印</td>
+			<td>copy</td>
+			<td>传    真</td>
+			<td>fax</td>
+		</tr>
+	</table>
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

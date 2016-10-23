@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #fff;
+	font-family: lantinghei;
+	padding: 8px;
+	background-color: #456177;
+	color: #fff;
+	border-left: none;
+	border-top: none;
+	}
+	.table-l td {
+		border:1px solid #456177;
+		font-family: lantingxihei;
+		padding: 8px;
+		border-top: none;
+		border-left: none;
+	}
+	.table-l td:first-child {
+		text-align: left;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="font-size: 20px;text-align: center;font-weight: bold;text-indent: 0px;">客房质量检查的内容和标准</section>
+	<section class="indent-title">1．查房的基本程序是：按顺时针或逆时针方向，循序进行、依次检查，按一定的程序查房可避免疏漏、提高速度。客房检查的标准应该根据客房清洁保养的质量标准，逐项分解、细化、量化。</section>
+	<section class="indent-title margin0">2．客房检查的内容一般包括 4 个方面：清洁卫生质量、物品摆放、设备状况和整体效果。</section>
+
+	<section class="table-header">表 11　客房检查的内容和标准</section>
+	<table class="table-l">
+		<tr>
+			<th style="width: 28%;">检查内容</th>
+			<th style="border-right: none;">检查标准</th>
+		</tr>
+		<tr>
+			<td>一、卧室部分<br>1．房门</td>
+			<td style="border-right: none;"><div class="table-h4">（1）无灰尘，无污迹，无伤痕</div><div class="table-h4">（2）房号牌清洁完好</div><div class="table-h4">（3）门锁、安全连锁清洁完好</div><div class="table-h4">（4）窥镜清洁完好</div><div class="table-h4">（5）安全逃生图、请勿打扰牌、餐牌齐全完好</div><div class="table-h4">（6）门靠完好</div></td>
+		</tr>
+		<tr>
+			<td>2．墙面、天花板</td>
+			<td style="border-right: none;"><div class="table-h4">（1）无灰尘污迹、无珠网</div><div class="table-h4">（2）无油漆脱落和墙纸、墙布起翘现象</div><div class="table-h4">（3）无漏水、渗水现象</div></td>
+		</tr>
+		<tr>
+			<td>3．护墙板、地脚线</td>
+			<td style="border-right: none;"><div class="table-h4">（1）无灰尘、无污迹</div><div class="table-h4">（2）完好无损</div></td>
+		</tr>
+		<tr>
+			<td>4．地毯</td>
+			<td style="border-right: none;"><div class="table-h4">（1）无灰尘、无污迹、无杂物</div><div class="table-h4">（2）无烟痕、压迹和脚印</div></td>
+		</tr>
+		<tr>
+			<td>5．床</td>
+			<td style="border-right: none;"><div class="table-h4">（1）床头板清洁完好</div><div class="table-h4">（2）床上用品清洁完好</div><div class="table-h4">（3）铺法规范正确，美观清洁</div><div class="table-h4">（4）床垫按期翻转，符合规定</div><div class="table-h4">（5）床底清洁物杂物</div></td>
+		</tr>
+		<tr>
+			<td>6．硬面家具</td>
+			<td style="border-right: none;"><div class="table-h4">（1）光洁明亮</div><div class="table-h4">（2）无伤痕，无木刺，无尖钉外露</div><div class="table-h4">（3）坚固物松动</div><div class="table-h4">（4）摆放得当</div></td>
+		</tr>
+		<tr>
+			<td>7．软面家具</td>
+			<td style="border-right: none;"><div class="table-h4">（1）物尘，无迹，无破损</div><div class="table-h4">（2）摆放得当</div></td>
+		</tr>
+		<tr>
+			<td>8．抽屉</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁，无灰尘，无杂物</div><div class="table-h4">（2）开关灵便，把手完好</div><div class="table-h4">（3）用品齐全</div></td>
+		</tr>
+		<tr>
+			<td>9．电话机</td>
+			<td style="border-right: none;"><div class="table-h4">（1）物尘，无迹，定期消毒</div><div class="table-h4">（2）摆放位置正确</div><div class="table-h4">（3）电话线整齐有序无缠绕</div><div class="table-h4">（4）使用正常</div></td>
+		</tr>
+		<tr>
+			<td>10．灯具</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁完好</div><div class="table-h4">（2）位置正确</div><div class="table-h4">（3）灯泡功率符合规定</div><div class="table-h4">（4）灯罩清洁完好，接缝面向墙</div></td>
+		</tr>
+		<tr>
+			<td>11．镜子</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁明亮，无灰尘，无污迹</div><div class="table-h4">（2）无破裂</div><div class="table-h4">（3）镜框清洁完好</div></td>
+		</tr>
+		<tr>
+			<td>12．挂画</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁完好</div><div class="table-h4">（2）悬挂端正</div></td>
+		</tr>
+		<tr>
+			<td>13．电视机</td>
+			<td style="border-right: none;"><div class="table-h4">（1）表面清洁</div><div class="table-h4">（2）底座、转盘清洁完好</div><div class="table-h4">（3）工作正常</div><div class="table-h4">（4）频道设置符合规定</div><div class="table-h4">（5）摇控器清洁完好，能正常使用，摆放在规定的地方</div><div class="table-h4">（6）电视机清洁完好，摆放正确</div></td>
+		</tr>
+		<tr>
+			<td>14．垃圾桶</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁完好</div><div class="table-h4">（2）套有干净的垃圾袋</div><div class="table-h4">（3）摆放位置正确</div></td>
+		</tr>
+		<tr>
+			<td>15．窗户</td>
+			<td style="border-right: none;"><div class="table-h4">（1）窗玻璃清洁完好</div><div class="table-h4">（2）窗台清洁无杂物</div><div class="table-h4">（3）关闭门窗</div></td>
+		</tr>
+		<tr>
+			<td>16．窗帘</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁完好，无污渍，无脱落</div><div class="table-h4">（2）开关灵便</div><div class="table-h4">（3）悬挂美观、对称，皱折均匀</div></td>
+		</tr>
+		<tr>
+			<td>二、卫生间的标准<br>1．门</td>
+			<td style="border-right: none;"><div class="table-h4">（1）门锁清洁、正常</div>（2）门下出气孔干净无落灰</div><div class="table-h4">（3）门擦洗干净，无污迹</div><div class="table-h4">（4）门后磁吸正常</div><div class="table-h4">（5）门开动灵活，无吱呀声</div></td>
+		</tr>
+		<tr>
+			<td>2．灯</td>
+			<td style="border-right: none;"><div class="table-h4">（1）灯正常，开关、插头灵活好用，无污迹、无破损</div></td>
+		</tr>
+		<tr>
+			<td>3．干肤器、吹风机</td>
+			<td style="border-right: none;"><div class="table-h4">（1）干净无污迹</div><div class="table-h4">（2）正常、好用</div></td>
+		</tr>
+		<tr>
+			<td>4．换气扇</td>
+			<td style="border-right: none;"><div class="table-h4">（1）干净、运转正常</div><div class="table-h4">（2）卫生间顶干净、无污迹、无蜘蛛网</div></td>
+		</tr>
+		<tr>
+			<td>5．墙壁</td>
+			<td style="border-right: none;"><div class="table-h4">（1）瓷砖干净、无破损</div><div class="table-h4">（2）浴缸上三块瓷砖必须每天擦洗，做到干净光亮</div><div class="table-h4">（3）皂槽干净无污迹</div></td>
+		</tr>
+		<tr>
+			<td>6．洗脸池</td>
+			<td style="border-right: none;"><div class="table-h4">（1）内外无污迹、水珠</div><div class="table-h4">（2）不锈钢笼头、水池下弯管干净、光亮</div><div class="table-h4">（3）云台及易耗品盘要擦干净、无灰尘</div><div class="table-h4">（4）易耗品要配齐，并按规范摆放</div><div class="table-h4">（5）镜面无污迹、水珠</div><div class="table-h4">（6）烟灰缸清洁、无污迹</div><div class="table-h4">（7）面巾纸架干净、无污迹，摆放规范</div></td>
+		</tr>
+		<tr>
+			<td>7．浴室</td>
+			<td style="border-right: none;"><div class="table-h4">（1）浴室内外擦洗干净、无污迹、无毛发</div><div class="table-h4">（2）冷、热水笼头及落水塞子正常、好用</div><div class="table-h4">（3）不锈钢笼头、浴缸扶手、浴帘杆干净光亮、牢固</div><div class="table-h4">（4）浴帘干净无异味并按规范拉好</div><div class="table-h4">（5）晒衣绳架完好、光亮</div></td>
+		</tr>
+		<tr>
+			<td>8．恭桶</td>
+			<td style="border-right: none;"><div class="table-h4">（1）已消毒、无异味、正常、好用</div><div class="table-h4">（2）恭桶盖、坐圈及桶内外擦洗干净</div><div class="table-h4">（3）三角阀处擦干净</div><div class="table-h4">（4）卫生纸架无污迹光亮</div><div class="table-h4">（5）卫生纸按规范折角</div></td>
+		</tr>
+		<tr>
+			<td>9．四巾</td>
+			<td style="border-right: none;"><div class="table-h4">（1）四巾架干净、光亮牢固</div><div class="table-h4">（2）四巾按规范折叠摆放，无污迹破损</div></td>
+		</tr>
+		<tr>
+			<td>10．地面</td>
+			<td style="border-right: none;"><div class="table-h4">（1）清洁、无水渍、无毛发</div><div class="table-h4">（2）地漏干净，定期喷药</div></td>
+		</tr>
+	</table>
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

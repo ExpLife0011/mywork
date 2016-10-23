@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,user-scalable=no"/>
+  <title>散客离店结账服务-填空题</title>
+  <link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+  <link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+
+ 
+  <link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+  <link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+  <link rel="stylesheet" type="text/css" href="../META-INF/css/fillin.css" />
+  <script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+    <script type="text/javascript" src='../META-INF/js/fillIn-disorder.js'></script>
+  <script type="text/javascript">
+
+    function pageOnLoad() {
+      
+        MIGlobals.init();
+
+        MIFill.init();
+    }
+
+  </script>
+  <style type="text/css">
+    @media screen and (max-width: 600px){
+      .slot{
+        min-height: 28px;
+        height: auto;
+        float: none;
+      }
+      .right-answer{
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="F41449F3-883A-C4AC-AD46-A492820A9FAD"
+data-activity-uuid="7BD2F6F7-816F-4E10-8754-2BCCE71668DA"
+data-activity-sn="tS-060501"
+data-level="2">
+
+
+	<div class="head-top">
+	    <div class="head-name">
+	      <!-- <img src="../META-INF/images/jiaohu.png" alt="" style="width:28px;height:26px;"/> -->
+	      散客离店结账服务-填空题</div>
+	</div>
+
+
+
+    <div class="tbox">   
+        <div class='txt-scroll clearfix' data-height='657'>
+            <div class='box'>    
+              	<div class='select-banner'>
+                  
+                	<div class='select-box clearfix'>
+	                    <div>客房中心服务</div><!-- 0 -->
+	                    <div>“明”、“暗”兼有</div><!-- 1 -->
+	                    <div>楼层值台服务模式</div><!-- 2 -->
+	                    
+                      
+	                </div>
+                  
+
+   					<!-- 
+   						层级关系不能变， 
+   						有序的选择是 order, slot-f, slot
+   						无序的选择是 disorder , slot-f , slot ,无序填空的data-answer放在class名为disorder的div里
+   						对于无序选择， data-ans 存储的是正确答案，以|分隔， 同时对于重复的答案，用逗号  
+   						' , '分隔
+   					-->
+                <section class='disorder' data-answer='0|2'>
+                    <div class='number'>1．</div>客房部对客服务模式有
+                    <div class='slot-f'><div class="slot">楼层值台服务模式</div></div>和
+                    <div class='slot-f'><div class="slot">客房中心服务</div></div>
+                    两种。
+                  </section>
+                <section class='order'>
+                    <div class='number'>2．</div>客房部对客服务的表现形式是
+                    <div class='slot-f'><div class="slot" data-answer='1'>“明”、“暗”兼有</div></div>。
+                  </section>
+                  
+                  
+
+
+
+	               	
+                  
+
+	               <div class="save btn-pad">提交答案</div>
+	               <div class='save btn-phone'>提交答案</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="foot"></div>
+</body>
+</html>

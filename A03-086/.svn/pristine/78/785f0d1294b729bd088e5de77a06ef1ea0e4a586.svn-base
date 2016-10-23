@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>表 15　未预定客人入住登记手续办理的程序与标准</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 130%;
+		box-sizing: border-box;
+		padding-left: 154px;
+		padding-right: 50px;
+		display: table-cell;
+    	vertical-align: middle;
+    	text-indent: -104px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #fff;
+	font-family: lantinghei;
+	padding: 8px;
+	background-color: #456177;
+	color: #fff;
+	border-left: none;
+	border-top: none;
+	}
+	.table-l td {
+		border:1px solid #456177;
+		font-family: lantingxihei;
+		padding: 8px;
+		border-top: none;
+		border-left: none;
+	}
+	.table-l td:first-child {
+		text-align: left;
+	}
+	
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	表 15　未预定客人入住登记手续办理的程序与标准
+</div>
+<article>
+	<div class="height35"></div>
+	<table class="table-l">
+		<tr>
+			<th style="width: 24%;">程序</th>
+			<th style="border-right: none;">标准</th>
+		</tr>
+		<tr>
+			<td><div class="table-h3">1．接受无预订客人入住要求</div></td>
+			<td style="border-right: none;"><div class="table-h4">（1）当客人办理入店手续时，首先查清客人是否有预订，若酒店出租率较高时，根据当时实际情况决定是否可接纳无预订客人入住</div><div class="table-h4">（2）确定客人未曾预订，但是酒店有空余房间可以接待客人时，表示欢迎客人的到来，并检查客人在酒店是否有特殊价或合同价</div><div class="table-h4">（3）在最短时间内为客人办理完入住手续</div></td>
+		</tr>
+		<tr>
+			<td><div class="table-h3">2．确认房费和付款方式</div></td>
+			<td style="border-right: none;"><div class="table-h4">（1）办理手续时和客人确认房费</div><div class="table-h4">（2）确认客人付款方式，并按照酒店规定收取押金</div></td>
+		</tr>
+		<tr>
+			<td><div class="table-h3">3．收取押金</div></td>
+			<td style="border-right: none;"><div class="table-h4">（1）若客人以现金结账，饭店预先收取客人的押金</div><div class="table-h4">（2）如客人以信用卡结账，接待员按照规定核对并影印客人信用卡，把信用卡的卡号输入计算机，并与登记表钉在一起放入客人档案中</div></td>
+		</tr>
+		<tr>
+			<td><div class="table-h3">4．信息储存</div></td>
+			<td style="border-right: none;"><div class="table-h4">（1）接待客人完毕后，立即将所有信息输入计算机，包括客人姓名、地址、付款方式、国籍、护照号码、离店日期等</div><div class="table-h4">（2）检查信息的正确性，并输入客人的档案中</div><div class="table-h4">（3）登记卡要存放进客人入住档案中，以便随时查询</div></td>
+		</tr>
+	</table>
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

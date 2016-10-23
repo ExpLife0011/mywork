@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta data-type="activity" charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>知识考核</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/mosoink.css" /> -->
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/select-text.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-yyq-new.js"></script>
+	<!-- 手机端选择题js的引入 -->
+	<script type="text/javascript" src="../META-INF/js/select-mobile2.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		if(MIGlobals.isRunningPhone){
+			MISPhone.init();
+		} else{
+			MIQuiz.init();
+			MIQuiz.layout();
+			window.onorientationchange = function() {
+				MIQuiz.layout();	
+
+			};
+			window.onresize=function(){
+				MIQuiz.layout();
+				
+			}
+		}
+	}
+	
+
+	</script>
+	<style type="text/css">
+	.btn-box{
+		left: 106px;
+	}
+	.book-btn{
+		    margin-left: 13px;
+	}
+	</style>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="5994768A-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="528F91CD-CBD7-BA41-C8CE-CD7E1605CA96"
+data-activity-uuid="5B074C13-BC3C-4AAB-BE68-034DAA53F737"
+data-activity-sn="tS-060201"
+data-level="2"
+>
+
+	<div class="book-top">
+		<div class="pageNumber"><span id = "spcc">1</span> / 14</div>
+		<div id="show-answer" class="show-answer-paper">交 卷</div>
+	</div>
+	<div class="quiz-block">
+		<div class="quiz-box" >
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="d" data-choice="" >
+					<div class="quiz-title">1．在接受客人预订要求时需要考虑的因素中，下列（　）项不包括在内。</div>
+					<div class="option-group none-re" data-ans='3'>
+						<div class="option" data-option-no="a">A．客人预期抵店的日期</div>
+						<div class="option" data-option-no="b">B．客人所需客房的类型</div>
+						<div class="option" data-option-no="c">C．客人所需客房的数量</div>
+						<div class="option" data-option-no="d">D．客人携带的行李数量</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+				<div class="quiz-sbox">	
+				<div class="quiz" data-answer="a" data-choice="" >
+					<div class="quiz-title">2．散客预订时，客房预订单通常不需要填写（　）。</div>
+					<div class="option-group none-re" data-ans='0'>
+						<div class="option" data-option-no="a">A．客人姓氏全名</div>
+						<div class="option" data-option-no="b">B．客人房号</div>
+						<div class="option" data-option-no="c">C．客人预订离店日期</div>
+						<div class="option" data-option-no="d">D．预订人联系电话</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="a" data-choice="" >
+					<div class="quiz-title">3．客房临时性预订是指客人在（　）联系预订。</div>
+					<div class="option-group none-re" data-ans='0'>
+						<div class="option" data-option-no="a">A．即将抵达酒店前很短的时间内</div>
+						<div class="option" data-option-no="b">B．抵达酒店前一周</div>
+						<div class="option" data-option-no="c">C．抵达酒店前三天</div>
+						<div class="option" data-option-no="d">D．抵达酒店前较长的时间内</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="a" data-choice="" >
+					<div class="quiz-title">4．保证性预订方式的具体措施是（　）。</div>
+					<div class="option-group none-re" data-ans='0'>
+						<div class="option" data-option-no="a">A．预付定金、信用卡担保、合同担保</div>
+						<div class="option" data-option-no="b">B．书面确认预订、电话确认预订、口头预订</div>
+						<div class="option" data-option-no="c">C．现金支付、信用卡支付、银行担保</div>
+						<div class="option" data-option-no="d">D．书面保证、电话保证、网上预订保证</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="b" data-choice="" >
+					<div class="quiz-title">5．婉拒客人预订房时，下列做法欠妥当的是（　）。</div>
+					<div class="option-group none-re" data-ans='1'>
+						<div class="option" data-option-no="a">A．主动提出若干建议</div>
+						<div class="option" data-option-no="b">B．立即终止服务</div>
+						<div class="option" data-option-no="c">C．对客人表示感谢</div>
+						<div class="option" data-option-no="d">D．尽可能提前向客人发致歉函</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="d" data-choice="" >
+					<div class="quiz-title">6．临时性预订客房的保留时限是（　）。</div>
+					<div class="option-group none-re" data-ans='3'>
+						<div class="option" data-option-no="a">A．预订次日下午 2 点左右</div>
+						<div class="option" data-option-no="b">B．预订当日晚上 24 点之前</div>
+						<div class="option" data-option-no="c">C．客人抵店当日中午 12 点之前</div>
+						<div class="option" data-option-no="d">D．客人抵店当日下午 18 点之前</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="d" data-choice="" >
+					<div class="quiz-title">7．下列操作要求不符合电话接听服务礼仪要求的是（　）。</div>
+					<div class="option-group none-re" data-ans='3'>
+						<div class="option" data-option-no="a">A．使客人获得满意的心理感受</div>
+						<div class="option" data-option-no="b">B．使用规范服务用语</div>
+						<div class="option" data-option-no="c">C．礼貌回答客人问题</div>
+						<div class="option" data-option-no="d">D．用当地的方言应答客人提出的问题</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="a" data-choice="" >
+					<div class="quiz-title">8．对于取消类预订，应（　）。</div>
+					<div class="option-group none-re" data-ans='0'>
+						<div class="option" data-option-no="a">A．直接在原预订单上进行更改</div>
+						<div class="option" data-option-no="b">B．将该客人的客史资料删除</div>
+						<div class="option" data-option-no="c">C．记录了在取消预订登记本</div>
+						<div class="option" data-option-no="d">D．将该客人列入“黑名单”</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="c" data-choice="" >
+					<div class="quiz-title">9．在接受电话的过程中以下（　）程序是为了确保客人的资料准确无误的。</div>
+					<div class="option-group none-re" data-ans='2'>
+						<div class="option" data-option-no="a">A．询问客人客房要求</div>
+						<div class="option" data-option-no="b">B．确认有无空房</div>
+						<div class="option" data-option-no="c">C．记录并复述订房要求</div>
+						<div class="option" data-option-no="d">D．要求客人预付订金</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="a" data-choice="" >
+					<div class="quiz-title">10．记录预订资料的正确步骤是（　）→存放预订资料。</div>
+					<div class="option-group none-re" data-ans='0'>
+						<div class="option" data-option-no="a">A．填写预订单→填写预订记录薄→电脑录入信息→在客房预订汇总表上标注房型及数量、入住天数</div>
+						<div class="option" data-option-no="b">B．在客房预订汇总表上标注房型及数量、入住天数→填写预订记录薄→填写预订单→电脑录入信息</div>
+						<div class="option" data-option-no="c">C．填写预订单→在客房预订汇总表上标注房型及数量、入住天数→电脑录入信息→填写预订记录薄</div>
+						<div class="option" data-option-no="d">D．电脑录入信息→填写预订单→在客房预订汇总表上标注房型及数量、入住天数→填写预订记录薄</div>
+					</div>
+					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+				
+			</div>
+
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="b" data-choice="">
+					<div class="quiz-title">11．（判断题）在处理客人的信函预订时应当及时复信，一般不超过 48h。（　）</div>
+					<div class="option-group" data-ans='1'>
+						<div class="option" data-option-no="a">A．对</div>
+						<div class="option" data-option-no="b">B．错</div>					
+					</div>					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="b" data-choice="">
+					<div class="quiz-title">12．（判断题）当预订员向客人书面确认订房情况时，所采用的形式可以是传真。（　）</div>
+					<div class="option-group" data-ans='1'>
+						<div class="option" data-option-no="a">A．对</div>
+						<div class="option" data-option-no="b">B．错</div>					
+					</div>					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="a" data-choice="">
+					<div class="quiz-title">13．（判断题）标准间客房可供两位客人使用。（　）</div>
+					<div class="option-group" data-ans='0'>
+						<div class="option" data-option-no="a">A．对</div>
+						<div class="option" data-option-no="b">B．错</div>					
+					</div>					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+			</div>
+
+			<div class="quiz-sbox">	
+				<div class="quiz" data-answer="b" data-choice="">
+					<div class="quiz-title">14．（判断题）散客预订时，客房预订单通常不需要填写预订人联系电话。（　）</div>
+					<div class="option-group" data-ans='1'>
+						<div class="option" data-option-no="a">A．对</div>
+						<div class="option" data-option-no="b">B．错</div>					
+					</div>					
+					<div class="show-answer-normal check-answer-every" data-abc="0">查看答案</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+	</div>	
+	<div class='feet clearfix'>
+		<div class='left'></div>
+		<div class='c-wrap'>
+			<!-- <div class='c-wrap-out'> -->
+				<div class='center'>
+					<div class='radius'>1</div>
+					<div class='radius'>2</div>
+					<div class='radius'>3</div>
+					<div class='radius'>4</div>
+					<div class='radius'>5</div>
+					<div class='radius'>6</div>
+					<div class='radius'>7</div>
+					<div class='radius'>8</div>
+					<div class='radius'>9</div>
+					<div class='radius'>10</div>
+					<div class='radius'>11</div>
+					<div class='radius'>12</div>
+					<div class='radius'>13</div>
+					<div class='radius'>14</div>
+				</div>
+			<!-- </div> -->
+		</div>
+		<div class='right'></div>
+	</div>
+	
+	<div class="book-bottom">
+		<div class="btn-left"></div>
+		<div class="btn-box">
+			<div class="book-btn book-btn-down"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+			<div class="book-btn"></div>
+		</div>
+		<div class="btn-right"></div>
+	</div>
+</body>
+</html>
+

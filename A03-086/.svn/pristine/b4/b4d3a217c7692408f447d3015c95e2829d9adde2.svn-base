@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>1.3　前厅部服务概述</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="5327EA9F-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="86811510-641A-F7CB-C19C-C4FBF3C3B340"
+data-pre-file="c01s02.html" 
+data-pre-title="前厅部概述" 
+data-next-file="c01s04.html" 
+data-next-title="">
+<div class="chapter-box">
+	<div class="chapter-num">第三部分</div>
+	<div class="chapter-name">前厅部服务概述</div>
+</div>
+ <article>
+	<h1>一、学习领域：</h1>
+	<section>前厅部服务概述。</section>
+	<h1>二、学习情境：</h1>
+	<section>天津蓟县恒大酒店前厅部</section>
+	<h1>三、学习目标：</h1>
+	<section>前厅部服务的好与坏直接影响酒店的生存与发展，前厅部员工的工作状况对酒店来说至关重要，因此通过本模块的学习达到：</section>
+	<section class="indent-title">1、熟悉前厅部服务的特点；</section>
+	<section class="indent-title margin0">2、掌握前厅对客服务的流程</section>
+	<section class="indent-title margin0">3、掌握前厅部前厅员工的礼仪及素养</section>
+	 
+	 
+	<h1>四、情景描述</h1>
+	<section>通过上周的培训，张福林已了解了酒店的组织结构及职责，接下来她将继续了解前厅服务的特点并且实地体会作为一名前厅员工应具备的礼仪及素养。</section>
+	<h1>五、任务内容</h1>
+	<section>学生分为若干组，根据老师设置的前厅部服务情境，展现在不同服务阶段应该有的礼仪和素养，包括仪容仪表，礼貌修养、性格和品德等因素。</section>
+	<h1>六、任务实施路径</h1>
+	<figure class="has-large-image top30" data-img-src="/c06/images/c0601-001.png" data-title="图 1　客房部服务流程图" data-desc="客房部服务流程图。">
+		<img src="images/c0601-001-s.png" alt="" class="width360">
+		<figcaption class="img-caption">图 1　客房部服务流程图</figcaption>
+	</figure>
+</article>
+<div class="foot"></div>
+</body>
+</html>

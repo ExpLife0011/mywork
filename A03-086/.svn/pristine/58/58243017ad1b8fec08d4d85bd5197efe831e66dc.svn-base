@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>相关知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #fff;
+	font-family: lantinghei;
+	padding: 8px;
+	background-color: #456177;
+	color: #fff;
+	border-left: none;
+	border-top: none;
+	}
+	.table-l td {
+		border:1px solid #456177;
+		font-family: lantingxihei;
+		padding: 8px;
+		border-top: none;
+		border-left: none;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	相关知识
+</div>
+<article>
+	<h1>一、接受 VIP 订房</h1>
+	<h2>（一）VIP 的概念</h2>
+	<section>VIP 是英文“Very Important Person”的简称，意为“非常重要的客人”，一般称为“贵宾”。对VIP的接待服务是酒店给予在政治、经济以及社会各领域有一定成就、影响和号召力人士的一种荣誉。VIP 接待服务是旅游饭店优质服务的集中体现，也代表酒店接待服务的最高水准。</section>
+	<h2>（二）VIP 接待内容</h2> 
+	<h3>1．VIP 接待小组</h3>
+	 <table class="table-l">
+		<tr>
+			<th style="width: 24%;">组织</th>
+			<th style="border-right: none;">成员</th>
+		</tr>
+		<tr>
+			<td style="text-align: left;">组长</td>
+			<td style="border-right: none;">公司总经理</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">副组长</td>
+			<td style="border-right: none;">公司副总经理、酒店总经理</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">接待处</td>
+			<td style="border-right: none; ">接待部经理、前厅部经理</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">接待成员</td>
+			<td style="border-right: none; ">餐饮部经理、工程部经理、财务部经理、客房部经理、洗衣房经理、人力资源部经理、大堂副理</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">接待处工作责任</td>
+			<td style="border-right: none; "><div class="table-o">1. 接待 VIP 订房时，跟进 VIP 的预抵时间、特别是接待的级别、客人职位等，发出 VIP 通知单；</div>
+<div class="table-o">2. 提前下单至相关部门准备相关赠品，在客人抵店前2小时检查好房间，要求房间符合使用标准及相关赠品摆放到位；</div>
+<div class="table-o">3. VIP 抵达时，相关人员在酒店门口迎接；</div>
+<div class="table-o">4. VIP 在店期间的服务全程跟进；</div><div class="table-o">5. VIP 宾客意见的跟进及反馈。</div>
+			</td>
+		</tr>
+	</table>
+	<h3>2．VIP级别区分及迎送人员安排</h3> 
+	 
+	<table class="table-l">
+		<tr>
+			<th style="width: 20%;">级别</th>
+			<th style="width: 38%;">客人</th>
+			<th style="width: 24%;">欢迎/欢送客人</th>
+			<th style="border-right: none;">执行部门</th>
+		</tr>
+		<tr>
+			<td style="text-align: left;"><div  class="table-h3">V1</div></td>
+			<td><div  class="table-h3">1．政府部门市级以上官员（含政府首脑、国家部级以上高级政府官员）。</div><div  class="table-h3">2．外国代表团</div><div  class="table-h3">3．社会知名人士</div><div  class="table-h3">4．董事长、总经理指定的客人</div></td>
+			<td>董事长、总经理、副总经理、接待部经理、客房部经理、前厅部经理、人力资源部经理、大堂副理</td>
+			<td style="border-right: none;">ALL</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;"><div  class="table-h3">V2</div></td>
+			<td><div  class="table-h3">1．政府部门县级以上官员。</div><div  class="table-h3">2．合约单位的高层领导</div><div  class="table-h3">3．董事会成员。</div><div  class="table-h3">4．地区知名人士。</div></td>
+			<td>董事长、总经理、副总经理、接待部经理、客房部经理、前厅部经理、人力资源部经理、大堂副理</td>
+			<td style="border-right: none;">ALL</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;"><div  class="table-h3">V3</div></td>
+			<td><div  class="table-h3">1． 重要媒体记者</div><div  class="table-h3">2． 有重大投诉的客人。</div><div  class="table-h3">3． 酒店邀请的旅行社负责人</div><div  class="table-h3">4．与酒店有较大生意往来的重要客户。</div><div  class="table-h3">5．重要商务客户。</div></td>
+			<td>接待部经理、前厅部经理、客房部经理、大堂副理。</td>
+			<td style="border-right: none;">T.E
+F.O
+HSKP
+A.M.</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;"><div  class="table-h3">V4</div></td>
+			<td><div  class="table-h3">1．.分局各处、委、办、站段、公司主要负责人</div><div  class="table-h3">2．个人全价入住酒店豪华客房3次以上客人</div><div  class="table-h3">3．个人全价入住酒店客房10次以上的客人</div><div class="table-h3">4．酒店邀请的宾客</div></td>
+			<td>前台管理以上管理人员。</td>
+			<td style="border-right: none;">>T.E
+F.O
+HSKP
+A.M.</td>
+		</tr>
+	</table>
+  <h3>3．VIP接待的规格</h3> 
+   <table class="table-l">
+		<tr>
+			<th>欢迎礼节</th>
+			<th>价值</th>
+			<th>V1</th>
+			<th>V2</th>
+			<th>V3</th>
+		</tr>
+		<tr>
+			 <td>红地毯</td>
+			 <td></td>
+			 <td>√</td>
+			 <td>√</td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>欢迎茶</td>
+			 <td></td>
+			 <td>√</td>
+			 <td>√</td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>贵宾卡</td>
+			 <td></td>
+			 <td>√</td>
+			 <td>√</td>
+			 <td>√</td>
+		</tr>
+		<tr>
+			 <td>普通花篮</td>
+			 <td></td>
+			 <td></td>
+			 <td></td>
+			 <td>√</td>
+		</tr>
+		<tr>
+			 <td>豪华花篮</td>
+			 <td></td>
+			 <td></td>
+			 <td>√</td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>特级豪华花篮</td>
+			 <td></td>
+			 <td>√</td>
+			 <td></td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>B 级果篮</td>
+			 <td></td>
+			 <td></td>
+			 <td></td>
+			 <td>√</td>
+		</tr>
+		<tr>
+			 <td>A 级果篮</td>
+			 <td></td>
+			 <td></td>
+			 <td></td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>豪华果篮</td>
+			 <td></td>
+			 <td></td>
+			 <td>√</td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>特级豪华果篮</td>
+			 <td></td>
+			 <td>√</td>
+			 <td></td>
+			 <td>√</td>
+		</tr>
+		<tr>
+			 <td>曲奇饼</td>
+			 <td></td>
+			 <td></td>
+			 <td></td>
+			 <td>√</td>
+		</tr>
+		<tr>
+			 <td>巧克力</td>
+			 <td></td>
+			 <td>√</td>
+			 <td>√</td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>白/红酒-国产</td>
+			 <td></td>
+			 <td></td>
+			 <td>√</td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td>红酒-进口</td>
+			 <td></td>
+			 <td>√</td>
+			 <td></td>
+			 <td></td>
+		</tr>		 
+	</table>
+	
+	
+	<h3>4．VIP等级的设定和权限划分</h3> 
+	<section>（1）公司总经理、公司副总经理可以对所有的 VIP 等级进行认定。	</section>
+	<section>（2）公司副总经理以下可以对 V2、V3 进行认定。	</section>
+	<section>（3）公司各部门经理及酒店各部门经理可以对 V3 进行认定。	</section>
+	<section>（4）公司领导可以以口头或者电话通知为认定，其它各部门必须以 VIP 预订单为认定。	</section>
+	<section>（5）接到公司领导及 VIP 客人预定确认单后，前厅部及接待部应将有关信息第一时间告知酒店总经理，经请示上级确定接待规格后，第一时间通知相关部门进行准备工作。	</section>
+	<section>（6）前厅部和餐饮部应注意留意自行来店消费宾客的身份，属于 VIP 范围内的客人，须通知相关部门，按 VIP 程序做好接待工作。</section>
+	 
+	 <h2>（三）VIP 预订程序与标准</h2> 
+	 <table class="table-l">
+		<tr>
+			<th style="width: 24%;">程序</th>
+			<th style="border-right: none;">标准</th>
+		</tr>
+		<tr>
+			<td style="text-align: left;">1．预订申请</td>
+			<td style="border-right: none;"><div class="table-o">（1）预订员若接到政府高级官员、大公司总裁、名人等符合VIP接待条件的预订，应及时告知预订部主管			</div>
+			<div class="table-o">（2）经预订部主管认可，轮值大堂副理填写 VIP 申请单（一式五份）</div></td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">2．填写订单</td>
+			<td style="border-right: none;">填写客人姓名、职位、公司名称、抵店时间、航班（车次）、房间类型、房价及其特殊要求</td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">3．选择礼品</td>
+			<td style="border-right: none; "><div class="table-o">（1）在VIP申请单上将已选择的礼品做好标记			</div>
+			<div class="table-o">（2）礼品总类主要有：欢迎信、水果篮、水果盘、鲜花、点心、酒水、糖果			</div>
+			<div class="table-o">（3）附上总经理名片</div></td>
+		</tr>
+		<tr>
+			<td style="text-align: left;">4．审定预批</td>
+			<td style="border-right: none; "><div class="table-o">（1）预订部主管审批、签字			</div>
+			<div class="table-o">（2）送交前厅部经理审批、签字			</div>
+			<div class="table-o">（3）送交总经理审批、签字			</div>
+			<div class="table-o">（4）将审批后的VIP申请单分送前厅部、礼宾处、大堂副理、总机及客房部</div></td>
+		</tr>
+	</table>
+	 
+	 <h1>二、VIP客人抵店前的准备工作</h1>
+	<h2>（一）抵店前的准备</h2>
+	<section>做好客人抵店前的准备工作，有助于缩短订房客人办理入住登记的时间，又能提前做好接待服务工作中的细节安排，向客人提供具有针对性的服务，宾客抵店前的工作大致分为三个阶段：</section>
+	<section>1．提前一周或数周：将酒店主要客情，如重点宾客（VIP）、大型团队、会议接待、客满登信息通知各部门。采取的方式是分发各类预报表，如“七日客情预测表”、“重点宾客（VIP）呈报表”、“重点宾客（VIP）接待规格呈报表”等，也可以召开由总经理主持的协调会	</section>
+   <section>2．宾客抵店前夕：将客情及具体接待安排以书面形式通知相关部门，做好准备工作。酒店在这方面常使用的表格有：“次日抵店宾客一览表”、“鲜花、水果篮通知单”、“特殊要求通知单”等。	</section>
+	<section>3．宾客抵店当天：前厅接待员应根据宾客预订具体要求提前排房，并将有关接待细节（变更或补充）通知相关部门，共同完成宾客抵店前的各项准备工作。</section>
+	
+	<h1>三、VIP客人入住登记</h1>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>小林是天津蓟县恒大酒店前厅接待员，其头脑灵活、观察力强，并且极具服务意识，为客人提供周到热情的服务，因此给客人留下的印象非常深刻。某日，一位VIP客人随带陪同来到前台登记，小林马上称呼出客人的名字，并递上打印好的登记卡请他签字，使客人感到了自己的地位不同，由于受到了超凡的尊重而感到格外的开心。</section>
+	<section>国内某著名酒店规定：在客人办理入住登记时至少要称呼客人名字3次，前台员工要熟记VIP的名字，尽可能多的掌握他们的资料，争取在他们来店自报家门前称呼出他们的名字，当再次见面时也能直称其名。同时还可以借助计算机系统，为客人建立客史档案，这将有助于为客人提供超水准、高档次的优质服务。</section>
+	</div>
+	<section>酒店前厅客人入住接待的一般程序包括迎接客人、识别客人是否有预订、入住登记、排房及定价、建立客账、分发房卡、引领入房等环节。但根据不同类型的客人，在接待程序上有些具体的区别，如对散客、团队、VIP客人以及免费的客人在入住接待程序上略有不同。将VIP的接待与散客区分开来，确保客人感到特殊的礼遇，尽可能地提供高效率的，个性化的服务。前面我们已经学习了散客及团队的入住相关知识，下面我们来了解一下VIP客人入住登记的程序与标准</section>
+	
+	<h2>（一）VIP 客人入住登记</h2>
+	<section>1．大堂副理根据 VIP 接待规格要求，在客人抵达前 20 分钟通知有关主持接待人员前来大厅等候，并告知主持接待人员客人具体抵达时间。	</section>
+	    <section>2．若 VIP 客人由酒店派专车迎接，酒店代表在接到客人后应立即通知大堂副理客人抵店的时间。	</section>
+	    <section>3．大堂副理须保证门口车道畅通无阻，大厅门童、行李员根据接待规格的要求都已经准备好、待命。	</section>
+	    <section>4．所有主持接待人员在客人到达前 10 分钟都必须到达大厅准备欢迎。	</section>
+	    <section>5．根据酒店需要，提前 5 分钟准备专用电梯，由大堂副理负责指定迎宾员开电梯。	</section>
+	    <section>6．客人抵达酒店时，由礼宾员开车门并用酒店标准语言欢迎客人光临本酒店。	</section>
+	    <section>7．大堂副理代表酒店欢迎客人，并把客人介绍给主要负责接待的总经理或副总经理。必要时将通知有关部门经理和员工列队欢送。	</section>
+	    <section>8．主持接待的总经理/副总经理、大堂副理陪同客人直接进房。	</section>
+	    <section>9．客房部经理率当值管理人员及优秀服务员在楼层迎接。	</section>
+	    <section>10．客房部经理或大堂副理向客人简单介绍酒店的服务设施和客房设施，并负责办理客人入住等手续。	</section>
+	    <section>11．总经理、客房部经理、大堂副理与客人暂别，并祝愿客人入住愉快。	</section>
+	    <section>12．大堂副理负责保证 VIP 客人行李正确无误地送至客房。	</section>
+	    <section>13．在贵宾入住 5 分钟内，根据客人人数送上欢迎茶和小毛巾。	</section>
+	    <section>14．接待部要准备名人题辞，签名簿，供 VIP 客人留言。	</section>
+	    <section>15．总台、总机、服务中心要熟悉 VIP 客人和房号、姓名、职务，当接到客人打来的电话时，应立即称呼客人的姓氏、职位，为客人提供服务。</section>
+	<h2>（二）VIP更换房间及房号</h2>
+	<h3>1．VIP 更换房号</h3>
+	<section>首先判断 VIP 要求更换房号的时间，若在 VIP 客人抵店之间，则应首先记录更改人的姓名、工作单位、日期、时间、经手人，检查是否已报房号给接待单位，若已报，则应及时通知有关接待单位（特别是营销部），并做好计算机更改。若在客人抵店后要求更换房号，则需要通知接待单位并将 VIP 单发至所有部门，并做好计算机房号更改。</section>
+	<h3>2．VIP 更换换房</h3>
+	<section>客人未抵店时要求换房，由预订处更改客人的入住信息后及时将房间变更单分发至各个部门；客人入住后要求换房，除按照散客换房处理外，必须通知大堂副理或部门管理人员，以确保服务周到。</section>
+	
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>2010 年 5 月 22 日，东营宾馆贵宾楼总台有两位客人来到前台，总台接待员苏倩礼貌的接待，因为是第一次与客人见面，于是主动的询问客人有什么需要，可是客人好像来过宾馆，直言问道：“小姐，我之前定下的餐厅及会议室准备的怎么样了？此时的苏倩有些茫然，但还是请客人稍等，并根据客人的描述在电脑里查询此预定，但却发现根本没有预订登记，虽然她回复客人的语言很婉转，但当时客人还是非常生气，在总台大声的训斥起来。</section>
+	<section> 无奈和委屈的苏倩几乎哭泣的打电话给当值金钥匙，很快宾馆金钥匙会员薛红艳出现在客人面前，表明身份后，首先承诺客人将全力协调想办法，并保证会在 10 分钟之内都给予答复，这时客人紧缩的眉头才稍微舒展一些。于是她立即与预定中心进行联系并得到确定回答后，与苏倩一起经过多方调解和努力以最快的速度根据客人餐厅及会议室等细节要求进行了新的预订登记，所有的细节很快得到客人的签字确认，时间不到 5 分钟。</section>
+	<section> 非常顺利，客人感觉很好，开始主动的与她们攀谈起来。可此时客人却意外的接到电话，原来是他们预定的并不是我们宾馆，此时的客人流露出满脸的遗憾，同时面对我们全部落实到位的各项要求，虽然我们一再强调“您怎样方便就怎样安排，没关系的”，但此时的客人又表现出非常的犹豫。可喜的是客人在我们面前打电话去，取消了原有的预定，他还连连说：“金钥匙好厉害！快、准、稳！你们受我们的气，又忙活了半天，就留在宾馆接待吧！</section>
+	</div>
+	
+	<h1>四、VIP 客人住店服务（金钥匙服务）</h1>
+	<h2>（一）VIP 住店服务内容</h2>
+	 <section>1．根据不同 VIP 等级，客房部经理/大堂副理/接待部经理必须每天在合适的时间，给住店的 VIP 客人拨打礼仪性电话，以表示酒店对 VIP 客人的特别关注，但打扰客人的时间不宜过长。通话内容应包括：	 </section>
+	    <section>（1）询问客人对房间舒适卫生等的满意程度	 </section>
+	    <section>（2）询问客人对酒店各营业部门服务项目和服务质量的意见	 </section>
+	    <section>（3）询问客人是否在住店期间收到员工的特别关注	 </section>
+	    <section>（4）询问客人对酒店整体有何意见或建议	 </section>
+	    <section>（5）询问客人有何特别要求	 </section>
+	    <section>（6）询问客人具体离店时间、是否需要安排车辆等	 </section>
+	     <section>2．所有礼仪电话均需书面抄送酒店总经理	 </section>
+	     <section>3．前厅总机房应熟记 VIP 客人姓名，铃响后接线员应准确称呼</section>
+	<h2>（二）金钥匙服务</h2>
+	<h3>1．什么是金钥匙服务？</h3>
+	<section>“金钥匙”服务人员是指从事酒店大堂工作并且具有一定经验的高级礼宾人员利用个人所掌握的丰富的外界信息为客人提供个性化服务的特殊群体。“金钥匙”起源于法国，它是一个以个人名义参加的民间组织，早在1929年，法国一群从事酒店的高级礼宾司就以个人名义将大家组织在一起讨论如何向宾客提供更好的个性化一条龙服务，这种一条龙服务主要体现在让客人住在店内就可以享受到多种服务项目，例如：酒店服务理念旅游咨询服务、行李打包服务、代订客房、冲印、订花、订餐、快递等诸多服务项目，由于服务内容的范围较广，且服务项目已超过了一般酒店所提供的范围，并且均以客人委托，服务人员代办的形式来完成，所以，这种一条龙服务也叫“委托代办”服务，他们给能够提供这些服务的特殊群体起了一个非常形象的名字“金钥匙”，所以“金钥匙”就这样应运而生。</section>
+	<h3>2．酒店金钥匙服务概念</h3>
+	<section>（1）酒店金钥匙的服务宗旨：在不违反法律和道德的前提下，为客人解决一切困难。	</section>
+	<section>（2）酒店金钥匙为客排忧解难，“尽管不是无所不能，但是也是竭尽所能”，要有强烈的 为客服务意识和奉献精神。	</section>
+	<section>（3）为客人提供满意加惊喜的个性化服务。	</section>
+	<section>（4）酒店金钥匙组织的工作口号是“友谊、协作、服务”（Service Through Friendship）。   （5）酒店金钥匙的人生哲学：在客人的惊喜中找到富有乐趣的人生。</section>
+	<h3>3．金钥匙服务内容</h3>
+	<table class="table-l">
+		<tr>
+			<th>序号</th>
+			<th>内容</th>
+			 
+		</tr>
+		<tr>
+			 <td>A</td>
+			 <td>金钥匙服务</td>
+			  
+		</tr>
+		<tr>
+			 <td>1</td>
+			 <td>金钥匙要在三声铃响之内接听电话。</td>			  
+		</tr>
+		<tr>
+			 <td>2</td>
+			 <td>如果超过三声铃响才接听电话，要表示歉意。</td>			  
+		</tr>
+		<tr>
+			 <td>3</td>
+			 <td>金钥匙接听电话要使用恰当的问候语，报部门名称并表示提供帮助。</td>		  
+		</tr>
+		<tr>
+			 <td>4</td>
+			 <td>金钥匙要询问客人的姓名并在交谈过程中一直使用尊称。</td>		 
+		</tr>
+		<tr>
+			 <td>5</td>
+			 <td>金钥匙要在客人到柜台后30秒内招呼客人。</td>		  
+		</tr>
+		<tr>
+			 <td>6</td>
+			 <td>金钥匙要热情、友好地问候客人。</td>		  
+		</tr>
+		<tr>
+			 <td>7</td>
+			 <td>酒店大堂要设有金钥匙柜台。</td>		  
+		</tr>
+		<tr>
+			 <td>8</td>
+			 <td>金钥匙柜台要有委托代办的显著的中英文标识。</td>		  
+		</tr>
+		<tr>
+			 <td>9</td>
+			 <td>金钥匙柜台要配备电脑，方便查询酒店宾客信息以及该城市各行业的有关信息。</td>			 
+		</tr>
+		<tr>
+			 <td>10</td>
+			 <td>金钥匙柜台至少要安装两部电话。</td>		 
+		</tr>
+		<tr>
+			 <td>11</td>
+			 <td>金钥匙柜台每天的服务时间不少于16小时，时间一般在7：00至23：00，其间要保证至少有一名金钥匙当值。</td>			  
+		</tr>
+		<tr>
+			 <td>12</td>
+			 <td>金钥匙柜台要必备：委托书、计算器、绳子、剪刀、文具、胶带、订书机、橡皮筋等供客人使用的办公用品。</td>			  
+		</tr>
+		<tr>
+			 <td>13</td>
+			 <td>金钥匙柜台要备有：城市电话簿、出行示意图、交通时刻表、维修小工具、针线包、地图、打包机、体温计、创可贴、棋牌等服务用品。</td>		  
+		</tr>
+		<tr>
+			 <td>14</td>
+			 <td>金钥匙柜台要备有《酒店服务指南》，可向客人提供酒店最新的服务信息。</td>		 
+		</tr>
+		<tr>
+			 <td>15</td>
+			 <td>金钥匙对酒店附近的公共服务场所和设施要熟悉（如剧院、旅游景点、运动场所、邮局、银行、医院、学校、商场等等），了解其营业时间、收费标准、联系电话、地址等。</td>		  
+		</tr>
+		<tr>
+			 <td>16</td>
+			 <td>金钥匙要主动提醒客人酒店不承担代办事项中所出现的任何问题。</td>		  
+		</tr>
+		<tr>
+			 <td>17</td>
+			 <td>金钥匙要按客人的要求详细填写委托书。</td>		  
+		</tr>
+		<tr>
+			 <td>18</td>
+			 <td>金钥匙要复述客人的委托要求并请客人签字确认。</td>		  
+		</tr>
+		<tr>
+			 <td>19</td>
+			 <td>金钥匙要提醒客人代办服务所需要的大致时间。</td>			 
+		</tr>
+		<tr>
+			 <td>20</td>
+			 <td>金钥匙要在约定的时间前完成代办事项并报告给客人，如果未能按时完成，要及时向客人解释原因。</td>		 
+		</tr>
+		<tr>
+			 <td>21</td>
+			 <td>金钥匙完成代办事项后要请客人在完工报告上签字确认。</td>			  
+		</tr>
+		<tr>
+			 <td>22</td>
+			 <td>金钥匙要向客人致谢。</td>			  
+		</tr>
+		<tr>
+			 <td>23</td>
+			 <td>金钥匙要尽其所能为客人办事。</td>		  
+		</tr>
+		<tr>
+			 <td>24</td>
+			 <td>金钥匙的工作台要保持整齐有序。</td>		 
+		</tr>
+		<tr>
+			 <td>25</td>
+			 <td>金钥匙可以为客人提供接送服务。</td>		  
+		</tr>
+		<tr>
+			 <td>26</td>
+			 <td>金钥匙可即时联系到汽车服务公司。</td>		  
+		</tr>
+		<tr>
+			 <td>27</td>
+			 <td>金钥匙要了解所需车辆的款式。</td>		  
+		</tr>
+		<tr>
+			 <td>28</td>
+			 <td>金钥匙要提前安排好接送客人的车辆。</td>		  
+		</tr>
+		<tr>
+			 <td>29</td>
+			 <td>金钥匙要准确的记录客人的姓名及联系方式。</td>			 
+		</tr>
+		<tr>
+			 <td>30</td>
+			 <td>金钥匙要告知司机接送客人的准确的时间、地点以及客人的姓名。</td>		 
+		</tr>
+		<tr>
+			 <td>31</td>
+			 <td>金钥匙要为客人备好所需物品如地图、杂志、当日中英文报纸、湿巾、冰桶等。阴雨天要准备好雨具。</td>			  
+		</tr>
+		<tr>
+			 <td>32</td>
+			 <td>标牌上客人的姓名要准确、字迹要清晰。</td>			  
+		</tr>
+		<tr>
+			 <td>33</td>
+			 <td>金钥匙要主动为客人提供行李服务。</td>		  
+		</tr>
+		<tr>
+			 <td>34</td>
+			 <td>金钥匙要记录车牌号码、抵离时间。</td>		 
+		</tr>
+		<tr>
+			 <td>35</td>
+			 <td>金钥匙要根据客人的要求帮助客人安排行程（如飞机、火车、轮船、计程车等）。</td>		  
+		</tr>
+		<tr>
+			 <td>36</td>
+			 <td>金钥匙可以提供订餐服务。</td>		  
+		</tr>
+		<tr>
+			 <td>37</td>
+			 <td>金钥匙要了解各种餐厅的特色、营业时间、规模、地址、联系人等。</td>		  
+		</tr>
+		<tr>
+			 <td>38</td>
+			 <td>金钥匙要了解客人用餐的倾向以及客人的喜好。</td>		  
+		</tr>
+		<tr>
+			 <td>39</td>
+			 <td>金钥匙要了解客人的宗教信仰以及忌讳。</td>			 
+		</tr>
+		<tr>
+			 <td>40</td>
+			 <td>金钥匙可向客人推荐各种类型的餐厅并介绍其特点。</td>		 
+		</tr>
+		<tr>
+			 <td>41</td>
+			 <td>金钥匙要主动询问客人要需要为其预订餐位并可以提供订餐服务。</td>			  
+		</tr>
+		<tr>
+			 <td>42</td>
+			 <td>金钥匙要告知客人用餐的地点、时间、路线。</td>			  
+		</tr>
+		<tr>
+			 <td>43</td>
+			 <td>金钥匙要主动帮客人联系接送事宜。</td>		  
+		</tr>
+		<tr>
+			 <td>44</td>
+			 <td>金钥匙可以提供订房服务。</td>		 
+		</tr>
+		<tr>
+			 <td>45</td>
+			 <td>金钥匙要向客人介绍各种房间的特点及价格。</td>		  
+		</tr>
+		<tr>
+			 <td>46</td>
+			 <td>金钥匙可帮助客人预订不同城市和地区的酒店。</td>		  
+		</tr>
+		<tr>
+			 <td>47</td>
+			 <td>金钥匙要向客人确认房间的类型、数量、价格以及客人的姓名、国籍、抵离时间和付款方式。</td>		  
+		</tr>
+		<tr>
+			 <td>48</td>
+			 <td>金钥匙要了解客人需要的其他附加要求。</td>		  
+		</tr>
+		<tr>
+			 <td>49</td>
+			 <td>金钥匙可以提供订票服务。</td>			 
+		</tr>
+		<tr>
+			 <td>50</td>
+			 <td>金钥匙可帮助客人预订机票、车票、船票、门票、入场券等。</td>		 
+		</tr>
+		<tr>
+			 <td>51</td>
+			 <td>金钥匙要与客人确认票的时间和票数。</td>			  
+		</tr>
+		<tr>
+			 <td>52</td>
+			 <td>金钥匙要主动提醒客人退票的注意事项。</td>			  
+		</tr>
+		<tr>
+			 <td>53</td>
+			 <td>金钥匙可以提供订花服务。</td>		  
+		</tr>
+		<tr>
+			 <td>54</td>
+			 <td>金钥匙要备有各种花束、花篮的图片以及价格表供客人选择。</td>		 
+		</tr>
+		<tr>
+			 <td>55</td>
+			 <td>金钥匙要了解客人订花的用途、场合以及用花时间。</td>		  
+		</tr>
+		<tr>
+			 <td>56</td>
+			 <td>金钥匙可帮助客人将鲜花送到指定地点并由指定联系人签收。</td>		  
+		</tr>
+		<tr>
+			 <td>57</td>
+			 <td>金钥匙可以提供订蛋糕、订阅报刊杂志等服务。</td>		  
+		</tr>
+		<tr>
+			 <td>58</td>
+			 <td>金钥匙可以提供修理物品服务。</td>		  
+		</tr>
+		<tr>
+			 <td>59</td>
+			 <td>金钥匙要检查物品的损坏情况。</td>			 
+		</tr>
+		<tr>
+			 <td>60</td>
+			 <td>金钥匙要提醒客人修理物品所需要的时间。</td>		 
+		</tr>
+		<tr>
+			 <td>61</td>
+			 <td>金钥匙要检查物品修理后的情况。</td>			  
+		</tr>
+		<tr>
+			 <td>62</td>
+			 <td>金钥匙可以提供跑腿服务。</td>			  
+		</tr>
+		<tr>
+			 <td>63</td>
+			 <td>金钥匙要向客人了解送取物品的情况。</td>		  
+		</tr>
+		<tr>
+			 <td>64</td>
+			 <td>金钥匙要向客人确认送取时间以及方式。</td>		 
+		</tr>
+		<tr>
+			 <td>65</td>
+			 <td>金钥匙要向客人了解送取的联系人以及联系方式。</td>		  
+		</tr>
+		<tr>
+			 <td>66</td>
+			 <td>送物后要由联系人确认物品并签收。</td>		  
+		</tr>
+		<tr>
+			 <td>67</td>
+			 <td>取物时要注意仔细检查物品。</td>		  
+		</tr>
+		<tr>
+			 <td>68</td>
+			 <td>金钥匙可以提供邮寄服务。</td>		  
+		</tr>
+		<tr>
+			 <td>69</td>
+			 <td>金钥匙要确认并检查邮寄物品。</td>			 
+		</tr>
+		<tr>
+			 <td>70</td>
+			 <td>金钥匙要选择合适的邮寄方式。</td>		 
+		</tr>
+		<tr>
+			 <td>71</td>
+			 <td>金钥匙可以提供出租物品服务。</td>			  
+		</tr>
+		<tr>
+			 <td>72</td>
+			 <td>金钥匙要及时联系出租公司。</td>			  
+		</tr>
+		<tr>
+			 <td>73</td>
+			 <td>金钥匙柜台要备有供客人租用的手机、相机、婴儿车、自行车等物品。</td>		  
+		</tr>
+		<tr>
+			 <td>74</td>
+			 <td>金钥匙可以提供购物服务。</td>		 
+		</tr>
+		<tr>
+			 <td>75</td>
+			 <td>金钥匙要了解各种商品信息以及各种专卖商店的地点。</td>		  
+		</tr>
+		<tr>
+			 <td>76</td>
+			 <td>金钥匙要确认客人所需商品的品牌、型号、价格范围、数量等具体情况。</td>		  
+		</tr>
+		<tr>
+			 <td>77</td>
+			 <td>金钥匙可以提供印制名片、印刻私人图章等服务。</td>		  
+		</tr>
+		<tr>
+			 <td>78</td>
+			 <td>金钥匙要确认名片、图章的内容、数量和版式以及所需时间。</td>		  
+		</tr>
+		<tr>
+			 <td>79</td>
+			 <td>金钥匙可以提供托婴服务。</td>			 
+		</tr>
+		<tr>
+			 <td>80</td>
+			 <td>金钥匙要向客人详细了解并确认托婴的要求。</td>		 
+		</tr>
+		<tr>
+			 <td>81</td>
+			 <td>如果时间较长，金钥匙要请客人事先准备好食品、水、牛奶或其他饮料。</td>			  
+		</tr>
+		<tr>
+			 <td>82</td>
+			 <td>金钥匙要安排有经验的服务人员照看孩子。</td>			  
+		</tr>
+		<tr>
+			 <td>83</td>
+			 <td>金钥匙可以提供代看宠物服务。</td>		  
+		</tr>
+		<tr>
+			 <td>84</td>
+			 <td>金钥匙要详细了解客人对于代看宠物的要求。</td>		 
+		</tr>
+		<tr>
+			 <td>85</td>
+			 <td>如果时间较长，金钥匙要请客人事先准备好喂养宠物的食品。</td>		  
+		</tr>
+		<tr>
+			 <td>86</td>
+			 <td>金钥匙要将宠物安排在专门的宠物房，避免影响到住店客人。</td>		  
+		</tr>
+		<tr>
+			 <td>87</td>
+			 <td>金钥匙可以提供留言服务。</td>		  
+		</tr>
+		<tr>
+			 <td>88</td>
+			 <td>金钥匙要把所有的留言、传真，均能在收到后15分钟内送到客人手中。</td>		  
+		</tr>
+		<tr>
+			 <td>89</td>
+			 <td>书面留言均要写在酒店专用留言纸上，内容要清楚，字迹要清晰。</td>			 
+		</tr>
+		<tr>
+			 <td>B</td>
+			 <td>财务状况</td>
+			  
+		</tr>
+		<tr>
+			 <td>90</td>
+			 <td>金钥匙要请客人事先交纳一定的委托代办押金。</td>		 
+		</tr>
+		<tr>
+			 <td>91</td>
+			 <td>金钥匙要与客人确认委托代办的费用。</td>			  
+		</tr>
+		<tr>
+			 <td>92</td>
+			 <td>金钥匙要与客人确认付款方式。</td>			  
+		</tr>
+		<tr>
+			 <td>93</td>
+			 <td>金钥匙要检查信用卡上的姓名要与客人证件所用姓名相符。</td>		  
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>员工表现</td>
+		</tr>
+		<tr>
+			 <td>94</td>
+			 <td>金钥匙要穿着干净、平整的制服，并佩带金钥匙徽章、领带。</td>		 
+		</tr>
+		<tr>
+			 <td>95</td>
+			 <td>金钥匙穿着的鞋子要符合酒店规定。</td>		  
+		</tr>
+		<tr>
+			 <td>96</td>
+			 <td>金钥匙都要规范佩带名牌。</td>		  
+		</tr>
+		<tr>
+			 <td>97</td>
+			 <td>金钥匙要与客人保持适度眼神交流。</td>		  
+		</tr>
+		<tr>
+			 <td>98</td>
+			 <td>金钥匙要保持微笑，态度要亲切友好。</td>		  
+		</tr>
+		<tr>
+			 <td>99</td>
+			 <td>金钥匙要熟练、流利运用工作日常英语。</td>			 
+		</tr>
+		<tr>
+			 <td>100</td>
+			 <td>在服务过程中，如果员工需要与其他同事交涉时，要回避客人。</td>		 
+		</tr>
+	</table>
+	
+	<div class="additional-knowledge jump-button" data-href="additional0402.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="NO" data-title="补充知识">
+		<div class="additional-text">补充知识</div>
+		<div class="additional-images"><img src="../META-INF/images/icon-02.png" alt=""></div>
+	</div>
+	
+	<h1>五、VIP 客人的结账和离店</h1>
+	<h2>（一）VIP 客人结账和离店的程序</h2>
+	 <section>1．大堂副理会检查所有离店VIP客人的账单，确保账单准确无误。	 </section>
+	 <section>2．按照客人提出的结账方式结账（VIP 客账部分由接待单位承担，部分私人消费有客人自行承担）。	 </section>
+	 <section>3．确保VIP客人账单的保密性，不得随意泄露客人账单。	 </section>
+	 <section>4．一旦VIP客人离后，前台会通知大堂副理，对客人的离店加以重视，并获取宝贵的意见。	 </section>
+	 <section>5．如果需要，前台会通知相关部门对 VIP 送行。	 </section>
+	 <section>6．夜班大堂副理会检查没到的 VIP 客人并从房间收回文件夹，管家部会被通知撤消房间内的赠品。	 </section>
+	 <section>7．对于预离的超级 VIP 客人，红地毯应在离开半小时前被铺好，所有的欢迎人员会列队送行、告别。	 </section>
+	 <section>8．当班大堂副理应在 VIP 客人离店之前确保所有的账目都被结清。	 </section>
+	 <section>9．礼宾部人员会把电梯停在客人的居住楼层等候。	 </section>
+	 <section>10．酒店前的车道暂时被隔开，只容 VIP 的轿车行驶，保安经理应负责交通指挥工作。	 </section>
+	 <section>11．与 VIP 到达时一样，酒店欢迎队，例在电梯两旁，在客人下梯后，鼓掌表示辞别。	 </section>
+	 <section>12．酒店经理及欢迎队伍会陪VIP走向出口，送行。</section>
+	 
+	 <h2>（二）VIP 客人离店后的信息储存</h2>	 
+	 <section>1．复核有关 VIP 客人资料的正确性，并准确输入计算机。	 </section>
+	 <section>2．在计算机中注明有哪些客人是 VIP 客人，以提示其他部门或人员注意。	 </section>
+	 <section>3．为VIP客人建立档案，并注明身份，以便作为预订和日后查询的参考资料。</section>
+	 
+	  <h2>（三）VIP 客人服务的注意事项</h2>	 
+	<section>1．VIP 客人的房卡一律做到预离日期的下午 18：00 点。	</section>
+	<section>2．对 VIP 客人要引起重视，每天上班前要查看电脑当日是否有 VIP 到店、在住 VIP、离店 VIP，掌握大量信息做好准备工作。	</section>
+	<section>3．接听电话时，发现是 VIP 房间的号码，知道姓名要用姓氏，级别、职务等问候客人。	</section>
+	<section>4．VIP 客人有特殊要求时，要给予全力的解决，必要时要及时通知 AM 做好相应的记录。</section>
+	 
+	 <div class="jump-exercise jump-button" data-target="_blank" data-href="test04.html" data-scroll-enable="NO" data-phscroll-enable="YES" data-title="案例分析" style="margin-top: 8px;" data-isActivity="YES">
+		<div class="jump-title">案例分析</div>
+		<div class="jump-left"></div>
+	</div>
+	 
+	 
+	 
+	 
+	 
+</article>	
+<div class="foot"></div>
+</body>
+</html>

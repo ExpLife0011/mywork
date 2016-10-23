@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<title>相关知识</title>
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)" />
+		<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)" />
+		<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+		<script type="text/javascript">
+			function pageOnLoad() {
+				MIGlobals.init();
+
+			}
+		</script>
+		<style type="text/css">
+			.secondary {
+				width: 718px;
+				height: 120px;
+				background-color: #85003c;
+				font-size: 30px;
+				-webkit-user-select: none;
+				color: #fff;
+				font-weight: bold;
+				line-height: 120px;
+				box-sizing: border-box;
+				padding-left: 50px;
+			}
+			
+			.headline {
+				text-align: center;
+				text-indent: 0px;
+				font-size: 24px;
+				-webkit-user-select: none;
+			}
+			
+			.headline-bottom {
+				text-align: center;
+				text-indent: 0px;
+				font-size: 20px;
+				-webkit-user-select: none;
+				margin-top: 8px;
+			}
+			
+			.table-l {
+				border-collapse: collapse;
+				width: 100%;
+				font-size: 16px;
+			}
+			
+			.table-l th {
+				border: 1px solid #fff;
+				font-family: lantinghei;
+				padding: 8px;
+				background-color: #456177;
+				color: #fff;
+				border-left: none;
+				border-top: none;
+			}
+			
+			.table-l td {
+				border: 1px solid #456177;
+				font-family: lantingxihei;
+				padding: 8px;
+				border-top: none;
+				border-left: none;
+			}
+			
+			.table-l td:first-child {
+				text-align: center;
+			}
+			
+			@media screen and (max-width: 600px) {
+				.secondary {
+					display: none;
+				}
+				.headline {
+					text-align: center;
+					text-indent: 0px;
+					font-size: 1.11rem;
+					-webkit-user-select: none;
+				}
+				.headline-bottom {
+					text-align: center;
+					text-indent: 0px;
+					font-size: 1rem;
+					-webkit-user-select: none;
+					margin-top: 8px;
+				}
+				.table-l td:first-child {
+					text-align: left;
+				}
+			}
+		</style>
+	</head>
+
+	<body onload="pageOnLoad();">
+
+		<div class="secondary">
+			相关知识
+		</div>
+		<article>
+			<h1>一、团队叫醒服务</h1>
+			<h2>（一）团队叫醒服务流程</h2>
+			<section>叫醒服务(Wake Up Call或Morning Call)，是前厅部为客人提供的又一项重要服务，即由话务员利用电话或其他人员利用人工叫醒方式在客人要求的时间把客人叫醒。叫醒服务多数情况下在早上进行，但有时也在下午或其他时间进行。叫醒服务可以由客人向总机提出，也可以由客人向房务中心、总台接待员、大堂副理等提出，再由这些员工通知总机组。</section>
+            <section>团体客人的叫醒要求可由导游直接告诉总机室或通过接待员告诉总机室。</section>
+           <section>叫醒服务的程序如下，：</section>
+           <section>1．当客人要求叫醒服务时，总机接线负(话务员)应问清客人的房号和叫醒时间，并向客人复述一遍以确认没有听错。</section>
+           <section>2．将叫醒客人的房号及叫醒时间准确地记录在笔记本上并签字，也可以记录在叫醒服务表上。</section>
+           <section>3．将要叫醒的房号及叫醒时间输入电脑。</section>
+           <section>4．电脑叫醒过程中，接线员要注意机器的运行情况，看是否准时叫醒了客人，如有必要，话务员应适时插入叫醒服务用语；如果电脑出了问题，应采用人工叫醒的方法。</section>
+           <section>5．人工叫醒的方法是由话务员打电话到客房，向客人问好，告诉客人这是叫醒电话，并祝客人住店愉快。</section>
+           <section>6．已叫醒过并且客人有应答的客房在叫醒控制表上勾去或划掉，无人应答的客房应用电话叫醒，如再无人应答，应通知楼层值台员或房务中心去敲门叫醒。</section>
+           <section>7．对应答含糊的客人为防止其睡着，可以过3分钟再叫醒一次，并就此向客人表示道歉。</section>
+           <section>8．要特别注意个别客人在下午或晚上的叫醒要求，以防遗漏。客人取消叫醒服务应及时做好登记并更改电脑中的记录，还应在工作曰志上填写说明。</section>
+           <section>9．团队叫醒</section>
+           <section>若团队客人需要全部叫醒时，应礼貌地请客人到前台问讯处登记；受理2．3：00以后的团队叫醒服务预订，记录团号、叫醒时间、预订人姓名及房号；根据前台问讯处的记录，中班话务员负责找出团队用房表，并与叫醒登记表核对，夜班服务员必须再次复核；填写叫醒登证表团队分房表，然后将团队叫醒输入机台。</section>
+    
+          <h2>（二）团队叫醒确认单填写</h2>
+         
+         
+         <h1>二、礼宾服务</h1>
+			<h2>（一）团队客人的迎送服务注意事项</h2>
+           <section>店门迎送服务主要由门卫负责，门卫也称迎宾员或门童。他一般穿着比较高级华丽、标志醒目的制服，站在正门处，代表酒店欢迎来店客人并送走离店客人。门卫工作责任重大，他象征着酒店的礼仪，代表着酒店的形象，起着“仪仗队”的作用。所以门卫在岗时，要着装整洁，精神饱满，思维敏捷，动作迅速，姿势规范，语言标准。同时，要热情、讲礼貌，创造一种热烈欢迎客人气氛，满足客人受尊重的心理需求。门卫通常由高大英俊的青年男子担任(所以被称为 “Doorman”)，这样可以与高档雄伟的酒店建筑和门面相融合。但也有些酒店启用气质好、仪表端庄的女性或具有绅士风度的中年男子做门卫，标新立异，受到客人的欢迎。门卫的主要职责是：</section>
+    
+			<h3>1．迎接宾客</h3>
+			<section>（1）客人抵店时，向客人点头致意，表示欢迎，并道声：“Welcome to our hotel” 如客人乘车，应把车辆引导到客人容易下车的地方，车停稳后，替客人打开车门，然后热情地向客人致意并问候。对重要客人及常客应能礼貌、正确地称呼客人的姓名。开车门时，要用左手拉开车门成70度左右，右手挡在车门上沿，为客人护顶，防止客人碰伤头部(但对信仰佛教或伊斯兰教的客人不能护顶)。关车门时，也要小心，注意勿夹、碰客人的手或脚。同时要注意扶老携幼。</section>
+			<section>（2）准确、及时地为客人拉开酒店正门(自动门、旋转门则可不必)，如果客人的行李较多，应帮助客人提拿行李，在进入大厅前交给行李员。</section>
+			<section>（3）住店客人进出酒店时，同样要热情地招呼致意，对重要客人和常客要努力记住客人的姓名，以示尊重。</section>
+			<section>（4）如遇雨天，应打伞为客人服务，客人随身携带的雨伞，也应锁在伞架上。并礼貌地请客人擦干鞋底后进入大厅，酒店向客人提供交押金免费使用雨伞的服务，以方便客人。</section>
+			<section>（5）团体客人到店前，应做好迎接的准备工作，团体大客车到店时，应维持好交通秩序，迎接客人下车。对一般客人要点头致意并问好，对行动不便的客人要扶助他们下车，对随身行李较多的客人，应帮助提行李。客人下车完毕后，要示意司机把车开走，或停在酒店附近适合停车的地方。</section>
+			 
+			<h3>2．送别宾客</h3>
+		   <section>（1）客人离店时，主动热情地为客人叫车，并把车引导到合适的位置。等车停稳后，拉开车门，请客人上车、护顶，并向客人道别，感谢客人的光临，预祝客人旅途愉快。然后，等客人坐稳后再关上车门。</section>
+		   <section>（2）客人如果有行李，应协助行李员将行李装好，并请客人核实。</section>
+		   <section>（3）当客人的汽车启动时，挥手向客人告别，目送客人，以示礼貌和诚意。</section>
+		   <section>（4）送别团队客人时，应站在车门一侧，向客人点头致意，并注意客人的上车过程，如发现有行动不便的客人，扶助其上车。等人都到齐后，示意司机开车。向客人挥手道别，目送客人离店。</section>
+		   
+		   <h3>3．其他日常服务</h3>
+		   <section>（1）安全服务</section>
+		 <section>①与保安部人员一起，注意出入者的动向，保持高度的警惕性，对个别精神病患者或形迹可疑者谢绝入内，必要时通知保安部甚至公安部门处理，确保酒店安全。对于衣冠不整者，应尽可能地劝其穿戴整齐后再进入大厅。</section>
+		<section>②随时注意酒店大门上所有部件的完好程度，如发现故障，随时排除或迅速通知维修人员修理。确保无碰撞、挤压客人及行李等现象发生。</section>
+		<section>（2）回答客人问讯。因门卫工作岗位的特殊位置，经常会遇到客人问讯，对此，要以热情的态度，准确地答复客人。如果对客人的问题没有把握；应向客人表示歉意，并礼貌地请客人到问讯处询问。要注意，绝不可用“不知道”、“不清楚”这样简单生硬的否定性语言答复客人。</section>
+		<section>（3）调度门前交通。掌握酒店门前交通、车辆出人以及停车场的情况，准确迅速地指示车辆停靠地点，确保酒店门前车道通畅。负责大门口附近的清理工作。</section>
+		
+		<h2>（二）团队行李服务的注意事项</h2>
+           <section>对团体客人的行李，酒店通常只负责从酒店大门进入客房以及从客房搬至酒店大厅这一段距离的运送，其余通常由团体接待单位派人完成，个别时候，在不影响店内行李运送的前提下，酒店也可以按照团体接待单位的要求到车站、机场、码头等地运送行李到酒店或把行李由酒店送到上述各处，此种情况下酒店可以收取一定的费用。</section>
+		<h3>1．团体客人入店时的行李服务程序</h3>
+		<section>（1）团体接待单位的人员及本店行李员一起卸下行李后，负责交接的本店行李员应与运送行李来的人清点行李件数，检查行李的破损情况，在团体行李一览表上找出该团的团名，写上行李到店时间、行李件数，找出团体分房名单，核对团名、人数无误后，请行李押运人员或司机签名。如行李出现破损或异常情况，也应在团体行李一览表上注明并请押运人员签名证实情况属实。</section>
+		<section>（2）装车。把团体行李轻轻地装上大行李推车，装车时要注意硬件在下，软件在上，大件在下，小件在上；按房号离电梯的远近自远向近装车，要力争同团同车、同层同车、同侧同车。要注意行李、包装物上的“小心轻放、请勿倒置”等字样。装上车后应再清点一次，一车行李通常由一名行李员运送；行李员很忙时，或者碰到没有姓名牌的内宾团体行李，装车时只注意硬件在下，软件在上，大件在下，小件在上即可；但应先把行李放在大堂妥善保管，等团体客人到了再送上楼层，供客人一一领取。</section>
+		<section>（3）走行李专用电梯(如果没有则单独乘一趟客梯)把行李运上楼层。</section>
+		<section>（4）按酒店的操作程序把行李交给楼层服务员或直接放在客房门口或送入客房。</section>
+		
+		<h3>2．团体客人离店时的行李服务程序</h3>
+		<section>（1）按接待单位规定的出行李时问提前上楼层拿行李，并携带团体分房单或团体分房表以记录每间客房出行李的件数及团体行李总件数。</section>
+		<section>（2）上楼层后，按已核对的团体分房表上的房号逐问收取行李，收取一间登记一问，不能全部登记后才收取行李，应注意陪同房是否有行李。收取行李时还应确认行李上的姓名与该房号住客的姓名是否一致。</section>
+		<section>（3）如果到陪同要求的出行李时间时行李还未放在客房门口，应通知该团的陪同。并协助陪同通知客人把行李放在客房门口，以免耽误时间。</section>
+		<section>（4）收取行李时只收取放于客房门口的行李或已被收集在一起的行李，对于放在客房内的行李，无论是否已整理好，均不收送。</section>
+		<section>（5）行李收齐后，行李员应点清件数，并在行李登记簿上写清团号、件数，用网罩好，并把件数报给领班。</section>
+		<section>（6）领班应尽快找到领队、陪同，核实出行李的准确数字，如准确无误，则请领队或陪同在签收单上签字。</section>
+		<section>（7）行李车队来拉行李时，行李员应问清所拉行李的团名，确认无误后，由行李车队的行李员和本酒店行李员一起点清所要拉的行李件数，并在旅行社的收行李单上签字，然后帮助装车。</section>
+		<section>（8）凌晨离店的客人一般在前一天晚上把行李收到大厅（因夜班行李员人数少），此时行李要在大厅过夜，除了要用网罩住放在厅内一侧外，还应请保安员、夜班行李员注意其安全。</section>
+		<section>（9）大型团体客人的行李抵、离店时，行李员必须集中力量快速运送行李，在这种情况下，行李员应两人一组使用大行李车走行李专用通道收送行李，以提高效率。</section>
+		<section>（10）行李员完成每次团体行李收送后应迅速返回工作岗位，并做好记录。</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</article>
+		<div class="foot"></div>
+	</body>
+
+</html>

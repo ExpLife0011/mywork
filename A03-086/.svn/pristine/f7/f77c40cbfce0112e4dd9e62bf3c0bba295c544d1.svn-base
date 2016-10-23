@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>案例分析</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/answer.css"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz.js"></script>
+	<script type="text/javascript" src="../META-INF/js/quiz-item.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		MIQuiz.makeQuiz();
+		MIQuizItem.makeQuizItems();
+	}
+	</script>
+</head>
+
+<body onload="pageOnLoad();" style="-webkit-user-select:none;"
+data-chapter-uuid="9EA77E6B-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="6C8DDE5D-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="C23EF684-E45E-CB08-6DA8-6C849601A2DD"
+data-activity-uuid="5F620FF6-C2EC-4275-AC48-46890592EF5C"
+data-activity-sn="tS-060504"
+data-level="2">
+<div class="content">
+<div class="test-top">案例分析</div>
+<article>
+	<div class='wrap'>
+	<div class="topheight"></div>
+		<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>“嘟……”，谋宾馆总机电话响起来了。“您好，总机”。总机接线员接起了电话。 “我是 1018 客人，明天早上 5：30 叫早好吗?谢谢!”
+“好的，不用谢，这是我们应该做的!”。说完后，接线员在交班本上进行了记录。
+“嘟……”，“您好，总机”。“你们是怎么搞的嘛，现在都几点了，你看看，已经 6：20 了，我叫你们做的叫早服务已经过了 50 分钟了。我要投诉你们耽误了我的登机时间。”1018 房客人怒气冲冲地打电话到总机。接线员被客人的怒气吓了一跳，马上查看交班记录，发现交班记录上写的是 6：30 叫早，并核对了一下总机自动叫早设置，都没有问题。于是，接线员说：“对不起先生，我们的交班记录上写的是 6：30 叫早，现在还有 10 分钟。如果到这个时间了，我们会叫早您的。我查看了记录和设置，我们没有错。”“你们没有错?那是我错了?我昨天跟你们讲的是 5：30。我要投诉你们。”客人显然是被激怒了，大声说完就挂断了电话。</section>
+	<section style="text-indent: 0px;">点评：</section>
+	<section>在这个服务过程中，我们不难看出是服务员没有按照规定的操作程序操作，加上后来在处理上的不当语言导致了这场本可以避免的重大投诉。首先，在叫早服务中，服务员应当重复客人的叫早要求，与客人进行核对房间号码和叫早时间。其次，在交班本上记录清楚，并与下班员工口头交接。</section>
+	<section>作为服务业从业者，首先要懂得礼貌待客，无论在什么情况下，都不能直接表达是客人做得不对。其次，不要与客人理论争吵。第三，在向客人解释说明时，不能使用绝对性语言，以免给解决问题留下隐患。第四，要沉着冷静地处理问题，不能表现出急躁和不耐烦。在接到客人投诉时，无论出于什么原因，首先都要表示歉意，因为毕竟是在我们的酒店给客人带来了不便(也许是误会)才导致客人投诉。其次，态度和语言要诚恳，为彻底解决问题留下良好的基础。第三，在自己不能或无权解决时，要第一时间向上级报告，并把这个决定告知客人，顺便说一下需要等待的时间。在每次不能解决问题时，都要向客人致歉。我们在这个案例中，本来已经是酒店的错误了，在处理时又没有注意细节和态度，导致了更大的投诉。从这个案例中，我们也可以学习到，工作是要按照程序进行的，任何没有按程序进行的事情，都有可能出现错误。</section>
+	</div>
+		 
+		
+	</div>
+<div style="clear:both;"></div>
+<div class="foot"></div>
+</article>
+</div>
+</body>
+</html>
+

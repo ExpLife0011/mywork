@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>技能训练</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	技能训练
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="text-indent: 0px;"><span style="font-weight: bold;">实训项目：</span>超额预订。</section>
+	<section class="margin0" style="text-indent: 0px;font-weight: bold;">实训目的：</section>
+	<section>通过模拟超额预订受理的情景训练，了解超额预订的基础知识，掌握超额预订受理程序，达到独立完成超额预订手续的办理。</section>
+	<section style="font-weight: bold;text-indent: 0px;">实训步骤：</section>
+	<section>准备工作</section>
+	<section class="indent-title">1．查阅客房预订状况总表。</section>
+    <section class="indent-title margin0">2．了解附近同级酒店的住房情况。</section>
+    <section>统计分析</section>
+	<section class="indent-title">1．分析过去历年同期订房不到的平均百分比。	</section>
+	<section class="indent-title margin0">2．临时取消的平均百分比。	</section>
+	<section class="indent-title margin0">3．提前抵离店和延期离店的客房数。	</section>
+	<section class="indent-title margin0">4．掌握好预订提前量的多少。	</section>
+	<section class="indent-title margin0">5．3天之内退房的精确数字。</section>
+	<section>估计超订率	</section>
+	<section class="indent-title">1．根据统计分析。	</section>
+	<section class="indent-title margin0">2．精确的退房、预订情况。	</section>
+	<section class="indent-title margin0">3．团队与散客的预订比例。	</section>
+	<section class="indent-title margin0">4．酒店的信誉。	</section>
+	<section>决定接受超额预订的比例。	</section>
+	<section>超订应对措施	</section>
+	<section class="indent-title">1．做好房型匹配。	</section>
+	<section class="indent-title margin0">2．联系几家相同档次的酒店作为协议单位，以防万一。	</section>
+	<section class="indent-title margin0">3．核对预订。</section>
+    
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

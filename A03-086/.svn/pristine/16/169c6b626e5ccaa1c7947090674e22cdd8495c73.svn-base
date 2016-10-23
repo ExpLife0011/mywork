@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>补充知识</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.secondary {
+		width: 718px;
+		height: 120px;
+		background-color: #85003c;
+		font-size: 30px;
+		-webkit-user-select:none;
+		color: #fff;
+		font-weight: bold;
+		line-height: 120px;
+		box-sizing: border-box;
+		padding-left: 50px;
+	}
+	.headline {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 24px;
+		-webkit-user-select:none;
+	}
+	.headline-bottom {
+		text-align: center;
+		text-indent: 0px;
+		font-size: 20px;
+		-webkit-user-select:none;
+		margin-top: 8px;
+	}
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.table-l td:first-child {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 600px){
+		.secondary {
+			display: none;
+		}
+	.headline {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1.11rem;
+			-webkit-user-select:none;
+		}
+	.headline-bottom {
+			text-align: center;
+			text-indent: 0px;
+			font-size: 1rem;
+			-webkit-user-select:none;
+			margin-top: 8px;
+		}
+		.table-l td:first-child {
+		text-align: left;
+	}
+
+
+
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();">
+
+
+<div class="secondary">
+	补充知识
+</div>
+<article>
+	<div class="section-sep">&nbsp;</div>
+	<section style="font-size: 20px;text-align: center;font-weight: bold;text-indent: 0px;">◆加床</section>
+	<section>酒店通常规定 12 岁以下的儿童与父母同居一室，可在房内为儿童免费提供一张小床，但不可把沙发椅当作床。如 3 个成年人同居一室(通常是在旺季客房不够时允许这样)要加床。</section>
+	<section class="indent-title">1．当3个成年客人同住一间双人房时，第3位客人要做加床处理并收取加床费。</section> 
+	<section class="indent-title margin0">2．一间房内一般不允许加两张床，因为这样既会给打扫卫生带来不便，也会降低酒店的收入，影响酒店声誉。</section>
+	<section class="indent-title margin0">3．如需要加床应在客人通知单上注明“加床”字样，同时在欢迎卡(钥匙卡)上注明该客人为加床客人。</section>
+	<section class="indent-title margin0">4．通知客房中心或客房所在楼层为客人加床，同时通知收款处，并更改电脑中的房态资料。</section>
+	<section class="indent-title margin0">5．请行李员(派送员、信使员)派发加床通知单给相关部门。</section>
+	 <section style="font-size: 20px;text-align: center;font-weight: bold;text-indent: 0px;">◆客房状况报表</section>
+	 <section>由于前台的工作量大，且客房时常处于变化之中，虽然很多酒店通过电脑查询，可知目前的房态情况；但为了避免由于工作上可能出现的差错，而造成前台接待处的房态与楼层实际房间状态的不符，出现“重房”或“漏房”现象，造成前台客房销售及客房服务的混乱，房态的核对、检查是十分必要的。对于房态的检查，是电脑查询与参考相关客房状况报表并用的。	</section>
+	<section>无论电脑还是手工制作的客房状况报表大致包括：</section>
+	<h3>1．客房状况报告</h3>
+客房状况报告是接待处根据客房状况显示架或电脑所显示的客房状况以及订房资料，每天定时制作的。制作此表的目的，是通过定时统计来确定客房的现状以及预订状况(见图1)。
+<h3>2．客房状况调整表</h3>
+<section>将未经预订直接抵店、延期离店和换房等情况汇集起来，使形成客房状况调整表。它的作用主要体现在两点：一是用于预订处与接待处之间的信息沟通，使预订处依据调整表中的内容，更改并建立新的客房预订汇总表。二是调整表上的统计数字，可以使接待处掌握有多少临时取消住店、已预订但未到店、提前离店和逾期离店的客人，以及他们所占客源的百分比。这些数字对客房的销售起到很大作用(见图 2)。</section>
+<h3>3．接待情况汇总</h3>
+<section>接待情况汇总是指接待处将客房状况显示架及电脑中所显示出的客房状况记录下来而形成的接待情况报告。它的作用主要是为制作每H客房营业H报表以及前厅的统计分析报表提供资料(见图 3)。</section>
+<h3>4．在店 VIP 客人或团队名单 </h3>
+<section>图 3 由夜班接待员根据客房状况显示系统提供的资料制作而成。它的作用在于，使酒店及时掌握在店的和即将抵店贵宾、团队客人的信息，以便酒店做好各方面的准备工作(见图 4)。</section>
+<h3>5．住店客人名单</h3>
+<section>住店客人名单，就是将所有住店客人的姓名登录下来。一般酒店编制住客名单主要采用两种方法：一是按照酒店客房房号的顺序排列；二是按住客姓名的首写字母的顺序排列。制作住店客人名单的作用，是为了便于前台各部门的对客服务。</section>
+<h3>6．预期离店客人名单</h3>
+<section>预期离店客人名单 ，就是根据客人在填写入住登记表时填写的离店日期汇总而成的。此表一般是按楼层、房号的顺序排列，其作用主要是为前台各部门和为客房部提前做好客人离店准备工作和客房的重新预订销售提供依据(见图 5)。</section>
+<h3>7．维修房报告</h3>
+<section>维修房报告，是由前台接待处制作，为工程部进行维修房整修而做的记录及依据。</section>
+<h3>8．客房状况差异表</h3> 
+<section>客房状况差异表，是指客房部每天都定时检查各楼层客房的使用情况，并将检查报告送至接待处。接待员根据客房实际使用状况，与客房状况显示架上及电脑内的客房状况相对照，将不一致处记录下来所形成的表格(见图 6)。</section>
+  <div class="box-example-pad">
+	<div class="example"><img src="../META-INF/images/text01.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href=" " data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能考核">技能考核</div>
+		<div class="example"><img src="../META-INF/images/text02.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href="skills-training2.html" data-scroll-enable="YES" data-phscroll-enable="YES" data-title="技能训练">技能训练</div>		
+		<div class="example"><img src="../META-INF/images/text03.png" alt=""></div>
+		<div class="jump-button example" data-target="_blank" data-href=" " data-scroll-enable="YES" data-phscroll-enable="YES" data-title="知识考核">知识考核</div>
+	<div style="clear: both;"></div>
+	</div>
+	<div class="jump-exercise jump-button" data-target="_blank" data-href="test03-2.html" data-scroll-enable="NO" data-phscroll-enable="YES" data-title="案例分析" style="margin-top: 8px;" data-isActivity="YES">
+		<div class="jump-title">案例分析</div>
+		<div class="jump-left"></div>
+	</div>	
+	 
+	 
+</article>	
+
+<div class="foot"></div>
+</body>
+</html>

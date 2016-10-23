@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/> 
+	<title>3.3　团队客人抵店服务</title>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/mosoink.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/html_style.css" />
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/pad.css" media="(min-width:600px)"/>
+	<link rel="stylesheet" type="text/css" href="../META-INF/css/phone.css" media="(max-width:600px)"/>
+	<script type="text/javascript" src="../META-INF/js/mosoink.js"></script>
+	<script type="text/javascript" src="../META-INF/js/select.js"></script>
+	<script type="text/javascript">
+	function pageOnLoad() {
+		MIGlobals.init();
+		select.init();
+		
+	}
+
+	
+	</script>
+	<style type="text/css">
+	.table-l {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 16px;
+	}
+	.table-l th {
+	border:1px solid #000;
+	font-family: lantinghei;
+	padding: 8px;
+	}
+	.table-l td {
+		border:1px solid #000;
+		font-family: lantingxihei;
+		padding: 8px;
+	}
+	.right{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/dui.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.wrong{
+	    width: 21px;
+	    height: 18px;
+	    opacity: 0.8;
+	    background-image: url(../META-INF/images/cuo.png);
+	    background-size: 21px 18px;
+	    z-index: 5;
+	}
+	.judge{
+		display: inline-block;
+		width: 21px;
+		height: 18px;
+		margin-bottom: -2px;
+	}
+	</style>
+</head>
+<body onload="pageOnLoad();"
+data-chapter-uuid="6125CCE8-762E-11E6-9EF4-0016D39A06D3"
+data-section-uuid="1478BE03-7630-11E6-9EF4-0016D39A06D3"
+data-uuid="D9BE091D-F7E3-507F-8A73-0EF623143A05"
+data-pre-file="c03s02.html" 
+data-pre-title="上一节：团队客人客房预订" 
+data-next-file="c03s04.html" 
+data-next-title="下一节：团队客人住店服务（叫醒、礼宾）">
+<div class="chapter-box">
+	<div class="chapter-num">第三部分</div>
+	<div class="chapter-name">团队客人抵店服务</div>
+</div>
+<div class="page-number" id="p_24">p.24</div>
+<article>
+	<h1>一、任务目标</h1>
+	<section class="indent-title">1．掌握团队客人入住接待的处理流程。</section>
+	<section class="indent-title margin0">2．了解前台接待管理内容。</section>
+	<section class="indent-title margin0">3．学会为团队客人办理入住手续。</section>
+	<h1>二、案例导入</h1>
+	<div class="case-box">
+	<div class="case-title">案例导入</div>
+	<section>场景一：新星旅游团和天马旅游团的客人在下午5点左右同时入住酒店，请根据团队名单，设计一段接待人员接待团队客人入住酒店的场景，并模拟训练。</section>
+	<section>场景二：某天晚上11点左右，东方酒店迎来了一批因路上遇到意外而姗姗来迟的泰兴旅行社的团队客人，请以此设计一段接待人员接待客人入住酒店的情景，并模拟训练。</section>
+	<section style="text-indent: 0px;">思考与讨论：</section>
+	<section class="case-fold margin0">1．假如你是场景二中的接待人员，怎样才能让客人尽快入住？</section>
+	<section class="case-fold margin0">2．接待两个同时入住的团队，应注意哪些问题？</section>
+	</div>
+	<h1>三、任务流程</h1>
+	<section>根据酒店实际情况和团队客人需求为客人办理入住。</section>
+	<section>前厅部接受团队客人入住的工作流程如下：</section> 
+	 
+	 <div class="related-information jump-button" data-href="information0303.html" data-target="_blank" data-phscroll-enable="YES" data-scroll-enable="YES" data-title="相关知识">
+		<div class="related-text">相关知识</div>
+		<div class="related-images"><img src="../META-INF/images/icon-01.png" alt=""></div>
+	</div>
+	 
+</article>
+<div class="foot"></div>
+</body>
+</html>
