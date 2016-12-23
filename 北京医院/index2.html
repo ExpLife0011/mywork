@@ -1,0 +1,4130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="jquery树形导航菜单插件制作一个类似树形展示的slider滑动多级二级下拉菜单目录，支持无限嵌套。jquery插件,jquery下载。" />
+<title>jquery树形导航菜单插件制作滑动多级二级下拉菜单展示</title>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>	
+<script type="text/javascript" src="js/jquery.tree.js"></script>	
+<script type="text/javascript">
+$(function(){
+	$('#files').tree({
+		expanded: 'li:first'
+	});
+});
+function ChangeDiv(divId,divName,zDivCount) { 
+	for(i=0;i<=zDivCount;i++) { 
+		document.getElementById(divName+i).style.display="none"; 
+		//将所有的层都隐藏 
+	} 
+	document.getElementById(divName+divId).style.display="block"; //显示当前层 
+} 
+
+function setTab(m,n){
+
+	var tli = document.getElementById("menu"+m).getElementsByTagName("li");
+	var mli = document.getElementById("main"+m).getElementsByTagName("ul");
+ 
+	for(i = 0;i < tli.length;i++){
+	    tli[i].className = i == n ? "hover" : "";
+	    mli[i].style.display = i == n ? "block" : "none";
+	    console.log(mli[i].style.display);
+	   
+	}
+}
+</script>	
+<style type="text/css">* {
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	font-size: 12px;
+}
+
+p,
+a,
+ul,
+li,
+span {
+	line-height: 2em;
+	border: 0;
+	font-family: "Microsoft Yahei" !important;
+}
+
+p,
+a {
+	line-height: 2em;
+	border: 0;
+	color: #555;
+	font-family: Microsoft Yahei !important;
+}
+
+a:hover {
+	border: 0px;
+}
+
+#files {
+	width: 246px;
+	float: Left;
+	height: 300px;
+	background: #ffffff;
+}
+
+#right {
+	float;
+	right;
+	width: 730px;
+}
+
+.tree,
+.tree ul,
+.tree li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tree ul {
+	margin-left: 8px;
+}
+
+.tree li a {
+	color: #555;
+	padding: .1em 7px .1em 15px;
+	/*display:block;*/
+	text-decoration: none;
+	position: relative;
+	left: -18px;
+}
+
+.tree ul.tree-group-collapsed {
+	display: none;
+}
+
+.content {
+	display: none;
+	font-size: 14px;
+	margin: 10px;
+	background: #ffffff;
+}
+
+@charset "utf-8";
+
+/** 清除边距 **/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+a,
+span,
+i,
+b,
+
+/* list elements 列表元素 */
+
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td
+/* table elements 表格元素 */
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	background: url(./image/bg.jpg) repeat-x left top;
+}
+
+
+/** 字体设置 **/
+
+body,
+button,
+input,
+select,
+textarea
+/* for ie */
+
+{
+	color: #333;
+}
+
+address,
+em {
+	font-style: normal;
+}
+
+
+/* 将斜体扶正 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Microsoft YaHei";
+}
+
+
+/** 重置列表元素 **/
+
+ul,
+ol {
+	list-style: none;
+}
+
+
+/** 重置链接元素 **/
+
+a {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+
+img {
+	border: 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*header*/
+
+#header {
+	height: 96px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 76px;
+	float: left;
+	padding-top: 20px;
+	padding-left: 25px;
+}
+
+.logo_left {
+	width: 204px;
+	padding-right: 18px;
+	background: url(./image/border-right.jpg) no-repeat right top;
+	float: left;
+}
+
+.logo_right {
+	color: #0A73C6;
+	float: left;
+	font-family: "Microsoft YaHei";
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 28px;
+	padding-left: 28px;
+	padding-top: 12px;
+}
+
+.wb {
+	width: 365px;
+	height: 76px;
+	float: right;
+	padding-top: 20px;
+}
+
+.login a {
+	padding: 0 10px;
+	border-right: 1px solid #023665;
+	color: #023665;
+}
+
+.login .one {
+	background: url(./image/wb.png) no-repeat left center;
+	padding-left: 24px;
+}
+
+.login .end {
+	border: 0;
+	color: #cc0000;
+}
+
+.login_btm {
+	line-height: 30px;
+	height: 30px;
+	margin-top: 15px;
+	text-align: right;
+}
+
+.login_btm a {
+	margin-right: 25px;
+}
+
+.login_btm .first {
+	display: inline-block;
+	background: url(./image/one.png) no-repeat left center;
+	padding-left: 25px;
+	line-height: 25px;
+}
+
+.login_btm .second {
+	background: url(./image/two.png) no-repeat left center;
+	padding-left: 25px;
+}
+
+
+/*导航*/
+
+#nav {
+	margin-top: 1px;
+	height: 40px;
+	background: url(./image/nav_bg.jpg) repeat-x left top;
+}
+
+#nav ul {
+	width: 980px;
+	margin: auto;
+	font-family: "Microsoft YaHei";
+}
+
+#nav ul li {
+	float: left;
+	line-height: 40px;
+}
+
+#nav ul li a {
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 24px;
+	background: url(./image/nav_xian.jpg) no-repeat;
+}
+
+#nav ul li a:hover {
+	padding: 0 24px;
+	color: #f9c100;
+}
+
+
+/*主体内容*/
+
+#main {
+	background-color: #eff8ff;
+	height: 897px;
+}
+
+#main_bg {
+	width: 1001px;
+	height: 831px;
+	margin: 0 auto;
+	background: url(./image/main_bg.jpg) no-repeat right;
+}
+
+
+/*12.31 content*/
+
+
+/*main*/
+
+#main_da {
+	background-color: #edf7ff;
+}
+
+#mainC {
+	margin: 0 auto;
+	width: 980px;
+}
+
+
+/*left*/
+
+.left {
+	float: left;
+	width: 246px;
+	background-color: #FFF;
+	padding-top: 5px;
+	margin-top: 15px;
+	min-height: 300px;
+	padding-bottom: 20px;
+}
+
+.left h4 {
+	font-size: 14px;
+	color: #236fb4;
+	padding: 0 0 2px 10px;
+	height: 18px;
+	line-height: 18px;
+}
+
+.left .xian {
+	padding-bottom: 10px;
+}
+
+
+/*搜索框*/
+
+.left .search {
+	width: 193px;
+	height: 35px;
+	border: none;
+	padding-left: 14px;
+	background: url(./image/list_page/k_1.jpg) no-repeat;
+	line-height: 35px;
+	vertical-align: top;
+}
+
+.left .left_tu {
+	padding: 10px 3px 3px;
+	border-top: none;
+	text-align: center;
+	width: 238px;
+}
+
+.left .left_tu img {
+	border: 1px solid #BFBFBF;
+	max-width: 234px;
+	padding: 2px;
+}
+
+
+/*right*/
+
+.right {
+	width: 717px;
+	float: left;
+	background-color: #FFF;
+	margin: 15px 0 0 15px;
+	padding-bottom: 20px;
+}
+
+.right h4 {
+	font-size: 12px;
+	color: #236fb4;
+	padding: 5px 0 2px 10px;
+}
+
+.right h4 a {
+	font-size: 14px;
+	color: #236fb4;
+}
+
+.right h4 a:hover {
+	color: #09F;
+}
+
+.right .xian {
+	padding-bottom: 10px;
+}
+
+.right h2 {
+	text-align: center;
+	font-size: 16px;
+	color: #333;
+	letter-spacing: 1px;
+	padding-top: 5px;
+}
+
+.right .ffd {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.right .ffd span {
+	padding: 0 37px;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	color: #4f4f4f;
+}
+
+.right .contentCss {
+	min-height: 300px;
+	padding: 0 5px 5px 10px;
+	line-height: 1.5em;
+}
+
+
+/*right*/
+
+.rightl {
+	width: 717px;
+	float: left;
+	background-color: #FFF;
+	margin: 15px 0 0 15px;
+	min-height: 300px;
+	padding-bottom: 30px;
+}
+
+.rightl h4 {
+	font-size: 14px;
+	color: #236fb4;
+	padding: 5px 15px 2px 10px;
+}
+
+.rightl h4 span {
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	color: #696969;
+	font-weight: normal;
+	float: right;
+	padding-top: 5px;
+}
+
+.rightl .xian {
+	padding-bottom: 10px;
+}
+
+.rightl .list {
+	width: 682px;
+	padding-left: 15px;
+}
+
+.rightl .list li {
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	color: #000;
+	height: 28px;
+	line-height: 28px;
+	background: url(./image/list_page/jt2.jpg) no-repeat left;
+	padding-left: 10px;
+	border-bottom: dashed 1px #CCC;
+}
+
+.rightl .list li span {
+	float: right;
+}
+
+.rightl .sx {
+	padding: 20px 0 30px 49px;
+}
+
+.rightl .sx a {
+	float: left;
+}
+
+.rightl .sx span {
+	float: left;
+	height: 16px;
+	line-height: 16px;
+}
+
+a {
+	color: #252525;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0664b6;
+	text-decoration: none;
+}
+
+a:active {
+	color: #058F04;
+	text-decoration: none;
+}
+
+.a_list {
+	margin-bottom: 115px;
+	background: none repeat scroll 0 0 #F7F7F7;
+}
+
+.a_list li {
+	background: url("./image/a_btn.jpg") no-repeat scroll 5px center rgba(0, 0, 0, 0);
+	border-bottom: 1px solid #F0F0F0;
+	height: 41px;
+	line-height: 41px;
+	padding: 0 10px 0 30px;
+}
+
+.a_list li a {
+	color: #999999;
+	font-size: 16px;
+	display: block;
+}
+
+.a_list li a:hover {
+	color: #3DAFE4;
+	background: none repeat scroll 0 0 #EEECEC;
+}
+
+.indexC {
+	width: 90%;
+	margin: 0 auto;
+	line-height: 2em;
+}
+
+@charset "gb2312";
+.h_tonglan {
+	width: 958px;
+	background: #FFFFFF;
+	padding: 14px 10px;
+	margin: 0 auto;
+}
+
+.h_tonglan dl {
+	width: 938px;
+	height: 32px;
+	_height: 32px;
+	background: url(./image/huixian2.gif) repeat-x top;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.h_tonglan dl dd {
+	float: left;
+	width: 196px;
+	height: 32px;
+	_height: 32px;
+	background: url(./image/lvx2.gif) repeat-x top;
+}
+
+.h_tonglan dl dt {
+	float: right;
+	width: 700px;
+	text-align: right;
+	line-height: 25px;
+	min-height: 25px;
+	color: #6A6A6A;
+}
+
+.h_tonglan ul {
+	overflow: hidden;
+}
+
+.h190px {
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 3px;
+	padding-top: 14px;
+}
+
+.h190px img {
+	width: 938px;
+	border: 0px;
+}
+
+.h218px {
+	width: 938px;
+	height: 200px;
+	_height: 200px;
+	padding-top: 14px;
+	margin: 0 auto;
+}
+
+.h218px th {
+	padding-top: 67px;
+}
+
+.h218px td {
+	overflow: hidden;
+}
+
+#scrollbox ul {
+	overflow: hidden;
+}
+
+#scrollbox ul LI {
+	FLOAT: left;
+	width: 150px;
+	_width: 150px;
+	height: 200px;
+	_height: 200px;
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 18px;
+	min-height: 18px;
+	text-align: center;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#scrollbox ul LI img {
+	width: 130px;
+	height: 160px;
+	border: 0px;
+}
+
+.pointer {
+	CURSOR: pointer
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	outline: none;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	padding: 0px;
+	font-size: 12px;
+	background: url(/image/t_ds.gif) repeat-x top;
+	background-color: #F2F2F2;
+	color: #252525;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+table,
+td,
+tr,
+th {
+	font-size: 12px;
+}
+
+li {
+	list-style-type: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+address,
+cite,
+code,
+em,
+th,
+i {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fB {
+	font-weight: bold;
+}
+
+.fred {
+	color: #ff0000;
+}
+
+.f12px {
+	font-size: 12px;
+}
+
+.f14px {
+	font-size: 14px;
+}
+
+.f14pxbai {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.f16px {
+	font-size: 16px;
+}
+
+.f18px {
+	font-size: 18px;
+}
+
+.f22px {
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+.center {
+	margin: 0px auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.rejm {
+	width: 60px;
+	height: 20px;
+	border: #7E9DB9 1px solid;
+	line-height: 20px;
+}
+
+
+/*第一种形式*/
+
+#tabs0 {
+	height: 200px;
+	width: 100%;
+	border: 0px solid #cbcbcb;
+}
+
+.menu0,
+.menu10,
+.menu1,
+.menu2,
+.menu3,
+.menu4,
+.menu5,
+.menu6,
+.menu7 {
+	width: 410px;
+	margin: 0 auto;
+}
+
+.menu0 li,
+.menu10 li,
+.menu1 li,
+.menu2 li,
+.menu3 li,
+.menu4 li,
+.menu5 li,
+.menu6 li,
+.menu7 li {
+	display: block;
+	float: left;
+	padding: 4px 0;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+	background: #EDF7FF;
+	margin-right: 2px;
+	border-radius: 3px;
+}
+
+.menu0 li.hover,
+.menu10 li.hover,
+.menu1 li.hover,
+.menu2 li.hover,
+.menu3 li.hover,
+.menu4 li.hover,
+.menu5 li.hover,
+.menu6 li.hover,
+.menu7 li.hover {
+	background: #a4c7e1;
+}
+
+#main0,
+#main1,
+#main2,
+#main3,
+#main4,
+#main5,
+#main6 {
+	padding-top: 15px;
+}
+
+#main0 ul,
+#main10 ul,
+#main1 ul,
+#main2 ul,
+#main3 ul,
+#main4 ul,
+#main5 ul,
+#main6 ul {
+	display: none;
+}
+
+#main0 ul.block,
+#main10 ul.block,
+#main1 ul.block,
+#main2 ul.block,
+#main3 ul.block,
+#main4 ul.block,
+#main5 ul.block,
+#main6 ul.block {
+	display: block;
+}
+
+.image_word {
+	font-size: 12px;
+	text-align: center;
+}
+
+.word_mark {
+	font-size: 14px;
+	font-weight: 800;
+	padding-top: 15px;
+	display: block;
+}
+
+h3 {
+	font-size: 14px !important;
+}
+
+.title {
+	padding: 6px 18px 6px 10px;
+	border-right-radius: 5px;
+	border-radius: 3px 32% 3px 3px;
+	border: 1px solid #00afec;
+	background: #00afec;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table,
+td,
+tr,
+th {
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.sample {
+	border-color: #ffffff;
+	text-align: center;
+	width: 625px;
+}
+
+.sample tr td {
+	border: 1px solid #ffffff;
+}
+
+.word_color {
+	color: #00b0f0;
+}
+
+table,
+td,
+tr,
+th {
+	font-size: 12px;
+	padding-left: 5px;
+	border: 1px solid #00afde;
+}
+
+.main {
+	float: left;
+	width: 100%;
+}
+
+.font_weights {
+	font-weight: 800;
+}
+
+.xian img {
+	width: 625px;
+}
+
+.left li:link,
+.left li:visited,
+.left li:hover,
+.left li:active {
+	border: 0px;
+}
+
+.left a:link,
+.left a:visited,
+.left a:hover,
+.left a:active {
+	border: 0px;
+}
+
+a:visited {
+	border: none;
+}
+
+a:active {
+	border: none;
+}
+
+.table_one {
+	background: #53c3f3
+}
+
+.table_two {
+	background: #e9f6fe
+}
+
+.table_three {
+	background: #f3fbfe
+}
+
+.table_four {
+	background: #eef3f7;
+}
+
+.table_five {
+	background: #6f94c0;
+	color: #ffffff;
+}
+
+p {
+	text-indent: 0em;
+}
+
+.textindent {
+	text-indent: 2em;
+}
+
+.zero_left {
+	text-indent: 0em;
+}
+
+.one_left {
+	text-indent: 1em;
+}
+
+.word_left,
+.table_wordleft tr td:last-child {
+	text-align: left;
+}
+
+.table_firstleft tr td:first-child {
+	text-align: left;
+}
+
+#white,
+td,
+tr,
+th {
+	border: 1px solid #ffffff;
+}
+
+#blue tr td,
+#blue tr th,
+,
+td,
+tr,
+th {
+	border: 1px solid #00afde;
+}
+
+#li_style {
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-left: 15px;
+}
+
+.icon {
+	background: url("./image/icon02.gif") left center no-repeat;
+	padding-left: 8px;
+	font-weight: 400
+}
+
+.sample td.border {
+	background: #24B8C6;
+	border-radius: 47px 0px 0px 0px;
+}
+.sample tr:first-child{
+	background: none !important;
+}
+.sample tr:first-child td{
+	background: #24B8C6;
+}
+.sample tr:first-child td:last-child{
+	background: #24B8C6;
+	border-radius: 0px 47px 0px 0px;
+}
+/*染色体更改*/
+.sample1{
+	text-align: center;
+	width: 625px;
+	border-color:#FFFFFF;
+}
+.sample1 tr:first-child td{
+	background: #00AFEC;
+}
+.sample1 tr:first-child td:last-child{
+	background: #00AFEC;
+	border-radius: 0px 47px 0px 0px;
+}
+.sample1 tr:first-child td:nth-child(4){
+	line-height: 1.2em;
+}
+
+/*对角线*/
+.t1{
+	position: relative;
+	left: 10px;
+}
+.t2{
+	position: relative;
+	right: 30px;
+}
+.sample1 tr:first-child{
+}
+.out{
+	position: relative;
+}
+.out::after{
+	content: '';
+width: 200px;
+height: 1px;
+background: #e1eef6;
+position: absolute;
+left: -19px;
+top: 51px;
+bottom: 0;
+right: 10px;
+transform: rotate(30deg);
+}
+
+#blue tr td:first-child{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+</style>
+
+</head>
+<body>
+<!--header-->
+	<div id="header">
+    	<div class="logo">
+        	<div class="logo_left"><a href="/"><img src="./image/logo.png" width="204"height="50"/></a></div>
+            <div class="logo_right">病理科</div>
+            <div class="clear"></div>
+        </div>
+        <div class="wb">
+        	<div class="login" style='text-align:center'>
+        	
+        		<a target="_blank" href="/index.php?r=archives/default/new&id=116&t=1478224014" >网站帮助</a>
+        		<a target="_blank" href="/index.php?r=archives/default/new&id=118&t=1478224014">网站地图 </a>
+        		<a target="_blank" href="/" style='border:0'>医院首页 </a>
+        	</div>
+            <div class="login_btm">
+            	<a href="http://www.bjhb.gov.cn" target="_blank" class="first">北京卫生信息网</a>
+            	<a href="http://www.moh.gov.cn" target="_blank" class="second">国家卫生和计划生育委员会</a>
+            </div>
+        </div>
+    </div><!--banner-->
+	<div id="banner"  align='center'>
+					<img style='max-height:246px' src="./image/banner1.jpg" />
+	</div>
+<!--nav-->
+<div id="nav">
+  <ul>
+    <li><a href="/index.php?r=tpl1&dec_id=33&t=1478224014">首页</a></li>
+      </ul>
+</div>
+<div class="clear"></div>
+<div id="main_da" >
+	<div id="mainC">
+		<!--左边-->
+		<div class="left" style=" ">
+			<h4>分子诊断室</h4>
+			<div class="xian"><img src="./image/left_xian.jpg" style="width: auto;"/></div>
+			<ul id="files" style="height:auto; margin-left: 1em;">
+				<li><a onclick="JavaScript:ChangeDiv('0','JKDiv_',19)" style="color: #236fb4;font-weight: 800;padding-left: 15px;" >实验室简介</a></li>
+				<li><a onclick="JavaScript:ChangeDiv('1','JKDiv_',19)" href="javascript:void(0);" style="color: #236fb4;font-weight: 800;">检测项目介绍</a>
+					<ul>
+						<li><a onclick="JavaScript:ChangeDiv('1','JKDiv_',19)" href="javascript:void(0);" class="font_weights">血液肿瘤基因检测</a>
+							<ul>
+								<li id="li_style">
+									<a onclick="JavaScript:ChangeDiv('1','JKDiv_',19)"  target="_blank" title="血液肿瘤综合性基因检测">血液肿瘤综合性基因检测</a>
+								</li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('2','JKDiv_',19)" target="_blank" title="急性髓细胞白血病（AML）基因检测">急性髓细胞白血病基因检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('3','JKDiv_',19)" target="_blank" title="骨髓增生异常综合征（MDS）基因检测">骨髓增生异常综合征基因检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('4','JKDiv_',19)" target="_blank" title="急性淋巴细胞白血病（ALL）基因检测">急性淋巴细胞白血病基因检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('5','JKDiv_',19)" target="_blank" title="骨髓增殖性肿瘤（MPN）基因检测">骨髓增殖性肿瘤基因检测</a></li>
+								 
+							</ul>
+						</li>
+						<li><a onclick="JavaScript:ChangeDiv('6','JKDiv_',19)" href="javascript:void(0);" class="font_weights">实体肿瘤基因检测</a>
+							<ul>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('6','JKDiv_',19)" target="_blank" title="肿瘤个体化诊疗基因检测（247基因）">肿瘤个体化诊疗基因检测 </a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('7','JKDiv_',19)" target="_blank" title="肺癌基因检测">肺癌基因检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('8','JKDiv_',19)" target="_blank" title="乳腺癌、卵巢癌基因检测">乳腺癌、卵巢癌基因检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('9','JKDiv_',19)" target="_blank" title="胃癌、结直肠癌基因检测">胃癌、结直肠癌基因检测</a></li>
+							</ul>
+						</li>
+						<li><a onclick="JavaScript:ChangeDiv('10','JKDiv_',19)"  href="javascript:void(0);" class="font_weights">生育生殖基因检测</a>
+							<ul>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('10','JKDiv_',19)" target="_blank" title="无创产前DNA检测">无创产前DNA检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('11','JKDiv_',19)" target="_blank" title="染色体异常检测">染色体异常检测</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('12','JKDiv_',19)"target="_blank" title="胚胎植入前遗传学筛查">胚胎植入前遗传学筛查</a></li>
+								<li id="li_style"><a onclick="JavaScript:ChangeDiv('13','JKDiv_',19)" target="_blank" title="叶酸利用能力基因检测">叶酸利用能力基因检测</a></li>
+							</ul>
+						</li>
+						<li><a onclick="JavaScript:ChangeDiv('14','JKDiv_',19)" class="font_weights" >全外显子组测序</a> 
+						</li>
+						<li><a onclick="JavaScript:ChangeDiv('15','JKDiv_',19)" class="font_weights">全基因组重测序</a> 
+						</li>
+						<li><a onclick="JavaScript:ChangeDiv('16','JKDiv_',19)" class="font_weights">单细胞全基因组测序</a> 
+						</li>
+						<li><a onclick="JavaScript:ChangeDiv('17','JKDiv_',19)" class="font_weights">细菌宏基因组测序</a></li>
+						<li><a onclick="JavaScript:ChangeDiv('18','JKDiv_',19)" class="font_weights">循环肿瘤细胞检测</a></li>
+						<li><a onclick="JavaScript:ChangeDiv('19','JKDiv_',19)" class="font_weights">循环DNA检测</a></li>
+					</ul>
+				</li> 
+	</ul>
+		</div>
+		
+		<div class="rightl"> 
+		<div class='indexC'>
+			<li id="JKDiv_0"  >
+				<h4>实验室简介</h4>
+				<div class="xian"><img src="./image/right_xian.jpg" /></div>
+				<p class="textindent">病理学科在医院的医疗工作中占有重要的地位，它是从病理标本的形态改变对某些疾病提出明确病理诊断，提出可能的病因以及治疗和预后的因素。病理科的具体工作包括：</p>
+				<p  class="textindent">活体组织检查机体在患病时，除发生机能、代谢障碍外，常在相应器官、组织表现出一定的形态结构改变（病理变化）。从患者活体采取病变组织，包括：(1)从病变部位切取的小块组织及用纤维胃镜、纤维支气管镜等内窥镜钳取的病变组织；(2)手术摘除的部分器官、组织，如乳腺、胃、淋巴结等；(3)穿刺取出病变部位的组织，如肝、肾的穿刺组织,进行病理诊断，称为活体组织检查，简称活检。</p>
+				<p  class="textindent">细胞学检查把患者的尿、痰及穿刺抽取的胸水、腹水、脑脊液、宫颈刮片等制成细胞涂片，经固定、染色后进行显微镜下观察，作出疾病细胞学诊断。细胞学诊断的特点：简单易行、诊断迅速、准确性高。</p>
+				<p  class="textindent">冰冻切片手术台上做冰冻切片的理由是决定下一步治疗的方案。即：在手术过程中，迅速确定病变性质，决定手术范围。如乳腺肿块的良恶性，决定是否需作根治术， 又如肢体肿瘤的性质，决定是否截肢等。临床医师也需事先向病理医生介绍病情，写清病史，有利于病理医生作出快而准确可靠的冰冻切片诊断。</p>
+				<p  class="textindent">病理工作可为临床提供明确的诊断，确定疾病的性质，如是否为肿瘤，肿瘤的良、恶性、肿瘤的分型、分期等，这些对临床医生制订治疗方案，判断病人的预后都具有重要的指导作用。病理科的诊断被称为“金标准”。中国普通外科学创始人裘法祖教授讲到“最后一句话应该由病理学家来说”。充分证明了病理科在临床诊断中的 重要性。</p>
+				<p  class="textindent">					  北京医院病理科拥有达到国际先进水平病理设备以及经验丰富的病理专家、医生和技术人员。可开展全身各个系统的病理学检查，尤其是对神经系统疾病、前列腺疾病、呼吸系统疾病、消化系统疾病、淋巴造血系统疾病，神经内分泌系统疾病以及软组织肿瘤等的病理诊断方面积累了丰富经验。在痰、尿、胸水、腹水及细针穿刺细胞病理学诊断在国内处于领先水平，近年来开展了薄层细胞学涂片技术，进一步提高了细胞病理诊断水平，特别是对早期宫颈癌的普查具有重要的意义。病理科 除了可进行常规病理学检查外，还开展了免疫组化、核酸分子原位杂交等多项技术。我们不但承担本院的病理常规检查工作，还接收外院的病理标本和切片会诊。我 们将以优良的医疗质量、先进的医疗设备和优美的环境全心全意地为病人服务。</p> 
+	</li> 
+	<li id="JKDiv_1" class="content"><!--血液肿瘤综合性基因检测-->
+		<h4>血液肿瘤综合性基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+				
+		<p></p> 
+		<p><a class="word_mark">血液肿瘤综合性基因检测</a></p>
+		<p class="textindent">目前，临床上对恶性血液病的诊断采用MICM分型，即形态学（morphology）、免疫学（immunology）、细胞遗传学（cytogenetics）、分子特征（molecular）的综合分型。特别是随着现代分子生物学技术的发展，尤其是基因序列检测技术的逐步成熟，对血液病患者的检查逐步深入到分子层面，基因突变已成为临床诊疗发展的新方向，并且符合“精准医学”概念。NCCN和WHO指南已经率先引入基因突变对现有的恶性血液肿瘤危险度预后分层系统做更细的分类。</p>
+		<p  class="textindent">基因突变检测作为新的分子特征检测手段在临床上有越来越重要的应用。使用高通量测序技术研究发现，基因突变在白血病细胞中普遍存在。在2012年《新英格兰医学期刊》（New England Journal of Medicine）的报道中，利用高通量测序（NGS）对398例急性髓细胞白血病（AML）患者进行筛查，发现97.3%的患者在18个目标基因中至少含有一个体细胞突变。进一步的分析发现，体细胞突变有协同发生的趋势，如超过三分之一的FLT3突变会合并NPM1突变。文章最后提出，多基因联合的突变分析在AML的预后分层中有潜在的应用价值。通过多基因联合突变检测分析，可弥补传统核型和流式分析技术的不足，为临床提供诊断和预后评估的依据；同时，临床对血液病的缓解监控已深入到分子水平，通过特征性的分子标记物（如突变）的监测，可以实现对患者治疗方案、周期、复发等的精确管理。</p>
+			<p class="textindent">血液肿瘤的分类从上世纪70年代的FAB分型开始，发展到综合性的MICM分型，随着测序技术的发展，尤其高通量测序技术等新的诊断技术在临床的推广应用，血液肿瘤分类有望进入精确诊断时代。
+		</p>
+		<p  class="textindent" style="text-indent: 1.7em;">再现性基因突变主要可分为以下几类：表观调控（如TET2、DNMT3A）、RNA 剪切（如SF3B1、SRSF2）、DNA 修复（如TP53）、转录调控（如AML1）、信号转导（如JAK2）、粘连蛋白复合物等。突变的发现和解析，可增加对疾病的发病机理的认识，并找到可能的治疗靶点。另外，基因突变给临床增加了一种观察疾病的新工具，可以从分子生物学的维度来理解疾病。</p>
+		<p><a class="word_mark">检测内容</a></p>
+		<p>	 
+			<style>.sample tr td {
+	border: 1px solid #ffffff;
+}</style>
+
+			<table class="sample" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="color: #fff; position: relative;">
+					<td class="border">检测内容</td><td style="width:100px;">样本要求</td><td style=" border-radius: 0px 47px 0px 0px;width: 100px;padding: 6px;">检测方法</td></tr>
+				<tr style="background:#efefef;text-align:left;"><td><p class="zero_left"><span style="font-weight:800">临床热点：<span></p>
+					CEBPA、AML1（RUNX1）、EZH2、IKZF1、NPM1、KRAS、CBL、FLT3-ITD、NRAS、JAK2、KIT、ASXL1、SETBP1、DNMT3A、PHF6、ETV6、IDH1、TP53、PTPN11、IDH2、SF3B1、MPL、MLL-PTD、SRSF2、CALR、TET2、U2AF1、CSF3R、WT1、ZRSR2、SH2B3<br>
+					<p  class="zero_left"><span style="font-weight:800">疾病相关：</span></p>
+					ABCB1（MDR1）、CDKN2A、GSTP1、NT5C2、ABCC3、CREBBP、HRAS、NTRK1、ABL、CRLF2、ID3、NTRK2、AKT2、CSF1R、IL7R、PDGFRA、AKT3、CTLA4、JAK1、PIGA、AMER1、CUX1、JAK3、PIK3CA、APC、CYP2C19、KDM6A、PTEN、ATM、CYP3A4、KMT2C、RAD21、ATRX、DIS3、KMT3A、RB1、BCL2、DNAH9、MAP2K4、SMAD4、BCOR、E2A、MAP3K7、SMC1A、BCORL1、EGFR、MDM2、SMC3、BRAF、ERCC1、MEF2B、STAG2、CACNA1E、ERG、MLH1、STAT5A、CARD11、FAM46C、MTHFR、STAT5B、CBLB、FBXW7、MYD88、SYK、CBLC、GATA1、NF2、TERC、CCND1、GATA2、NOTCH1、TPMT、CD79B、GNAS、、NOTCH2、TRAF3、CDA、GSTM1、NQO1、XRCC1<br>
+					</td><td>EDTA抗凝骨髓/外周血（紫头管）2~3mL，骨髓为首选标本，MDS患者样本只能是骨髓。</td>
+					<td style="text-align:center;" >NGS</td></tr> 
+			</table> 
+		</p>
+		
+		<p><a class="word_mark">检测意义</a></p>
+		 
+		<p class="zero_left">
+			<ul class="icon"> 骨髓增生异常综合征预后分层</ul>
+			<ul class="icon">骨髓增生异常综合征预后分层</ul>
+			<ul class="icon">骨髓增殖性肿瘤辅助诊断及预后评估</ul>
+			<ul class="icon">靶向药物相关及耐药位点检测</ul>
+			<ul class="icon">复发难治患者病因探查</ul>	
+		</p>
+		
+		<p><a class="word_mark">检测优势</a></p>
+		<p>实现全面的基因突变检测，为临床打造一款从预后分层到靶向用药的新型诊断工具。</p> 
+		<p style="text-align: center;"><img src="./image/xueye_1.jpg" width="625"></p>
+		 
+		<p><a class="word_mark">检测周期</a></p>
+		<p>从实验室接收样本起10个工作日</p>
+		<p><a class="word_mark">样本采集和运输</a></p>
+		<p>骨髓：2～3mL，置于EDTA抗凝管（紫头管）中，原始细胞或幼稚细胞比例>5%；4℃保存和运输。<br>
+			外周血：2～3mL，白细胞数>5×109/L，原始细胞或异常细胞达到5%以上，白细胞数＜5×109/L的样品，需要相应增加样品量（>5mL）。<br>
+			注：
+			1、MDS检测只接收骨髓样本。</p>
+			<p style="text-indent: 2.4em;">2、有造血干细胞移植史或三个月内有输血史者（成分血除外）不宜接受检测。</p>
+			<p style="text-indent: 2.4em;">3、为保证检测质量，样本运输需24小时内送到实验室。</p>
+		
+		<p><a class="word_mark">适用人群</a></p>
+		
+		<p class="zero_left">
+		1、初诊为各类型白血病的患者<br>
+		2、初诊为骨髓增生异常综合征（MDS）的患者<br>
+		3、初诊为骨髓增殖性肿瘤（MPN）的患者<br>
+		4、初诊为骨髓增生异常/骨髓增殖性肿瘤（MDS/MPN）的患者<br>
+		5、疑似血液肿瘤但尚未明确疾病类型的患者<br>
+		6、复发难治的患者接受检测后也可获益<br>
+		     <p style="padding-left: 20px;"> 全套突变热点检测以排查病因<br>
+		                 监控亚克隆低频突变，预防复发或疾病亚型转变<br>
+		                靶向药物相关及耐药位点检测<br></p>
+		</p>
+	
+	
+		<p><a class="word_mark">检测流程</a></p>
+		<p style="text-align: center;"><img src="./image/xueye_2.jpg" width="625">
+		 
+				
+	</li> 
+	<li id="JKDiv_2" class="content"><!--急性髓细胞白血病（AML）基因检测-->
+		<!--<p>急性髓细胞白血病（AML）基因检测</p>-->
+		<h4>急性髓细胞白血病（AML）基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p class="textindent">临床上以细胞遗传学作为AML患者危险度预后分层的主要依据，然而只有40%的患者有特异的细胞遗传学表型，具有同样表型患者群体中，治疗结果也表现出异质性。</p>
+		<p  class="textindent">基因突变是一种新兴的分子特征检测指标，NCCN急性髓系白血病指南早已将c-KIT、FLT3、CEBPA及NPM1等四个基因突变整合到分子生物学异常中，进一步细化急性髓细胞白血病患者的危险度预后分层，其他的基因突变在急性髓细胞白血病的诊断、预后分层、治疗和药物选择上都有不同程度的指导作用。2015年最新的NCCN指南建议，可用NGS方法对AML相关的热点基因进行突变检测，辅助预后分层。
+		</p>
+		<p style="text-align: center;"><img src="./image/jixing_1.jpg" width="625">
+		<p><a class="word_mark">急性髓细胞白血病58个基因检测</a></p>	 
+			<style>.sample tr td {
+	border: 1px solid #ffffff;
+}</style>
+		<p style="text-align: center;">
+			<table class="sample table_firstleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;">
+					<td style=" border-radius: 47px 0px 0px 0px; text-align:center">检测内容</td><td style="width:100px;">样本要求</td><td style=" border-radius: 0px 47px 0px 0px;width: 100px;padding: 6px; ">检测方法</td></tr>
+				<tr style="background:#efefef;"><td><p style="text-align:left;"  class="zero_left"><span style="font-weight:800">临床热点：<span></p>
+					  
+					CEBPA、NPM1、FLT3-ITD、KIT、DNMT3A、TET2、WT1、ASXL1、RUNX1、IDH1、IDH2、MLL-PTD、PHF6、TP53、KRAS、NRAS
+					<p style="text-align:left"  class="zero_left"><span style="font-weight:800">疾病相关：<span></p>
+					CREBBP、ETV6、EZH2、ABCB1（MDR1）、AKT3、AMER1、APC、BCOR、BCORL1、CACNA1E、CBL、CDKN2A、CRLF2、CSF1R、CUX1、DIS3、DNAH9、EGFR、ERG、FAM46C、GSTP1、HRAS、JAK1、KDM6A、KMT2C、KMT3A、MAP2K4、MLH1、NF2、NQO1、NTRK1、NTRK2、PTPN11、RAD21、SETBP1、SMAD4、SMC1A、SMC3、STAG2、STAT5B、TPMT、U2AF1
+					<br>
+					</td><td style="text-align:left">EDTA抗凝骨髓/外周血（紫头管）2~3mL，骨髓为首选标本。</td>
+					<td >NGS</td></tr> 
+			</table> 
+		</p>
+		
+		<p><a class="word_mark">急性髓细胞白血病检测流程</a></p>
+		<p style="text-align: center;"><img src="./image/jixing_2.jpg" width="470">
+		
+		<p><a class="word_mark">急性髓细胞白血病部分基因突变的临床意义</a></p>
+		<p style="text-align: center;">
+			<table class="sample table_wordleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;">		
+					<td style=" border-radius: 47px 0px 0px 0px;width:100px; ">基因名称</td><td style="width:100px;">发生率</td><td style=" border-radius: 0px 47px 0px 0px;padding: 6px;text-align:center; ">临床意义</td></tr>
+				<tr style="background:#f7f7f7;"><td>CEBPA</td><td>7%-11%</td>
+					<td>CEBPA在AML患者中的突变率约为5%-14%，主要见于M1、M2和部分M4型，其中约70%属于CN-AML患者，CEBPA双等位基因突变预后良好。</td></tr>	
+				<tr style="background:#efefef;"><td>NPM1</td><td>28%-35%</td><td >NPM1突变常见于AML患者，在NK-AML患者中的发生频率为48%～53%，其中最常见于M4、M5a和M5b。NPM1突变常见于12号外显子，以6种变异体为主（突变A-F），最常见的为A型，占77%-80%病例。NPM1的A型突变具有更高的完全缓解率，更好的无事件生存率及总生存率，预后良好。</td></tr> 
+						
+				<tr style="background:#f7f7f7;"><td>FLT3</td><td>30%</td><td >FLT3-ITD在AML患者中的突变率约为20%，在NK-AML患者中的突变率可达到28%-34%。提示AML预后不良，且插入序列越长，预后越差。目前临床应用的小分子酪氨酸激酶抑制剂（TKIs）对阳性患者治疗，主要有索拉非尼、舒尼替尼。</td></tr> 		
+				<tr style="background:#efefef;"><td>KIT</td><td>20%的AML/CBF</td>
+					<td>KIT基因在染色体t(8;21)(q22;q22)或inv(16)(p13.1q22)异常为特征的AML（CBF-AML）患者中的突变率较高。12.7%-48.1%成人CBF-AML中存在KIT突变，D816V突变是CBF-AML预后不良指标，突变患者无病生存期短。该突变与伊马替尼耐药相关，可以指导系统性肥大细胞增生症和AML的治疗。</td></tr> 
+				<tr style="background:#f7f7f7;"><td>DNMT3A</td><td>18%-22%	</td>
+					<td >DNMT3A基因的突变可出现在AML、MDS及其他血液恶性肿瘤患者中，在AML患者中高达20%，以M5型居多，其热点突变是发生于编码第882位精氨酸的错义突变，R882H突变导致AML治疗效果差，完全缓解率低，预后不良。</td></tr> 
+						
+				<tr style="background:#efefef;"><td>TET2</td><td>15%的髓系肿瘤</td>
+					<td >TET2突变的AML患者，较正常野生型患者预后差。</td></tr> 
+				<tr style="background:#f7f7f7;"><td>WT1	</td><td>7%-10%	</td><td >发生WT1突变的正常核型AML患者预后不良。</td></tr> 
+					
+				<tr style="background:#efefef;"><td>ASXL1</td><td>3%-31%	</td>
+					<td >ASXL1突变见于MDS、CMML、AML等是髓系肿瘤患者，AML患者中ASXL1突变提示预后不良。
+					</td></tr> 
+						
+				<tr style="background:#f7f7f7;"><td>RUNX1</td><td>在正常核型的AML患者中发生率约16%	</td><td >发生RUNX突变的AML患者预后不良。</td></tr> 
+						
+				<tr style="background:#efefef;"><td>IDH1</td><td>6%-9%</td>
+					<td >IDH1突变主要存在于AML、ALL及MPN中，在CN-AML患者中的发生率为5.5-9.6%，IDH1突变患者有较低的CR、较高的复发风险和较低的OS。
+					</td></tr> 
+				<tr style="background:#f7f7f7;"><td>IDH2</td><td>8%-12%</td>
+				<td >IDH2突变主要存在于AML、ALL及MPN中，集中发生于R140和R172位点，突变患者有较低的CR、较高的复发风险和较低的OS。</td></tr> 
+				<tr style="background:#efefef;"><td>MLL-PTD</td><td>5%-11%的CN-AML</td>
+					<td >MLL-PTD是发生在11q23的部分串联重复，在CN-AML中的发生频率为5%-11%,可以作为MRD的监测指标,dupMLL基因阳性提示预后差，临床缓解率低。</td></tr> 
+				<tr style="background:#f7f7f7;"><td>PHF6</td><td>3%</td>
+					<td >PHF6基因位于X染色体，大约3%的AML患者有PHF6基因突变，多见于M0、M1和M2。PHF6突变的患者一般具有较差的OS，且提示预后不良。
+					</td></tr> 
+				<tr style="background:#efefef;"><td>TP53</td><td>7%原发性AML，58.8%核型复杂的AML患者</td>
+					<td >TP53基因是重要的抑癌基因之一，TP53基因突变可以指导临床用药和提示预后，TP53基因突变提示预后不好。
+					</td></tr> 
+						
+				<tr style="background:#f7f7f7;"><td>KRAS</td><td>13%</td>	
+					<td >使用高剂量阿糖胞苷相对于使用低剂量，总生存期和无疾病进展期延长。</td></tr> 
+						
+
+
+				<tr style="background:#efefef;"><td>NRAS</td><td>45%	</td>
+					<td >与AML患者inv（16）/t（16;16）和inv（3）/t（3;3）核型异常的发生具有显著相关性；患者白细胞计数（WBC）多显著增高；对预后无显著影响。</td></tr>  
+			</table> 
+		</p>
+		 
+	</li> 
+	<li id="JKDiv_3" class="content"><!--骨髓增生异常综合征（MDS）基因检测-->
+		<h4>骨髓增生异常综合征（MDS）基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<!--<p>骨髓增生异常综合征（MDS）基因检测</p>-->
+		<p class="textindent">MDS的预后很大程度上取决于骨髓中原始细胞所占的百分比、血细胞下降程度以及细胞遗传学是否有异常。对所有怀疑MDS的患者均应进行染色体核型检测，MDS往往是染色体的部分或完全缺失，在染色体异常核型类型中最常见的是-5/5q-，-7/7q-，+8，20q-等。除细胞遗传学外，随着测序技术的发展，基因突变等分子生物学标记进入MDS的诊疗指南，用于协助证实MDS的诊断和预后。2014年的《骨髓增生异常综合征诊断与治疗中国专家共识》中，考虑到基因突变具有潜在应用价值，将基因突变列为可选检测项目。</p>
+		<p><a class="word_mark">骨髓增生异常综合征43个基因检测</a></p>
+		<p style="text-align: center;">
+			<table class="sample table_wordleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;height:25px;">		
+					<td style=" border-radius: 47px 0px 0px 0px; ">检测内容</td><td style="width:100px;">样本要求</td><td style=" border-radius: 0px 47px 0px 0px;padding: 6px;width:100px;text-align:center ">检测方法</td></tr>
+				<tr style="background:#efefef;"><td style="text-align:left;">
+					<p class="zero_left"><span class="font_weights zero_left">临床热点：</span></p>
+					TET2、DNMT3A、TP53、SF3B1、SRSF2、U2AF1、ZRSR2、ASXL1、RUNX1、EZH2、CBL、JAK2、NRAS、KRAS、PTPN11、SETBP1、ETV6、IDH1、IDH2
+					
+					<p  class="zero_left"><span class="font_weights zero_left">疾病相关：</span></p>BCOR、ATRX、BCORL1、BRAF、CDKN2A、CEBPA、CREBBP、CSF3R、CUX1、DNAH9、FLT3、GATA2、GNAS、KDM6A、KIT、MPL、NPM1、PHF6、PTEN、RAD21、SH2B3、STAG2、TERC、WT1
+					</td><td>EDTA抗凝骨髓(紫头管)2~3mL。</td><td style="text-align:center">NGS</td></tr>  
+				 
+			</table> 
+		</p>
+		<p><a class="word_mark">骨髓增生异常综合征基因检测流程</a></p>
+		<p style="text-align: center;"><img src="./image/gusui_1.jpg" width="625">
+		<p><a class="word_mark">骨髓增生异常综合征基因检测部分基因突变的临床意义</a></p>
+		<p style="text-align: center;">
+			<table class="sample table_wordleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;">		
+					<td style=" border-radius: 47px 0px 0px 0px;width:100px; ">基因名称</td><td style="width:100px;">发生率</td><td style=" border-radius: 0px 47px 0px 0px;padding: 6px;text-align:center ">临床意义</td></tr>
+						
+				<tr style="background:#f7f7f7;"><td>TET2</td><td>20%-25%</td>
+					<td >约90%的慢性粒单核细胞白血病（CMML）患者有一个或一个以上的基因突变，TET2基因突变频率为40%～60%。</td></tr>	
+							
+				<tr style="background:#efefef;"><td>DNMT3A</td><td>12%-18%</td>
+					<td >MDS最常受累的基因之一，基因突变频率在10%以上，可预测MDS患者应用甲基化药物的敏感性。</td></tr> 
+				<tr style="background:#f7f7f7;"><td>TP53</td><td>8%-12%</td><td >MDS患者高危突变。</td></tr> 	
+				<tr style="background:#efefef;"><td>SF3B1</td><td>18%-30%	</td>
+					<td>约一半的正常核型MDS患者中能发现有基因突变。MDS最常受累的基因之一，基因突变频率在10%以上。</td></tr> 
+					
+				<tr style="background:#f7f7f7;"><td>SRSF2</td><td>10%-15%</td>
+					<td >约90%的慢性粒单核细胞白血病（CMML）患者有一个或一个以上的基因突变，SRSF2基因突变频率为30%～50%；MDS最常受累的基因之一，基因突变频率在10%以上。</td></tr> 
+				<tr style="background:#efefef;"><td>U2AF1</td><td>8%-12%</td>
+					<td >约一半的正常核型MDS患者中能发现有基因突变。U2AF1基因多见于ASXL1突变或是20q-染色体异常的MDS患者。</td></tr> 
+							
+				<tr style="background:#f7f7f7;"><td>ZRSR2</td><td>5%-10%</td><td >预后不良相关。</td></tr> 
+						
+				<tr style="background:#efefef;"><td>ASXL1</td><td>15%-25%</td>
+					<td >约90%的慢性粒单核细胞白血病（CMML）患者有一个或一个以上的基因突变，其中ASXL1的突变率约40%。ASXL1基因突变在CMML患者中提示预后不良，且更快的向白血病转化；MDS最常受累的基因之一，ASXL1基因突变的MDS患者归入高危组，可预测甲基化药物的敏感性。
+					</td></tr> 
+								
+				<tr style="background:#f7f7f7;"><td>RUNX1</td><td>10%-15%</td>
+					<td >MDS中与预后不良独立相关。在罕见病例中可能存在家族性。</td></tr> 
+								
+				<tr style="background:#efefef;"><td>EZH2</td><td>5%-10%</td>
+					<td >MDS患者高危突变。</td></tr> 
+						
+				<tr style="background:#f7f7f7;"><td>CBL</td><td><5%</td>
+					<td >主要用于幼年型-单核细胞白血病（JMML）的辅助诊断；在多种髓系肿瘤如MDS、MDS/MPN、CMML、JMML等均有发现，有CBL基因突变的患者预后差。</td></tr>  
+				<tr style="background:#efefef;"><td>JAK2</td><td><5%</td>
+					<td >V617F是最常见的典型MPN特征性突变，在MDS中发生率低于5%，在RARS、RARS-T以及5q-中发生率较高。</td></tr>
+		
+					
+				<tr style="background:#f7f7f7;"><td>NRAS</td><td>5%-10%</td>
+					<td >主要用于幼年型-单核细胞白血病（JMML）的辅助诊断；辅助MDS患者的诊断及预后判断。
+					</td></tr> 
+						
+				<tr style="background:#efefef;"><td>KRAS</td>在JMML中突变率为10%-15%	<td></td>
+					<td >多伴随急变出现。
+					</td></tr> 
+								
+				<tr style="background:#f7f7f7;"><td>PTPN11</td><td>在JMML中突变率为40%-50%</td>	
+					<td >在JMML中突变率为40%-50%。</td></tr> 
+							
+				<tr style="background:#efefef;"><td>SETBP1</td><td><5%</td>
+					<td >与疾病进展有关，常见于CMML（5%-10%）和JMML（7%）。</td></tr>  
+							
+				<tr style="background:#f7f7f7;"><td>ETV6</td><5%<td></td>
+					<td >MDS患者高危突变。
+					</td></tr> 
+								
+				<tr style="background:#efefef;"><td>IDH1</td><td><5%</td>	
+						<td >预测MDS患者应用甲基化药物的敏感性。</td></tr>
+				<tr style="background:#f7f7f7;"><td>IDH2</td><5%<td></td>
+					<td >预测MDS患者应用甲基化药物的敏感性。
+					</td></tr>   
+			</table> 
+		</p>
+		
+	</li> 
+	<li id="JKDiv_4" class="content"><!--急性淋巴细胞白血病（ALL）基因检测-->
+		<!--<p>急性淋巴细胞白血病（ALL）基因检测</p>-->
+		<h4>急性淋巴细胞白血病（ALL）基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p class="textindent">目前依据ALL不同的生物学特性制定相应的治疗方案已取得较好疗效，大约80%的儿童和30%的成人能够获得长期无病生存，并且有治愈的可能。由于ALL患者主要为儿童，他们的长期生活质量逐步受到关注，现行的治疗方法虽然取得不错的疗效，但是仍有必要投入更多的临床研究，发掘分子标记物，为患者的个性化治疗提供指导。</p>
+		<p><a class="word_mark">急性淋巴细胞白血病35个基因检测</a></p>
+		<p style="text-align: center;">
+			<table class="sample table_firstleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;height:25px;height:25px;">		
+					<td style=" border-radius: 47px 0px 0px 0px; text-align:center;">检测内容</td><td style="width:100px;">样本要求</td><td style=" border-radius: 0px 47px 0px 0px;padding: 6px;width:100px; text-align:center;">检测方法</td>
+				</tr> 
+				<tr style="background:#f7f7f7;">
+					<td><p class="zero_left"><span class="font_weights zero_left">临床热点：</span></p> 
+						NOTCH1、FLT3、FBXW7、ABL、CDKN2A、ETV6、TPMT
+						<p class="zero_left"><span class="font_weights zero_left">疾病相关：</span></p>
+						AML1、BRAF、CREBBP、CRLF2、CTLA4、DNMT3A、GSTP1、IKZF1、IL7R、JAK1、JAK2、JAK3、KMT3A、KRAS、MDM2、MTHFR、MYD88、NRAS、NT5C2、PHF6、PTEN、PTPN11、SH2B3、STAT5B、SYK、TERC、TP53、WT1
+					</td>
+					<td>EDTA抗凝骨髓/外周血（紫头管）2~3mL，骨髓为首选标本。</td>
+					<td >NGS</td>
+				</tr>	 
+			</table> 
+		</p>
+		<p><a class="word_mark">急性淋巴细胞白血病部分基因突变的临床意义</a></p>
+		<p style="text-align: center;">
+			<table id="td_left" class="sample table_wordleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;">		
+					<td style=" border-radius: 47px 0px 0px 0px; width:100px;">基因名称</td>
+					<td style="width:100px;">发生率</td>
+					<td style=" border-radius: 0px 47px 0px 0px;padding: 6px; text-align:center;">临床意义</td>
+				</tr> 
+				<tr style="background:#f7f7f7;">	
+					<td> NOTCH1</td>
+					<td>40%-60%</td>
+					<td >成人ALL预后分层，NOTCH1突变在ALL患者中多与预后良好相关。 </td>
+				</tr>	 		
+				<tr style="background:#efefef;">	
+					<td> FLT3</td>
+					<td>10%-15%</td>
+					<td >在高二倍体儿童ALL患者和存在MLL重排的儿童ALL患者中存在。  </td>
+				</tr>	 	
+				<tr style="background:#f7f7f7;">	
+					<td> FBXW7</td>
+					<td>3%-10%</td>
+					<td >成人ALL预后分层，约80%的T-ALL患者可以检测到NOTCH11或其信号转导途径成员FBXW7的突变，突变的成人ALL患者预后较好。</td>
+				</tr>	 
+						
+				<tr style="background:#efefef;">	
+					<td> ABL</td>
+					<td>约70%的伊马替尼耐药患者</td>
+					<td >常与伊马替尼耐药相关。</td>
+				</tr> 		
+				<tr style="background:#f7f7f7;">	
+					<td> CDKN2A</td>
+					<td>小于5%</td>
+					<td >CDKN2A缺失与预后不良相关。</td>
+				</tr>	 		
+				<tr style="background:#efefef;">	
+					<td> ETV6</td>
+					<td>12%的成人T-ALL;5-10%的B-ALL</td>
+					<td >常见于12%的成人ETP-ALL患者。</td>
+				</tr>					
+
+				<tr style="background:#f7f7f7;">	
+					<td> TPMT</td>
+					<td>—</td>
+					<td >接受6-巯基嘌呤（6-MP）患者，考虑检测TPMT基因多态性，特别是使用6-MP后出现严重中性粒细胞减少的患者。</td>
+				</tr> 
+			</table> 
+		</p>
+		
+	</li> 
+	<li id="JKDiv_5" class="content"><!--骨髓增殖性肿瘤（MPN）基因检测-->
+	
+		<h4>骨髓增殖性肿瘤（MPN）基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<!--<p>骨髓增殖性肿瘤（MPN）基因检测内容</p>-->
+		<p class="textindent">2008年WHO修订后将骨髓增殖性疾病（MPD）改为骨髓增殖性肿瘤（MPN）。改版修订除了对MPN疾病亚型有调整外，其中一项重要的改变是增加了基因突变在疾病诊断中的应用。BCR/ABL融合基因仍然是慢性粒细胞白血病（CML）的标准，另外，由于JAK2基因V617F突变在大部分真性红细胞增多症（PV）及约一半的原发性骨髓纤维化（PMF）、特发性血小板增多症（ET）中存在，为此这三种疾病的诊断流程已经做了重大改变。联合检测JAK2、MPL和CALR基因突变，结果的阳性率可达97%。
+		</p>
+		<p><a class="word_mark">骨髓增殖性肿瘤23个基因检测</a></p>
+		<p style="text-align: center;">
+			<table class="sample table_firstleft" width="625" height="210" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;height:25px;">		
+					<td style=" border-radius: 47px 0px 0px 0px;text-align:center;">检测内容</td><td style="width:100px;">样本要求</td><td style=" border-radius: 0px 47px 0px 0px;padding: 6px; width:100px;">检测方法</td>
+				</tr> 
+				<tr style="background:#f7f7f7;">	
+					<td><p class="zero_left"><span class="font_weights zero_left">临床热点：</span></p> 
+						JAK2、MPL、CALR、CSF3R、KIT、ASXL1、SETBP1、SH2B3、SRSF2、TET2、U2AF1、IDH1、IDH2、EZH2、CBL、DNMT3A、IKZF1、TP53、SF3B1
+						<p class="zero_left"><span class="font_weights zero_left">疾病相关：</span></p> 
+						EGFR、FAM46C、CSF1R、CBLC
+					</td>
+					<td>EDTA抗凝骨髓/外周血（紫头管）2~3mL，骨髓为首选标本。</td><td >NGS </td>
+				</tr>	 		
+				  
+			</table> 
+		</p>
+		<p><a class="word_mark">骨髓增殖性肿瘤患者检测流程</a></p>
+		<p style="text-align: center;"><img src="./image/zengzhi_1.jpg" width="625">
+		
+		<p><a class="word_mark">骨髓增殖性肿瘤部分基因突变的临床意义</a></p>
+		<p style="text-align: center;">
+			<table class="sample table_wordleft" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#24b8c6;color: #fff;">		
+					<td style=" border-radius: 47px 0px 0px 0px; width:100px;">基因名称</td>
+					<td style="width:100px;">发生率</td>
+					<td style=" border-radius: 0px 47px 0px 0px;padding: 6px; text-align:center;">临床意义</td>
+				</tr> 	
+
+				<tr style="background:#f7f7f7;">	
+					<td> JAK2</td>
+					<td class="textleft">在PV、ET和PMF中发生率分别为95%、60%、60%</td>
+					<td >在PV、ET和PMF中发生率分别为95%、60%、60%。V617F是最常见的典型MPN特征性突变，在MDS中发生率低于5%，在RARS、RARS-T以及5q-中发生率较高。 </td>
+				</tr>	 
+	
+				
+				<tr style="background:#efefef;">	
+					<td> MPL</td>
+					<td class="textleft">在ET,PMF中有发生发生率为3%、7%</td>	
+					<td >适用于JAK2突变阴性的MPN患者，辅助骨髓增殖性疾病诊断。  </td>
+				</tr>
+						
+				<tr style="background:#f7f7f7;">	
+					<td> CALR</td>
+					<td class="textleft">在ET和PMF中发生率为20%、25%</td>
+					<td >70-80%的JAK2和MPL突变阴性的ET和PMF患者中存在CALR基因突变，CALR基因突变主要见于MPN，很少见MDS患者，为MPN的特征性突变。联合检测JAK2、MPL和CALR基因突变，在MPN患者中阳性率达到97%。 </td>
+				</tr>	
+						
+				<tr style="background:#efefef;">	
+					<td> CSF3R</td>
+					<td class="textleft">80%-100%的CML中发生率</td >
+					<td >CSF3R突变在CNL和非典型CML患者中非常普遍，代表对这些肿瘤一个潜在有用的诊断标准。在重型先天性中性粒细胞减少症（SCN）患者中，CSF3R的突变也较为常见。约1/3的SCN患者存在该突变，与MDS、AML的病程转化相关。  </td>
+				</tr>
+					
+				<tr style="background:#f7f7f7;">	
+					<td> KIT</td>
+					<td class="textleft">80%-100%的系统性肥大细胞增生症	</td>
+					<td >KIT基因突变在肥大细胞增多症患者中常出现，最常见的是D816突变。 </td>
+				</tr>	 
+						
+				<tr style="background:#efefef;">	
+					<td> ASXL1</td>
+					<td class="textleft">在PV、ET和PMF中发生率分别为7%、4%、20%</td>
+					<td >约90%的慢性粒单核细胞白血病（CMML）患者有一个或一个以上的基因突变，其中ASXL1的突变率约40%。ASXL1基因突变在CMML患者中提示预后不良，且更快的向白血病转化；MDS最常受累的基因之一，ASXL1基因突变的MDS患者归入高危组，可预测甲基化药物的敏感性。  </td>
+				</tr>
+						
+				<tr style="background:#f7f7f7;">	
+					<td> SETBP1</td>
+					<td>30%的CNL</td>
+					<td >主要用于幼年型-单核细胞白血病（JMML）的辅助诊断；为aCML患者的确诊提供临床辅助诊断；同时可以对aCML、sAML等髓系肿瘤的诊断、发病机制研究以及预后提供参考。 </td>
+				</tr>	 
+						
+				<tr style="background:#efefef;">	
+					<td> SH2B3</td><td class="textleft">5%原发性骨髓纤维化PMF</td><td >MPN急变期突变率为9.8%。  </td>
+				</tr>
+						
+				<tr style="background:#f7f7f7;">	
+					<td> SRSF2</td><td class="textleft">19%的初期MPN中发生，在PMF中发生率17%</td><td >约90%的慢性粒单核细胞白血病（CMML）患者有一个或一个以上的基因突变，SRSF2基因突变频率为30%～50%；MDS最常受累的基因之一，基因突变频率在10%以上。 </td>
+				</tr>	
+				<tr style="background:#efefef;">	
+					<td> TET2</td><td class="textleft">19%的初期MPN中发生，在PMF中发生率17%	</td><td >约90%的慢性粒单核细胞白血病（CMML）患者有一个或一个的基因以上突变，TET2基因突变频率为40%～60%。  </td>
+				</tr>
+					
+				<tr style="background:#f7f7f7;">	
+					<td> U2AF1	</td><td class="textleft">6%的初期MPN，在PMF中发生率为16%</td><td >约一半的正常核型MDS患者中能发现有基因突变。U2AF1基因是MDS的常见突变之一。 </td>
+				</tr>	 
+						
+				<tr style="background:#efefef;">	
+					<td> IDH1</td><td class="textleft">19%的初期MPN（Blast-Phase MPN）</td><td >19%的初期MPN（Blast-Phase MPN）。  </td>
+				</tr>	
+		
+				<tr style="background:#f7f7f7;">	
+					<td> IDH2	</td><td class="textleft">22%的初期MPN,在PV，ET,PMF中发生率<5%</td><td >预测MDS患者使用甲基化药物的敏感性。 </td>
+				</tr>	 
+				<tr style="background:#efefef;">	
+					<td> SF3B1</td><td class="textleft">4%的初期MPN,在PMF中发生率7%</td><td >约一半的正常核型MDS患者中能发现有基因突变。MDS最常受累的基因之一，基因突变频率在10%以上。  </td>
+				</tr>	
+				
+			</table> 
+		</p>
+	</li> 
+	
+	
+	<li id="JKDiv_6" class="content"><!--肿瘤个体化诊疗基因检测（247基因）--> 
+		<h4>肿瘤个体化诊疗基因检测（247基因）</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu5">
+				   <li onclick="setTab(5,0)" class="hover" style="margin-left:50px;">简介</li>
+				   <li onclick="setTab(5,1)">检测意义</li>
+				   <li onclick="setTab(5,2)">检测流程</li>
+				</ul> 
+			</div>
+			
+			<div class="main" id="main5" style="background: #ffffff;">
+			   <ul class="block">
+					<li>
+						
+						<div   id="list_setting"> 
+						<p style="text-align: justify;" class="textindent">
+						高通量测序（NGS）技术的不断发展、测序成本的大幅下降，为临床实现对肿瘤患者的精准治疗提供了有利条件。安诺优达精心挑选了与肿瘤用药密切相关的247个基因，涵盖指南推荐的所有基因及临床热点基因，分析200余种药物与基因变异的关系，可应用于肺癌、胃癌、结直肠癌、乳腺癌等实体瘤患者，尤其适用于复发、转移的晚期患者。根据患者的实际情况，可选择组织样本或血液样本进行基因检测：</p>
+						<p>1）对于新鲜组织、穿刺组织、石蜡切片组织等组织样本，可选择肿瘤个体化用药（NGS）基因检测；</p>
+						<p>2）对于血液样本，可以采集血液开展ctDNA检测。</p>
+
+						<p>基因检测的意义在于辅助医生制定个体化肿瘤治疗方案、疗效评价、预后评估及耐药监测。</p>
+						
+						<h3>专家视角</h3>
+						<p>基因检测指导肿瘤个体化诊疗逐步成为业内共识</p>
+						
+						<h2>肺癌领域专家共识</h2>
+						
+						<p>1）高通量测序敏感性、特异性、准确性好，且组织样本与ctDNA液体活检一致性较高，ctDNA检测可作为组织活检的补充；</p>
+						<p>2）ctDNA检测可无创、实时取样，可以作为复发及耐药动态监测的有利工具；</p>
+						<p>3）ctDNA检测可克服肿瘤组织异质性带来的检测差异；</p>
+						<p>4）高通量测序基因检测可发现新的驱动基因，助推新药研发。</p>
+						
+						<h2>消化道肿瘤（胃癌和结直肠癌）领域专家观点</h2>
+						<p>1）高通量测序基因检测，对临床分子分型意义深远；</p>
+						<p>2）ctDNA检测可避免肿瘤组织样本异质性带来的检测差异；</p>
+						<p>3）ctDNA检测可作为动态监测的有利工具。</p>
+						
+						<h2>乳腺癌领域专家观点：</h2>
+						<p>ctDNA检测非常适合用于动态监测。</p>
+						
+						<h3>临床指南推荐</h3>
+						<p>NCCN、ASCO、ESMO推荐：检测已知、多个平行临床可药物抑制的靶点，推荐NGS法液体活检技术。</p>
+
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h3>临床意义</h3>
+						<p>个体化用药指导：检测药物靶点基因，精确解读相关位点，分析基因变异与药物的关系，根据肿瘤患者特有的基因变异，评估药物的疗效和相关毒副作用，协助医生制定个体化的治疗方案；</p>
+						<p>耐药性分析：耐药性的产生源于肿瘤相关基因的不断突变，ctDNA检测的优势在于可以实时动态检测药物靶点突变，分析耐药性产生的根源，帮助医生调整治疗方案、选择合适的药物；</p>
+						<p>动态监测：ctDNA检测可以多个时间点取样，帮助医生实现对患者用药疗效、复发及转移的动态监测。</p>
+						
+						<h3>检测优势</h3>
+						<p class="icon">全面检测：一次可检测247个肿瘤用药相关基因，解读200余种药物与基因变异的关系；</p>
+						<p class="icon">灵敏准确：可检测低至0.1%的低频突变，准确度在99.9%以上；</p>
+						<p class="icon">精准解读：采纳多个国际权威数据库、专业的医学遗传解读团队；</p>
+						<p class="icon">ctDNA检测的独特优势：无创便捷，只需取血6ml；可克服肿瘤异质性导致的检测信息遗漏；</p>
+						<p class="icon">可实现动态监测。</p>
+						
+						<h3>适用人群</3>
+						<p class="icon">治疗过程中出现耐药或治疗效果不佳的肿瘤患者；</p>
+						<p class="icon">需多基因、多位点检测，以制定完善治疗方案的肿瘤患者;</p>
+						<p class="icon">无法取得手术或穿刺组织的肿瘤患者（适合ctDNA检测）；</p>
+						<p class="icon">已有组织切片，但储存时间超过1年的肿瘤患者（适合ctDNA检测）。</p>
+						
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h3>检测内容</h3>
+						<p style="text-align: center;">
+						<table cellpadding="0" cellspacing="0" border="1" width="625" class="sample" style="text-align:left;">
+							<tbody>
+							<tr class="table_five" style="text-align:center;">
+								<td style="border-radius:8px 0px 0px 0px ">检测247个肿瘤相关基因</td>
+								<td style=" border-radius: 0px 8px 0px 0px; ">解读200余种肿瘤相关药物</td>
+							</tr>
+							<tr class="table_four"> 
+								<td style="text-align: center;">
+									<p>指南/共识推荐基因37个</p>
+									<p>临床研究热点基因50个</p>
+									<p>敏感性和毒副作用相关基因160个</p>
+								</td>
+								
+								<td style="text-align: center;">
+									<p>靶向药物125种（54种已获批，71种临床在研）</p>
+									<p>化疗药物51个（获批）、其它药物25种（获批）</p>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+						
+						<h3>检测流程</h3>
+						<p style="text-align: center;"><img src="./image/247/02-247检测流程.jpg" width="625">
+						</p>
+						<h3>检测周期</h3>
+						<p>自实验室接收到样本起，10个工作日内出具检测报告。</p>
+						
+						<h3>样本类型及取样要求</h3>
+						<h4>新鲜组织样本</h4> 
+						<table cellpadding="0" cellspacing="0" border="1" width="625" class="sample" style="text-align:left;">
+							<tbody>
+							<tr class="table_five" style="text-align:center;">
+								<td style=" border-radius: 8px 0px 0px 0px; ">样本类型</td>
+								<td>取样要求</td>
+								<td>保存及运输</td>
+								<td style=" border-radius: 0px 8px 0px 0px; ">适用检测项目</td>
+							</tr>
+							<tr class="table_four">
+								<td rowspan="4">新鲜手术组织</td>
+							</tr>
+							<tr class="table_four">
+								<td>>50mg黄豆粒大小</td>
+								<td rowspan="3">-80℃暂存, 尽快用干冰送至实验室</td>
+								<td rowspan="3">肿瘤个体化用药（NGS）基因检测</td>
+							</tr>
+							<tr  class="table_four">
+								<td>-80℃或-20℃冻存过夜（或液氮速冻）</td>
+							</tr>
+							<tr class="table_four">
+								<td>肿瘤含量>50%，坏死细胞少于10%</td>
+							</tr>
+							<tr  class="table_four">
+								<td>新鲜穿刺</td>
+								<td>长度>1cm 1-2条</td>
+								<td rowspan="2">-80℃暂存, 尽快用干冰送至实验室</td>
+								<td rowspan="2">肿瘤个体化用药（NGS）基因检测123</td>
+							</tr>
+							<tr class="table_four">
+								<td>组织</td>
+								<td>生理盐水冲洗干净后，-80℃冻存2h,或-20℃冻存过夜（或液氮速冻）</td> 
+							</tr>
+
+							</tbody>
+						</table>
+						<p></p>
+						
+						<h4>石蜡组织样本</h4> 
+						<table cellpadding="0" cellspacing="0" border="1" width="625" class="sample" style="text-align:left;">
+							<tbody>
+							<tr class="table_five" style="text-align:center;">
+								<td style="border-radius:8px 0px 0px 0px ">样本类型</td>
+								<td>取样要求</td>
+								<td>保存及运输</td>
+								<td style="border-radius:0px 8px 0px 0px ">适用检测项目</td>
+							</tr>
+							<tr class="table_four">
+								<td rowspan="5">石蜡组织样本</td>
+							</tr>
+							<tr class="table_four">
+								<td>>50mg黄豆粒大小</td>
+								<td rowspan="4">-常温保存,收集后尽快送至实验室</td>
+								<td rowspan="4">肿瘤个体化用药（NGS）基因检测</td>
+							</tr>
+							<tr class="table_four">
+								<td>样本保存少于1年</td>
+							</tr>
+							<tr class="table_four">
+								<td>固定时间6-24小时，小组织固定6-12小时</td>
+							</tr>
+							<tr class="table_four">
+								<td>肿瘤含量>50%；坏死细胞少于10%</td>
+							</tr>
+							<tr class="table_four">
+								<td rowspan="5">FFPE石蜡组织切片（白）或蜡卷（另加1张HE染色片）</td>
+							</tr>
+							<tr class="table_four">
+								<td>厚度>4μm, 面积>10mm×10mm</td>
+								<td rowspan="2">常温保存，切片盒子保存，应采取必要措施避免不同样本间蜡屑交叉污染</td>
+								<td rowspan="4">肿瘤个体化用药（NGS）基因检测</td>
+							</tr>
+							<tr class="table_four">
+								<td>手术组织>10张，活检小组织>20张;固定时间6-24小时，小组织固定6-12小时</td>
+								
+							</tr>
+							<tr class="table_four">
+								<td>样本保存少于1年</td>
+								<td rowspan="2">收集后尽快送至实验室</td>
+							</tr>
+							<tr class="table_four">
+								<td>肿瘤含量>50%；坏死细胞少于10%</td>
+							</tr>
+
+							</tbody>
+						</table>
+						
+						<h4>血液样本</h4> 
+						<table cellpadding="0" cellspacing="0" border="1" width="625" class="sample" style="text-align:left;">
+							<tbody>
+								<tr class="table_five" style="text-align:center;">
+									<td  style="border-radius:8px 0px 0px 0px ;width:100px;">样本类型</td>
+									<td>取样要求</td>
+									<td>保存及运输</td>
+									<td  style="border-radius:0px 8px 0px 0px;width:100px; ">适用检测项目</td>
+								</tr>
+								<tr class="table_four">
+									<td rowspan="2" style="text-align:center;">血液样本</td>
+									<td rowspan="2">用Cell-free DNA采血管取血，6-10ml，</td>
+									<td>10ml静脉血，最低6ml</td>
+									<td rowspan="2">ctDNA基因检测</td>
+								</tr>
+								<tr class="table_four">
+									<td>采血后，缓慢颠倒10次，让血</td>
+								</tr>
+								<tr class="table_four">
+									<td rowspan="3"></td>
+									<td rowspan="3">取样后立刻轻柔上下翻转10次混匀</td>
+									<td>液与管内成分充分混匀</td>
+									<td rowspan="3"></td>
+								</tr>
+								<tr class="table_four">
+									<td>存储温度为6-26℃，切勿冷藏（-4℃）或冷冻（-20℃/-80℃）</td>
+								</tr>
+								<tr class="table_four">
+									<td>采血完成后，须72小时内，6-26℃环境下送至实验室</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<h4>胸水样本</h4> 
+						<table cellpadding="0" cellspacing="0" border="1" width="625" class="sample" style="text-align:left;">
+							<tbody> 
+								<tr class="table_five" style="text-align:center;">
+									<td style="border-radius:8px 0px 0px 0px ;width:80px;">样本类型</td>
+									<td>取样要求</td>
+									<td>保存及运输</td>
+									<td style="border-radius:0px 8px 0px 0px ;width:100px;">适用检测项目</td>
+								</tr>
+								<tr class="table_four">
+									<td style="text-align:center;">胸水样本</td>
+									<td>离心后，细胞群>50mg黄豆粒大小；-80℃或-20℃冻存过夜（或液氮速冻）</td>
+									<td>-80℃暂存, 尽快用干冰送至实验室</td>
+									<td>肿瘤个体化用药（NGS）基因检测</td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						
+						<h2>基因检测列表</h2>
+						<p>指南/共识推荐药物相关基因列表</p> 
+					 
+						<p></p>
+						<style>#table_five tr td {
+	border: 2px solid #ffffff;
+	text-align: center;
+}</style>
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five" style="text-align:center;">
+						  <tr class="table_five">
+							<td width="565" nowrap colspan="6" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">靶向药物相关基因 </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="94" rowspan="8"><p align="center" class="zero_left">指南/共识推荐基因（37个） </p></td>
+							<td width="97"><p align="left">EGFR</p></td>
+							<td width="94"><p align="left">PDGFRA</p></td>
+							<td width="94"><p align="left">NPM1</p></td>
+							<td width="94"><p align="left">FIP1L1</p></td>
+							<td width="94"><p align="left">KIF5B</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">ALK</p></td>
+							<td width="94"><p align="left">PDGFRB</p></td>
+							<td width="94"><p align="left">SMO</p></td>
+							<td width="94"><p align="left">DDR2</p></td>
+							<td width="94"><p align="left">CD74</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">ERBB2</p></td>
+							<td width="94"><p align="left">ABL1</p></td>
+							<td width="94"><p align="left">PTCH1</p></td>
+							<td width="94"><p align="left">RARA</p></td>
+							<td width="94"><p align="left">SDC4</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">BRAF</p></td>
+							<td width="94"><p align="left">JAK2</p></td>
+							<td width="94"><p align="left">FLT3</p></td>
+							<td width="94"><p align="left">MET</p></td>
+							<td width="94"><p align="left">EZR</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">KRAS</p></td>
+							<td width="94"><p align="left">BRCA1</p></td>
+							<td width="94"><p align="left">DNMT3A</p></td>
+							<td width="94"><p align="left">RET</p></td>
+							<td width="94"><p align="left">PTEN</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">NRAS</p></td>
+							<td width="94"><p align="left">BRCA2</p></td>
+							<td width="94"><p align="left">AKT1</p></td>
+							<td width="94"><p align="left">TP53</p></td>
+							<td width="94" nowrap valign="bottom"><p align="left">　 </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">KIT</p></td>
+							<td width="94"><p align="left">ROS1</p></td>
+							<td width="94"><p align="left">EML4</p></td>
+							<td width="94"><p align="left">FGFR2</p></td>
+							<td width="94" nowrap valign="bottom"><p align="left">　 </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="97"><p align="left">PIK3CA</p></td>
+							<td width="94"><p align="left">PML</p></td>
+							<td width="94"><p align="left">ESR1</p></td>
+							<td width="94"><p align="left">FGFR1</p></td>
+							<td width="94"><p align="left">　 </p></td>
+						  </tr>
+						</table>
+
+						<p><br></p>
+						
+
+
+						
+						<h4>临床研究阶段药物相关基因列表</h4>
+						<p style="text-align: center;">  
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five" style="text-align:center;">
+						  <tr class="table_five">
+							<td width="568" nowrap colspan="6" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">靶向药物相关基因 </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="91" rowspan="10"><p align="center" class="zero_left">临床研究阶段基因（50个） </p></td>
+							<td width="96" valign="bottom"><p align="left">AKT2</p></td>
+							<td width="93" valign="bottom"><p align="left">FGFR3</p></td>
+							<td width="96" valign="bottom"><p align="left">NOTCH1</p></td>
+							<td width="94" valign="bottom"><p align="left">CXCR4</p></td>
+							<td width="98" valign="bottom"><p align="left">PRKAR1A</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">AKT3</p></td>
+							<td width="93" valign="bottom"><p align="left">GNA11</p></td>
+							<td width="96" valign="bottom"><p align="left">NOTCH2</p></td>
+							<td width="94" valign="bottom"><p align="left">CSF1R</p></td>
+							<td width="98" valign="bottom"><p align="left">AR</p></td>
+						  </tr >
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">BCR</p></td>
+							<td width="93" valign="bottom"><p align="left">GNAQ</p></td>
+							<td width="96" valign="bottom"><p align="left">PIK3R1</p></td>
+							<td width="94" valign="bottom"><p align="left">NCOA4</p></td>
+							<td width="98" valign="bottom"><p align="left">EZH2</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">BTK</p></td>
+							<td width="93" valign="bottom"><p align="left">HRAS</p></td>
+							<td width="96" valign="bottom"><p align="left">SLC34A2</p></td>
+							<td width="94" valign="bottom"><p align="left">CCDC6</p></td>
+							<td width="98" valign="bottom"><p align="left">TEKT4</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">CDK4</p></td>
+							<td width="93" valign="bottom"><p align="left">IDH1</p></td>
+							<td width="96" valign="bottom"><p align="left">SMAD4</p></td>
+							<td width="94" valign="bottom"><p align="left">ZRSR2</p></td>
+							<td width="98" valign="bottom"><p align="left">TET2</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">CDKN2A</p></td>
+							<td width="93" valign="bottom"><p align="left">IDH2</p></td>
+							<td width="96" valign="bottom"><p align="left">GOPC</p></td>
+							<td width="94" valign="bottom"><p align="left">LRRK2</p></td>
+							<td width="98" valign="bottom"><p align="left">SF3B1</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">KDR</p></td>
+							<td width="93" valign="bottom"><p align="left">CDK6</p></td>
+							<td width="96" valign="bottom"><p align="left">TSC1</p></td>
+							<td width="94" valign="bottom"><p align="left">MAP2K1</p></td>
+							<td width="98" valign="bottom"><p align="left">STAT3</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">CSF3R</p></td>
+							<td width="93" valign="bottom"><p align="left">CRLF2</p></td>
+							<td width="96" valign="bottom"><p align="left">JAK1</p></td>
+							<td width="94" valign="bottom"><p align="left">fes</p></td>
+							<td width="98" valign="bottom"><p align="left">PTPN11</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">CTNNB1</p></td>
+							<td width="93" valign="bottom"><p align="left">U2AF1</p></td>
+							<td width="96" valign="bottom"><p align="left">JAK3</p></td>
+							<td width="94" valign="bottom"><p align="left">EGF</p></td>
+							<td width="98" valign="bottom"><p align="left">MLL3</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" valign="bottom"><p align="left">CREBBP</p></td>
+							<td width="93" valign="bottom"><p align="left">CD79B</p></td>
+							<td width="96" valign="bottom"><p align="left">CALR</p></td>
+							<td width="94" valign="bottom"><p align="left">IL7R</p></td>
+							<td width="98" valign="bottom"><p align="left">MLH1</p></td>
+						  </tr>
+						</table>
+
+						<p><br></p>
+						<h2 style="font-size:14px;">敏感性和毒副作用相关基因列表</h2>
+						<p style="text-align: center;"> 
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five" style="text-align:center;">
+						  <tr class="table_five">
+							<td width="578" colspan="6" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">化疗药物相关基因 </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="102" rowspan="32"><p align="center" class="zero_left">毒性及敏感性相关基因（160个） </p></td>
+							<td width="96" nowrap valign="bottom"><p align="left">ABCA1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP2C8</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">KLC1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CHST3</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLC22A4</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCB1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP2C9</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">LEPR</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CMPK1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLC22A5</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP2D6</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">LIG3</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">COMT</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLC28A3</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC10</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP2E1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">LRP2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CTLA4</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLC29A1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC11</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP3A4</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MAD1L1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYBA</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLC31A1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP3A5</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MAP3K1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP19A1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLCO1B1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC3</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP4B1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MAP3K5</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP1A1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLCO1B3</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC4</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">DCBLD1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MAP4K4</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP1B1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SLIT1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+
+							<td width="96" nowrap valign="bottom"><p align="left">ABCC6</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">DCK</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MTHFD1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP2B6</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SOD2</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ABCG2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">DHFR</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MTHFR</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">CYP2C19</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SOX10</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ACTG1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">DPYD</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MTR</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">HLA-G</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SPECC1L</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ADH1C</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">DSCAM</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MTRR</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">HMGCR</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SPG7</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ADORA2A</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">DYNC2H1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">MUTYH</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">HTR3B</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SULT1C4</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ALDH1A1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">EIF3A</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NALCN</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">IDO1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">SULT2B1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">AMPD1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">EPHX1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NAT2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">IFNL3</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TGFB1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">APOA5</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">ERCC1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NCF4</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">IFNL4</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TLR4</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">APOE</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">ERCC2</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NOS3</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">IL10</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TNF</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ARID5B</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">ESR2</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NQO1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">IMPDH2</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TNFAIP3</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ATIC</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">F2</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NQO2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">ITPA</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TOP1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">ATP7A</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">FCGR3A</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NT5C2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">KCNQ5</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TPMT</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">BCL2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">FDPS</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">NUDT15</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">RRM1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">VEGFA</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">BCL2L11</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">FOLR3</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">OASL</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">RRM2</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TRAM2-AS1</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">BLMH</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">FPGS</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">OPRM1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">RRM2B</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TSG1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">C8orf34</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GALNT14</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">PARD3B</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SEMA3C</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TUBB1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CAPG</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GATA3</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">PPARA</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SHMT1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TYMP</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CASP7</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GGH</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">PPARD</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SLC10A2</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">TYMS</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CBR1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GSTA1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">PRDX4</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SLC19A1</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">UBE2I</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CBR3</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GSTM1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">PTGS2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SLC22A12</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">UGT1A1</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CCND1</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GSTM3</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">RAC2</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SLC22A16</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">UGT1A10</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CDA</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GSTP1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">RAD52</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">SLC22A2</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">ZNF423</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">CETP</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">GSTT1</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">RPL13</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">UGT1A4</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">XRCC1</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="96" nowrap valign="bottom"><p align="left">XRCC4</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">XPC</p></td>
+							<td width="82" nowrap valign="bottom"><p align="left">UMPS</p></td>
+							<td width="93" nowrap valign="bottom"><p align="left">UGT1A8</p></td>
+							<td width="112" nowrap valign="bottom"><p align="left">UGT1A9</p></td>
+						  </tr>
+						</table>
+
+						
+						
+						<h2>基因检测对应分析药物列表</h2>
+						<p>靶向药物列表</p>
+						<p style="text-align: center;">
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five" style="text-align:left;">
+						  <tr class="table_five" style="text-align:center;">
+							<td width="556" nowrap colspan="5" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">获批药物(54个)</p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="83" nowrap valign="bottom"> 吉非替尼 </p></td>
+							<td width="83" nowrap valign="bottom">厄洛替尼 </p></td>
+							<td width="75" nowrap valign="bottom">阿法替尼 </p></td>
+							<td width="151" nowrap valign="bottom">司美替尼 </p></td>
+							<td width="164" nowrap valign="bottom">帕纳替尼 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">拉帕替尼 </p></td>
+							<td width="83" nowrap valign="bottom">曲妥单抗 </p></td>
+							<td width="75" nowrap valign="bottom">克唑替尼 </p></td>
+							<td width="151" nowrap valign="bottom">埃克替尼 </p></td>
+							<td width="164" nowrap valign="bottom">西妥昔单抗 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">曲美替尼 </p></td>
+							<td width="83" nowrap valign="bottom">瑞戈非尼 </p></td>
+							<td width="75" nowrap valign="bottom">贝伐单抗 </p></td>
+							<td width="151" nowrap valign="bottom">Osimertinib（AZD9291)</p></td>
+							<td width="164" nowrap valign="bottom">帕唑帕尼 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">阿西替尼 </p></td>
+							<td width="83" nowrap valign="bottom">帕尼单抗 </p></td>
+							<td width="75" nowrap valign="bottom">色瑞替尼 </p></td>
+							<td width="151" nowrap valign="bottom">阿雷替尼 </p></td>
+							<td width="164" nowrap valign="bottom">舒尼替尼 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">达拉菲尼 </p></td>
+							<td width="83" nowrap valign="bottom">博舒替尼 </p></td>
+							<td width="75" nowrap valign="bottom">托法替尼 </p></td>
+							<td width="151" nowrap valign="bottom">维莫德吉 </p></td>
+							<td width="164" nowrap valign="top">吉妥珠单抗 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">坦罗莫司 </p></td>
+							<td width="83" nowrap valign="bottom">奥拉帕尼 </p></td>
+							<td width="75" nowrap valign="bottom">鲁索利替尼 </p></td>
+							<td width="151" nowrap valign="top">西罗莫司 </p></td>
+							<td width="164" nowrap valign="top">42-(二甲基亚膦酰)雷帕霉素 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">威罗菲尼 </p></td>
+							<td width="83" nowrap valign="bottom">达沙替尼 </p></td>
+							<td width="75" nowrap valign="bottom">尼达尼布 </p></td>
+							<td width="151" nowrap valign="bottom">帕博西尼 </p></td>
+							<td width="164" nowrap valign="bottom">重组人血管内皮抑制素 </p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">凡德他尼 </p></td>
+							<td width="83" nowrap valign="bottom">尼洛替尼 </p></td>
+							<td width="75" nowrap valign="bottom">伊马替尼 </p></td>
+							<td width="151" nowrap valign="bottom">乐伐替尼 </p></td>
+							<td width="164" nowrap valign="bottom">Blinatumomab</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">卡博替尼 </p></td>
+							<td width="83" nowrap valign="bottom">帕妥珠单抗 </p></td>
+							<td width="75" nowrap valign="top">利妥昔单抗 </p></td>
+							<td width="151" nowrap valign="top">罗非昔布 </p></td>
+							<td width="164" nowrap valign="bottom">Cobimetinib</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">依维莫司 </p></td>
+							<td width="83" nowrap valign="top">硼替佐米 </p></td>
+							<td width="75" nowrap valign="bottom">依鲁替尼 </p></td>
+							<td width="151" nowrap valign="top">塞来昔布 </p></td>
+							<td width="164" nowrap valign="bottom">Necitumumab</p></td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">索拉非尼 </p></td>
+							<td width="83" nowrap valign="bottom">尼妥珠单抗 </p></td>
+							<td width="75" nowrap valign="bottom">艾代拉里斯 </p></td>
+							<td width="151" nowrap valign="bottom">T-DM1</p></td>
+							<td width="164" nowrap valign="bottom">　 </p></td>
+						  </tr>
+						</table>
+						<p><br></p>
+						<p style="text-align: center;">
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five" style="text-align:left;">
+						  <tr class="table_five" style="text-align:center;">
+							<td width="556" nowrap colspan="5" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">在研药物（71个） </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="83" nowrap valign="bottom">来那替尼 </td>
+							<td width="83" nowrap valign="bottom">达克米替尼 </td>
+							<td width="75" nowrap valign="bottom">瑞他霉素 </td>
+							<td width="151" nowrap valign="bottom">厄妥索单抗 </td>
+							<td width="164" nowrap valign="bottom">易吡替尼 </td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">胶霉毒素 </td>
+							<td width="83" nowrap valign="bottom">多韦替尼 </td>
+							<td width="75" nowrap valign="bottom">诺司替尼 </td>
+							<td width="151" nowrap valign="bottom">来他替尼 </td>
+							<td width="164" nowrap valign="bottom">马赛替尼 </td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">奎扎替尼 </td>
+							<td width="83" nowrap valign="bottom">沃利替尼 </td>
+							<td width="75" nowrap valign="bottom">夫拉平度 </td>
+							<td width="151" nowrap valign="bottom">坦度替尼 </td>
+							<td width="164" nowrap valign="bottom">德立替尼 </td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">曲西立滨 </td>
+							<td width="83" nowrap valign="bottom">巴非替尼 </td>
+							<td width="75" nowrap valign="bottom">马妥珠单抗 </td>
+							<td width="151" nowrap valign="bottom">莫特塞尼 </td>
+							<td width="164" nowrap valign="bottom">哌立福新 </td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">坦螺旋霉素 </td>
+							<td width="83" nowrap valign="bottom">陶扎色替 </td>
+							<td width="75" nowrap valign="bottom">培利替尼 </td>
+							<td width="151" nowrap valign="bottom">洛拉替尼 </td>
+							<td width="164" nowrap valign="bottom">米哚妥林 </td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">卡奈替尼 </td>
+							<td width="83" nowrap valign="bottom">Tivantinib</td>
+							<td width="75" nowrap valign="bottom">XL888</td>
+							<td width="151" nowrap valign="bottom">Apitolisib</td>
+							<td width="164" nowrap valign="bottom">ALLO-1</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">MK-2206</td>
+							<td width="83" nowrap valign="bottom">AZD5363</td>
+							<td width="75" nowrap valign="bottom">Ganetespib</td>
+							<td width="151" nowrap valign="bottom">Rebastinib</td>
+							<td width="164" nowrap valign="bottom">Entrectinib</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">WZ4002</td>
+							<td width="83" nowrap valign="bottom">NVP-BGJ398</td>
+							<td width="75" nowrap valign="bottom">Uprosertib</td>
+							<td width="151" nowrap valign="bottom">TSR-011</td>
+							<td width="164" nowrap valign="bottom">RO5212054</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">Brigatinib</td>
+							<td width="83" nowrap valign="bottom">BMS-690514</td>
+							<td width="75" nowrap valign="bottom">HM61713</td>
+							<td width="151" nowrap valign="bottom">TAK733</td>
+							<td width="164" nowrap valign="bottom">RAF265</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">NVP-TAE684</td>
+							<td width="83" nowrap valign="bottom">Buparlisib</td>
+							<td width="75" nowrap valign="bottom">Luminespib</td>
+							<td width="151" nowrap valign="bottom">Imgatuzumab</td>
+							<td width="164" nowrap valign="bottom">ARQ 736</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">AZD4547</td>
+							<td width="83" nowrap valign="bottom">Alpelisib</td>
+							<td width="75" nowrap valign="bottom">PD173074</td>
+							<td width="151" nowrap valign="bottom">Sapitinib</td>
+							<td width="164" nowrap valign="bottom">Encorafenib</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">Crenolanib</td>
+							<td width="83" nowrap valign="bottom">NVP-BEZ235</td>
+							<td width="75" nowrap valign="bottom">PI-103</td>
+							<td width="151" nowrap valign="bottom">Omipalisib </td>
+							<td width="164" nowrap valign="bottom">ASP8273</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">Binimetinib</td>
+							<td width="83" nowrap valign="bottom">PD0325901</td>
+							<td width="75" nowrap valign="bottom">RO5126766</td>
+							<td width="151" nowrap valign="bottom">Cenisertib</td>
+							<td width="164" nowrap valign="bottom">Poziotinib</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">SU5614</td>
+							<td width="83" nowrap valign="bottom">Pictilisib</td>
+							<td width="75" nowrap valign="bottom">XL647</td>
+							<td width="151" nowrap valign="bottom">Ipatasertib</td>
+							<td width="164" nowrap valign="bottom">Gandotinib</td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="83" nowrap valign="bottom">MK-1775</td>
+							<td width="83" nowrap valign="bottom"> </td>
+							<td width="75" nowrap valign="bottom"></td>
+							<td width="151" nowrap valign="bottom"> </td>
+							<td width="164" nowrap valign="bottom"> </td>
+						  </tr>
+						</table>
+
+
+					<p><br></p>
+						<h3>化疗药物列表</h3>
+						<p style="text-align: center;"> 
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five" style="text-align:left;">
+						  <tr class="table_five" style="text-align:center;">
+							<td width="539" nowrap colspan="5" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">获批药物（51个） </p></td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" valign="top">氟尿嘧啶 </td>
+							<td width="94" valign="top">亚叶酸钙 </td>
+							<td width="102" valign="top">卡培他滨 </td>
+							<td width="110" nowrap valign="bottom">紫杉醇 </td>
+							<td width="145" valign="top">表柔比星 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" nowrap valign="bottom">顺铂 </td>
+							<td width="94" valign="top">奥沙利铂 </td>
+							<td width="102" valign="top">伊立替康 </td>
+							<td width="110" valign="top">培美曲塞 </td>
+							<td width="145" valign="top">多西他赛 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" valign="top">吉西他滨 </td>
+							<td width="94" valign="top">长春新碱 </td>
+							<td width="102" valign="top">环磷酰胺 </td>
+							<td width="110" valign="top">长春瑞滨 </td>
+							<td width="145" nowrap valign="bottom">卡铂 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" valign="top">奈达铂 </td>
+							<td width="94" valign="top">甲氨蝶呤 </td>
+							<td width="102" valign="top">沙利度胺 </td>
+							<td width="110" valign="top">依托泊苷 </td>
+							<td width="145" valign="top">丝裂霉素 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" valign="top">柔红霉素 </td>
+							<td width="94" valign="top">三亚胺硫磷 </td>
+							<td width="102" nowrap valign="bottom">喷司他丁 </td>
+							<td width="110" valign="top">天冬酰胺酶 </td>
+							<td width="145" valign="top">伊达比星 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" nowrap valign="bottom">雷利度胺 </td>
+							<td width="94" valign="top">阿霉素 </td>
+							<td width="102" valign="top">阿糖胞苷 </td>
+							<td width="110" valign="top">环孢霉素 </td>
+							<td width="145" valign="top">培门冬酶 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" nowrap valign="bottom">维A酸 </td>
+							<td width="94" valign="top">卡巴他赛 </td>
+							<td width="102" nowrap valign="bottom">三氧化二砷 </td>
+							<td width="110" valign="top">巯基嘌呤 </td>
+							<td width="145" valign="top">更生霉素 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" nowrap valign="bottom">福莫司汀 </td>
+							<td width="94" nowrap valign="bottom">司莫司汀 </td>
+							<td width="102" valign="top">异环磷酰胺 </td>
+							<td width="110" valign="top">硫鸟嘌呤 </td>
+							<td width="145" nowrap valign="bottom">氟达拉滨 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" nowrap valign="bottom">白消安 </td>
+							<td width="94" valign="top">米托蒽醌 </td>
+							<td width="102" valign="top">羟基脲 </td>
+							<td width="110" nowrap valign="bottom">替莫唑胺 </td>
+							<td width="145" nowrap valign="bottom">地西他滨 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" nowrap valign="bottom">高三尖杉酯碱 </td>
+							<td width="94" valign="top">博来霉素 </td>
+							<td width="102" nowrap valign="bottom">甲磺酸艾日布林 </td>
+							<td width="110" valign="top">克拉屈滨 </td>
+							<td width="145" nowrap valign="bottom">氯法拉滨 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="88" valign="top">强的松 </td>
+							<td width="94" nowrap valign="bottom">　 </td>
+							<td width="102" nowrap valign="bottom">　 </td>
+							<td width="110" nowrap valign="bottom">　 </td>
+							<td width="145" nowrap valign="bottom">　 </td>
+						  </tr>
+						</table>
+						<p><br>
+					
+						<h3>其他药物</h3>
+						<p style="text-align: center;"> 
+						<table border="0" cellspacing="0" cellpadding="0" width="625" id="table_five">
+						  <tr class="table_five">
+							<td width="549" nowrap colspan="5" valign="bottom" style="border-radius:8px 8px 0px 0px;color:#ffffff;"><p align="center" style="color:#ffffff;">获批药物（25个） </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="105" nowrap valign="top">辛伐他汀 </td>
+							<td width="123" nowrap valign="bottom">帕比司他 </td>
+							<td width="138" nowrap valign="top">地塞米松 </td>
+							<td width="86" nowrap valign="bottom">他莫昔芬 </td>
+							<td width="97" nowrap valign="bottom">来曲唑 </td>
+						  </tr>
+						  <tr  class="table_four">
+							<td width="105" nowrap valign="bottom">氟维司群 </td>
+							<td width="123" nowrap valign="bottom">伏林司他 </td>
+							<td width="138" nowrap valign="top">醋酸甲羟孕酮 </td>
+							<td width="86" nowrap valign="top">替诺福韦 </td>
+							<td width="97" nowrap valign="bottom">阿那曲唑 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="105" nowrap valign="bottom">阿那格雷 </td>
+							<td width="123" nowrap valign="bottom">戈舍瑞林 </td>
+							<td width="138" nowrap valign="bottom">阿比特龙 </td>
+							<td width="86" nowrap valign="top">阿德福韦酯 </td>
+							<td width="97" nowrap valign="bottom">依西美坦 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="105" nowrap valign="bottom">托瑞米芬 </td>
+							<td width="123" nowrap valign="bottom">4-羟基他莫昔芬 </td>
+							<td width="138" nowrap valign="top">唑来磷酸 </td>
+							<td width="86" nowrap valign="top">拉米夫定 </td>
+							<td width="97" nowrap valign="top">芬太尼 </td>
+						  </tr>
+						  <tr class="table_four">
+							<td width="105" nowrap valign="bottom">纳武单抗 </td>
+							<td width="123" nowrap valign="top">a-2a型干扰素 </td>
+							<td width="138" nowrap valign="top">a-2b型聚乙二醇干扰素 </td>
+							<td width="86" nowrap valign="top">贝利司他 </td>
+							<td width="97" nowrap valign="top">重组干扰素α </td>
+						  </tr>
+						</table>
+
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li> 
+	<li id="JKDiv_7" class="content"><!--肺癌基因检测-->
+	
+		<h4>肺癌基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu4">
+				   <li onclick="setTab(4,0)" class="hover">产品介绍</li>
+				   <li onclick="setTab(4,1)">检测意义</li>
+				   <li onclick="setTab(4,2)">检测过程</li>
+				   <li onclick="setTab(4,3)">检测套餐</li>
+				</ul> 
+			</div>
+			
+			<div class="main" id="main4" style="background: #ffffff;">
+			   <ul class="block">
+					<li>
+						<div  id="list_setting"><p style="text-align: justify;" class="textindent">高通量测序（NGS）技术的不断发展、测序成本大幅下降，为临床实现对肿瘤患者的精准治疗提供了有利条件。我们精心挑选了与肿瘤密切相关的247个基因，涵盖指南推荐的所有基因及临床热点基因，分析200余种药物与基因变异的关系，帮助肺癌患者进行基因检测，尤其适用于复发、转移的中晚期患者。根据患者能够提供的样本不同，推出了两类检测产品：</p> <p class="textindent">安复坦AnnoUltra-ctDNA检测：适用于血液样本，采集血液后利用NGS技术开展ctDNA基因检测；</p>
+						<p style="padding-left: 2em;">安谱健AnnoPro-组织检测：适用于新鲜组织（包括新鲜胸水样本）、穿刺组织、石蜡切片组织等组织样本，利用NGS技术进行基因检测。</p>
+						 
+						<p>
+						<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 170px; margin: 0 auto; ">
+						<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">1</a>
+						<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);width: 120px;float: left;height: 20px;margin-top: 9px;">肺癌诊疗中的分子分型</a>
+						
+						</div>
+					</p>
+						<p><br></p><p style="text-align:center;font-size:12px;">非小细胞肺癌从组织分型到分子分型的发展过程</p><p style="text-align: center;"><img src="./image/feiai_1.jpg" width="625"></p>
+						<p class="textindent">肿瘤组织病理学分型是目前临床肿瘤治疗方案的基本出发点，但越多越多的l临床研究表明，根据肿瘤驱动基因变异进行的分子分型可以更多地帮助患者有针对性地选择个体化的治疗方案，实现精准治疗。</p>
+						<p class="image_word">肺癌驱动基因谱</p>
+						 
+						<p>
+							<table class="sample" id="white" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: left; " > 
+								<tr style="background:#00afde;color: #fff;"><th>基因</th><th>关联靶向药物</th></tr>
+								<tr style="background:#daf1f7"><th>EGFR（指南推荐）</th><th>厄洛替尼、吉非替尼、埃克替尼、奥希替尼（AZD9291）、阿法替尼</th></tr>
+								<tr style="background:#ebf9fc"><th>ALK（指南推荐）</th>
+									<th>克唑替尼、厄洛替尼、吉非替尼、色瑞替尼、艾乐替尼</th></tr>
+								<tr style="background:#daf1f7"><th>ERBB2（指南推荐）</th>
+									<th>阿法替尼、厄洛替尼、吉非替尼</th></tr>
+								<tr style="background:#ebf9fc"><th>ROS1（指南推荐）</th><th>克唑替尼、卡博替尼</th></tr>
+								<tr style="background:#daf1f7"><th>MET（指南推荐）</th><th>克唑替尼、卡博替尼</th></tr>
+								<tr style="background:#ebf9fc"><th>RET（指南推荐）</th><th>卡博替尼</th></tr>
+								<tr style="background:#daf1f7"><th>BRAF（指南推荐）</th><th>达拉菲尼、威罗菲尼</th></tr>
+								<tr style="background:#ebf9fc"><th>KRAS</th><th>厄洛替尼、吉非替尼</th></tr>
+								<tr style="background:#daf1f7"><th>TP53</th><th>帕唑帕尼</th></tr>
+								
+							</table>  
+						</p>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						
+						<p><a class="word_mark">临床意义</a></p>
+						<p class="textindent">		个体化用药指导：检测药物靶点基因，精确解读相关位点，分析基因变异与药物的关系，根据肿瘤患者特有的基因变异推荐合适的药物，评估药物的疗效和相关毒副作用，协助临床制定个体化的治疗方案；</p>
+						<p  class="textindent">耐药性分析：耐药性的产生源于肿瘤相关基因的不断突变，ctDNA检测的优势在于可以实时动态检测药物靶点突变，分析耐药性产生的根源，帮助医生适时调整治疗方案、选择合适的药物；
+						</p>
+						<p><a class="word_color">ctDNA基因检测独有的临床意义</a></p>
+						<p class="textindent">动态监测：ctDNA检测可以多个时间点取样，帮助医生实现对患者用药疗效、复发及转移的动态监测。</p>
+						
+						<p><a class="word_mark">适用人群</a></p>
+						<p class="icon">在肿瘤被诊断后，寻求更适合自己的用药方案的患者；</p>
+						<p class="icon">肿瘤用药疗效不佳，希望寻求更优用药方案的患者；</p>
+						<p class="icon">传统检测后未发现可用靶药，寻求更多靶药用药机会的患者；</p>
+						<p class="icon">出现耐药现象，需要更换治疗方案的患者；</p>
+						<p class="icon">ctDNA基因检测独有的适应人群：</p>
+						<p class="icon">复发、转移，无法获得组织样本的患者；</p>
+						<p class="icon">组织量太少不足以检测的晚期患者；</p>
+						<p class="icon">有动态监测意愿，期望提早发现可能的复发、转移征兆的患者。</p>
+						
+						<p><a class="word_mark">检测优势</a></p>
+						<p>全面综合：一次可检测247个肿瘤相关基因，解读200余种药物与基因变异的关系；
+							灵敏准确：可检测低至0.1%的低频突变，准确度在99.9%以上；<br>
+							精准解读：采纳多个国际权威数据库、专业的医学遗传解读团队；<br>
+						</p>
+						<p><a class="word_color">ctDNA基因检测的独特优势</a></p>
+						<p>无创便捷：只需取血10ml；可在一定程度上克服肿瘤异质性；可实现动态监测。</p>
+						
+						
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p><a class="word_mark">样本要求</a></p>
+						<p  class="icon"><a >安复坦AnnoUltra ctDNA检测：</p>
+						<p  class="icon">6-10ml外周血，cell free DNA管，6-26℃保存</p>
+						<p  class="icon"><a>安谱健AnnoPro组织检测：</p>
+						<p  class="icon">外周血6-10ml（cell free DNA管，6-26℃保存）+以下四者之一：</p>
+						<p style="padding-left:2em;">
+							1、新鲜组织：肿瘤细胞大于50%，坏死细胞小于10%，黄豆粒大小，保护液，6-26℃保存；<br>2、新鲜穿刺组织：长度＞1cm，1-2条；<br>
+							3、蜡块：肿瘤细胞大于50%，坏死细胞小于10%，组织面积10mm×10mm，附带HE染色切片，切片盒，常温运输；<br>
+							4、石蜡切片：肿瘤细胞大于50%，坏死细胞小于10%，切片上组织厚度＞4μm，组织面积10mm×10mm，10片切片，附带HE染色切片，切片盒，常温运输。<br>
+						</p>
+						
+						<p><a class="word_mark">检测周期</a></p>
+						<p>自实验室接受样本起，10个工作日出具检测报告</p>
+						<p><a class="word_mark">检测流程</a></p>
+						<p style="text-align: center;"><img src="./image/feiai_3.jpg" width="625"></p> 
+						<p></p>
+						<p></p>
+						
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p><a class="word_mark">肺癌指南推荐9基因检测套餐（基础版）</a></p>
+						<p>
+							<table class="sample "  id="blue" width="625" border="0" style=" border-color: #ffffff;text-align: center; " > 
+								<tr><th  style="background:#00afde;color: #fff;width:100px;border-bottom:1px solid #ffffff;">9基因</th><th style="text-align:left;">EGFR、ALK、ERBB2、ROS1、MET、BRAF、RET、KARS、TP53</th></tr>
+								<tr><th style="background:#00afde;color: #fff;">12种药物</th><th  style="text-align:left;">克唑替尼、厄洛替尼、吉非替尼、埃克替尼、奥希替尼、卡博替尼、色瑞替尼、阿法替尼、达拉菲尼、威罗菲尼、帕唑帕尼、艾乐替尼</th></tr> 
+								
+							</table>  
+						</p>
+					
+						<p><a class="word_mark">肺癌23基因检测套餐（全面版）</a></p>
+						<p>
+							<table class="sample" id="blue"  width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " > 
+								<tr><th  style="background:#00afde;color: #fff;width:100px;border-bottom:1px solid #ffffff;">检测基因23个</th><th  style="text-align:left;">ALK、BRAF、EGFR、ERBB2、FGFR1、FGFR2、KIT、KRAS、MET、NRAS、PDGFRA、PIK3CA、PTEN、RET、ROS1、TP53、VEGFR2、CDA、ABCB1、XRCC1、ERCC1、GSTP1、MTHFR</th></tr>
+								<tr><th style="background:#00afde;color: #fff;">解读药物28个</th><th  style="text-align:left;">克唑替尼、厄洛替尼、吉非替尼、埃克替尼、贝伐单抗、舒尼替尼、曲妥珠单抗、依维莫司、重组人血管内皮抑制素、奥希替尼、卡博替尼、色瑞替尼、达拉菲尼、威罗菲尼、帕唑帕尼、阿法替尼、纳武单抗、尼达尼布、Portrazza、艾乐替尼、曲美替尼、吉西他滨、紫杉醇、卡铂、奈达铂、顺铂、奥沙利铂、培美曲塞</th></tr>  
+							</table>  
+						</p>
+					
+						<p><a class="word_mark">肺癌55基因检测套餐（高级版）</a></p>
+						<style> #blue tr th {
+ 	border: 1px solid #00afde;
+ }</style>
+						<p>
+							<table class="sample "  id="blue" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " > 
+								<tr><th  style="background:#00afde;color: #fff;width:100px;border-bottom:1px solid #ffffff;">检测基因55个</th><th  style="text-align:left;">ALK、BRAF、EGFR、ERBB2、FGFR1、FGFR2、KIT、KRAS、MET、NRAS、PDGFRA、PIK3CA、PTEN、RET、ROS1、TP53、VEGFR2、AKT1、BRCA1、BRCA2、CDK4、CDK6、CDKN2A、CXCR4、DDR2、FGFR3、FLT3、HRAS、JAK1、JAK2、MAP2K1、PIK3R1、TSC1、IDH1 、CDA、ABCB1、XRCC1、ERCC1、GSTP1、MTHFR、ATIC、C8orf34、CASP7、CYP1A1、CYP1B1、CYP4B1、DYNC2H1、DPYD、ERCC2、MTRR、NQO1、SEMA3C、SOD2、UGT1A1、XPC</th></tr>
+								<tr><th style="background:#00afde;color: #fff;">解读药物85个</th><th  style="text-align:left;">克唑替尼、厄洛替尼、吉非替尼、埃克替尼、贝伐单抗、舒尼替尼、曲妥珠单抗、依维莫司、重组人血管内皮抑制素、奥希替尼、卡博替尼、色瑞替尼、达拉菲尼、威罗菲尼、帕唑帕尼、阿法替尼、纳武单抗、尼达尼布、P o r t r a z z a、艾乐替尼、达沙替尼、拉帕替尼、索拉非尼、尼妥珠单抗、西罗莫司/雷帕霉素、阿帕替尼、Cobimetinib、奥拉帕尼、帕尼单抗、帕纳替尼、鲁索利替尼、曲美替尼、凡德他尼、依鲁替尼、帕博西尼、司美替尼、替西罗莫斯/坦罗莫司、来那替尼、entrectinib、坦螺旋霉素、Brigatinib、ASP8273、AZD4547、AZD5363、NVP-BGJ398、buparlisib、BMS-690514、卡奈替尼、达克米替尼、沃利替尼、ganetespib、pictilisib、HM61713、德立替尼、Binimetinib、MK-2206、PD0325901、培利替尼、洛拉替尼、瑞他霉素、诺司替尼、多韦替尼、XL647、AG-120、Defactinib、吉西他滨、紫杉醇、卡铂、奈达铂、顺铂、奥沙利铂、培美曲塞、多柔比星（阿霉素）、甲氨蝶呤、长春瑞滨、多西他赛、依托泊苷、异环磷酰胺、环磷酰胺、长春新碱、丝裂霉素、氟尿嘧啶、表柔比星、伊立替康、卡培他滨</th></tr>  
+							</table>  
+						</p>
+						<p><a class="word_mark">肺癌247基因检测套餐（全谱版）</a></p>
+						<style>#blue tr td {
+	border: 1px solid #00afde;
+}</style>
+						<p>
+							<table class="sample "  id="blue"width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " > 
+								<tr><th  style="background:#00afde;color: #fff;border-bottom:1px solid #ffffff;width:100px;">靶向药物相关基因</th><th  style="text-align:left;">EGFR、PDGFRA、NPM1、FIP1L1、KIF5B、ALK、PDGFRB、SMO、DDR2、CD74、ERBB2、ABL1、PTCH1、RARA、SDC4、BRAF、JAK2、FLT3、MET、EZR、KRAS、BRCA1、DNMT3A、RET、PTEN、NRAS、BRCA2、AKT1、TP53、KIT、ROS1、EML4、FGFR2、PIK3CA、PML、ESR1、FGFR1、AKT2、FGFR3、NOTCH1、CXCR4、PRKAR1A、AKT3、GNA11、NOTCH2、CSF1R、AR、BCR、GNAQ、PIK3R1、NCOA4、EZH2、BTK、HRAS、SLC34A2、CCDC6、TEKT4、CDK4、IDH1、SMAD4、ZRSR2、TET2、CDKN2A、IDH2、GOPC、LRRK2、SF3B1、KDR、CDK6、TSC1、MAP2K1、STAT3、CSF3R、CRLF2、JAK1、fes、PTPN11、CTNNB1、U2AF1、JAK3、EGF、MLL3、CREBBP、CD79B、CALR、IL7R、MLH1
+								</th></tr>
+								<tr><th style="background:#00afde;color: #fff;">化疗药物相关基因</th><th  style="text-align:left;">ABCA1、CYP2C8、KLC1、CHST3、SLC22A4、ABCB1、CYP2C9、LEPR、CMPK1、SLC22A5、ABCC1、CYP2D6、LIG3、COMT、SLC28A3、ABCC10、CYP2E1、LRP2、CTLA4、SLC29A1、ABCC11、CYP3A4、MAD1L1、CYBA、SLC31A1、ABCC2、CYP3A5、MAP3K1、CYP19A1、SLCO1B1、ABCC3、CYP4B1、MAP3K5、CYP1A1、SLCO1B3、ABCC4、DCBLD1、MAP4K4、CYP1B1、SLIT1、ABCC6、DCK、MTHFD1、CYP2B6、SOD2、ABCG2、DHFR、MTHFR、CYP2C19、SOX10、ACTG1、DPYD、MTR、HLA-G、SPECC1L、ADH1C、DSCAM、MTRR、HMGCR、SPG7、ADORA2A、DYNC2H1、MUTYH、HTR3B、SULT1C4、ALDH1A1、EIF3A、NALCN、IDO1、SULT2B1、AMPD1、EPHX1、NAT2、IFNL3、TGFB1、APOA5、ERCC1、NCF4、IFNL4、TLR4、APOE、ERCC2、NOS3、IL10、TNF、ARID5B、ESR2、NQO1、IMPDH2、TNFAIP3、ATIC、F2、NQO2、ITPA、TOP1、ATP7A、FCGR3A、NT5C2、KCNQ5、TPMT、BCL2、FDPS、NUDT15、RRM1、VEGFA、BCL2L11、FOLR3、OASL、RRM2、TRAM2-AS1、BLMH、FPGS、OPRM1、RRM2B、TSG1、C8orf34、GALNT14、PARD3B、SEMA3C、TUBB1、CAPG、GATA3、PPARA、SHMT1、TYMP、CASP7、GGH、PPARD、SLC10A2、TYMS、CBR1、GSTA1、PRDX4、SLC19A1、UBE2I、CBR3、GSTM1、PTGS2、SLC22A12、UGT1A1、CCND1、GSTM3、RAC2、SLC22A16、UGT1A10、CDA、GSTP1、RAD52、SLC22A2、ZNF423、CETP、GSTT1、RPL13、UGT1A4、XRCC1、XRCC4、XPC、UMPS、UGT1A8、UGT1A9</th></tr>  
+								<tr><th colspan="2">相关药物</th></tr> 
+								<tr><th style="background:#00afde;color: #fff;border-bottom:1px solid #ffffff;">靶向药物（126）</th><th  style="text-align:left;">吉非替尼、厄洛替尼、阿法替尼、司美替尼、帕纳替尼、拉帕替尼、曲妥单抗、克唑替尼、埃克替尼、西妥昔单抗、曲美替尼、瑞戈非尼、贝伐单抗、奥西替尼、帕唑帕尼、阿西替尼、帕尼单抗、色瑞替尼、阿雷替尼、舒尼替尼、达拉菲尼、博舒替尼、托法替尼、维莫德吉、吉妥珠单抗、坦罗莫司、奥拉帕尼、鲁索利替尼、西罗莫司、42-雷帕霉素、威罗菲尼、达沙替尼、尼达尼布、帕博西尼、重组人血管内皮抑制素、凡德他尼、尼洛替尼、伊马替尼、乐伐替尼、Blinatumomab、卡博替尼、帕妥珠单抗、利妥昔单抗、罗非昔布、Cobimetinib、依维莫司、硼替佐米、依鲁替尼、塞来昔布、Necitumumab、索拉非尼、尼妥珠单抗、艾代拉里斯、T-DM1、来那替尼、达克米替尼、瑞他霉素、厄妥索单抗、易吡替尼、胶霉毒素、多韦替尼、诺司替尼、来他替尼、马赛替尼、奎扎替尼、沃利替尼、夫拉平度、坦度替尼、德立替尼、曲西立滨、巴非替尼、马妥珠单抗、莫特塞尼、哌立福新、坦螺旋霉素、陶扎色替、培利替尼、洛拉替尼、米哚妥林、卡奈替尼、艾乐替尼、Tivantinib、XL888、Apitolisib、ALLO-1、MK-2206、AZD5363、Ganetespib、Rebastinib、Entrectinib、WZ4002、NVP-BGJ398、Uprosertib、TSR-011、RO5212054、Brigatinib、BMS-690514、HM61713、TAK733、RAF265、NVP-TAE684、Buparlisib、Luminespib、Imgatuzumab、ARQ736、AZD4547、Alpelisib、PD173074、Sapitinib、Encorafenib、Crenolanib、NVP-BEZ235、PI-103、Omipalisib、ASP8273、Binimetinib、PD0325901、RO5126766、Cenisertib、Poziotinib、SU5614、Pictilisib、XL647、Ipatasertib、Gandotinib、MK-1775</th></tr> 
+								<tr><th style="background:#00afde;color: #fff;border-bottom:1px solid #ffffff;">化疗药物（51个）</th><th  style="text-align:left;">氟尿嘧啶、亚叶酸钙、卡培他滨、紫杉醇、表柔比星、顺铂、奥沙利铂、伊立替康、培美曲塞、多西他赛、吉西他滨、长春新碱、环磷酰胺、长春瑞滨、卡铂、奈达铂、甲氨蝶呤、沙利度胺、依托泊苷、丝裂霉素、柔红霉素、三亚胺硫磷、喷司他丁、天冬酰胺酶、伊达比星、雷利度胺、阿霉素、阿糖胞苷、环孢霉素、培门冬酶、维A酸、卡巴他赛、三氧化二砷、巯基嘌呤、更生霉素、福莫司汀、司莫司汀、异环磷酰胺、硫鸟嘌呤、氟达拉滨、白消安、米托蒽醌、羟基脲、替莫唑胺、地西他滨、高三尖杉酯碱、博来霉素、甲磺酸艾日布林、克拉屈滨、氯法拉滨、强的松</th></tr> 
+								<tr><th style="background:#00afde;color: #fff;">其他药物（25个）</th><th  style="text-align:left;">辛伐他汀、帕比司他、地塞米松、他莫昔芬、来曲唑、氟维司群、伏林司他、醋酸甲羟孕酮、替诺福韦、阿那曲唑、阿那格雷、戈舍瑞林、阿比特龙、阿德福韦酯、依西美坦、托瑞米芬、4-羟基他莫昔芬、唑来磷酸、拉米夫定、芬太尼、纳武单抗、a-2a型干扰素、a-2b型聚乙二醇干扰素、贝利司他、重组干扰素α</th></tr>  
+							</table>  
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li> 
+	<li id="JKDiv_8" class="content"><!--乳腺癌、卵巢癌基因检测--->
+		<!--<p></p>-->
+		
+		<h4>乳腺癌、卵巢癌基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu6">
+				   <li onclick="setTab(6,0)" class="hover" style=" margin-left: 111px; ">乳腺癌</li>
+				   <li onclick="setTab(6,1)">卵巢癌</li> 
+				</ul> 
+			</div>
+			
+			<div class="main" id="main6" style="background: #ffffff;">
+			   <ul class="block">
+					<li>
+						<p><a class="word_mark">安泰AnnnoPath——乳腺癌基因检测</a></p>
+						<p style="text-align:right !important;">——唯一符合NCCN指南HBOC遗传风险筛查的基因检测</p>
+						<p>BRCA1和BRAC2基因编码肿瘤抑制蛋白，与双链DNA受损后的复制修复有关。</p>
+						<p style="text-align: center;"><img src="./image/ruxian_1.png" width="625"></p>
+						<p class="zero_left" style="margin-top: -20px;">
+							1.	SEER Stat Fact Sheets: Breast cancer. http://seer.cancer.gov/statfacts/html/breast.html. <br>
+							2.	SEER Stat Fact Sheets: Ovary Cancer. http://seer.cancer.gov/statfacts/html/ovary.html. <br> 
+							3.	Balmaña J, et al. Ann Oncol 2011;22(Suppl. 6):vi31–vi34.<br> 
+						</p>
+						
+						<p style="margin-top: 10px;" class="word_mark">最新指南建议高危人群进行BRAC1/2或多基因检测</p>
+						<p></p>
+						<p style="text-align: center;"><img src="./image/ruxian_2.jpg" width="625"></p>
+						<p>NCCN指南建议：BRAC1/2基因突变者需遵循遗传性乳腺癌/卵巢癌综合征（HBOC）的风险管理措施</p>
+						
+						<p><a class="word_mark">乳腺癌基因检测套餐</a></p>
+						<h5>乳腺癌BRCA1/2基因检测（标准版）</h5>
+						<p>使用NGS检测BRCA1和BRCA2两个基因编码区（共1.6万个碱基）的SNP（单核苷酸多态性）和InDel(插入/缺失)。</p>
+						
+						<h5> 乳腺癌17基因检测（权威版）</h5>
+						<p>使用NGS检测乳腺癌相关17基因编码区的SNP（单核苷酸多态性）和InDel(插入/缺失)。</p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr class="table_two">
+							<td width="277"><p align="center" class="zero_left"><a name="OLE_LINK2"></a><a name="OLE_LINK1">NCCN</a>指NCCN指南列出的17个乳腺癌相关基因 </p></td>
+							<td width="277" valign="top" style="text-align:left;"><p class="zero_left">BRCA1、BRCA2、ATM、BARD1、BRIP1、CDH1、CHEK2、MLH1、MSH2、MSH6、PALB2、PMS2、PTEN、RAD51C、RAD51D、STK11、TP53</p></td>
+						  </tr>
+						</table>
+						
+						 <h5>乳腺癌40基因检测（定制版）</h5>
+						<p>使用NGS检测乳腺癌相关40基因编码区的SNP（单核苷酸多态性）和InDel(插入/缺失)。关于乳腺癌40基因：整合了NCCN指南推荐的17个乳腺癌相关基因（如BRCA1、BRCA2、PALB2等）和权威文献中列出的与乳腺癌相关的23个基因。</p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr class="table_two">
+							<td width="198"><p>NCCN指南列出的17个乳腺癌相关基因 </p></td>
+							<td width="355" valign="top"><p style="text-align: left;">BRCA1、BRCA2、ATM、BARD1、BRIP1、CDH1、CHEK2、MLH1、MSH2、MSH6、PALB2、PMS2、PTEN、RAD51C、RAD51D、STK11、TP53</p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="277"><p>权威文献中列出的23个乳腺癌相关基因 </p></td>
+							<td width="355" valign="top"><p style="text-align: left;">CDK4、CDKN2A、CYP17A1、FANCC、FANCD2、FANCI、FANCM、FGFR3、MLH3、MSH3、MRE11A(MRE11)、MUTYH、NBN(NBS1)、NF1、PIK3CA、PMS1、PPM1D、RAD50、RAD51、RGSL1、SLX4、WRN、XRCC2</p></td>
+						  </tr>
+						</table>
+						<p></p>
+						 
+						
+						<p><a class="word_mark">指南推荐</a></p>
+						<p>鉴于乳腺癌基因筛查的必要性，美国国立综合癌症网络（NCCN）及中国抗癌协会乳腺癌专业委员会制定了针对性的临床实践指南。</p>
+						<p>NCCN：遗传高危人群需遵循遗传性乳腺癌/卵巢癌综合征（HBOC）风险管理办法。</p>
+						<p style="text-align: center;"><img src="./image/ruxian_3.png" width="625"></p>
+						<p>2015年版的《中国抗癌协会乳腺癌诊治指南与规范》，新增BRCA1/2基因突变为保乳治疗的相对禁忌症。</p>
+						
+						<p><a class="word_mark">文献研究</a></p>
+						<p>BRCA1/2基因突变与保乳手术的关系</p>
+						<p style="text-align: center;"><img src="./image/ruxian_7.jpg" width="625"></p>
+						<p>BRCA1/2突变携带者保乳手术后，10年和15年单侧乳腺癌患病概率分别为12%和24%，而未携带者分别为9%和17%。BRCA1/2突变携带者保乳手术后，10年和15年对侧乳腺癌患病概率分别为26%和39%，而未携带者分别为3%和7%。</p>
+						<p>携带BRCA1/2基因突变会增加同侧和对侧乳腺癌复发风险，在评估是否进行保乳手术时，应该考虑BRCA1/2基因突变的状态。</p>
+						
+						<p><a class="word_mark">BRCA1/2基因突变与双侧复发风险的关系</a></p>
+						<p style="text-align: center;"><img src="./image/ruxian_8.jpg" width="625"></p>
+						<p>回顾性研究，入选390名乳腺癌1期和2期携带BRCA1/2基因突变的患者，其中181名患者接受双侧乳房切除手术，209名接受单侧乳房切除手术，中位随访时间为14.3年（0.1-20年）。</p>
+						<p>携带基因突变会增加对侧乳腺癌复发风险，在判断BRCA1/2基因突变乳腺癌患者是否进行切除手术时，应考虑到该因素。</p>
+						
+						
+						<p><a class="word_mark">BRCA1/2基因突变与三阴性乳腺癌铂类化疗敏感性</a></p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr class="table_one">
+							<td width="553" colspan="5" valign="top"><p align="center">Treatment Response and Exploratory Subgroup Analysis(Table 1） </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left" class="zero_left"><a name="_Hlk465192377">RECIST Response</a></p></td>
+							<td width="111" valign="top"><p align="left">No. of Patients</p></td>
+							<td width="111" valign="top"><p align="left">%</p></td>
+							<td width="111" valign="top"><p align="left">95% CI</p></td>
+							<td width="111" valign="top"><p align="left">Response</p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left" class="zero_left">Overall RR(N-86)</p></td>
+							<td width="111" valign="top"><p align="left">22 </p></td>
+							<td width="111" valign="top"><p align="left">25.6 </p></td>
+							<td width="111" valign="top"><p align="left">16.8 to 36.1</p></td>
+							<td width="111" valign="top"><p align="left">- </p></td>
+						  </tr>
+						</table>
+						<p></p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr class="table_one">
+							<td width="553" colspan="5" valign="top"><p align="left">Treatment Response and Exploratory Subgroup Analysis(Table 2） </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left">RR by subgroup<br>
+							  BRCA1/2 status</p></td>
+							<td width="111" valign="top"><p align="left">No. of Patients</p></td>
+							<td width="111" valign="top"><p align="left">%</p></td>
+							<td width="111" valign="top"><p align="left">95% CI</p></td>
+							<td width="111" valign="top"><p align="left">Response</p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left">Mutated    (n＝11) </p></td>
+							<td width="111" valign="top"><p align="left">6 </p></td>
+							<td width="111" valign="top"><p align="left">54.5 </p></td>
+							<td width="111" valign="top"><p align="left">23.4    to 83.3 </p></td>
+							<td width="111" valign="top"><p align="left">6 PR </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left">Wild    type (n＝66) </p></td>
+							<td width="111" valign="top"><p align="left">13 </p></td>
+							<td width="111" valign="top"><p align="left">19.7 </p></td>
+							<td width="111" valign="top"><p align="left">10.9    to 31.3 </p></td>
+							<td width="111" valign="top"><p align="left">10 PR,    3 CR </p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left">Unknown    (n＝9) </p></td>
+							<td width="111" valign="top"><p align="left">3 </p></td>
+							<td width="111" valign="top"><p align="left">33.3 </p></td>
+							<td width="111" valign="top"><p align="left">7.5 to    70.1 </p></td>
+							<td width="111" valign="top"><p align="left">3 PR </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left">Cisplatin（n=43） </p></td>
+							<td width="111" valign="top"><p align="left">14 </p></td>
+							<td width="111" valign="top"><p align="left">32.6% </p></td>
+							<td width="111" valign="top"><p align="left">19.1    to 48.5 </p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left">First    line（n=34） </p></td>
+							<td width="111" valign="top"><p align="left">12</p></td>
+							<td width="111" valign="top"><p align="left">35.3</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+							<td width="111" valign="top"><p align="left">10 PR,    2 CR </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left">Second    line（n=9） </p></td>
+							<td width="111" valign="top"><p align="left">2</p></td>
+							<td width="111" valign="top"><p align="left">22.2</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+							<td width="111" valign="top"><p align="left">2 PR </p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left">Carboplatin（n=43） </p></td>
+							<td width="111" valign="top"><p align="left">8</p></td>
+							<td width="111" valign="top"><p align="left">18.6</p></td>
+							<td width="111" valign="top"><p align="left">8.4 to    33.4</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left">First    line（n=35） </p></td>
+							<td width="111" valign="top"><p align="left">8</p></td>
+							<td width="111" valign="top"><p align="left">22.9</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+							<td width="111" valign="top"><p align="left">7 PR,    1 CR </p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left">Second    line（n=8） </p></td>
+							<td width="111" valign="top"><p align="left">0</p></td>
+							<td width="111" valign="top"><p align="left">0</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="111" valign="top"><p align="left">First    line（n=69） </p></td>
+							<td width="111" valign="top"><p align="left">20</p></td>
+							<td width="111" valign="top"><p align="left">29.0</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="111" valign="top"><p align="left">Second    line（n=17） </p></td>
+							<td width="111" valign="top"><p align="left">2</p></td>
+							<td width="111" valign="top"><p align="left">11.8</p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+							<td width="111" valign="top"><p align="left">— </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="553" colspan="5" valign="top"><p align="left">Abbreviations:CR,complete    response;PR,partial response;RR,response rate</p></td>
+						  </tr>
+						</table>
+						
+						<p><a class="image_word">图表来源：J Clin Oncol ,2015, 33: 1902-1909</a></p>
+						<p>结果显示：携带BRCA1/2基因突变者在接受铂类化疗后，总缓解率达到54.5%，是未携带BRCA1/2基因突变者的3倍左右。</p>
+						<p>携带BRCA1/2基因突变的乳腺癌患者由于其编码蛋白功能的缺失，所以通常预示化疗敏感性，特别是对于DNA损伤剂类的化疗药物，如铂类。</p>
+						
+						
+						<p><a class="word_mark">检测意义</a></p>
+						<p style="text-align: center;"><img src="./image/ruxian_9.png" width="625"></p>
+						 
+						
+						<p><a class="word_mark">适应人群</a></p>
+						<p class="icon">发病年龄≤45岁的乳腺癌患者；</p>
+						<p class="icon">家族性乳腺癌患者；</p>
+						<p class="icon">三阴性乳腺癌患者；</p>
+						<p class="icon">双侧原发性乳腺癌患者；</p>
+						<p class="icon">男性乳腺癌患者；</p>
+						<p class="icon">有卵巢上皮癌、输卵管癌、原发性腹膜癌既往病史的乳腺癌患者；</p>
+						<p class="icon">具有血缘关系的亲属中有乳腺癌相关基因突变的携带者；</p>
+						<p class="icon">准备做保乳手术的乳腺癌患者。</p>
+						</p>
+						
+						<p><a class="word_mark">样本要求</a></p>
+						<p class="icon">外周血，体积≥5ml；采血前无需空腹，保持正常饮食作息即可;</p>
+						<p  class="icon">（注：有造血干细胞移植史或者三个月内有输血史者不宜接受检测）</p>
+						
+						<p><a class="word_mark">检测流程</a></p>
+						<p style="text-align: center;"><img src="./image/ruan_ruxian.png" width="625"></p>
+						 <p></p>
+						
+						<p><a class="word_mark">检测周期</a></p>
+						<p>标准版（10个工作日）、权威版和定制版（15个自然日）</p>
+						
+						<p><a class="word_mark">乳腺癌基因检测——一站式解决方案</a></p>
+						<p style="text-align: center;"><img src="./image/ruxian_10.png" width="625"></p>
+						<p class="textindent">基于高通量测序技术精心挑选了与肿瘤用药密切相关的247个基因，涵盖指南推荐的所有基因及临床热点基因，分析200余种药物与基因变异的关系，可应用于乳腺癌患者，尤其是复发、转移的晚期患者。同时，根据乳腺癌患者在诊疗过程中的不同需求，制定个性化的基因Panel和解读对应的药物。样本类型：组织或外周血。</p>
+						
+						<p><a class="word_mark">适检人群（复发转移的乳腺癌患者）</a></p>
+						
+						<p><a class="word_mark">基础版（11基因）</a></p>
+						<p>复发转移或初诊晚期，有靶向药物需求的乳腺癌患者（依据Her2状态分3种情况）</p>
+						
+						<p><a class="word_mark">高级版（29基因）</a></p>
+						<p>
+							1.复发转移或初诊晚期，有靶向药物需求的乳腺癌患者<br>
+							2.出现耐药或疗效不佳，需要调整用药方案的乳腺癌患者（依据Her2状态分3种情况和是否优化方案）<br>
+						</p>
+						
+						<p><a class="word_mark">全面版（60基因）</a></p>
+						<p>
+							1.经多线治疗无效，需要寻求更多治疗方案的乳腺癌患者<br>
+							2.希望得到最佳治疗方案的乳腺癌患者<br>
+							注：符合上述情况但无法提供组织（组织储存时间不超过1年）的晚期乳腺癌患者可选择ctDNA检测方式。<br>
+						</p>
+						
+						<p>乳腺癌ctDNA基因检测和个体化用药基因检测（高通量测序）</p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample" style="width: 625px;">
+						  <tr class="table_one">
+							<td width="553" colspan="2" class="table_one"><p align="center">基础版 </p></td>
+						  </tr>
+						  <tr class="table_two">
+							<td width="104" valign="top"><p>检测基因11个 </p></td>
+							<td width="449" valign="top"><p><em style="margin-left: -1.3em;">ESR1</em>、<em>VEGFR2</em>、<em>PTEN</em>、<em>PIK3CA</em>、<em>MET</em>、<em>ERBB2</em>、<em>EGFR</em>、<em>FGFR2</em>、<em>TP53</em>、<em>CDK4</em>、<em>CDK6</em></p></td>
+						  </tr>
+						  <tr class="table_three">
+							<td width="104"><p>解读药物15个 </p></td>
+							<td width="449" valign="top"><p align="left" class="zero_left">氟维司群、阿帕替尼、拉帕替尼、依维莫司、曲妥珠单抗、伊马替尼、尼达尼布、阿法替尼、克唑替尼、 <br>
+							  T-DM1、帕妥珠单抗、帕唑帕尼、索拉非尼、帕博西尼、来那替尼 </p></td>
+						  </tr>
+						</table>
+						<p></p>
+						
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr  class="table_one">
+							<td width="553" colspan="2"><p align="center">全面版 </p></td>
+						  </tr>
+						  <tr  class="table_two">
+							<td width="104"><p>检测基因29个 </p></td>
+							<td width="449" valign="top"><p class="zero_left" style="text-align: left;">ERBB2、BRAF、BRCA1、BRCA2、CDK4、CDK6、EGFR、ESR1、FGFR1、FGFR2、KRAS、MET、NRAS、PDGFRA、PIK3CA、PTEN、TP53、VEGFR2、DPYD、CASP7、CYP19A1、CYP2D6、CYP4B1、GSTP1、ERCC1、XRCC1、CDA、TUBB1、ABCB1</p></td>
+						  </tr>
+						  <tr  class="table_three">
+							<td width="104"><p>解读药物46个 </p></td>
+							<td width="449" valign="top"><p align="left" class="zero_left">氟维司群、曲妥珠单抗、依维莫司、拉帕替尼、帕妥珠单抗、阿法替尼、尼达尼布、尼妥珠单抗、司美替尼、西妥昔单抗、克唑替尼、达沙替尼、Cobimetinib、伊马替尼、索拉非尼、舒尼替尼、埃克替尼、尼妥珠单抗、贝伐单抗、重组人血管内皮抑制素、西罗莫司/雷帕霉素、阿帕替尼、帕博西尼、T-DM1、奥拉帕尼、帕尼单抗、顺铂、环磷酰胺、多西他赛、曲美替尼、凡德他尼、表柔比星、阿霉素，紫杉醇、卡铂、长春瑞滨、卡培他滨、氟尿嘧啶、吉西他滨、阿那曲唑、依西美坦、戈舍瑞林、来曲唑、他莫昔芬、托瑞米芬、来那替尼 </p></td>
+						  </tr>
+						</table>
+						<p></p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr  class="table_one">
+							<td width="104" valign="top"><p>&nbsp;</p></td>
+							<td width="447" valign="top"><p style="text-align:center;">高级版 </p></td>
+						  </tr>
+						  <tr  class="table_two">
+							<td width="104"><p>检测基因60个 </p></td>
+							<td width="447" valign="top"><p class="zero_left" align="left">ERBB2、AKT1、BRAF、BRCA1、BRCA2、CDK4、CDK6、CDKN2A、EGFR、ESR1、FGFR1、FGFR2、FGFR3、KRAS、MET、NRAS、PDGFRA、PIK3CA、PIK3R1、PTEN、TP53、VEGFR2、ALK、BCR-ABL1、BTK、CALR、CD79B、CSF3R、CXCR4、DDR2、FLT3、HRAS、JAK1、JAK2、KIT、MAP2K1、PDGFRB、PTCH1、RET、ROS1、SMO、TSC1、ABCB1、ATIC、CASP7、CDA、CYP19A1、CYP1A1、CYP1B1、CYP2D6、CYP4B1、DPYD、ERCC1、GSTP1、MTHFR、MTRR、SOD2、TUBB1、XRCC1、XPC</p></td>
+						  </tr>
+						  <tr  class="table_three">
+							<td width="104"><p>解读药物81个 </p></td>
+							<td width="447" valign="top" style="text-align:left;"><p class="zero_left">曲妥珠单抗、依维莫司、拉帕替尼、帕妥珠单抗、西妥昔单抗、克唑替尼、达沙替尼、伊马替尼、索拉非尼、舒尼替尼、埃克替尼、尼妥珠单抗、阿西替尼、贝伐单抗、重组人血管内皮抑制素、西罗莫司/雷帕霉素、阿帕替尼、帕博西尼、T-DM1、奥拉帕尼、帕尼单抗、阿法替尼、卡博替尼、Cobimetinib、鲁索利替尼、曲美替尼、凡德他尼、威罗菲尼、维莫德吉、依鲁替尼、尼达尼布、帕唑帕尼、司美替尼、替西罗莫斯/坦罗莫司、长春瑞滨、卡培他滨、顺铂、环磷酰胺、多西他赛、多柔比星（阿霉素）、表柔比星、氟尿嘧啶、甲氨蝶呤、紫杉醇、丝裂霉素、卡铂、吉西他滨、三亚胺硫磷（三乙烯硫代磷酰胺）、阿那曲唑、依西美坦、氟维司群、戈舍瑞林、来曲唑、他莫昔芬、托瑞米芬、42-(二甲基亚膦酰)雷帕霉素、（RXDX-101）entrectinib、坦螺旋霉素、AZD4547、AZD5363、NVP-BEZ235、NVP-BGJ398、BKM120(buparlisib)、BMS-690514、BYL719（alpelisib）、卡奈替尼、夫拉平度、沃利替尼、ganetespib、GDC-0941（pictilisib）、GDC-0980（apitolisib）、德立替尼、MEK162(Binimetinib)、MK-1775、MK-2206、莫特塞尼、来那替尼、poziotinib(HM781-36B)、tivantinib、多韦替尼、曲西立滨 </p></td>
+						  </tr>
+						</table>
+						<p></p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+					<p><a class="word_mark">安泰AnnnoPath——卵巢癌基因检测</a></p>
+					<p style="text-align:right !important;">——唯一符合NCCN指南HBOC遗传风险筛查的基因检测</p>
+					<p><a class="word_mark">卵巢癌诊断和治疗的现状</a>	</p>
+					<p class="zero_left">
+						Ⅰ～Ⅱ期卵巢癌患者经过手术及化疗后5年生存率可达到80～95%，而Ⅲ～Ⅳ期仅为20～30%</p>
+					<p class="icon">早期诊断及治疗在提高卵巢癌患者的生存率上极其重要</p>
+					<p class="icon">目前，卵巢癌治疗的常用药物：卡铂、紫杉醇、吉西他滨、多柔比星和拓扑替康，晚期患者长期生存率不超过20%</p>
+					<p class="icon">晚期卵巢癌患者需要疗效更加显著、靶向更加精准的药物</p>
+					
+					<p style="text-align:right;"><a class="image_word" style="font-size:8px;text-align:right;font-size:400;">——NCCN卵巢癌临床实践指南</a></p>
+					
+					<p><a class="word_mark">检测意义</a></p>
+					<p class="textindent">携带BRCA1和BRCA2突变的卵巢癌患者在治疗上有别于非携带者，突变与化疗延长生存期呈一定的相关性。由于对化疗的敏感性，携带BRCA突变的卵巢癌患者有更多的药物用于化疗。基因检测有以下临床价值：</p>
+					<p  class="zero_left">
+						1.	评估患病风险可鉴别出卵巢癌遗传风险高的女性患者，并能帮助这些人群及其家属提前制定预防策略；目前，各种国际指南都推荐所有的卵巢癌患者进行BRCA1/2或多基因检测。<br>
+						2.	制定治疗方案可鉴别出对铂类化疗敏感的患者或适合接受靶向治疗的患者（如：PARP抑制剂）。<br>
+					</p>
+					
+					<p><a class="word_mark">检测项目</a></p> 
+					<p></p>
+					<table border="1" cellspacing="0" cellpadding="0" class="sample">
+					  <tr  class="table_one">
+						<td width="123"><p>标准版BRCA1/2</p></td>
+						<td width="431" valign="top"><p style=" text-align: left; text-indent: 0em; ">采用基因测序技术检测BRCA1/2两个基因编码区（共1.6万个碱基）的单核苷酸多态性（SNP）和小片段插入/缺失（InDel）；采用多重连接探针扩增（MLPA）技术检测BRCA1/2两个基因的大片段重排（LGRs）。 </p></td>
+					  </tr>
+					  <tr  class="table_two">
+						<td width="123"><p>权威版17基因 </p></td>
+						<td width="431" valign="top"><p style=" text-align: left; text-indent: 0em; ">BRCA1、BRCA2、PALB2、CDH1、CHEK2、ATM、PTEN、STK11、TP53、BARD1、BRIP1、RAD51C、RAD51D、MLH1、MSH2、MSH6、PMS2</p></td>
+					  </tr>
+					</table>
+					<p></p>
+					<p>
+						5%-10%的遗传性BRCA1/2突变属于LGRs，LGRs会导致蛋白质结构和功能异常，因此，LGRs通常是致病的；MLPA技术作为基因测序技术的补充，可以有效提高检出率。
+					</p>
+					<p style="text-align:right;"><a class="image_word" style="text-align:right;font-size:8px;font-weight:400;">—A. Kwong et al. Cancer Genetics, 2015</a></p>
+					
+					<p><a class="word_mark">适应人群</a></p>
+					<p class="zero_left">
+						1、所有已罹患卵巢癌的患者<br>
+						2、 BRCA1/2或多基因检测结果为突变阳性的卵巢癌患者的健康家属<br>
+					</p>
+
+					<p><a class="word_mark">技术优势</a></p>
+					<p style="text-align: center;"><img src="./image/luan_3.jpg" width="625"></p>
+					<p></p>
+					 
+					
+					<p><a class="word_mark">样本要求</a></p>
+					<p>
+						外周血，体积≥5mL；采血前无需空腹，保持正常饮食作息即可。
+						（注：有造血干细胞移植史或者三个月内有输血史者不宜接受检测）
+					</p>
+					
+					<p><a class="word_mark">检测流程</a></p>
+					<p style="text-align: center;"><img src="./image/ruan_ruxian.png" width="625"></p>
+					 
+					
+					<p><a class="word_mark">检测周期</a></p>
+					<p>标准版（10个工作日）、权威版（15个自然日）</p>
+					
+					<p><a class="word_mark">卵巢癌基因检测一站式解决方案</a></p>
+					<p></p>
+					<p style="text-align: center;"><img src="./image/luan_4.jpg" width="625"></p>
+					<p></p>
+					<p>卵巢癌临床个体化用药Panel涵盖247基因，200余种临床上市和在研的药物，包含卵巢癌常用药物如：贝伐珠单抗、奥拉帕尼、吉非替尼、西妥昔单抗等。</p>
+					
+					<p><a class="word_mark">临床意义</a></p>
+					 
+					<p>个体化用药指导：检测药物靶点基因，精确解读相关位点，分析基因变异与药物的关系，根据肿瘤患者特有的基因变异，评估药物疗效和相关毒副作用，协助医生制定个体化的治疗方案；</p>
+					<p>耐药性分析：耐药性的产生源于肿瘤相关基因的不断突变，ctDNA检测的优势在于可以实时动态检测药物靶点突变，分析耐药性产生的根源，帮助医生调整治疗方案、选择合适的药物；</p>
+					<p>动态检测：ctDNA检测可以多个时间取样，帮助医生实现对患者用药疗效、复发及转移的动态检测。</p>
+					
+					<p><a class="word_mark">检测内容</a></p>
+					<p></p> 
+					<p></p>
+					<p>
+						<table border="1" cellspacing="0" cellpadding="0" class="sample">
+						  <tr  class="table_one">
+							<td width="119"><p class="zero_left">检测247个肿瘤相关基因 	 </p></td>
+							<td width="440" valign="top"><p>解读200余种肿瘤相关药物</p></td>
+						  </tr>
+						  <tr  class="table_two">
+							<td width="119"><p  class="zero_left" style=" text-align: left; ">指南/共识推荐基因37个<br>
+								临床研究热点基因50个<br>
+								敏感性和毒副作用相关基因160个<br>
+								</p></td>
+							<td width="440" valign="top"><p align="left"  class="zero_left" >靶向药物125种（54种已获批，71种临床在研）化疗药物51个（获批）、其它药物25种（获批）
+								</p>
+							</td>
+						  </tr>
+						</table>
+					</p>
+					<p><a class="word_mark">适用人群</a></p>
+					<p></p> 
+					<p></p>
+					<p  class="zero_left">1.	治疗过程中出现耐药或治疗效果不佳的肿瘤患者；<br>
+						2.	需多基因、多位点检测，以完善治疗方案的肿瘤患者；<br>
+						3.	无法取得手术或穿刺组织的肿瘤患者（适合ctDNA检测）；<br>
+						4.	已有组织切片，但储存时间超过1年的肿瘤患者（适合ctDNA检测）<br>
+					</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+						
+		
+	</li> 
+	<li id="JKDiv_9" class="content"><!--胃癌、结直肠癌基因检测-->
+		<h4>胃癌、结直肠癌基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<!--<p></p>-->
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu7">
+				   <li onclick="setTab(7,0)" class="hover" style="margin-left:100px;">胃癌</li>
+				   <li onclick="setTab(7,1)">结直肠癌</li> 
+				</ul> 
+			</div>
+			
+			<div class="main" id="main7" style="background: #ffffff;">
+			   <ul class="block">
+					<li>
+						<p><a class="word_mark">胃癌基因组数据精准解读</a></p>
+						<p style="text-align:right !important;">——提供临床用药决策解决方案</p>
+						
+						<p><a class="word_mark">检测意义</a></p> 
+						<p class="icon">辅助选择合适药物及治疗方案</p>
+						<p class="icon">提升治疗效果全面覆盖胃癌关键基因</p>
+						<p class="icon">突破传统方法限制</p>
+						<p class="icon" style="margin-bottom: 10px;">动态监测</p>
+						
+						<p>						精准解读35种靶向药物的疗效及耐药情况（包含26种已获批药物和9种临床在研药物），以及13种胃癌治疗方案中常用化疗药物的敏感性与毒副作用，辅助临床医生更加精准的制定个性化的治疗方案，提升患者生存获益。<br>
+						</p>
+						<p><a class="word_mark">检测项目</a></p>
+						
+						
+						<p><a class="word_mark">胃癌基因检测基础版方案</a></p>
+						<style>#left_zeroindexnt td p,
+#left_zeroindexnt p {
+	text-align: left;
+	text-indent: 0em;
+}</style>
+						<p>	
+							<table border="1" cellspacing="0" cellpadding="0" width="625" id="blue" >
+							  <tr style="background:#82bfeb">
+								<td width="112" valign="top"><p>检测基因10个 </p></td>
+								<td width="110" valign="top"><p align="left">突变类型 </p></td>
+								<td width="111" valign="top"><p>关联靶向药物 </p></td>
+								<td width="225" valign="top"><p>临床意义 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112" valign="top"><p>ERBB2<br>
+								  NCCN指南推荐 </p></td>
+								<td width="110" valign="top"><p align="left">拷贝数变异/点突变 </p></td>
+								<td width="111" valign="top"><p align="left">西妥珠单抗、拉帕替尼、帕妥珠单抗 </p></td>
+								<td width="225" valign="top"><p align="left">ERBB2基因的变异状态与ERBB2、EGFR抑制剂 <br>
+								  的敏感性和耐药密切相关 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112" valign="top"><p>NRAS </p></td>
+								<td width="110" valign="top"><p align="left">点突变 </p></td>
+								<td width="111" valign="top"><p>西妥昔单抗、帕尼单抗 </p></td>
+								<td width="225" valign="top"><p align="left">NRAS基因的变异状态与EGFR、BRAF、MET抑 <br>
+								  制剂的敏感性和耐药密切相关 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112" valign="top"><p>KRAS </p></td>
+								<td width="110" valign="top"><p align="left">点突变 </p></td>
+								<td width="111" valign="top"><p>西妥昔单抗、帕尼单抗 </p></td>
+								<td width="225" valign="top"><p>携带KRAS突变的肿瘤对EGFR的靶向抑制剂耐药 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112" valign="top"><p>BRAF </p></td>
+								<td width="110" valign="top"><p align="left">点突变 </p></td>
+								<td width="111" valign="top"><p align="left">西妥昔单抗、索拉非尼、 <br>
+								  帕尼单抗、威罗非尼 </p></td>
+								<td width="225" valign="top"><p>携带BRAF突变的肿瘤对BRAF抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112"><p>ROS1</p></td>
+								<td width="110"><p align="left">融合/点突变 </p></td>
+								<td width="111"><p align="left">克唑替尼 </p></td>
+								<td width="225"><p align="left">携带ROS1融合的肿瘤对ROS1抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112"><p>PDGFRA</p></td>
+								<td width="110"><p align="left">拷贝数变异/点突变 </p></td>
+								<td width="111"><p align="left">索拉非尼、舒尼替尼、伊马替尼 </p></td>
+								<td width="225"><p align="left">携带PDGFR变异的肿瘤对PDGFR抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112"><p>FGFR2</p></td>
+								<td width="110"><p align="left">拷贝数变异/点突变 </p></td>
+								<td width="111"><p align="left">索拉非尼、帕唑帕尼 </p></td>
+								<td width="225"><p align="left">携带FGFR2突变或拷贝数扩增的肿瘤对FGFR抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112"><p>KIT</p></td>
+								<td width="110"><p align="left">点突变 </p></td>
+								<td width="111"><p align="left">索拉非尼、舒尼替尼、伊马替尼 </p></td>
+								<td width="225"><p align="left">携带KIT突变的肿瘤对KIT抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112"><p>PIK3CA</p></td>
+								<td width="110"><p align="left">拷贝数变异/点突变 </p></td>
+								<td width="111"><p align="left">依维莫司/曲妥珠单抗、西妥昔单抗、帕尼单抗 </p></td>
+								<td width="225"><p align="left">携带PIK3CA突变或拷贝数扩增的肿瘤对PI3K抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="112"><p>VEGFR2</p></td>
+								<td width="110"><p align="left">点突变 </p></td>
+								<td width="111"><p align="left">索拉非尼、舒尼替尼、阿帕替尼、雷莫芦单抗、 </p></td>
+								<td width="225"><p align="left">携带VEGFR突变的肿瘤对VEGFR抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="222" colspan="2"><p>解读药物汇总（14个） </p></td>
+								<td width="336" colspan="2" valign="top"><p>曲妥珠单抗、阿帕替尼、拉帕替尼、西妥昔单抗、索拉非尼、舒尼替尼、克唑替尼、伊马替尼、依维莫司、帕唑帕尼、雷莫卢单抗、帕尼单抗、帕妥珠单抗、威罗非尼 </p></td>
+							  </tr>
+							</table>
+
+						</p>
+						<p><a class="word_mark">胃癌基因检测全面版方案	</a></p>
+						<p>
+							<table border="1" id="blue" cellspacing="0" cellpadding="0" width="625">
+							  <tr>
+								<td width="104" valign="top" style="background:#82bfeb"><p style="line-height:90px;">检测基因22个 </p></td>
+								<td width="449" valign="top" id="left_zeroindexnt"><p align="left">BRAF、EGFR、ERBB2、FGFR2、KIT、KRAS、NRAS、PDGFRA、PIK3CA、ROS1、VEGFR2、ALK、 <br>
+								  PTEN、MET、ABCB1、DPYD、ERCC1、GSTP1、MTHFR、TP53、UMPS、XRCC1 </p></td>
+							  </tr>
+							  <tr>
+								<td width="104" valign="top" style="background:#82bfeb"><p style="line-height:115px;">解读药物31个 </p></td>
+								<td width="449" valign="top" id="left_zeroindexnt"><p align="left">曲妥珠单抗、阿帕替尼、拉帕替尼、西妥昔单抗、索拉非尼、舒尼替尼、克唑替尼、厄洛替尼、贝伐单抗、西罗莫司/雷帕霉素、伊马替尼、依维莫司、卡培他滨、卡铂、顺铂、表柔比星、氟尿嘧啶、亚叶酸钙、紫杉醇、奥沙利铂、 <br>
+								  kadcyla、阿法替尼、色瑞替尼、瑞戈非尼、司美替尼、替西罗莫斯/坦罗莫司、帕尼单抗、帕妥珠单抗、雷莫卢单抗、威罗非尼、帕唑帕尼 </p></td>
+							  </tr>
+							</table>
+
+						</p>
+						<p><a class="word_mark">胃癌基因检测高级版方案	</a></p>
+						<p>
+							<table border="1" cellspacing="0" cellpadding="0" width="625" id="blue">
+							  <tr>
+								<td width="113" style="background:#82bfeb"><p>检测基因42个 </p></td>
+								<td width="440" valign="top" id="left_zeroindexnt"><p>ERBB2、AKT1、ALK、BRAF、BRCA1、BRCA2、BTK、CD79B、CXCR4、EGFR、FGFR1、FGFR2、FGFR3、FLT3、KIT、KRAS、MET、NRAS、PDGFRA、PIK3CA、PTEN、ROS1、TSC1、VEGFR2、MAP2K1、ABCB1、C8orf34、CASP7、XPC、CYP1A1、CYP1B1、CYP4B1、DPYD、ERCC1、GSTP1、MTHFR、NQO1、SEMA3C、TP53、UGT1A1、UMPS、XRCC1</p></td>
+							  </tr>
+							  <tr>
+								<td width="113" style="background:#82bfeb"><p>解读药物48个 </p></td>
+								<td width="440" valign="top" id="left_zeroindexnt"><p align="left">曲妥珠单抗、阿帕替尼、拉帕替尼、西妥昔单抗、索拉非尼、舒尼替尼、克唑替尼、厄洛替尼、伊马替尼、贝伐单抗、西罗莫司/雷帕霉素、依维莫司、卡培他滨、卡铂、顺铂、表柔比星、氟尿嘧啶、亚叶酸钙、紫杉醇、奥沙利铂、多西他赛、吉西他滨、伊立替康、丝裂霉素、多柔比星（阿霉素）、kadcyla、阿法替尼、色瑞替尼、瑞戈非尼、司美替尼、替西罗莫斯/坦罗莫司、依鲁替尼、雷莫卢单抗、帕唑帕尼、坦螺旋霉素、奥拉帕尼、帕尼单抗、帕妥珠单抗、威罗非尼、AZD4547、AZD5363、buparlisib、达克米替尼、沃利替尼、马妥珠单抗、poziotinib、瑞他霉素、多韦替尼 </p></td>
+							  </tr>
+							</table>
+
+						</p> 
+						<p></p>
+						<p><a class="word_mark">解读优势	</a></p>
+						<p class="icon">数据库匹配 + 人工解读</p>
+						<p class="icon">解读更准更全面，为精准用药提供科学依据</p>
+						<p class="icon">即时更新内部数据库+第三方数据库，数据更新更全面</p>
+						<p class="icon">人工专业遗传信息解读，避免遗漏位点，真正做到全面解读</p>
+						<p class="word_mark">检测周期</p>
+						<p>自实验室接收样本起，10个工作日内出具检测报告。</p> 
+						</p> 
+						<p></p>
+						<p><a class="word_mark">检测参数	</a></p> 
+						<p>测序深度20000X，平均有效测序深度2000X，低频突变检出率达0.1%。</p>
+						<p></p>
+						<p><a class="word_mark">适应人群	</a></p>
+						<p>
+					基础版：初诊，有靶向药物需求的胃癌患者；<br>
+					全面版：初诊，有靶向药物及化疗药物需求的胃癌患者；出现耐药或疗效不佳，需要调整用药方案的胃癌患者；<br>
+					高级版：经多线治疗出现进展或复发，需要寻求更多治疗方案的胃癌患者；希望得到最佳治疗方案的胃癌患者；<br>
+					符合上述情况但无法提供组织（或组织储存时间已超过1年）的IIIB期及IV期胃癌患者可选择ctDNA检测方式。<br>
+
+						</p> 
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p><a class="word_mark">结直肠癌基因组数据精准解读</a></p>
+						<p style="text-align:right !important;">——提供临床用药决策解决方案</p>
+						
+						<p><a class="word_mark">检测意义</a></p>
+						<p class="icon">辅助选择合适药物及治疗方案，</p>
+						<p class="icon">提升治疗效果全面覆盖结直肠癌关键基因，突破传统方法限制</p>
+						<p class="icon">动态监测</p>		
+						<p>精准解读51种靶药（包含34种已获批药物和17种临床在研药物），以及9种结直肠癌治疗方案中常用化疗药物的敏感性与毒副作用，辅助临床医生更加精准的制定个性化的治疗方案，提升患者生存获益。<br>
+						</p>
+						
+						<p><a class="word_mark">检测项目	</a></p>
+						<p><a class="word_mark">结直肠癌基因检测基础版方案	</a></p>
+						<p>
+							<table border="1" cellspacing="0" id="blue" cellpadding="0" width="625"  > 
+							  <tr style="background:#82bfeb" id="left_zeroindexnt">
+								<td width="77"><p align="center">检测基因 <br>
+								  （9个） </p></td>
+								<td width="114"><p align="center">突变类型 </p></td>
+								<td width="154"><p align="center">关联靶向药物 </p></td>
+								<td width="206"><p align="center">临床意义 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">NRAS<br>
+								  指南推荐 </p></td>
+								<td width="114"><p align="center">拷贝数变异/点突变 </p></td>
+								<td width="154"><p align="left">西妥昔单抗、帕尼单抗 </p></td>
+								<td width="206"><p align="left">NRAS基因的变异状态与EGFR、BRAF、MET抑制剂的敏感性和耐药密切相关 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">BRAF<br>
+								  指南推荐 </p></td>
+								<td width="114"><p align="center">点突变 </p></td>
+								<td width="154"><p align="left">西妥昔单抗、帕尼单抗 </p></td>
+								<td width="206"><p align="left">携带某些BRAF突变对EGFR单抗类药物耐药；是不良预后因子 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">KRAS<br>
+								  指南推荐 </p></td>
+								<td width="114"><p align="center">点突变 </p></td>
+								<td width="154"><p align="left">西妥昔单抗、帕尼单抗 </p></td>
+								<td width="206"><p align="left">携带KRAS突变的肿瘤对EGFR的靶向抑制剂耐药 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">ERBB2</p></td>
+								<td width="114"><p align="center">拷贝数变异/点突变/插入缺失 </p></td>
+								<td width="154"><p align="left">拉帕替尼、曲妥珠单抗、帕妥珠单抗 </p></td>
+								<td width="206"><p align="left">ERBB2基因的变异状态与ERBB2抑制剂的敏感性和耐药密切相关 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">ROS1</p></td>
+								<td width="114"><p align="center">融合/点突变 </p></td>
+								<td width="154"><p align="left">克唑替尼 </p></td>
+								<td width="206"><p align="left">携带ROS1融合的肿瘤对ROS1抑制剂敏感，对EGFR抑制剂耐药 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">PIK3CA</p></td>
+								<td width="114"><p align="center">拷贝数变异/点突变 </p></td>
+								<td width="154"><p align="left">依维莫司、拉帕替尼、西妥昔单抗、帕尼单抗 </p></td>
+								<td width="206"><p align="left">携带PIK3CA激突变或拷贝数扩增的肿瘤对PI3K抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">VEGFR2</p></td>
+								<td width="114"><p align="center">点突变/拷贝数变异 </p></td>
+								<td width="154"><p align="left">阿帕替尼、贝伐单抗、雷莫芦单抗 </p></td>
+								<td width="206"><p align="left">携带VEGFR2突变的肿瘤对VEGFR抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">EGFR</p></td>
+								<td width="114"><p align="center">点突变/插入缺失/拷贝数变异 </p></td>
+								<td width="154"><p align="left">西妥昔单抗、帕尼单抗 </p></td>
+								<td width="206"><p>EGFR基因的变异状态与TKI类靶向药物的敏感性和耐药密切相关 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="77"><p align="center">PTEN</p></td>
+								<td width="114"><p align="center">点突变/拷贝数缺失 </p></td>
+								<td width="154"><p align="left">依维莫司、拉帕替尼、曲妥珠单抗 </p></td>
+								<td width="206"><p align="left">携带PTEN突变的肿瘤对PI3K抑制剂敏感 </p></td>
+							  </tr>
+							  <tr id="left_zeroindexnt">
+								<td width="191" colspan="2"><p align="center">解读药物汇总（10个） </p></td>
+								<td width="359" colspan="2"><p align="left">西妥昔单抗、贝伐单抗、拉帕替尼、阿帕替尼、曲妥珠单抗、<a name="OLE_LINK4"></a><a name="OLE_LINK3">依维莫司、克唑替尼、</a>帕尼单抗、帕妥珠单抗、雷莫芦单抗 </p></td>
+							  </tr>
+							</table>
+
+						</p>
+						
+						<p><a class="word_mark">结直肠癌基因检测全面版方案	</a></p>
+						<p>
+							<table border="1" cellspacing="0" cellpadding="0" id="blue"  width="625" >
+							  <tr>
+								<td width="104" valign="top" style="background:#82bfeb"><p style=" line-height: 94px; ">检测基因24个 </p></td>
+								<td width="449" valign="top" ><p align="left">EGFR、KRAS、NRAS、ROS1、BRAF、PIK3CA、ERBB2、PTEN、VEGFR2、ALK、MET、FGFR2、
+								  TSC1、KIT、MAP2K1、RET、DPYD、UMPS、MTHFR、GSTP1、TP53、ERCC1、XPC、UGT1A1 </p></td>
+							  </tr>
+							  <tr>
+								<td width="104" valign="top" style="background:#82bfeb"><p style=" line-height: 94px; ">解读药物28个 </p></td>
+								<td width="449" valign="top" id="left_zeroindexnt"><p align="left">西妥昔单抗、贝伐单抗、拉帕替尼、阿帕替尼、厄洛替尼、曲妥珠单抗、依维莫司、克唑替尼、西罗莫司/雷帕霉素、卡培他滨、氟尿嘧啶、亚叶酸钙、奥沙利铂、顺铂、伊立替康、Necitumumab、瑞戈非尼、曲美替尼、凡德他尼、威罗菲尼、阿法替尼、卡博替尼、色瑞替尼、达拉菲尼、司美替尼、雷莫芦单抗、帕妥珠单抗、帕尼单抗 </p></td>
+							  </tr>
+							</table>
+
+						</p>
+						<p><a class="word_mark">结直肠癌基因检测高级版方案	</a></p>
+						<p>
+							<table border="1" cellspacing="0" cellpadding="0" width="625" id="blue">
+							  <tr>
+								<td width="100" style="background:#82bfeb"><p class="zero_left">检测基因46个 </p></td>
+								<td width="468" valign="top" id="left_zeroindexnt"><p align="left">KRAS、ABL1、ALK、BRAF、BRCA1、BRCA2、BTK、CALR、CD79B、CDK4、CDK6、CDKN2A、
+								  CSF3R、CXCR4、DDR2、EGFR、ERBB2、FGFR1、FGFR2、FLT3、HRAS、JAK1、JAK2、KIT、 <br>
+								  MAP2K1、MET、NRAS、PDGFRA、PDGFRB、PIK3CA、PIK3R1、PTEN、RET、ROS1、TSC1、 <br>
+								  VEGFR2、DPYD、UMPS、MTHFR、GSTP1、TP53、ERCC1、XPC、UGT1A1、XRCC1、ABCB1 </p></td>
+							  </tr>
+							  <tr>
+								<td width="85" style="background:#82bfeb"><p class="zero_left">解读药物60个 </p></td>
+								<td width="468" valign="top" id="left_zeroindexnt"><p align="left">西妥昔单抗、贝伐单抗、拉帕替尼、阿帕替尼、厄洛替尼、曲妥珠单抗、西罗莫司/雷帕霉素、索拉非尼、舒尼替尼、伊马替尼、克唑替尼、达沙替尼、依维莫司、卡培他滨、氟尿嘧啶、亚叶酸钙、奥沙利铂、顺铂、伊立替康、卡铂、表柔比星、紫杉醇、Necitumumab、瑞戈非尼、曲美替尼、凡德他尼、威罗菲尼、阿法替尼、帕尼单抗、帕妥珠单抗、卡博替尼、色瑞替尼、达拉菲尼、司美替尼、鲁索利替尼、奥拉帕尼、Cobimetinib、尼洛替尼、尼达尼布、帕博西尼、替西罗莫斯/坦罗莫司、雷莫芦单抗、依鲁替尼、来那替尼、entrectinib、坦螺旋霉素、NVP-BGJ398、buparlisib、达克米替尼、ganetespib、Binimetinib、米哚妥林、MK-2206、莫特塞尼、PD0325901、培利替尼、瑞他霉素、RO5212054(PLX3603)、多韦替尼、Defactinib </p></td>
+							  </tr>
+							</table>
+
+						</p>
+						<p></p>
+						<p><a class="word_mark">解读优势	</a></p>
+						<p class="icon">数据库匹配 + 人工解读</p>
+						<p class="icon">解读更准更全面，为精准用药提供科学依据</p>
+						<p class="icon">即时更新内部数据库+第三方数据库，数据更新更全面</p>
+						<p class="icon">人工专业遗传信息解读，避免遗漏位点，真正做到全面解读</p>
+						<p></p>
+						<p><a class="word_mark">检测周期	</a></p> 
+						<p>自实验室接收样本起，10个工作日内出具检测报告。</p>
+						<p></p>
+						<p><a class="word_mark">检测参数	</a></p>
+						
+						<p>测序深度20000X，平均有效测序深度2000X，低频突变检出率达0.1%。</p>
+						<p></p>
+						<p></p>
+						<p><a class="word_mark">适用人群	</a></p>
+						<p>基础版：初诊，有靶向药物需求的结直肠癌患者；</p>
+						<p>全面版：初诊，有靶向药物及化疗药物需求的结直肠癌患者；出现耐药或疗效不佳，需要调整用药方案的结直肠癌患者；</p>
+						<p>高级版：经多线治疗出现进展或复发，需要寻求更多治疗方案的结直肠癌患者；希望得到最佳治疗方案的结直肠癌患者；</p>
+						<p>符合上述情况但无法提供组织（或组织储存时间已超过1年）的IIIB期及IV期结直肠癌患者可选择ctDNA检测方式。
+						</p>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li> 
+	<li id="JKDiv_10" class="content"><!----> 
+		<h4>无创产前DNA检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<p class="textindent">无创产前DNA检测，是一种针对胎儿染色体非整倍性疾病的新型检测技术，具有无创、安全、精准的特点，发病率较高的21-三体综合征（唐氏综合征）、18-三体综合征（爱德华氏综合征）、13-三体综合征（帕陶氏综合征）均在检测范围内。</p>
+		<p><a class="title">一、技术原理</a></p>
+		<p class="textindent">1997年，科学家发现在母体外周血中存在胎儿游离DNA，这一发现成为了无创产前检测的理论基础。无创产前DNA检测技术通过采集孕妇外周血，利用新一代测序技术对母体外周血中的游离DNA片段进行测序，并结合生物信息分析及数据统计，最终评估胎儿是否患21-三体综合征(唐氏综合征)、18-三体综合征(爱德华氏综合征)、13-三体综合征(帕陶氏综合征)三大染色体疾病。</p>
+		<p style="text-align: center;"><img src="./image/wuchuang_1.jpg" width="625"></p>
+		<p><a class="title">二、技术介绍</a></p>
+		<p><a class="word_mark">产前检测技术比较</a></p>
+		<p style="text-align: center;"><img src="./image/wuchuang_2.jpg" width="625"></p>
+		<p> 
+		</p>
+		<p><a class="word_mark">技术优势</a></p>
+		<p class="textindent">采用国际领先的测序平台，成功研发出具有自主知识产权的无创产前DNA检测技术，该技术具有无创、安全、精准等特点，可为医生提供可靠的临床参考信息，为准父母提供科学的生育建议。</p>
+		<p style="text-align: center;"><img src="./image/wuchuang_3.jpg" width="625"></p>
+		<p class="icon">无创：仅需抽取外周血即可完成检测；</p>
+		<p class="icon">精准：准确率99%以上；</p>
+		<p class="icon">安全：避免胎儿宫内感染及流产风险；</p>
+		<p class="icon">快速：7-10个工作日可获知检测结果；</p>
+		<p class="icon">筛查孕周范围大：12+0-26+6周均可检测。</p>
+		<p><a class="title">三、技术适用范围</a></p>
+		<p class="textindent">无创产前DNA检测适用于孕12+0-26+6周的单胎孕妇,目标疾病为常见胎儿染色体非整倍性疾病（即21-三体、18-三体、13-三体综合征）。</p>
+		<p><a class="word_mark">适用人群：</a></p>
+		<p  class="zero_left">1、血清学筛查、影像学检查显示为常见染色体非整倍体临界风险（即1/1000≤唐氏综合征风险值<1/270，1/1000≤18-三体综合征风险值<1/350）的孕妇。<br>
+		2、有介入性产前诊断禁忌症者（先兆流产、发热、有出血倾向、感染未愈等）。<br>
+		3、就诊时，患者为孕20+6周以上，错过血清学筛查最佳时间，或错过常规产前诊断时机，但要求降低21-三体综合征、18-三体综合征、13-三体综合征风险的孕妇。</p>
+		<p></p>
+		<p>有以下几种情形的孕妇属于慎用人群，包括：<br>
+			1、产前筛查高风险，预产期年龄≥35 岁的高龄孕妇，以及有其他直接产前诊断指征的孕妇。<br>
+			2、孕周<12周的孕妇。<br>
+			3、高体重（体重>100千克）孕妇。<br>
+			4、通过体外受精-胚胎移植方式受孕的孕妇。<br>
+			5、双胎妊娠的孕妇。<br>
+			6、合并恶性肿瘤的孕妇。</p>
+		<p><a class="word_mark">不适用人群：</a></p>
+		<p class="zero_left">1、染色体异常胎儿分娩史，夫妇一方有明确染色体异常的孕妇。<br>
+		2、孕妇1年内接受过异体输血、移植手术、细胞治疗或接受过免疫治疗等对高通量基因测序产前筛查与诊断结果将造成干扰的。<br>
+		3、胎儿影像学检查怀疑胎儿有微缺失微重复综合征或其他染色体异常可能的。<br>
+		4、各种基因病的高风险人群。</p>
+		<p><a class="title">四、检测流程</a></p>
+		<p></p>
+		<p  class="zero_left">1.	咨询预约：通过医院产科医生咨询及预约；<br>
+		2.	填写申请单及知情同意书：申请单及知情同意书：填写个人基本信息、孕产信息、既往病史等；<br>
+		3.	样本采集：抽取5-10ml外周血，抽血前无需空腹，孕妇保持正常饮食作息即可；<br>
+		4.	检测分析：依托国际主流平台进行高通量测序和生物信息分析；<br>
+		5.	获知结果：7-10个工作日出具检测结果，多渠道结果获取方式。</p>
+		<p></p>
+		<p><a class="title">五、检测周期</a></p>
+		<p></p>
+		<p  class="zero_left">自抽血之日起，7-10个工作日出具检测结果。</p>
+		<p></p><p></p>
+		
+	</li> 
+	<li id="JKDiv_11" class="content"><!--染色体异常检测-->
+		<h4>染色体异常检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<!--<p>染色体异常检测</p>-->
+		<div>
+		<p><a class="word_mark ranseti">染色体异常检测服务简介</a></p>
+		<p class="textindent">染色体异常是导致自然流产、出生缺陷、先天性遗传疾病、不孕不育等的重要遗传因素。</p>
+		<p  class="textindent">染色体异常检测结合新一代高通量测序（NGS）技术与生物信息分析方法，针对妊娠期流产/引产组织、胎儿绒毛/脐带血或受检者外周血样本进行全基因组测序，可为不明原因的自然流产寻找可能的遗传学因素，也可为具有不良生育史或疑似染色体异常症状人群查找染色体异常方面的原因。</p>
+		<p>本检测过程无需细胞培养，检出率与特异性均在99%以上。</p>
+		<p style="text-align: center;"><img src="./image/ranse_1.jpg" width="625"></p>
+		<p><a class="word_mark ranseti">染色体异常检测</a></p>
+		<p class="icon">流产组织检测：分析自然流产、异常妊娠的原因，指导再次生育；</p>
+		<p class="icon">新生儿/未成年个体染色体异常检测：为发育迟缓、智力异常、多发畸形等患儿分析染色体因素；</p>
+		<p class="icon">成人染色体异常检测：为不良孕产史、不育不孕、表型异常等查找遗传学原因。</p>
+
+		<p><a class="word_mark ranseti">检测内容</a></p>
+		<p>全面检测人体23对染色体非整倍性异常以及0.1Mb以上的染色体缺失或重复突变，同时可以检测低至5%的嵌合体。</p>
+		<p><a class="word_mark ranseti">检测适用范围</a></p>
+		
+		<p style="text-align: center;"><img src="./image/ranse_2.jpg" width="625"></p>
+		<p></p>
+		 
+		<p><a class="word_mark ranseti">检测周期及流程</a></p>
+		<p>自收到样本日起，10个工作日出具检测报告。</p>
+		<p style="text-align: center;"><img src="./image/ranse_3.png" width="625"></p>
+		 <p></p>
+		<p><a class="word_mark ranseti">样本要求</a></p>
+		<p></p>
+		<p>	 
+			<style>.sample tr td {
+	border: 1px solid #ffffff;
+}</style>
+
+			<table class="sample" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#01a8dd;color: #fff;">
+					<td style=" border-radius: 47px 0px 0px 0px; ">样本类型</td><td>体积/数量</td><td style=" border-radius: 0px 47px 0px 0px; ">保存/运输条件</td></tr>
+				<tr style="background:#e1eef6;"><td>流产组织、引产组织</td><td>100mg以上的绒毛、胚胎或胎儿组织</td>
+					<td >生理盐水冲洗3-5次，置于无菌采样管中。冷冻（-20℃）保存运输。</td></tr>
+				<tr style="background:#e9f6fe;"><td>脐带血</td><td>2mL</td>
+					<td rowspan="2">置于EDTA抗凝采血管中，轻轻摇动5-8次混匀，冷冻（-20℃）保存运输。</td></tr>
+				<tr style="background:#e9f6fe;"><td>脐带血</td><td>2mL</td></tr>
+			</table> 
+		</p>
+		<p><a class="word_mark ranseti">染色体异常检测技术的优势</a></p>
+		<p style="text-align: center;"><img src="./image/ranse_4.jpg" width="625"></p>
+		<p></p>
+		
+		<p><a class="word_mark ranseti">高通量基因测序染色体异常检测技术与其他技术对比</a></p>
+		
+		<!--<p style="text-align: center;">
+			<img src="./image/ranse_5.jpg" width="625">
+		</p> -->
+		<table class="sample1">
+				<tr style="color: #fff;">
+					<td>
+					<div class="out"> 
+                         <div class="t1">技术特点</div> 
+                         <div class="t2">方法</div> 
+                   </div> 
+					</td>
+					<td>不需细胞培养</td>
+					<td>不需对照样本</td>
+					<td>均匀覆盖<br>全基因组</td>
+					<td>精度<br>达到0.1Mb</td>
+					<td>发现新的缺失/重复</td>
+				</tr>
+				<tr style="background:#e1eef6;">
+					<td>NGS技术</td>
+					<td>√</td>
+					<td>√</td>
+					<td>√</td>
+					<td>√</td>
+					<td>√</td>
+				</tr>
+				<tr style="background:#e9f6fe;">
+					<td>核型分析</td>
+					<td>×</td>
+					<td>√</td>
+					<td>√</td>
+					<td>×</td>
+					<td>×</td>
+				</tr>
+				<tr style="background:#e9f6fe;">
+					<td>FISH</td>
+					<td>×</td>
+					<td>√</td>
+					<td>×</td>
+					<td>×</td>
+					<td>×</td>
+				</tr>
+				<tr style="background:#e9f6fe;">
+					<td>Array CGH</td>
+					<td>√</td>
+					<td>×</td>
+					<td>×</td>
+					<td>√</td>
+					<td>×</td>
+				</tr>
+		</table> 
+			 
+		<p></br></p>
+		</div> 
+	</li> 
+	<li id="JKDiv_12" class="content"><!--胚胎植入前遗传学筛查-->
+		<h4>胚胎植入前遗传学筛查</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+	  <div>
+		<p><a class="word_mark">NGS胚胎植入前遗传学筛查</a></p>
+		<p style="text-align: center;"><img src="./image/peitai_1.jpg" width="625"></p> <br>
+		<p ></p>
+	
+		<p><a class="word_mark">适用人群</a></p>
+		
+		<p  class="icon">1.	女方高龄的夫妇；</p>
+		<p  class="icon">2.	反复自然流产的夫妇（≥2次）；</p>
+		<p  class="icon">3.	反复种植失败的夫妇（≥2次）；</p>
+		<p  class="icon">4.	染色体异常的夫妇；</p>
+		<p  class="icon">5.	男方严重不孕症的夫妇；</p>
+		<p  class="icon">6.	希望提高IVF成功率的夫妇；</p>
+		<p  class="icon">7.	不明原因不孕的夫妇。</p>
+		<p><a class="word_mark">形态学挑选的体外胚胎着床率低</a></p>
+		<p style="text-align: center;"><img src="./image/peitai_2.jpg" width="625"></p> <br>
+		<p class="textindent">仅依据形态学特征来挑选体外培养的胚胎，其着床率较低。且随着孕妇年龄的增加，着床率进一步降低。相关研究显示，染色体数目异常是导致体外培养胚胎着床率低的主要原因。</p>
+
+		<p><a class="word_mark">PGS可显著提高IVF临床妊娠率</a></p>
+		<p style="text-align: center;"><img src="./image/peitai_3.jpg" width="625"></p> <br>
+		<p  class="textindent"><数据来源：Can Comprehensive ChromosomeScreening Technology Improve IVF/ICSI Outcomes? AMeta-Analysis，2015><br>	近年来，越来越多的研究显示，PGS技术可显著改善辅助生殖结局。应用该技术可以有效提高体外培养胚胎的种植率、临床妊娠率和活产率，并降低胚胎的流产率，减少由于反复植入给孕妇带来的身心伤害。
+		</p>
+	   </div>  
+	</li> 
+	<li id="JKDiv_13" class="content"><!--叶酸利用能力基因检测-->
+		<h4>叶酸利用能力基因检测</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>
+		<div>
+		<!--<p>叶酸利用能力基因检测</p>-->
+		<p><a class="word_mark ranseti">叶酸缺乏与疾病</a></p>
+		<p  class="textindent">叶酸补充不足和叶酸利用能力差均会造成叶酸缺乏，叶酸缺乏会导致血液中同型半胱氨酸浓度升高，进而引发一系列不良症状。</p>
+		<p style="text-align: center;"><img src="./image/yesuan_1.jpg" width="625"></p> 
+		<p><a class="word_mark ranseti">相关疾病发病率</a></p>
+		<p  class="textindent">我国出生缺陷发生率在5.6%左右，每年新增出生缺陷数约90万例，其中出生时临床明显可见的出生缺陷约有25万例，如唇腭裂、神经管畸形等，而导致新生儿唇腭裂、神经管畸形的最主要原因就是孕期叶酸缺乏。</p>
+		<p style="text-align: center;"><img src="./image/yesuan_2.jpg" width="625"></p> 
+		<p><a class="word_mark ranseti">叶酸相关基因</a></p>
+		<p  class="textindent">人体内的“亚甲基四氢叶酸还原酶（MTHFR）”和“甲硫氨酸合成酶还原酶（MTRR）”在叶酸代谢过程中发挥着重要作用，其活性直接与叶酸利用能力相关。正是由于这两种关键酶的基因型在中国人群中存在一定风险比例，导致不同人对叶酸的代谢能力不同，所以叶酸补充需要个性化。</p>
+		<p></p>
+		<p style="image_word">国人叶酸代谢相关基因</p>
+		<p>	 
+			<style>.sample tr td {
+	border: 1px solid #ffffff;
+}</style>
+
+			<table class="sample" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#01a8dd;color: #fff;">
+					<td style=" border-radius: 47px 0px 0px 0px; ">基因</td><td>位点</td><td>基因型</td><td style=" border-radius: 0px 47px 0px 0px; ">基因型在中国人群中分别所占比例</td></tr>
+				<tr style="background:#efefef;"><td>MTHFR</td><td>C677T</td><td>CC(正常); CT(正常); TT(风险)</td>
+					<td >22%；50%；28%</td></tr>
+				<tr style="background:#e6e6e8;"><td>MTHFR</td><td>A1298C</td><td>AA(正常); AC(正常); CC(风险)</td>
+					<td>66%；31%；4%</td></tr>
+				<tr style="background:#efefef;"><td>MTRR</td><td>A66G</td><td>AA(正常); AG(风险); GG(风险)</td><td>58%；36%；6%</td></tr>
+			</table> 
+		</p>
+		<p><a class="word_mark ranseti">风险基因与疾病</a></p>
+		<p  class="textindent">携带MTHFR风险型基因的人群在重复性自然流产患者中的比例明显高于健康人群，说明该基因与自然流产高度相关。携带该基因使不明性反复自然流产相对危险性提高5.1倍。</p>
+		<p style="text-align: center;"><img src="./image/yesuan_3.jpg" width="625"></p> 
+		<p style="image_word" style="font-size:8px;">来源：汪希鹏等.原因不明复发性流产患者血中亚甲基四氢叶酸还原酶基因C677T和A1298C位点突变的研究.中华妇产科杂志,2004.</p>
+		
+		<p><a class="word_mark ranseti">叶酸过量与疾病</a></p>
+		<p>过量补充叶酸也会导致一系列的不良后果：</p>
+		<p>1.	导致胎儿生长缓慢，出生体重过低；</p>
+		<p>2.	导致孕妇体虚、神经衰弱和恶性贫血等症状；</p>
+		<p>3.	增加结肠腺瘤、乳腺癌风险；</p>
+		<p>4.	引发叶酸过敏症</p>
+		<p>所以补充叶酸也不能盲目。要做到足量又不过量，需要对叶酸利用能力进行评估，来确定个性化的叶酸补充方案。</p>
+
+		<p><a class="word_mark ranseti">叶酸基因检测项目介绍</a></p>
+		<p class="icon">检测内容</p>
+		<p>MTHFR 基因（2个位点）、MTRR 基因（1个位点）</p>
+		<p  class="icon">检测目的</p>
+		<p>利用测序技术检测孕妇叶酸代谢相关基因，根据基因分型结果对	受检者叶酸利用能力进行分级，进而针对性的调整叶酸补充剂量，全面预防胎儿神经管缺陷、妊高症等疾病。
+		<p  class="icon">采样方式</p>
+		<p>1.口腔拭子取口腔上皮细胞，简单方便</p>
+		<p>2.静脉取血</p>
+		<p  class="icon">检测周期</p>
+		<p>5个工作日</p>
+		<p><a class="word_mark ranseti">项目优势</a></p>
+		<p style="text-align: center;"><img src="./image/yesuan_4.jpg" width="625"></p> 
+		<p>优势</p>
+		<p  class="icon">全面：覆盖3个相关位点，保证诊断准确；</p>
+		<p  class="icon">准确：一代测序技术，临床诊断金标准；</p>
+		<p  class="icon">方便：口腔拭子取样，摆脱繁琐采集方式；</p>
+		<p  class="icon">快速：5天出具报告，迅速得知检测结果。</p>
+
+
+		<p><a class="word_mark ranseti">叶酸补充建议</a></p>
+		<p>中国疾病预防控制中心妇幼保健中心依不同风险分级提供的孕期叶酸的增补参考量如下:</p>
+		<p>	 
+			<style>.sample tr td {
+	border: 1px solid #ffffff;
+}</style>
+
+			<table class="sample" width="625" height="262" border="0" style=" border-color: #ffffff;text-align: center; " >
+				<tr style="background:#01a8dd;color: #fff;">
+					<td style=" border-radius: 47px 0px 0px 0px; ">检测结果</td><td>孕前3个月</td><td>孕早期(0–12周)</td><td style=" border-radius: 0px 47px 0px 0px; ">孕中/后期(13-40周)	</td></tr>
+				<tr style="background:#efefef;"><td>未发现风险</td><td>400微克/天</td><td>400微克/天</td>
+					<td >注意食物补充，可不需要额外增补</td></tr>
+				<tr style="background:#e6e6e8;"><td>低度风险</td><td>400微克/天</td><td>400微克/天</td>
+					<td>400微克/天</td></tr>
+				<tr style="background:#efefef;"><td>中度风险</td><td>400微克/天</td><td>800微克/天</td><td>400微克/天</td></tr>
+				<tr style="background:#e6e6e8;"><td>高度风险</td><td>800微克/天</td><td>800微克/天</td>
+					<td>400微克/天</td></tr>
+			</table> 
+		</p> 
+		
+		</div>
+	</li> 
+	<li id="JKDiv_14" class="content"><!--全外显子组测序-->
+		<h4>全外显子组测序</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p> 
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu0">
+				   <li onclick="setTab(0,0)" class="hover">产品介绍</li>
+				   <li onclick="setTab(0,1)">技术路线</li>
+				   <li onclick="setTab(0,2)">样本要求</li>
+				   <li onclick="setTab(0,3)">经典案例</li>
+				</ul> 
+			</div>
+			
+			<div class="main" id="main0" style="background: #ffffff;">
+				<ul class="block">
+					<li><div id="list_setting"><p><strong><span style="font-size: 16px; color: rgb(0, 112, 192);"></span></strong></p><p><strong><span style="color: rgb(0, 112, 192);"><br></span></strong></p><p style="text-align: center;"><strong><span style="color: rgb(0, 112, 192);"><img src="./image/1469757338499673.png" title="技术简介.png" alt="技术简介.png" style="text-align: center; white-space: normal; width: 84px; height: 41px;" width="84" height="41" border="0" vspace="0"></span></strong></p><p><strong><span style="color: rgb(0, 112, 192);"><br></span></strong></p>
+					<p class="textindent"><strong><span style="color: rgb(0, 112, 192);">全外显子测序</span></strong> （Whole-exome sequencing，<span style="color: rgb(0, 112, 192);"><strong>WES</strong></span>）是应用频率最高基因组测序方法。外显子是人基因组的蛋白编码区域，利用序列捕获技术可以将其DNA捕获并且富集。虽然外显子区域不到全基因组的2%，但是却集中了大部分疾病的致病突变位点。</p><p style="text-align: center;"><br></p><p><br></p><p style="text-align: center;"><img src="./image/1471853357897116.png" title="全外显子测序 优势.png" alt="全外显子测序 优势.png" width="443" height="432" border="0" vspace="0" style="width: 443px; height: 432px;"></p><p><br></p><p><br></p><p style="text-align: center;"><img src="./image/1471853077288580.png" title="全外显子测序 应用领域.png" alt="全外显子测序 应用领域.png" width="345" height="460" style="width: 345px; height: 460px;" border="0" vspace="0"></p><p style="text-align: center;"><br></p><p style="text-align: center;"><br></p><p><br></p><p style="text-align: center;">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</p></div>
+					</li>
+				</ul>
+				<ul>
+					<li><div  id="list_advant"><p><br></p><p style="text-align: center;"><img src="./image/1470907593675333.png" title="技术路线.png" alt="技术路线.png" style="text-align: center; white-space: normal; width: 85px; height: 41px;" width="85" height="41" border="0" vspace="0"></p><p style="text-align: left;"><br></p><p style=" text-align: center;"><img src="./image/1471856321561610.png" title="全外显子测序 技术路线.png" alt="全外显子测序 技术路线.png" width="530" height="972" border="0" vspace="0" style="width: 530px; height: 972px;"></p><p><span style="font-size: 14px;">&nbsp; &nbsp; &nbsp;</span></p><p><span style="font-size: 12px;"><br></span></p><p style=""><br></p></div>
+					</li>
+				</ul>
+				<ul>
+					<li><div  id="list_harm"><p style="text-align: center;"><br></p><p style="text-align: center;"><img src="./image/1470907750447366.png" title="样本要求.png" alt="样本要求.png" style="text-align: center; white-space: normal; width: 84px; height: 41px;" width="84" height="41" border="0" vspace="0"></p><p><br></p><p><br></p><p style="text-align: center;"><img src="./image/1471852193648544.png" title="全外显子测序 样本要求.png" alt="全外显子测序 样本要求.png" width="525" height="148" border="0" vspace="0" style="width: 525px; height: 148px;"></p></div>
+					</li>
+				</ul>
+				<ul>
+					<li><div id="list_flow">
+						<p><br></p>
+						<p style="text-align: center;"><strong><span style="font-size: 16px;">子宫内膜癌和腹盆腔转移：演化过程以及基因图谱</span></strong></p>
+						<p><br></p>
+						<p style="text-align: center;"><strong><span style="font-size: 16px;">The genomic landscape and evolution of endometrial carcinoma progression and abdominopelvic metastasis</span></strong></p>
+						
+						<p><strong><span style="font-size: 16px;"><br></span></strong></p>
+						<p style="text-align: center;">
+							<strong>
+								<span style="font-size: 16px;"><img src="./image/1471848108978942.png" title="子宫内膜癌和腹盆腔转移：演化过程以及基因图谱.png" alt="子宫内膜癌和腹盆腔转移：演化过程以及基因图谱.png" width="437" height="102" border="0" vspace="0" style="width: 437px; height: 102px;">
+								</span>
+							</strong>
+						</p>
+					
+					 <p><strong><span style="font-size: 16px;"><br></span></strong></p>
+					<p>
+						<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+						<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">1</a>
+						<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">设计思路</a>
+						
+						</div>
+					</p>
+					<p style="text-align: center;"><strong><span style="font-size: 16px;"><img src="./image/1471848154876618.png" title="子宫内膜癌和腹盆腔转移：演化过程以及基因图谱设计思路.png" alt="子宫内膜癌和腹盆腔转移：演化过程以及基因图谱设计思路.png" width="166" height="181" border="0" vspace="0" style="width: 166px; height: 181px;"></span></strong></p>
+					
+					
+					<p><strong><span style="font-size: 16px;"><br></span></strong></p><p><strong><span style="font-size: 16px;"></span></strong></p><p style="text-align: center;"><img src="./image/1471848368407903.png" title="图1 样本来源.png" alt="图1 样本来源.png" width="322" height="300" style="width: 322px; height: 300px;" border="0" vspace="0"></p><p><br></p><p style="text-align: center;">&nbsp;图1 &nbsp;样本来源：<span style="line-height: 1.5em;">来自52位患者的98例冰冻组织（12例复杂增生，32例原发灶，54例腹腔转移灶）</span></p><p><strong><span style="font-size: 16px;"><br></span></strong></p>
+					
+					<p><br></p>
+					
+					<p>
+						<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+						<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">2</a>
+						<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结果</a>
+						
+						</div>
+					</p>
+					<p><br></p>
+					<p style="text-align: center;"><strong><span style="font-size: 16px;"><img src="./image/1471848513474103.png" title="图2 复杂增生，原发灶和腹腔转移灶的基因变化.png" alt="图2 复杂增生，原发灶和腹腔转移灶的基因变化.png" width="600" height="400" border="0" vspace="0" style="width: 600px; height: 400px;"></span></strong><br></p><p style="text-align: center;">图2 复杂增生，原发灶和腹腔转移灶的基因变化</p><p><br></p><p style="text-align: center;"><img src="./image/1471848555120471.png" title="图2 复杂增生，原发灶和腹腔转移灶的基因变化.png" alt="图2 复杂增生，原发灶和腹腔转移灶的基因变化.png" width="621" height="391" border="0" vspace="0" style="width: 621px; height: 391px;"></p><p style="text-align: center;">图3 多个转移灶肿瘤的分析树状图</p><p><br></p><p><br></p>
+					 
+					<p>
+						<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+						<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">3</a>
+						<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结论</a>
+						
+						</div>
+					</p>
+					
+					<p style="white-space: normal; text-align: justify;"><br></p>
+					<p style="white-space: normal; text-align: justify;" class="textindent">最近的研究已详述初级子宫内膜癌的基因组景观，但这些癌症的发展成转移尚未表征。这项研究对98肿瘤样本进行活检，全外显子测序和肿瘤进化研究。样本类型分3类包括复杂的不典型增生，原发灶肿瘤和腹部盆腔转移灶肿瘤。研究通过重新分析癌症基因组图谱（TCGA）的数据，在原发灶肿瘤中发现了新的复发突变，例如12%的患者都含有，雌激素受体基因的辅因子基因NRIP1。研究还发现在原发灶和转移灶中 &nbsp; 可能驱动事件是本原发性和转移性的组织样品中，具有显着的例外如ARID1A突变。这些数据表明在子宫内膜癌广泛的基因异质性，和转移灶处肿瘤相对的同质性。</p>
+					<p style="white-space: normal; text-align: justify;"><br></p><p><br></p>
+					 
+					<p>
+						<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+						<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">4</a>
+						<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">参考文献</a>
+						
+						</div>
+					</p>
+					
+					<p><br></p><p style="text-align: justify;">Gibson, W. J., Hoivik, E. A., Halle, M. K., et al. The genomic landscape and evolution of endometrial carcinoma progression and abdominopelvic metastasis. Nature Genetics,&nbsp;2016.</p></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li> 
+	<li id="JKDiv_15" class="content"><!--全基因组重测序-->
+		<h4>全基因组重测序</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>  
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu1">
+				   <li onclick="setTab(1,0)" class="hover">产品介绍</li>
+				   <li onclick="setTab(1,1)">技术路线</li>
+				   <li onclick="setTab(1,2)">样本要求</li>
+				   <li onclick="setTab(1,3)">经典案例</li>
+				</ul> 
+			</div>
+			
+			<div class="main" id="main1" style="background: #ffffff;">
+				<ul class="block">
+					<li>
+						<div  id="list_setting"><p style="text-align: center;"><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"><br></span></strong></span></p><p style="text-align: center;"><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"><img src="./image/1469757338499673.png" title="技术简介.png" alt="技术简介.png" style="text-align: center; white-space: normal; width: 84px; height: 41px;" width="84" height="41" border="0" vspace="0"></span></strong></span></p><p><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"></span></strong></span></p><p style="margin-top: 0;margin-bottom: 0;margin-left: 0in;direction: ltr;unicode-bidi: embed"><br></p>
+						<p class="textindent" style="text-align: justify;"><strong><span style="color: rgb(0, 112, 192);">全基因组重测序 </span></strong>（Whole-genome sequencing，<strong><span style="color: rgb(0, 112, 192);">WGS</span></strong>）是分析基因组最全面的方法。新一代测序高通量和低成本的特点，为研究人个体或群体全基因组提供了平台。基于WGS技术的疾病研究显示，非编码区的DNA变异与复杂疾病起因有很大关联。</p><p><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"><br></span></strong></span><br></p><p style="text-align: center;"><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"><img src="./image/1470966569726152.png" title="优势" alt="优势" width="68" height="44" border="0" vspace="0" style="white-space: normal; text-indent: 28px; width: 68px; height: 44px;"></span></strong></span></p><p><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"><br></span></strong></span></p><p style="text-align: center;"><span style="font-size: 16px; color: rgb(0, 112, 192);"><strong><span style="font-size: 16px;"><img src="./image/1471599117397926.png" title="全基因组重测序优势.png" alt="全基因组重测序优势.png" width="639" height="536" style="width: 639px; height: 536px;" border="0" vspace="0"></span></strong></span></p><p style="LINE-HEIGHT: 150%"><span style=" font-family: 微软雅黑; font-size: 14px;">&nbsp;</span></p><p style="LINE-HEIGHT: 150%"><span style=" font-family: 微软雅黑; font-size: 14px;"><br></span></p><p style=" text-align: center;"><img src="./image/1470966575738567.png" title="应用领域" alt="应用领域" width="88" height="41" border="0" vspace="0" style="text-align: center; white-space: normal; width: 88px; height: 41px;"></p><p style=""><br></p><p style=" text-align: center;"><img src="./image/1471828428293139.png" title="全基因组重测序应用领域.png" alt="全基因组重测序应用领域.png" width="625" height="140" style="width: 625px; height: 140px;" border="0" vspace="0"></p><p>&nbsp; &nbsp;&nbsp;</p></div>
+						
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div  id="list_advant"><p style="text-align: center;"><br></p><p style="text-align: center;"><img src="./image/1470966751341255.png" title="技术路线" alt="技术路线" width="85" height="41" border="0" vspace="0" style="text-align: center; white-space: normal; width: 85px; height: 41px;"></p><p><br></p><p style="text-align: center;"><img src="./image/1471856287182124.png" title="全基因组重测序技术路线.png" alt="全基因组重测序技术路线.png" width="530" height="972" border="0" vspace="0" style="width: 530px; height: 972px;"></p></div>
+					</li>
+				</ul>
+				<ul>
+					<li><div  id="list_harm"><p style="text-align: center;"><br></p><p style="text-align: center;"><img src="./image/1470966771968768.png" title="样本要求.png" alt="样本要求.png" style="text-align: center; white-space: normal; width: 85px; height: 45px;" width="85" height="45" border="0" vspace="0"></p><p><br></p><p style="text-align: center;"><img src="./image/1471829310712879.png" title="全基因组重测序样本要求.png" alt="全基因组重测序样本要求.png" width="513" height="152" style="width: 513px; height: 152px;" border="0" vspace="0"></p><p style="text-align: center;"><br></p></div></li>
+				</ul>
+				<ul>
+					<li>
+						<div  id="list_flow"><p style="text-align: center;"><strong><span style="font-size: 16px;"><br></span></strong></p><p style="text-align: center;"><strong><span style="font-size: 16px;">全基因组检测自闭症新生突变的特征</span></strong></p><p><strong><span style="font-size: 16px;"><br></span></strong></p><p style="text-align: center;"><strong><span style="font-size: 16px;">Genome-wide characteristics of de novo mutations in autism</span></strong></p><p><strong><span style="font-size: 16px;"><br></span></strong></p><p style=";margin-top:0;margin-bottom:0;text-align:center;direction:ltr;unicode-bidi:embed"><img src="./image/1471599900243668.png" title="全基因组检测自闭症新生突变的特征.png" alt="全基因组检测自闭症新生突变的特征.png" width="437" height="102" border="0" vspace="0" style="width: 437px; height: 102px;"></p><p style="margin-top: 0px; margin-bottom: 0px; direction: ltr; unicode-bidi: embed;"><br></p>
+						  
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">1</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">设计思路</a>
+							
+							</div>
+						</p>
+						
+						
+						<p style="margin-top: 0px; margin-bottom: 0px; direction: ltr; unicode-bidi: embed;"><br></p><p style="margin-top: 0px; margin-bottom: 0px; direction: ltr; unicode-bidi: embed; text-align: center;"><img src="./image/1471600036875807.png" title="全基因组检测自闭症新生突变的特征设计思路.png" alt="全基因组检测自闭症新生突变的特征设计思路.png" width="167" height="235" border="0" vspace="0" style="width: 167px; height: 235px;"></p><p style="margin-top: 0px; margin-bottom: 0px; direction: ltr; unicode-bidi: embed;"><br></p><p style="margin-top: 0px; margin-bottom: 0px; direction: ltr; unicode-bidi: embed;"><br></p>
+						  
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">2</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结果</a>
+							
+							</div>
+						</p>
+						
+						
+						<p style="color: rgb(62, 62, 62); font-family: 微软雅黑; font-size: 16px; font-weight: bold; line-height: 32px; white-space: normal; background-color: rgb(255, 255, 255);"><strong><span style="color: rgb(0, 112, 192);"></span></strong></p><p><br></p>
+						<p style="text-align: justify;" class="textindent">研究发现绝大种系突变（75.6%）来自父亲，突变率与父亲年龄增长成正相关。但是绝大部分的簇突变来自母亲，并且这些簇突变与新生突变的CNVs相邻。研究还发现，在非编码区（15.6%）和遗传非编码区（22.5%），聚集了大量有破坏性的突变。这些非编码区的突变基因虽然不会被翻译，但是参与调控外显子跳跃，脱氧核糖酶I高敏感区域。</p><p style="text-align: center;"><img src="./image/1471829474154205.png" title="图1 种系、簇族和体细胞突变的来源.png" alt="图1 种系、簇族和体细胞突变的来源.png" width="655" height="498" style="width: 655px; height: 498px;" border="0" vspace="0"></p><p style="LINE-HEIGHT: 150%"><span style=" ; FONT-SIZE: 16px"></span></p><p style=""><span style=" ; FONT-SIZE: 16px">&nbsp;</span></p><p style="text-align: center;">图1 种系、簇族和体细胞突变的来源</p><p style=""><br><span style=" ; FONT-SIZE: 16px"></span></p><p style="text-align: center;"><img src="./image/1471829592404319.png" title="图2 破坏性新生突变主要集中在染色质组合，RNA生成和翻译，突触传递的基因本体GO通路中.png" alt="图2 破坏性新生突变主要集中在染色质组合，RNA生成和翻译，突触传递的基因本体GO通路中.png" width="315" height="189" style="width: 315px; height: 189px;" border="0" vspace="0"><</p><p style=" text-align: center;">图2 破坏性新生突变主要集中在染色质组合，RNA生成和翻译，突触传递的基因本体GO通路中</p><p style=""><br></p>
+						
+						
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">3</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结论</a>
+							
+							</div>
+						</p>
+						
+						
+						<p style="white-space: normal; text-align: justify;"><br></p>
+						<p style="text-align: justify;" class="textindent">此前对自闭症新生突变的研究中，只对编码区的1.5%基因进行过测序。 加拿大多伦多儿童医院的研究，选取了来自200个自闭症儿童三口之家，一共600人的样本，采用全基因组测序，来研究种系突变和体细胞突变的遗传特征。全基因组测序研究，揭示了非编码区基因突变对自闭症成因的影响。</p><p style="white-space: normal; text-align: justify;"><br></p><p><br></p>
+						  
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">4</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">参考文献</a>
+							
+							</div>
+						</p>
+						
+						<p><br></p><p style="text-align: justify;">Yuen, R. K., Merico, D., Cao, H., Pellecchia, G., Alipanahi, B., Thiruvahindrapuram, B., ... &amp; Wu, X. (2016). Genome-wide characteristics of de novo mutations in autism. NPJ genomic medicine, 1, 16027-1.</p><p style=""><br></p></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li> 
+	<li id="JKDiv_16" class="content"><!--单细胞全基因组测序-->
+		<h4>单细胞全基因组测序</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>  
+		<div id="tabs0">
+			<div class="main" style="height:32px;margin-bottom:8px;"> 
+				<ul class="menu0" id="menu2">
+				   <li onclick="setTab(2,0)" class="hover">产品介绍</li>
+				   <li onclick="setTab(2,1)">技术路线</li>
+				   <li onclick="setTab(2,2)">样本要求</li>
+				   <li onclick="setTab(2,3)">经典案例</li>
+				</ul> 
+			</div>
+			
+			<div class="main" id="main2" style="background: #ffffff;">
+			   <ul class="block">
+					<li>
+						<div  id="list_setting"><p style="text-align: center;"><img src="./image/1470966566923636.png" title="技术简介" alt="技术简介" width="84" height="41" border="0" vspace="0" style="width: 84px; height: 41px;"></p><p><br></p><p style="text-align: justify;" class="textindent"><strong>单细胞全基因组测序</strong>是在单细胞水平对全基因组进行扩增与测序的一项新技术。其原理是利用MDA或MALBAC技术对分离的单细胞中微量全基因组DNA进行高效扩增，获得高覆盖度的完整基因组后进行高通量测序，生物信息学分析获得细胞中的遗传变异信息，可用于揭示细胞群体差异和细胞进化关系。</p><p><br></p><p style="text-align: center;"><img src="./image/1470966569726152.png" title="优势" alt="优势" width="68" height="44" border="0" vspace="0" style="width: 68px; height: 44px;"></p><p><br></p><p style="text-align: center;"><img src="./image/1470966714589780.png" title="单细胞全基因组测序优势" alt="单细胞全基因组测序优势" width="625" height="247" style="width: 625px; height: 247px;" border="0" vspace="0"></p><p><br></p><p style="text-align: center;"><img src="./image/1470966575738567.png" title="应用领域" alt="应用领域" width="88" height="41" border="0" vspace="0" style="width: 88px; height: 41px;"></p><p><br></p><p style="text-align: center;"><img src="./image/1470966729258940.png" title="单细胞全基因组测序应用领域" alt="单细胞全基因组测序应用领域" width="554" height="284" border="0" vspace="0" style="width: 554px; height: 284px;"></p><p><br></p></div>
+					 </li>
+			   </ul>
+			   <ul>
+					<li>
+						<div  id="list_advant"><p style="text-align: center;"><img src="./image/1470966751341255.png" title="技术路线" alt="技术路线" width="85" height="41" border="0" vspace="0" style="width: 85px; height: 41px;"></p><p><br></p>
+						<p style="text-align: center;"><img src="./image/1470966762981673.png" title="单细胞全基因组测序技术路线" alt="单细胞全基因组测序技术路线" width="682" height="625" border="0" vspace="0" style="width: 625px; height: 666px;"></p>
+						<p style="text-align: center;"><br></p>
+						<p style="text-align: center;"><img src="./image/1470966819607483.png" title="产品参数" alt="产品参数" width="85" height="41" border="0" vspace="0" style="width: 85px; height: 41px;"></p>
+						 <p><br></p>
+						 <p style="text-align: center;"><img src="./image/1470966830653604.png" title="单细胞全基因组测序产品参数" alt="单细胞全基因组测序产品参数" width="625" height="115" style="width: 625px; height: 115px;" border="0" vspace="0"></p>
+						 <p><br></p>
+						</div>
+					</li> 
+				</ul>
+			   <ul>
+					<li>
+						<div  id="list_harm"><p style="LINE-HEIGHT: 150%"><strong><span style=" ; COLOR: #00b0f0"></span></strong></p><p style=" text-align: center;"><img src="./image/1470966771968768.png" title="1470966771968768.png" alt="2.png"></p><p><br></p><p style=" text-align: justify;"><strong><span>样品要求</span></strong></p>
+						<p style=" text-align: justify;">1)&nbsp;&nbsp;细胞分离：由合作方完成单细胞分离；</p>
+						
+						<p style=" text-align: justify;">2)&nbsp;   由公司寄出样品保存液（MALBAC——裂解液；MDA——PBS缓冲液）；</p>
+						
+						<p style=" text-align: justify;">3)&nbsp;&nbsp;样品需求量：1-1000个新鲜细胞，样本体积尽量不超过1-2μl。</p>
+						 
+						 <p><strong><span style="font-family: 微软雅黑, sans-serif"><br></span></strong></p><p style="line-height:150%"><strong><span style="font-family: 微软雅黑, sans-serif">其他要求</span></strong></p><p class="MsoListParagraph" style=" text-align: justify;"><span style=";line-height:150%">1)<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family:'Microsoft YaHei';"></span></span><span style="font-family:Microsoft YaHei;">&nbsp;&nbsp;直接使用公司提供的</span><span style=";line-height:150%">0.2mL</span><span style=";font-family:Microsoft YaHei;">平盖</span><span style=";line-height:150%">PCR</span><span style=";font-family:Microsoft YaHei;">管作为采集管，管盖标注编号；细胞样本需采用不含</span><span style=";line-height:150%">Ca<sup>2+</sup></span><span style=";font-family:Microsoft YaHei;">、</span><span style=";line-height:150%">Mg<sup>2+</sup></span><span style=";font-family:Microsoft YaHei;">的缓冲液洗涤；裂解液避免反复冻融。注意避免起泡；</span></p><p class="MsoListParagraph" style=" text-align: justify;"><span style=";line-height:150%">2)<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family:Microsoft YaHei">&nbsp;&nbsp; </span></span><span style=";font-family:Microsoft YaHei;">操作过程中请尽量将采样管置于低温环境下</span><span style=";line-height:150%">(</span><span style=";font-family:Microsoft YaHei;">如冰上</span><span style=";line-height:150%">)</span><span style=";font-family:Microsoft YaHei;">。</span> <span>样本采集管需要用</span><span style=";line-height:150%">Parafilm</span><span style=";font-family:Microsoft YaHei;">封口膜缠绕封口，装入</span><span style=";line-height:150%">PCR</span><span style=";font-family:Microsoft YaHei;">管盒，橡皮筋固定，再装入自封袋，</span><span style=";line-height:150%">-80</span><span style=";font-family:Microsoft YaHei;">℃暂存，大体积干冰运输；防止液体状态下管身颠倒使细胞附于采样管内壁上部；</span><span style="">&nbsp;</span></p><p class="MsoListParagraph" style=" text-align: justify;"><span style=";line-height:150%">3)<span style="font-stretch: normal;font-size: 9px;line-height: normal;font-family: Microsoft YaHei;">&nbsp;&nbsp; </span></span><span style=";font-family:Microsoft YaHei;">送样量：单细胞基因组扩增，建议重复单细胞样本个数不小于</span><span style=";line-height:150%">3</span><span style=";font-family:Microsoft YaHei;">个；</span><strong style=""><span style=";line-height:150%">&nbsp;</span></strong></p><p class="MsoListParagraph" style=" text-align: justify;"><span style="">4)<span style="font-stretch: normal; font-size: 9px; line-height: normal; font-family: Microsoft YaHei;;">&nbsp; &nbsp; </span>细胞采样</span><span style="line-height: 1.5em; font-family: 微软雅黑, sans-serif;">后，请置于</span><span style="line-height: 1.5em; font-family: Microsoft YaHei;, serif;">96</span><span style="line-height: 1.5em; font-family: 微软雅黑, sans-serif;">孔管盒中，避免采样管倾倒，尽快寄送，若需保存请置于</span><span style="line-height: 1.5em; font-family: Microsoft YaHei;, serif;"></span><span style="text-align: justify;">-80</span>℃<span style="line-height: 1.5em; font-family: Microsoft YaHei;"></span><span style="line-height: 1.5em; font-family: 微软雅黑, sans-serif;">。</span></p><p style="text-align: justify;"><span style=";font-family:Microsoft YaHei;"></span><br></p></div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div  id="list_flow"><p style="text-align: center;"><span style="font-size: 16px;font-weight:800;">单细胞基因组测序技术揭示乳腺癌细胞克隆进化机制</span></p><p><br></p><p style="text-align: center;"><span style="font-size: 16px;"><strong>Clonal evolution in breast cancer revealed by single nucleus genome sequencing</strong></span></p><p style="TEXT-ALIGN: center; LINE-HEIGHT: 150%"><span style="font-size: 16px;"><strong><span style=" font-family: 微软雅黑, sans-serif; font-size: 12px;">&nbsp;</span></strong></span></p><p style=" text-align: center;"><img src="./image/1471594292781807.png" title="单细胞基因组测序技术揭示乳腺癌细胞克隆进化机制.png" alt="单细胞基因组测序技术揭示乳腺癌细胞克隆进化机制.png" width="554" height="131" style="width: 554px; height: 131px;" border="0" vspace="0"></p>
+						
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">1</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究背景</a>
+							
+							</div>
+						</p>
+						
+						<p><br></p><p style="text-align: justify;" class="textindent">肿瘤细胞之间存在高度的遗传异质性，研究发现乳腺癌分为5种与雌激素、孕激素以及人类表皮生长因子受体相关的分子亚型。其中三阴乳腺癌(ER-/PR-/Her2-)表现出大量的突变，而luminal A (ER+/PR+/Her2-)表现出较低的突变频率。相关研究表明三阴乳腺癌（TNBCs）可能导致克隆多样性和突变进化，但是这种推断很难通过群体细胞进行相关验证。</p>
+						<p style="text-align: justify;" class="textindent">本文开发一种单细胞测序分析三阴乳腺癌肿瘤样本，揭示了来自两个患者（ERBC和TNBC）乳腺癌的种群结构，并结合目标区域测序的大样本验证来揭示肿瘤进化过程中的罕见突变，这对于癌症预后、阶段确定及诊断具有重要的临床意义。</p><p style="text-align: justify;"><br></p>
+						
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">2</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">设计思路</a>
+							
+							</div>
+						</p>
+						<p><br></p>
+						<p style="text-align: center;"><img src="./image/1470993668115776.jpg" title="设计思路.jpg" alt="设计思路.jpg" width="500" height="493" border="0" vspace="0" style="width: 500px; height: 493px;"></p><p><br></p>
+						  
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">3</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结果</a>
+							
+							</div>
+						</p>
+						<section class="wx96Diy" data-source="bj.96weixin.com" style=""><section class="96wx-bdtc"><section> <span ><strong ><span>克隆进化分析发现乳腺癌不同的亚型</span></strong></span></section></section></section>
+						<p style="text-align: justify;" class="textindent">本文采用染色体断点分析（chromosomal breakpoint analysis）的方法，来分析不同肿瘤细胞亚群之间的联系。研究发现许多肿瘤细胞（大约30%）都混合包含有DNA缺失和增加的情况，就总体DNA数目而言，看上去和正常细胞一样；分析两种类型的乳腺癌组织样本克隆进化种群结构，发现ER样本中存在一个亚群，而TNBC样本乳腺癌中三个亚群，并且这三个亚群是连续的克隆进化关系，每个亚群都由高度相似的拷贝数目的细胞组成。</p><p><br></p><p style="text-align: center;"><img src="./image/1470967381660488.png" title="图1 两种三阴乳腺癌克隆进化分析" alt="图1 两种三阴乳腺癌克隆进化分析" width="625" height="175" border="0" vspace="0" style="width: 625px; height: 175px;"></p><p><br></p><p style="text-align: center;">图1&nbsp;两种三阴乳腺癌克隆进化分析</p><p><br></p> 
+						<section class="wx96Diy" data-source="bj.96weixin.com" style=""><section class="96wx-bdtc"><section> <span ><strong ><span>遗传变异分析——发现癌症组织内细胞的异质性</span></strong></span></section></section></section>
+						
+						<p style="text-align: justify;" class="textindent">针对ER和TNBC两种类型的乳腺癌样本进行遗传变异位点分析，发现:突变在进化的过程中不断产生，引起大量的克隆异质性；而拷贝数变异往往发生在进化的早期，呈爆发式的出现，从而形成稳定的亚克隆种群，从而解释了癌症组织内细胞异质性产生的原因。</p><p><br></p><p style="text-align: center;"><img src="./image/1470967607475542.png" title="图2 两种三阴乳腺癌遗传变异检测分布" alt="图2 两种三阴乳腺癌遗传变异检测分布" width="564" height="276" style="height: 276px; width: 564px;" border="0" vspace="0"></p><p><br></p><p style="text-align: center;">图2&nbsp;两种三阴乳腺癌遗传变异检测分布</p><p><br></p><p style="text-align: center;"><img src="./image/1470967624740729.png" title="图3 三阴乳腺癌样本遗传变异分析发现癌症组织内细胞的异质性 " alt="图3 三阴乳腺癌样本遗传变异分析发现癌症组织内细胞的异质性 " width="592" height="151" border="0" vspace="0" style="width: 592px; height: 151px;"></p><p><br></p><p style="text-align: center;">图3&nbsp;三阴乳腺癌样本遗传变异分析发现癌症组织内细胞的异质性&nbsp; &nbsp;<span style="font-size:11px"> &nbsp; &nbsp;&nbsp;</span></p>
+						
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">4</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结论</a>
+							
+							</div>
+						</p>
+						<p><br></p>
+						 
+						
+						<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; list-style: none; border: 0px; font-family:Microsoft YaHei&#39;; color: rgb(51, 51, 51); white-space: normal; text-align: justify; background-color: rgb(255, 255, 255);"><br style="padding: 0px; margin: 0px; list-style: none; border: 0px;"></p><p style="text-align: justify;"  class="textindent">本研究利用单细胞基因组测序和目标区域测序揭示了三阴乳腺癌中三种不同类型的肿瘤细胞亚群都是存在的，每个亚群都由高度相似的拷贝数目的细胞组成。三阴性的肿瘤细胞具有增加的突变率（13.33）。这些研究结果对于癌症预后及阶段确定具有重要临床意义。</p><p><br></p><p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">5</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">参考文献</a>
+							
+							</div>
+						</p>
+						<p><br></p>
+						<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; list-style: none; border: 0px; font-family:Microsoft YaHei; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255);"><br style="padding: 0px; margin: 0px; list-style: none; border: 0px;"></p><p style="margin: 0 0 5px;line-height: 26px;vertical-align: baseline;background: white"><span style="font-size: 14px;">[1] Zong, C., et al. Genome-wide detection of single nucleotide and copy number variations of a single human cell<span style="line-height: 26px; background-color: rgb(255, 255, 255);">[J]</span>. <em>Science</em>&nbsp;, 2012, 338(6114): 1622-1626.</span></p><p style="margin: 0px 0px 5px; vertical-align: baseline; background: white;"><span style="font-size: 14px;"><span style="font-stretch: normal; line-height: 26px;">[2]&nbsp;</span><span style="line-height: normal; font-stretch: normal; font-family: Microsoft YaHei;;">&nbsp;</span><span style="line-height: 26px;">YongWang, et al. Clonal evolution in breast cancer revealed by single nucleus genome sequencing [J]. <em>Nature</em>. 2014, 512(7513): 155-60.&nbsp;</span></span></p></div>
+					</li>
+				</ul>
+			</div>
+		</div> 
+	</li> 
+	<li id="JKDiv_17" class="content"><!--细菌宏基因组测序-->
+		<h4>细菌宏基因组测序</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>  
+		<div id="tabs0">
+			<div class="main" style="height:32px;">
+				<ul class="menu0" id="menu3">
+				   <li onclick="setTab(3,0)" class="hover">产品介绍</li>
+				   <li onclick="setTab(3,1)">技术路线</li>
+				   <li onclick="setTab(3,2)">样本要求</li>
+				   <li onclick="setTab(3,3)">经典案例</li>
+				</ul> 
+			</div>
+			
+			<div class="main" id="main3" style="background: #ffffff;">
+			   <ul class="block">
+					<li>
+						<div  id="list_setting"><p style="text-align: center;"><img src="./image/1470895106935505.png" title="1470895106935505.png" alt="3.png"></p><p><br></p><p style="text-align: justify;" class="textindent">细菌宏基因组测序是以特定环境中整个细菌微生物群落作为研究对象，不需对环境中细菌微生物进行分离培养，而是通过提取环境中整个细菌微生物群落的总DNA，利用Illumina HiSeq测序仪进行高通量测序，并进行生物信息学分析，来研究细菌微生物与环境、与宿主相互之间的关系，它摆脱了传统研究中微生物分离培养的技术限制。二代高通量测序平台具有通量高、准确性高、速度快、信息全等特点，能够显著加快宏基因组学研究的进程，并且在鉴定低丰度的微生物群落及种类，挖掘更多基因资源方面具有非常大的优势，完全能够满足常规微生物群体的物种分类研究、群落结构、系统进化、功能注释，样品间的物种或基因差异以及物种间的代谢网络等分析。通过深度挖掘具有应用价值的基因资源，为研究和开发新的微生物活性物质提供有力支持。</p><p><br></p><p style="text-align: center;"><img src="./image/1470895123373932.png" title="1470895123373932.png" alt="youshi.png"></p><p><br></p><p style="text-align: center;"><img src="./image/1470895137196001.png" title="细菌宏基因组优势.png" alt="细菌宏基因组优势.png" width="625" height="" border="0" vspace="0" style="width: 625px;"></p><p><br></p><p style="text-align: center;"><img src="./image/1470895183815631.png" title="1470895183815631.png" alt="yingyonglingyu.png"></p><p style="text-align: center;"><img src="./image/1471571093741071.png" title="细菌宏基因组测序应用领域.png" alt="细菌宏基因组测序应用领域.png" width="388" height="286" border="0" vspace="0" style="width: 388px; height: 286px;"></p><p><br></p></div>
+					</li>
+			   </ul>
+			   <ul>
+					<li>
+						<div  id="list_advant"><p style="text-align: center;"><img src="./image/1470895233782668.png" title="1470895233782668.png" alt="4.png"></p><p style="text-align: center;"><br></p><p style="text-align: center;"><img src="./image/1471571256682037.png" title="细菌宏基因组测序技术路线.png" alt="细菌宏基因组测序技术路线.png" width="564" height="780" border="0" vspace="0" style="width: 564px; height: 780px;"></p><p><br></p><p style="text-align: center;"><img src="./image/1470895261569383.png" title="1470895261569383.png" alt="1.png"></p><p><br></p><p style="text-align: center;"><img src="./image/1470895268568694.png" title="细菌宏基因组测序产品参数.png" alt="细菌宏基因组测序产品参数.png" width="625" height="" border="0" vspace="0" style="width: 625px;"></p></div>
+					</li> 
+				</ul>
+			   <ul>
+					<li>
+						<div  id="list_harm"><p style="text-align: center;"><img src="./image/1470895320109326.png" title="1470895320109326.png" alt="2.png"></p><p style="text-align: center;"><img src="./image/1470895327252112.png" title="细菌宏基因组测序样本要求.png" alt="细菌宏基因组测序样本要求.png" width="625" height="" border="0" vspace="0" style="width: 625px;"></p></div>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div  id="list_flow"><p style="text-align: center;">球海洋微生物的结构和功能</p><p style="text-align: justify;"><br></p><p style="text-align: center;">Structure and function of the global ocean microbiome</p><p style="text-align: justify;"><br></p><p style="text-align: center;"><img src="./image/1470895854219186.png" title="1470895854219186.png" alt="细菌宏基因组测序_19.png"></p>
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">1</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">设计思路</a>
+							
+							</div>
+						</p> 
+						<p><br></p><p style="text-align: center;">&nbsp;<img src="./image/1471571222667071.png" title="设计思路.png" alt="设计思路.png" width="352" height="434" border="0" vspace="0" style="width: 352px; height: 434px;"></p><p style="text-align: justify;">&nbsp;</p>
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">2</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结果</a>
+							
+							</div>
+						</p> 
+						<p><br></p><section class="wx96Diy cur" data-source="bj.96weixin.com"><section><section></section><strong><span>Tara 海洋微生物样本中获得的新基因的多样性</span></strong></section></section><p><br></p><p style="text-align: justify;"><br></p><p style="text-align: center;"><img src="./image/1470898779342483.png" title="海洋微生物参考基因目录.png" alt="海洋微生物参考基因目录.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: center;">图1 海洋微生物参考基因目录</p><p><br></p>
+						<p class="textindent" style="text-align: justify;">建立了一个全球海洋微生物内参基因目录（OM-RGC），包含＞4000万个来自病毒、原核生物、微型真核生物的非冗余，且大部分为新发现的基因，约为人体肠道微生物内参基因目录数目的4倍，大部分为细菌中的基因。</p>
+						<p style="text-align: justify;">（A）通过对来自68个地点的243个样本3µm以下的病毒和微生物进行宏基因组测序，组装和基因预测，鉴定出&gt;111.5M的基因编码序列，聚类到&gt;40M的参考基因上的序列&gt;26M（外源基因）（左上图）。而目前肠道微生物参考基因目录才10M（来自1,070个个体的1,267个样本）（右上图）。结合从公共资源中获得的数据，对海洋微生物的基因进行聚类注释，结果显示超过81%的基因只在本研究的样本中发现，且参考基因目录主要有细菌基因组成（左下图）。（B）样本增加与新发现基因数稀释曲线。小图139个海洋原核样本对比相同数量人肠道微生物的稀疏曲线，发现具有更丰富的遗传多样性。（C）139个海洋原核样本中新发现的基因（红色）与能比对到已有公共数据库上的基因（蓝色）比例。</p><p><br></p><section class="wx96Diy cur" data-source="bj.96weixin.com"><section><strong><span>海洋微生物的深度层级分布</span></strong> </section></section><p><br></p><p style="text-align: center;"><img src="./image/1470899092353603.png" title="海洋微生物在不同深度水层中分布分析.png" alt="海洋微生物在不同深度水层中分布分析.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: justify;"><br></p><p style="text-align: center;">图2 海洋微生物在不同深度水层中分布分析</p><p style="text-align: justify;"><br></p><p style="text-align: justify;" class="textindent">（A）基于139个原核生物16S测序数据的主成份分析发现样品中微生物丰度在不同深度水层中显著分离；盒形图分析发现表层水与深层水的微生物差异显著，与中层水的差异较小。（B）20个不同地点取样分析表层水、深层水和中层水中微生物物种丰度和细胞密度，发现随着水深增加，微生物的物种丰度升高，而细胞密度降低；基因功能和丰度随深度加深而增加，而样品间的差异降低。相对于表层水的微生物，预测中层水最短微生物群体世代间隔更长。</p>
+						<p><br></p><section class="wx96Diy cur" data-source="bj.96weixin.com"><section><strong><span>海洋微生物群落横向的多样性与垂直距离的衰减</span></strong></section></section><p><br></p><p style="text-align: center;"><img src="./image/1470899170827221.png" title="海洋微生物群体纬度相关的多样性和随距递减.png" alt="海洋微生物群体纬度相关的多样性和随距递减.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: center;">图3 海洋微生物群体纬度相关的多样性和随距递减</p><p><br></p><p style="text-align: justify;">（A）物种丰度与温度的关系显示出随温度升高至15℃，物种丰度增加；温度继续升高则物种丰度逐渐降低。颜色表示处于不同的纬度，可以看出海水中微生物丰度最高的区域是在中纬度，而不是赤道附近。方块和圆圈分别表示样本来自于南半球和北半球。（B）样品采集点两两之间距离与微生物群结构的差异，显示样品采集点之间距离在5000km之内时，微生物群体结构随距离增加而差异增大（只计算海洋区域的距离）。</p><p><br></p><section class="wx96Diy cur" data-source="bj.96weixin.com"><section><strong><span>海洋表面的微生物群落组成的环境的驱动因素</span></strong></section></section><p><br></p><p style="text-align: justify;"><br></p><p style="text-align: center;"><img src="./image/1470899234471146.png" title="环境对表层水中微生物组成的影响.png" alt="环境对表层水中微生物组成的影响.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: center;">图4 环境对表层水中微生物组成的影响</p><p style="text-align: justify;"><br></p><p style="text-align: justify;" class="textindent" class="textindent">（A）主成分析发现表层水中微生物随区域聚集的趋势并不明显（上），反而随着所在地的温度而分离，第一主成份和温度之间显示强关联性（R2:0.76）。(B)运用斯皮尔曼相关系数展示环境因素之间两两比较。基于三种独立的分类方法：16S的mitags、mOTU和功能（KEGG模块）组成与环境因素采用曼特尔检验进行相关性分析。</p><p style="text-align: justify;"><br></p>
+						<p style="text-align: justify;" class="textindent">对海洋表层的139个原核生物样本进行PCoA分析发现，温度和溶氧量是影响原核生物分类和功能组成的主要因素，其中温度的相关性更大，温度是影响表层水中微生物组成结构的主要因素；随着纬度的升高，物种丰度呈现先升高后降低的趋势，峰值出现在中纬度区域。</p>
+						<p style="text-align: justify;"><br></p><p style="text-align: center;"><img src="./image/1470899304955962.png" title="温度是影响浅层水中微生物组成结构的主要因素.png" alt="温度是影响浅层水中微生物组成结构的主要因素.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: center;">图5 温度是影响浅层水中微生物组成结构的主要因素</p><p><br></p><p style="text-align: justify;">（A）&nbsp; 宏基因组与环境因素的关联强度。（B）微生物种类构成与实地温度的关联强度。</p><p><br></p><section class="wx96Diy cur" data-source="bj.96weixin.com"><section><strong><span>海洋微生物与肠道微生物核心直系同源簇的差异比较</span></strong></section></section><p><br></p><p style="text-align: center;"><img src="./image/1470900859746403.png" title="核心同源微生物.png" alt="核心同源微生物.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: justify;"><br></p><p style="text-align: center;" >图6 海洋和人肠道核心同源微生物</p><p><br></p>
+						<p style="text-align: justify;" class="textindent">（A）从1-139个随机样本中同源微生物（orthologous groups, OGs）统计。随着样本量的增加，同源群数先快速下降，然后缓慢下降逐渐接近139个样本时的5755个OGs。（B）海洋和人肠道核心同源组的功能对比。海洋组中有40%位置功能，而人肠道组只有9%。海洋核心同源组又被分为了普通组，不常见组和罕见组。（C）海洋和人肠道核心同源组的基因丰度对比，显示两个不同的生态中的微生物基因在功能质量和数量上都有很大的交叉。</p><p><br></p><section class="wx96Diy cur" data-source="bj.96weixin.com"><section><strong style="line-height: 1.5em;"><span>海洋微生物功能结构的组成</span></strong></section></section><p><br></p><p style="text-align: center;"><img src="./image/1470900928468851.png" title="海洋微生物的功能结构.png" alt="海洋微生物的功能结构.png" width="500" height="" border="0" vspace="0" style="width: 500px;"></p><p style="text-align: justify;"><br></p><p style="text-align: justify;"><br></p><p style="text-align: center;" >图7 海洋微生物的功能结构</p><p><br></p>
+						<p style="text-align: justify;" class="textindent">（A）海洋微生物的门水平上的种类多样性相对与功能组成更加丰富（上）；非核心基因功能占总基因丰度的比例（下）。（B）表层水中微生物核心同源组几乎完全被中层水微生物核心同源组所包含（左）；表层水中微生物标记基因丰度与中层水中的差异。</p><p style="text-align: justify;">&nbsp;</p>
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">3</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">研究结论</a>
+							</div>
+						</p> <p style="text-align: justify;"><br></p><p style="text-align: justify;" class="textindent">全球范围内不同位置海洋宏基因组的研究促进了对海洋模型的预测，发现了环境温度对海洋微生物群落结构变化的驱动作用，揭示了全球不同海域海洋功能的相似性，对研究气候变化具有广泛的意义，也为研究海洋微生物之间及微生物与环境互作提供方法理论基础。Tara Oceans项目不仅有利于全面研究海洋生态系统，其中对微生物群落结构的研究也有助于更加深入的研究海洋生态环境。Tara海洋项目对生态系统的发展过程理解的促进作用，不仅在于海洋生态，也通过生态系统之间的比较分析，促进了对所有微生物群的研究。</p>
+						<p style="text-align: justify;"><br></p>
+						<p>
+							<div style=" border-bottom: 2px solid rgb(9, 110, 181); height: 41px; width: 110px; margin: 0 auto; ">
+							<a style="display:block;line-height:40px;font-size:42px;color: rgb(9, 110, 181);width:50px;float: left;">4</a>
+							<a style="display:block;line-height: 31px;font-size: 12px;border-top: 2px solid rgb(9, 110, 181);/* border-bottom:2px solid rgb(9, 110, 181); */width: 60px;float: left;height: 20px;margin-top: 9px;">参考文献</a>
+							</div>
+						</p>
+						<p style="text-align: justify;"><br></p><p style="text-align: justify;">Sunagawa S, Coelho L P, Chaffron S, et al. Structure and function of the global ocean microbiome[J]. <em>Science</em>, 2015, 348(6237): 1-9.</p></div>
+					</li>
+				</ul>
+			</div>
+		</div> 
+		 
+				
+	</li> 
+	<li id="JKDiv_18" class="content"><!--循环肿瘤细胞检测（CTC）-->
+		
+		<h4>细菌宏基因组测序</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>  
+		<p>循环肿瘤细胞检测（CTC）</p>
+	</li> 
+	<li id="JKDiv_19" class="content"><!--循环DNA检测（cfDNA）-->
+		<h4>循环DNA检测（cfDNA）</h4>
+		<div class="xian"><img src="./image/right_xian.jpg" /></div>
+		<p></p>  
+		<p>循环DNA检测（cfDNA）</p>
+	</li>
+	</div>
+		</div>
+		 
+			
+	</div>
+</div>
+<script>
+	$(function(){
+		$('#td_left tr').each(function(){
+			$(this).children('td:eq(1)').addClass('textleft')
+		})
+	})
+</script>
+</body>
+</html>
